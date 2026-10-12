@@ -62,6 +62,11 @@
 .custom-packs-entry { display: block; margin: 1rem auto 0; text-align: center; }
 .packs-page { min-height: 100dvh; }
 .packs-shell { width: min(calc(100% - 32px), 1120px); margin: 2rem auto 4rem; }
+.admin-unlock { width: min(calc(100% - 32px), 520px); }
+.admin-unlock .game-panel { display: grid; gap: 1rem; }
+.admin-unlock h1 { margin: 0; font-size: clamp(1.8rem, 6vw, 2.8rem); letter-spacing: -0.045em; }
+.admin-unlock .stage-copy, .admin-unlock .form-error { margin: 0; }
+.admin-unlock .btn-ghost { justify-self: start; }
 .packs-page-heading, .editor-title, .editor-actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .packs-page-heading h1 { margin: 0.2rem 0; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.05em; }
 .packs-page-heading p { margin: 0; color: var(--muted); line-height: 1.6; }

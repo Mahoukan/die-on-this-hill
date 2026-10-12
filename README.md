@@ -4,13 +4,13 @@ Trivia is easy. Convincing your friends isn't.
 
 ## What it is
 
-Die on This Hill is a browser-based multiplayer trivia party game. Players answer privately, invent believable alternatives, argue their case, and then vote on the truth. The server controls game state, timing, answers, votes, scoring, and room permissions.
+Die on This Hill is a browser-based multiplayer trivia party game. Players answer privately, invent believable alternatives, debate, and vote on the truth. The custom Node server controls game state, timing, answers, votes, scoring, and Socket.IO connections.
 
 ## How the game works
 
 1. Answer the trivia question genuinely.
 2. Submit a believable wrong answer as a bluff.
-3. Debate the combined answer pool with the group.
+3. Debate the combined answer pool.
 4. Vote for the answer you believe is correct.
 5. Reveal the truth, votes, and bluff owners.
 6. Score the round and continue to the final leaderboard.
@@ -22,27 +22,29 @@ Once per game, a player can choose I WILL DIE ON THIS HILL to double the stakes 
 - Multiplayer rooms with reconnect handling and configurable game length
 - Single Pack and Mixed Game modes
 - Six built-in question packs and persistent custom packs
-- Optional read-only Shared Displays for TVs and extra browsers
+- Optional read-only Shared Displays
 - Majority debate readiness with a host override
 - Multi-round scoring, statistics, final rankings, and awards
-- Bundled audio with synthesized fallback cues and per-device sound controls
-- Keyboard-friendly controls and reduced-motion support
+- Bundled audio, synthesized fallback cues, and reduced-motion support
 
 ## Requirements
 
 - Node.js 22 or newer
 - npm, using the committed `package-lock.json`
+- Docker for container deployment
 
 ## Local development
+
+Set `PACK_ADMIN_PASSWORD` in a local ignored environment file to enable custom-pack administration, then run:
 
 ```sh
 npm install
 npm run dev
 ```
 
-The application listens on `http://localhost:3000` by default. The development command starts the custom server that hosts both Next.js and Socket.IO.
+The development server listens on `http://localhost:3000` by default.
 
-## Production
+## Production without Docker
 
 ```sh
 npm install
@@ -50,43 +52,122 @@ npm run build
 npm run start
 ```
 
-The production start command must be used instead of `next start` because multiplayer connections are attached by the custom Node server in `server.ts`. Run a single application process unless the deployment adds shared room state and a Socket.IO adapter. Put the server behind TLS and a suitable reverse proxy for public internet deployment.
+Use `npm run start`, not `next start`. The custom command starts both Next.js and Socket.IO. Production startup fails if `PACK_ADMIN_PASSWORD` is missing.
 
 ## Environment
 
-Copy `.env.example` to an appropriate local environment file or configure these values in the deployment platform:
+See `.env.example` for safe example values.
 
-- `HOST`: listening interface. Defaults to `0.0.0.0`.
-- `PORT`: listening port. Defaults to `3000`.
-- `CUSTOM_PACKS_DIR`: optional absolute or project-relative path to persistent custom-pack storage. Defaults to `data/custom-packs/`.
+- `NODE_ENV=production`
+- `HOST=0.0.0.0`
+- `PORT=3000`
+- `CUSTOM_PACKS_DIR=/data/custom-packs`
+- `PACK_ADMIN_PASSWORD`: required production secret for `/packs`
 
-The custom-pack directory must be writable by the application and stored on persistent storage in production.
+Do not commit real passwords or production environment files.
+
+## Docker
+
+The multi-stage image builds with Node.js 22 and runs as the non-root `node` user. It exposes port 3000 and stores custom packs outside the application at `/data/custom-packs`.
+
+```sh
+docker build -t die-on-this-hill .
+docker run -d \
+  --name die-on-this-hill \
+  --restart unless-stopped \
+  --env-file .env \
+  -p 3000:3000 \
+  -v die-on-this-hill-packs:/data/custom-packs \
+  die-on-this-hill
+```
+
+The image healthcheck calls `GET /api/health` every 30 seconds. The endpoint returns `{"status":"ok"}` without reading or changing game state.
+
+For the portable Compose example, replace its example password before starting it:
+
+```sh
+docker compose -f docker-compose.example.yml up -d --build
+```
+
+## Coolify
+
+1. Connect the GitHub repository and select Dockerfile deployment.
+2. Set the internal application port to `3000`. Do not assign container ports 80 or 443.
+3. Configure all environment variables listed above with a strong `PACK_ADMIN_PASSWORD`.
+4. Mount persistent Coolify storage at `/data/custom-packs`.
+5. Ensure Nginx Proxy Manager can reach the Coolify-managed application on port 3000, either through an appropriate Docker network or a host port that is not publicly exposed.
+6. Deploy and wait for the container healthcheck to pass.
+
+An empty Docker-managed volume inherits the image directory permissions. For a host bind mount, ensure the mounted directory is writable by the container's `node` user, UID 1000 in the selected base image. Do not use mode 777 as the default fix.
+
+## Nginx Proxy Manager
+
+Create a proxy host such as `game.example.com` with:
+
+- Scheme: `http`
+- Forward hostname or IP: the address that reaches the Coolify application
+- Forward port: `3000`
+- WebSocket support: enabled for Socket.IO
+- SSL certificate: configured at Nginx Proxy Manager
+- Force SSL: enabled
+- HTTP/2: optional
+
+TLS terminates at Nginx Proxy Manager. The application uses plain HTTP on the trusted internal network and needs no separate WebSocket port. Preserve the public `Host` header so same-origin Socket.IO checks succeed. Security headers already come from the application; avoid adding conflicting duplicates at the proxy.
+
+## Custom pack administration
+
+Gameplay, room creation, joining, and Shared Displays remain passwordless. Visiting `/packs` requires the server-side `PACK_ADMIN_PASSWORD`.
+
+A successful unlock creates a random 12-hour server session and an HttpOnly, SameSite=Strict cookie. Production cookies are Secure and therefore require HTTPS. The password is not stored in browser storage or included in client JavaScript. Pack listing, creation, editing, import, export, and deletion are all authorized again by the server. Lock Admin ends the server session and clears the cookie.
+
+If `PACK_ADMIN_PASSWORD` is missing, production startup fails. Development mode stays available, but pack administration is disabled.
 
 ## Question packs
 
-### Built-in packs
+Built-in packs are read-only source data under `server/questions/`. Custom packs are JSON files in `CUSTOM_PACKS_DIR`. Use the validated `/packs` import interface instead of manually creating files.
 
-Built-in packs are read-only application source data under `server/questions/`. They are version controlled and validated by the automated tests.
-
-### Custom packs
-
-Custom packs are server-side JSON files stored under `data/custom-packs/` by default. Create or import them through the Custom Packs interface at `/packs`; the Import Pack flow validates the schema, limits, IDs, and duplicate questions.
-
-To back up or migrate custom packs, stop writes to the application and copy the configured custom-pack directory. Custom pack JSON files are intentionally ignored by Git, while `data/custom-packs/.gitkeep` retains the default directory.
+Normal players receive only the safe pack metadata needed for lobby selection. They do not need admin access to select or play custom packs.
 
 ## Shared Display
 
-Open `/display/ROOMCODE`, replacing `ROOMCODE` with the four-letter room code. Any player can open or copy this read-only link. Shared Displays do not join as players, submit actions, affect readiness, or receive private answer data before reveal. A TV is optional; everyone can play entirely on their own devices.
+Open `/display/ROOMCODE`, replacing `ROOMCODE` with the four-letter room code. Any player can open or copy this read-only link. Displays do not join as players, submit actions, affect readiness, or receive private answer data before reveal.
 
-## Persistence
+## Persistence and restarts
 
-Active rooms, sessions, and scores are held in server memory. Restarting the server ends active games. A room with no connected players is removed after ten minutes. Custom packs persist independently in the configured storage directory.
+Active rooms, sessions, and scores exist only in server memory. Container replacement or restart ends active games, and players must create or join a new room. Custom packs survive rebuilds and redeployments only when persistent storage is mounted at `/data/custom-packs`.
+
+## Backup
+
+Custom packs are the only persistent application data that currently requires backup. Temporarily prevent pack editing, then archive the mounted directory from its host or volume backup location:
+
+```sh
+tar -C /path/to/custom-packs -czf die-on-this-hill-custom-packs.tar.gz .
+```
+
+Store the archive somewhere separate from the application server.
+
+## Restore
+
+1. Stop the application or otherwise prevent pack editing.
+2. Inspect the archive contents before extraction.
+3. Back up or move aside any existing JSON files that must not be overwritten.
+4. Extract the archive into the persistent custom-pack directory.
+5. Confirm the directory and files are readable and writable by the container user.
+6. Start or restart the application and verify the packs through `/packs`.
+
+## Upgrade
+
+1. Push the new version to the GitHub repository.
+2. Let Coolify detect the change or start a deployment manually.
+3. Coolify builds the new Docker image and replaces the container.
+4. Verify the healthcheck and application logs.
+5. Confirm custom packs remain available from the mounted `/data/custom-packs` storage.
+
+Container replacement interrupts active games. The persistent pack volume is not part of the image and should remain attached across deployments.
 
 ## Audio
 
-Bundled audio is under `public/audio/`. Sound and mute preferences are local to each browser. Synthesized Web Audio cues provide intentional fallbacks for events without selected files.
-
-Before distributing or publicly deploying the application, maintainers must confirm that they hold appropriate production rights for every bundled audio asset. No asset license is asserted by this repository.
+Bundled audio is under `public/audio/`. Sound preferences are local to each browser. Maintainers must confirm appropriate production rights for every bundled audio asset; this repository does not assert an asset license.
 
 ## Testing
 

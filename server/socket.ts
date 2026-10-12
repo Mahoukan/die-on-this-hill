@@ -1,12 +1,13 @@
 import type { Server, Socket } from 'socket.io';
 import type { ClientEvents, PlayerSession, Reply, ServerEvents } from '../shared/types';
 import { GameError, RoomStore } from './rooms';
+import type { PackAdminAuth } from './pack-admin';
 
 interface SocketData { session?: PlayerSession; displayRoomCode?: string }
 export type GameServer = Server<ClientEvents, ServerEvents, Record<string, never>, SocketData>;
 type GameSocket = Socket<ClientEvents, ServerEvents, Record<string, never>, SocketData>;
 
-export function attachGameSockets(io: GameServer, store: RoomStore): void {
+export function attachGameSockets(io: GameServer, store: RoomStore, packAdmin?: PackAdminAuth): void {
   io.on('connection', (socket: GameSocket) => {
     let requests = 0;
     let windowStart = Date.now();
@@ -33,6 +34,9 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
     const requireUnbound = () => {
       if (socket.data.session || socket.data.displayRoomCode) throw new GameError('This connection is already attached to a room.');
     };
+    const requirePackAdmin = () => {
+      if (!packAdmin?.isAuthorized(socket.handshake.headers.cookie)) throw new GameError('Admin authorization is required.');
+    };
     socket.on('display:join', (payload, reply) => action(reply, () => {
       requireUnbound();
       const view = store.displayView(payload?.roomCode);
@@ -40,15 +44,15 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       void socket.join(displayChannel(view.roomCode));
       return view;
     }));
-    socket.on('packs:list', (reply) => action(reply, () => store.listCustomPacks()));
-    socket.on('packs:create', (payload, reply) => action(reply, () => { const pack = store.createPack(payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:update', (payload, reply) => action(reply, () => { const pack = store.updatePack(payload?.packId, payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:delete', (payload, reply) => action(reply, () => { store.deletePack(payload?.packId); io.emit('packs:changed'); return undefined; }));
-    socket.on('packs:question-add', (payload, reply) => action(reply, () => { const pack = store.addPackQuestion(payload?.packId, payload?.question); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:question-update', (payload, reply) => action(reply, () => { const pack = store.updatePackQuestion(payload?.packId, payload?.questionId, payload?.question); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:question-delete', (payload, reply) => action(reply, () => { const pack = store.deletePackQuestion(payload?.packId, payload?.questionId); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:import', (payload, reply) => action(reply, () => { const pack = store.importPack(payload?.json); io.emit('packs:changed'); return pack; }));
-    socket.on('packs:export', (payload, reply) => action(reply, () => store.exportPack(payload?.packId)));
+    socket.on('packs:list', (reply) => action(reply, () => { requirePackAdmin(); return store.listCustomPacks(); }));
+    socket.on('packs:create', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.createPack(payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:update', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.updatePack(payload?.packId, payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:delete', (payload, reply) => action(reply, () => { requirePackAdmin(); store.deletePack(payload?.packId); io.emit('packs:changed'); return undefined; }));
+    socket.on('packs:question-add', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.addPackQuestion(payload?.packId, payload?.question); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:question-update', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.updatePackQuestion(payload?.packId, payload?.questionId, payload?.question); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:question-delete', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.deletePackQuestion(payload?.packId, payload?.questionId); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:import', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.importPack(payload?.json); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:export', (payload, reply) => action(reply, () => { requirePackAdmin(); return store.exportPack(payload?.packId); }));
     socket.on('room:create', (payload, reply) => action(reply, () => {
       requireUnbound();
       return bind(store.create(payload?.name, socket.id));

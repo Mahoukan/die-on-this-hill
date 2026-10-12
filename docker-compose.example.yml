@@ -1,0 +1,25 @@
+services:
+  die-on-this-hill:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3000
+      CUSTOM_PACKS_DIR: /data/custom-packs
+      PACK_ADMIN_PASSWORD: change-me
+    ports:
+      - "3000:3000"
+    volumes:
+      - custom-packs:/data/custom-packs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:' + (process.env.PORT || '3000') + '/api/health').then((response) => { if (!response.ok) process.exit(1); }).catch(() => process.exit(1));"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+volumes:
+  custom-packs:
