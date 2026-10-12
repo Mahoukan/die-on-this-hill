@@ -1,0 +1,22 @@
+.round-scoreboard { margin-top: 1.75rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
+.round-scoreboard table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.scoreboard-caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.round-scoreboard thead { background: rgba(0,0,0,0.15); }
+.round-scoreboard th, .round-scoreboard td { padding: 1.1rem; text-align: right; }
+.round-scoreboard th:first-child { text-align: left; }
+.round-scoreboard thead th { color: var(--muted); font-size: 0.7rem; font-weight: 750; white-space: nowrap; }
+.round-scoreboard tbody th { font-size: 0.95rem; font-weight: 800; }
+.round-scoreboard tbody td { font-weight: 900; font-size: 1.2rem; }
+.round-scoreboard tbody tr + tr { border-top: 1px solid var(--line); }
+.leader-row { background: rgba(121,217,154,0.06); }
+.score-player { display: flex; gap: 0.7rem; align-items: center; }
+.score-avatar { display: grid; flex-shrink: 0; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--panel-strong); font-weight: 900; }
+.leader-row .score-avatar { background: rgba(121,217,154,0.15); color: var(--success); }
+.you-label { margin-left: 0.25rem; color: var(--muted); font-size: 0.65rem; font-weight: 500; }
+.leader-row .result-tag { margin-top: 0.7rem; }
+@media (max-width: 480px) {
+  .round-scoreboard th, .round-scoreboard td { padding: 1rem 0.65rem; }
+  .round-scoreboard tbody td { font-size: 1.05rem; }
+  .score-avatar { display: none; }
+  .leader-row .result-tag { max-width: 140px; font-size: 0.58rem; }
+}

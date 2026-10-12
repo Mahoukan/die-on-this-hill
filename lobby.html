@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lobby · Die on This Hill</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/lobby.css" />
+</head>
+<body class="page page-lobby">
+  <header class="topbar">
+    <a class="brand-mark" href="index.html" aria-label="Back to home">
+      <span class="brand-flame">▲</span>
+      <span>Die on This Hill</span>
+    </a>
+    <button class="icon-button" type="button" aria-label="Game settings" title="Game settings">•••</button>
+  </header>
+
+  <main class="lobby-shell">
+    <section class="room-panel">
+      <div class="room-kicker">Room code</div>
+      <button id="copy-room-code" class="room-code" type="button" title="Copy room code" aria-label="Copy room code HILL">
+        HILL
+      </button>
+      <p id="copy-message" class="copy-message" aria-live="polite">Tap the code to copy it.</p>
+
+      <div class="share-row">
+        <button class="btn btn-secondary btn-small" id="copy-link" type="button">Copy Invite Link</button>
+        <button class="btn btn-ghost btn-small" id="display-button" type="button">Open Display</button>
+      </div>
+    </section>
+
+    <section class="players-panel" aria-labelledby="players-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Ready room</div>
+          <h1 id="players-title">5 players joined</h1>
+        </div>
+        <div class="status-pill"><span class="status-dot"></span> Live</div>
+      </div>
+
+      <div id="player-grid" class="player-grid">
+        <article class="player-card player-card-host">
+          <div class="avatar">S</div>
+          <div class="player-info">
+            <strong>Suriya</strong>
+            <span>Host</span>
+          </div>
+          <span class="ready-check" aria-label="Ready">✓</span>
+        </article>
+
+        <article class="player-card">
+          <div class="avatar">M</div>
+          <div class="player-info"><strong>Mark</strong><span>Ready</span></div>
+          <span class="ready-check" aria-label="Ready">✓</span>
+        </article>
+
+        <article class="player-card">
+          <div class="avatar">R</div>
+          <div class="player-info"><strong>Renee</strong><span>Ready</span></div>
+          <span class="ready-check" aria-label="Ready">✓</span>
+        </article>
+
+        <article class="player-card">
+          <div class="avatar">P</div>
+          <div class="player-info"><strong>Perry</strong><span>Ready</span></div>
+          <span class="ready-check" aria-label="Ready">✓</span>
+        </article>
+
+        <article class="player-card player-card-waiting">
+          <div class="avatar">H</div>
+          <div class="player-info"><strong>Hunter</strong><span>Choosing name…</span></div>
+          <span class="waiting-dot" aria-label="Waiting"></span>
+        </article>
+      </div>
+
+      <button id="add-player" class="add-player" type="button">+ Add fake player</button>
+    </section>
+
+    <aside class="settings-card" aria-label="Game settings">
+      <div class="settings-heading">
+        <div>
+          <div class="eyebrow">Game setup</div>
+          <h2>Tonight's game</h2>
+        </div>
+        <span class="recommended-badge">Recommended</span>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <strong>Rounds</strong>
+          <span>Based on 5 players</span>
+        </div>
+        <div class="segmented" role="group" aria-label="Rounds">
+          <button type="button">6</button>
+          <button type="button" class="active">8</button>
+          <button type="button">10</button>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <strong>Question pack</strong>
+          <span>Prototype content</span>
+        </div>
+        <button class="select-like" type="button">Mixed Trivia <span>⌄</span></button>
+      </div>
+
+      <div class="setting-row setting-row-compact">
+        <div>
+          <strong>Shared display</strong>
+          <span>Optional — the whole game works without it</span>
+        </div>
+        <span class="optional-label">Optional</span>
+      </div>
+    </aside>
+
+    <section class="start-panel">
+      <button id="start-game" class="btn btn-primary btn-large start-button" type="button">
+        Start Game
+        <span class="btn-arrow">→</span>
+      </button>
+      <p>Everyone can play entirely from their own device.</p>
+    </section>
+  </main>
+
+  <div id="prototype-toast" class="toast" role="status" aria-live="polite"></div>
+
+  <nav class="prototype-nav" aria-label="Prototype navigation">
+    <a href="index.html">← Home</a>
+    <span>Lobby</span>
+    <button id="next-screen" type="button">Next screen →</button>
+  </nav>
+
+  <script src="js/prototype.js"></script>
+</body>
+</html>

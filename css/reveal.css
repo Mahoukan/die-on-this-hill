@@ -1,0 +1,20 @@
+.page-reveal .stage-title { max-width: 650px; }
+.page-reveal .answer-pool { margin-top: 1.5rem; }
+.page-reveal .answer-card { justify-content: flex-start; min-height: 145px; }
+.voter-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; padding: 0; margin: 0.9rem 0 0; list-style: none; font-size: 0.78rem; font-weight: 650; letter-spacing: 0; }
+.voter-list li { padding: 0.4rem 0.6rem; border-radius: 8px; background: var(--panel-strong); }
+.voter-hill { color: var(--accent); font-size: 0.65rem; margin-left: 0.2rem; white-space: nowrap; }
+.no-votes { margin: 0.9rem 0 0; color: var(--muted); font-size: 0.78rem; font-weight: 500; letter-spacing: 0; }
+.correct-label { margin-top: 0.8rem; font-size: 0.7rem; font-weight: 800; color: var(--success); letter-spacing: 0; }
+.correct-reveal { margin-top: 2rem; padding: clamp(1.25rem, 4vw, 2.5rem); border: 1px solid rgba(121,217,154,0.4); border-radius: var(--radius-lg); background: radial-gradient(circle at 50% -30%, rgba(121,217,154,0.17), transparent 70%), var(--panel); text-align: center; }
+.correct-reveal .eyebrow { color: var(--success); }
+.correct-reveal h2 { margin: 0.5rem 0 0; color: var(--success); font-size: clamp(3rem, 13vw, 6.5rem); font-weight: 950; letter-spacing: -0.065em; line-height: 1.05; }
+.correct-reveal > p { color: var(--muted); }
+.hill-survivor { display: flex; align-items: center; gap: 0.85rem; margin-top: 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(0,0,0,0.15); text-align: left; }
+.hill-survivor > span:first-child { color: var(--accent); font-size: 1.7rem; }
+.hill-survivor > div { flex: 1; }
+.hill-survivor strong, .hill-survivor div span { display: block; }
+.hill-survivor strong { font-size: 0.85rem; }
+.hill-survivor div span { margin-top: 0.4rem; font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+.hill-survivor > .positive { font-weight: 900; font-size: 1.25rem; }
+@media (max-width: 480px) { .hill-survivor { flex-wrap: wrap; } .hill-survivor > span:first-child { display: none; } .page-reveal .header-note { display: none; } }

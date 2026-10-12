@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Vote · Die on This Hill</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/vote.css" />
+</head>
+<body class="page game-page page-vote" data-phase="vote">
+  <header class="topbar"><a class="brand-mark" href="index.html" aria-label="Back to home"><span class="brand-flame" aria-hidden="true">▲</span><span>Die on This Hill</span></a><span class="header-note">Pick your hill.</span></header>
+  <main class="game-shell">
+    <div class="round-strip"><span data-round>Round <strong>2</strong> of 8</span><span class="score-pill" data-score><strong>350</strong> pts</span></div>
+    <section aria-labelledby="vote-title">
+      <div class="stage-heading"><div><div class="eyebrow">04 / The vote</div><h1 id="vote-title">FINAL ANSWER</h1></div><div class="timer" role="timer" aria-label="Time remaining"><span class="timer-value" data-timer="15">0:15</span><span class="timer-label">to choose</span></div></div>
+      <p class="question-small">Which country has the most islands in the world?</p>
+      <form id="vote-form">
+        <fieldset class="vote-fieldset" id="vote-options">
+          <legend class="input-help">Choose the answer you believe is right.</legend>
+          <div class="answer-pool">
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Sweden" required /><span class="answer-card">Sweden</span></label>
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Canada" /><span class="answer-card">Canada</span></label>
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Norway" /><span class="answer-card">Norway</span></label>
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Finland" /><span class="answer-card">Finland</span></label>
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Indonesia" /><span class="answer-card">Indonesia</span></label>
+            <label class="vote-choice"><input type="radio" name="final-answer" value="Philippines" /><span class="answer-card">Philippines</span></label>
+          </div>
+        </fieldset>
+        <button class="btn btn-secondary btn-large full-width" id="lock-vote" type="submit" disabled>LOCK ANSWER</button>
+        <div class="hill-action">
+          <button class="btn btn-hill full-width" id="hill-button" type="button" disabled><span class="hill-symbol" aria-hidden="true">▲</span><span>I WILL DIE ON THIS HILL</span></button>
+          <p id="hill-remaining">1 remaining <span>· Once per game. Double the stakes.</span></p>
+        </div>
+      </form>
+      <p class="waiting-message vote-status" id="vote-status" role="status" hidden></p>
+    </section>
+  </main>
+  <footer class="prototype-footer" aria-label="Prototype navigation"><a href="debate.html">← Debate</a><span>Prototype · Final vote</span><a id="continue-link" href="reveal.html" hidden>Continue to reveal →</a></footer>
+  <dialog class="hill-dialog" id="hill-dialog" aria-labelledby="hill-confirm-title" aria-describedby="hill-confirm-copy">
+    <form method="dialog"><button class="dialog-close" aria-label="Close confirmation" value="cancel">×</button></form>
+    <div class="eyebrow">Your one shot. Make it count.</div>
+    <h2 id="hill-confirm-title">YOU ARE ABOUT TO DIE ON THIS HILL.</h2>
+    <div class="chosen-hill" id="hill-selected-answer">Sweden</div>
+    <p id="hill-confirm-copy">Points won or lost from this answer will be doubled.</p>
+    <div class="dialog-actions"><button class="btn btn-secondary" id="hill-back" type="button" autofocus>GO BACK</button><button class="btn btn-primary" id="hill-confirm" type="button">I ACCEPT MY FATE</button></div>
+  </dialog>
+  <script src="js/gameplay.js"></script>
+</body>
+</html>

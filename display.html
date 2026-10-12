@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shared Display · Die on This Hill</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/display.css" />
+</head>
+<body class="page page-display" data-phase="display">
+  <div class="display-shell">
+    <header class="display-header"><div class="brand-mark"><span class="brand-flame" aria-hidden="true">▲</span><span>Die on This Hill</span></div><span class="display-round">Round <strong>2</strong> of 8</span></header>
+    <main class="display-main">
+      <div class="display-stage-heading"><div><div class="eyebrow" id="display-eyebrow">The debate</div><h1 id="display-title">MAKE YOUR CASE</h1></div><div class="timer display-timer" role="timer" aria-label="Time remaining"><span class="timer-value" data-timer="60">1:00</span><span class="timer-label" id="display-timer-label">to debate</span></div></div>
+      <p class="display-question">Which country has the most islands in the world?</p>
+      <section class="answer-pool display-pool" id="display-pool" aria-label="Answers to discuss"><article class="answer-card" data-answer="Sweden"><h2>Sweden</h2></article><article class="answer-card"><h2>Canada</h2></article><article class="answer-card"><h2>Norway</h2></article><article class="answer-card"><h2>Finland</h2></article><article class="answer-card"><h2>Indonesia</h2></article><article class="answer-card"><h2>Philippines</h2></article></section>
+      <p class="display-instruction" id="display-instruction" role="status">ARGUE AMONGST YOURSELVES</p>
+    </main>
+    <footer class="display-footer"><span>Optional shared display · Play on your phones</span><nav class="phase-switcher" aria-label="Prototype display phase"><span>Preview:</span><button type="button" data-display-phase="debate" aria-pressed="true">Debate</button><button type="button" data-display-phase="vote" aria-pressed="false">Vote</button><button type="button" data-display-phase="reveal" aria-pressed="false">Reveal</button></nav></footer>
+  </div>
+  <script src="js/gameplay.js"></script>
+</body>
+</html>

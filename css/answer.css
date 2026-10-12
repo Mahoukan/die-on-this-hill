@@ -1,0 +1,6 @@
+.answer-intro { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+.page-answer .game-shell { max-width: 660px; }
+.page-answer .prototype-footer { max-width: 660px; }
+.page-answer .question { margin-top: 0.75rem; }
+.page-answer .game-panel { box-shadow: var(--shadow); }
+@media (max-width: 400px) { .page-answer .header-note { display: none; } }

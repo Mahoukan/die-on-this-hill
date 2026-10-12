@@ -1,0 +1,30 @@
+.final-heading { max-width: 800px; margin: 0 auto 2.5rem; text-align: center; }
+.final-heading .eyebrow { color: var(--accent); }
+.final-heading h1 { margin: 0.8rem 0 1rem; font-size: clamp(2.7rem, 8vw, 5rem); line-height: 0.98; letter-spacing: -0.065em; font-weight: 950; }
+.final-heading p { color: var(--muted); line-height: 1.5; }
+.final-layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); align-items: start; gap: 1.5rem; }
+.rankings-panel { padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.rankings-panel h2, .awards-section > h2 { margin: 0 0 1.2rem; line-height: 1.5; }
+.final-rankings { list-style: none; margin: 0; padding: 0; }
+.final-rankings li { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 0; }
+.final-rankings li + li { border-top: 1px solid var(--line); }
+.rank-number { color: var(--muted); font-weight: 900; width: 1.5rem; font-size: 1.1rem; }
+.rank-player { flex: 1; min-width: 0; }
+.rank-player strong { font-size: 1rem; }
+.rank-player span { display: block; margin-top: 0.3rem; color: var(--muted); font-size: 0.7rem; line-height: 1.4; }
+.rank-score { font-size: 1.25rem; font-variant-numeric: tabular-nums; letter-spacing: -0.04em; }
+.final-rankings .champion { margin: 0 -0.6rem 0.7rem; padding: 1.1rem 0.6rem; border: 1px solid rgba(255,90,54,0.45); border-radius: 14px; background: var(--accent-soft); }
+.champion .rank-number, .champion .rank-score { color: var(--accent); }
+.champion .rank-player strong { font-size: 1.2rem; }
+.awards-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+.award-card { display: flex; flex-direction: column; min-width: 0; padding: 1.2rem; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.award-number { color: var(--accent); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.15em; }
+.award-card h3 { margin: 0.75rem 0 0.5rem; font-size: 0.95rem; letter-spacing: -0.025em; line-height: 1.2; }
+.award-card p { flex: 1; margin: 0 0 1rem; color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
+.award-winner { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding-top: 0.7rem; border-top: 1px solid var(--line); }
+.award-winner span { color: var(--muted); font-size: 0.7rem; }
+.award-winner strong { font-size: 0.9rem; }
+.award-wide { grid-column: 1 / -1; }
+.final-actions { max-width: 600px; margin: 2rem auto 0; }
+@media (max-width: 780px) { .final-layout { grid-template-columns: 1fr; gap: 2rem; } .final-heading { margin-bottom: 2rem; } }
+@media (max-width: 430px) { .award-card { padding: 1rem; } .final-actions { flex-direction: column; } .page-final-results .header-note { display: none; } }

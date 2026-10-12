@@ -1,0 +1,5 @@
+.page-debate .game-shell { margin-top: 24px; }
+.page-debate .question { max-width: 680px; margin: 1.5rem 0 2rem; }
+.page-debate .answer-card { min-height: clamp(108px, 12vw, 160px); text-align: center; font-size: clamp(1.45rem, 4vw, 2.1rem); background: linear-gradient(160deg, var(--panel-strong), rgba(255,255,255,0.025)); }
+.page-debate .phase-note { max-width: 400px; margin: 1.5rem auto 0; }
+@media (max-width: 420px) { .page-debate .header-note { display: none; } }

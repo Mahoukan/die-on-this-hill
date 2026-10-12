@@ -1,0 +1,24 @@
+.page-display { background: radial-gradient(circle at 15% -15%, rgba(255,90,54,0.12), transparent 50%), var(--bg); }
+.display-shell { width: min(calc(100% - 7vw), 1800px); min-height: 100svh; margin: 0 auto; display: flex; flex-direction: column; padding: 2.5vh 0 1.5vh; }
+.display-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.display-header .brand-mark { font-size: clamp(1rem, 1.65vw, 2rem); }
+.display-header .brand-flame { font-size: 1.4em; width: 1.3em; height: 1.3em; }
+.display-round { font-size: clamp(0.9rem, 1.5vw, 1.7rem); color: var(--muted); }
+.display-round strong { color: var(--text); }
+.display-main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 3vh 0 2vh; }
+.display-stage-heading { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+.display-stage-heading .eyebrow { font-size: clamp(0.8rem, 1.15vw, 1.4rem); color: var(--accent); }
+.display-stage-heading h1 { margin: 0.5rem 0 0; font-size: clamp(2rem, 4.6vw, 5.5rem); font-weight: 950; letter-spacing: -0.06em; line-height: 1; }
+.display-timer { min-width: 12vw; padding: 1.3vw 1.8vw; border-radius: 1.4vw; }
+.display-timer .timer-value { font-size: clamp(2.8rem, 6.5vw, 8rem); }
+.display-timer .timer-label { font-size: clamp(0.6rem, 0.9vw, 1.1rem); }
+.display-question { max-width: 90%; margin: 2.5vh 0 3vh; font-size: clamp(1.7rem, 3vw, 3.5rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.2; }
+.display-pool { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2vw; }
+.display-pool .answer-card { min-height: 15vh; padding: 1.2vw; text-align: center; font-size: clamp(1.5rem, 3vw, 3.5rem); border-radius: 1.2vw; background: linear-gradient(160deg, var(--panel-strong), rgba(255,255,255,0.025)); }
+.display-pool .answer-card.is-correct { background: rgba(121,217,154,0.12); color: var(--success); }
+.display-instruction { text-align: center; margin: 3vh 0 0; color: var(--muted); font-size: clamp(1rem, 1.7vw, 2rem); font-weight: 800; letter-spacing: 0.07em; }
+.display-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; color: var(--muted); font-size: 0.68rem; }
+.phase-switcher { display: flex; align-items: center; gap: 0.35rem; }
+.phase-switcher button { min-height: 32px; border: 1px solid transparent; border-radius: 8px; padding: 0.3rem 0.6rem; background: transparent; color: var(--muted); font-size: 0.68rem; cursor: pointer; }
+.phase-switcher button[aria-pressed="true"] { border-color: var(--line); background: var(--panel); color: var(--text); }
+@media (max-width: 700px) { .display-pool { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; } .display-pool .answer-card { border-radius: 14px; min-height: 100px; } .display-timer { border-radius: 16px; } .display-question { max-width: 100%; } .display-footer { margin-top: 1rem; } }
