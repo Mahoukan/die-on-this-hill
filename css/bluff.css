@@ -1,4 +1,4 @@
-.page-bluff .game-shell, .page-bluff .prototype-footer { max-width: 720px; }
+.page-bluff .game-shell, .page-bluff .game-footer { max-width: 720px; }
 .genuine-receipt { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; padding: 0.9rem 1rem; margin: 0 0 1.8rem; border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--accent-soft); }
 .genuine-receipt span { color: var(--muted); font-size: 0.72rem; font-weight: 850; letter-spacing: 0.08em; }
 .genuine-receipt strong { font-size: 1.1rem; overflow-wrap: anywhere; min-width: 0; }

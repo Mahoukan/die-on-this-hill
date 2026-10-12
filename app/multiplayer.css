@@ -1,4 +1,4 @@
-/* Only live-state additions. Approved prototype styles remain in css/. */
+/* Live multiplayer and custom-pack styles shared across application routes. */
 .form-error { color: var(--accent); font-size: 0.85rem; line-height: 1.5; }
 .connection-copy { color: var(--muted); font-size: 0.8rem; text-align: center; }
 .leave-home { margin-top: 0.75rem; }
@@ -38,7 +38,7 @@
 .pack-card strong { padding-right: 1.8rem; font-size: 0.95rem; }
 .pack-card > span:not(.pack-check) { color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
 .pack-card small { margin-top: auto; color: var(--accent); font-size: 0.67rem; font-weight: 850; text-transform: uppercase; letter-spacing: 0.08em; }
-.pack-check { position: absolute; top: 0.8rem; right: 0.8rem; display: grid; place-items: center; width: 24px; height: 24px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-weight: 900; }
+.pack-check { position: absolute; top: 0.8rem; right: 0.8rem; display: grid; place-items: center; min-width: 42px; height: 24px; padding: 0 0.4rem; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: 0.58rem; font-weight: 900; text-transform: uppercase; }
 .pack-card.is-selected .pack-check { border-color: var(--accent); background: var(--accent); color: #fff; }
 .guest-setup-summary { display: flex; flex-direction: column; gap: 0.55rem; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.025); }
 .guest-setup-summary span { color: var(--muted); font-size: 0.82rem; line-height: 1.5; }

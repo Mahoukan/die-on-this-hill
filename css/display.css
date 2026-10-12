@@ -60,8 +60,5 @@
 .display-hill-announcement strong { max-width: 1200px; color: var(--accent); font-size: clamp(3rem, 8vw, 9rem); line-height: 0.95; letter-spacing: -0.05em; }
 .display-hill-announcement small { color: var(--muted); font-size: clamp(0.8rem, 1.2vw, 1.4rem); }
 @keyframes display-hill-in { from { opacity: 0; transform: scale(1.03); } }
-.phase-switcher { display: flex; align-items: center; gap: 0.35rem; }
-.phase-switcher button { min-height: 32px; border: 1px solid transparent; border-radius: 8px; padding: 0.3rem 0.6rem; background: transparent; color: var(--muted); font-size: 0.68rem; cursor: pointer; }
-.phase-switcher button[aria-pressed="true"] { border-color: var(--line); background: var(--panel); color: var(--text); }
 @media (max-width: 900px) { .display-final-layout { grid-template-columns: 1fr; } }
 @media (max-width: 700px) { .display-pool { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; } .display-pool .answer-card { border-radius: 14px; min-height: 100px; } .display-timer { border-radius: 16px; } .display-question { max-width: 100%; } .display-footer { margin-top: 1rem; } .display-lobby-grid { grid-template-columns: 1fr; } .display-score-row { grid-template-columns: minmax(0, 1fr) auto auto; } .display-hill-badge { display: none; } }

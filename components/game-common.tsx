@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { RoomView } from '../shared/types';
 import { useGame } from './game-provider';
+import { AudioSettingsControl } from './audio-provider';
 
 export function Header({ note, roomCode }: { note?: string; roomCode?: string }) {
-  return <header className="topbar"><Link className="brand-mark" href="/" aria-label="Back to home"><span className="brand-flame" aria-hidden="true">▲</span><span>Die on This Hill</span></Link>{note && <span className="header-note">{note}</span>}{roomCode && <DisplayMenu roomCode={roomCode} />}</header>;
+  return <header className="topbar"><Link className="brand-mark" href="/" aria-label="Back to home"><span className="brand-flame" aria-hidden="true" /><span>Die on This Hill</span></Link>{note && <span className="header-note">{note}</span>}<AudioSettingsControl compact />{roomCode && <DisplayMenu roomCode={roomCode} />}</header>;
 }
 
 function DisplayMenu({ roomCode }: { roomCode: string }) {
@@ -40,16 +41,10 @@ export function Timer({ seconds, label, locked = false }: { seconds: number; lab
 
 export function GameNotice() {
   const game = useGame();
-  if (!game.error && game.connected && !game.restoring) return null;
-  return <div className="game-notice" role={game.error ? 'alert' : 'status'}>{game.error || (game.restoring ? 'Restoring your player...' : 'Connection lost. Reconnecting...')}</div>;
-}
-
-export function DevStatus({ room }: { room: RoomView }) {
-  const game = useGame();
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'development') console.debug('[Die on This Hill]', { room: room.roomCode, playerId: room.me.id, socket: game.connected ? 'connected' : 'disconnected', phase: room.phase, phaseEndsAt: room.phaseEndsAt });
-  }, [room.roomCode, room.me.id, room.phase, room.phaseEndsAt, game.connected]);
-  return null;
+  const wasDisconnected = useRef(false); const [restored, setRestored] = useState(false);
+  useEffect(() => { if (!game.connected) { wasDisconnected.current = true; setRestored(false); return; } if (!wasDisconnected.current || game.restoring) return; wasDisconnected.current = false; setRestored(true); const timer = window.setTimeout(() => setRestored(false), 1800); return () => window.clearTimeout(timer); }, [game.connected, game.restoring]);
+  if (!game.error && game.connected && !game.restoring && !restored) return null;
+  return <div className={`game-notice${restored ? ' is-restored' : ''}`} role={game.error ? 'alert' : 'status'}>{game.error || (restored ? 'RECONNECTED' : game.restoring ? 'Restoring your player...' : 'RECONNECTING...')}</div>;
 }
 
 export const signed = (value: number) => value >= 0 ? `+${value}` : String(value);

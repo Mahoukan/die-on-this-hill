@@ -16,7 +16,7 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       if (++requests > 15) { reply({ ok: false, error: 'Too many actions. Try again in a moment.' }); return; }
       try { reply({ ok: true, data: callback() }); }
       catch (error) {
-        if (!(error instanceof GameError)) console.error('Game action failed:', error);
+        if (!(error instanceof GameError)) console.error('Game action failed:', error instanceof Error ? error.message : 'Unknown error');
         reply({ ok: false, error: error instanceof GameError ? error.message : 'Something went wrong. Please try again.' });
       }
     };

@@ -36,13 +36,13 @@ export function Home({ initialCode = '' }: { initialCode?: string }) {
 
   return <div className="page page-home">
     <main className="home-shell">
-      <section className="brand-block" aria-labelledby="game-title"><div className="eyebrow">A party game about being right — or sounding like you are.</div><h1 id="game-title" className="game-title">Die on This Hill</h1><p className="tagline">Trivia is easy. Convincing your friends isn&apos;t.</p></section>
+      <section className="brand-block" aria-labelledby="game-title"><div className="eyebrow">A party game about being right, or sounding like you are.</div><h1 id="game-title" className="game-title">Die on This Hill</h1><p className="tagline">Trivia is easy. Convincing your friends isn&apos;t.</p></section>
       <section className="home-card" aria-label="Game options">
         {game.session ? <>
-          <Link className="btn btn-primary btn-large" href={`/game/${game.session.roomCode}`}><span>Return to Your Game</span><span className="btn-arrow" aria-hidden="true">→</span></Link>
+          <Link className="btn btn-primary btn-large" href={`/game/${game.session.roomCode}`}>Return to Your Game</Link>
           <button className="btn btn-ghost full-width leave-home" disabled={unavailable} onClick={() => void game.leave()}>Leave Game</button>
         </> : <>
-          <button className="btn btn-primary btn-large" type="button" disabled={unavailable} onClick={() => askName('create')}><span>Create a Game</span><span className="btn-arrow" aria-hidden="true">→</span></button>
+          <button className="btn btn-primary btn-large" type="button" disabled={unavailable} onClick={() => askName('create')}>Create a Game</button>
           <div className="divider" aria-hidden="true"><span>or</span></div>
           <form className="join-form" onSubmit={(event) => { event.preventDefault(); askName('join'); }}>
             <label htmlFor="room-code">Join a Game</label>
@@ -56,16 +56,16 @@ export function Home({ initialCode = '' }: { initialCode?: string }) {
       </section>
       <section className="how-it-works" aria-label="How the game works">{[['Know it.', 'Give your real answer.'], ['Fake it.', 'Write a believable wrong answer.'], ['Defend it.', 'Argue, bluff, and choose.']].map(([title, copy], index) => <div className="mini-step" key={title}><span className="mini-step-number">{index + 1}</span><div><strong>{title}</strong><span>{copy}</span></div></div>)}</section>
     </main>
-    <footer className="site-footer"><span>Play with your friends</span><span className="footer-dot">•</span><span>No account required</span></footer>
+    <footer className="site-footer"><span>Play with your friends</span><span>No account required</span></footer>
     <dialog className="name-dialog" ref={dialog} aria-labelledby="name-title" onClose={() => setLocalError('')}>
-      <form method="dialog"><button className="dialog-close" aria-label="Close" value="cancel">×</button></form>
+      <form method="dialog"><button className="dialog-close" aria-label="Close" value="cancel">X</button></form>
       <div className="eyebrow">{mode === 'create' ? 'Your hill awaits' : `Room ${code}`}</div>
       <h2 id="name-title">What should we call you?</h2>
       <form className="answer-form" onSubmit={enterRoom}>
         <label htmlFor="display-name">Display name</label><input id="display-name" className="answer-input" maxLength={24} autoComplete="nickname" required autoFocus value={name} onChange={(event) => { setName(event.target.value); setLocalError(''); }} />
         <p className="input-help">Something your friends will recognise.</p>
         {(localError || game.error) && <p className="form-error" role="alert">{localError || game.error}</p>}
-        <button className="btn btn-primary btn-large full-width" disabled={unavailable}>{game.pending ? 'CONNECTING...' : mode === 'create' ? 'CREATE GAME →' : 'JOIN GAME →'}</button>
+        <button className="btn btn-primary btn-large full-width" disabled={unavailable}>{game.pending ? 'CONNECTING...' : mode === 'create' ? 'CREATE GAME' : 'JOIN GAME'}</button>
       </form>
     </dialog>
   </div>;

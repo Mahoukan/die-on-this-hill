@@ -8,12 +8,17 @@ async function main() {
   const dev = !process.argv.includes('--production');
   const hostname = process.env.HOST || '0.0.0.0';
   const port = Number(process.env.PORT || 3000);
+  if (!Number.isInteger(port) || port < 1 || port > 65_535) throw new Error('PORT must be an integer between 1 and 65535.');
   const app = next({ dev, hostname, port, webpack: true });
   await app.prepare();
   const handler = app.getRequestHandler();
   const httpServer = createServer((request, response) => {
+    response.setHeader('X-Content-Type-Options', 'nosniff');
+    response.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    response.setHeader('Referrer-Policy', 'same-origin');
+    response.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
     handler(request, response).catch((error: unknown) => {
-      console.error('HTTP request failed:', error);
+      console.error('HTTP request failed:', error instanceof Error ? error.message : 'Unknown error');
       if (!response.headersSent) response.writeHead(500);
       response.end('Server error');
     });
@@ -30,7 +35,7 @@ async function main() {
   });
   const rooms = new RoomStore((code) => broadcastRoom(io, rooms, code), {}, (code) => io.to(displayChannel(code)).emit('display:closed'));
   attachGameSockets(io, rooms);
-  httpServer.listen(port, hostname, () => console.log(`Die on This Hill: http://localhost:${port} (${dev ? 'development' : 'production'}) — listening on ${hostname}`));
+  httpServer.listen(port, hostname, () => console.log(`Die on This Hill: http://localhost:${port} (${dev ? 'development' : 'production'}), listening on ${hostname}`));
   const shutdown = () => {
     rooms.close();
     io.close();
@@ -41,4 +46,4 @@ async function main() {
   process.once('SIGTERM', shutdown);
 }
 
-main().catch((error: unknown) => { console.error(error); process.exitCode = 1; });
+main().catch((error: unknown) => { console.error('Server startup failed:', error instanceof Error ? error.message : 'Unknown error'); process.exitCode = 1; });

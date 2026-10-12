@@ -113,7 +113,7 @@
 .player-info strong, .player-info span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .player-info strong { font-size: 0.92rem; }
 .player-info span { margin-top: 0.12rem; color: var(--muted); font-size: 0.74rem; }
-.ready-check { color: var(--success); font-weight: 950; }
+.ready-check { width: 10px; height: 10px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 4px rgba(121,217,154,0.1); }
 .waiting-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
 
 .add-player {

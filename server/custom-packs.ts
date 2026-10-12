@@ -53,7 +53,7 @@ export class PackRegistry {
   private custom = new Map<string, QuestionPack>();
   readonly directory: string;
 
-  constructor(directory = join(process.cwd(), 'data', 'custom-packs')) {
+  constructor(directory = process.env.CUSTOM_PACKS_DIR || join(process.cwd(), 'data', 'custom-packs')) {
     this.directory = resolve(directory);
     mkdirSync(this.directory, { recursive: true });
     this.reload();
