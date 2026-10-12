@@ -176,6 +176,23 @@ Bundled audio is under `public/audio/`. Sound preferences are local to each brow
 
 ## Testing
 
+### PWA installation
+
+The app has a standalone manifest at `/manifest.webmanifest`, Apple Add to Home Screen metadata, and icons resized without cropping from `public/hill.jpg`: `public/icons/icon-192.png`, `public/icons/icon-512.png`, and `public/icons/apple-touch-icon.png` (180 x 180). The PNGs preserve the opaque JPEG artwork. No PWA dependency is required.
+
+Service-worker registration runs only in production on a secure origin (HTTPS or localhost). The worker caches only `/offline.html`. A full navigation to `/` always tries the network and shows that notice only if the request fails. It never caches application HTML, RSC responses, room state, `/game/*`, `/display/*`, `/packs`, `/api/*`, or `/socket.io/*`. Static assets use normal browser HTTP caching. Offline gameplay is not supported. Updates wait until open app windows/tabs close; there are no forced reloads. Bump the cache version in `public/sw.js` when changing the offline page or cache policy.
+
+To test locally, run `npm run build`, set the existing `PACK_ADMIN_PASSWORD` environment variable, and run `npm run start`. Open `http://localhost:3000` in Chrome or Edge. Development mode (`npm run dev`) does not register a worker. Use a separate browser profile or unregister the worker in DevTools when switching the same origin back to development.
+
+1. In DevTools, check Application > Manifest for the name, icons, start URL, and standalone mode. Check Application > Service Workers for `/sw.js`, then reload once so it controls the page.
+2. Use the browser's Install app action and launch the installed app. Check portrait/landscape layouts and safe areas on a mobile device.
+3. After the first online visit, disconnect the device from the network (or stop the local test server) and reload `/`. Only the internet-connection notice should appear. Direct offline visits to game, display, admin, and API routes should fail normally without cached application content. Cache Storage should contain only the offline page.
+4. Restore the network and test creating/joining a room with two clients, a Shared Display, reconnecting, and pack administration. Requests to Socket.IO must still use the network.
+
+In production, deploy normally and repeat these checks at `https://hill.arulmozhis.com`. On iPhone/iPad, open the site in Safari and use Share > Add to Home Screen, then launch the home-screen icon. Phone testing needs HTTPS; an HTTP LAN address is not a secure origin. No new Coolify environment variables, volumes, ports, or Docker changes are needed. Keep HTTPS and the existing WebSocket proxy configuration, and let the application serve `/sw.js` with its no-store header instead of adding proxy caching for it.
+
+### Automated checks
+
 ```sh
 npm test
 npm run typecheck
