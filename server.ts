@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import next from 'next';
 import { Server } from 'socket.io';
 import { RoomStore } from './server/rooms';
-import { attachGameSockets, broadcastRoom, type GameServer } from './server/socket';
+import { attachGameSockets, broadcastRoom, displayChannel, type GameServer } from './server/socket';
 
 async function main() {
   const dev = !process.argv.includes('--production');
@@ -28,7 +28,7 @@ async function main() {
       catch { callback(null, false); }
     },
   });
-  const rooms = new RoomStore((code) => broadcastRoom(io, rooms, code));
+  const rooms = new RoomStore((code) => broadcastRoom(io, rooms, code), {}, (code) => io.to(displayChannel(code)).emit('display:closed'));
   attachGameSockets(io, rooms);
   httpServer.listen(port, hostname, () => console.log(`Die on This Hill: http://localhost:${port} (${dev ? 'development' : 'production'}) — listening on ${hostname}`));
   const shutdown = () => {

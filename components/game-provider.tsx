@@ -1,10 +1,11 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import { clearSession, createSocket, readSession, saveSession, type GameSocket } from '../lib/socket';
-import type { Ack, PlayerSession, RoomView } from '../shared/types';
+import type { Ack, PlayerSession, RoomView, RoundSetting } from '../shared/types';
 
-type Action = 'game:start' | 'game:reset' | 'reveal:continue';
+type Action = 'game:start' | 'game:advance' | 'game:reset' | 'reveal:continue';
 interface GameContextValue {
   room: RoomView | null;
   session: PlayerSession | null;
@@ -17,12 +18,16 @@ interface GameContextValue {
   act: (event: Action) => Promise<boolean>;
   submit: (phase: 'answer' | 'bluff', answer: string) => Promise<boolean>;
   vote: (answerId: string, hill: boolean) => Promise<boolean>;
+  settings: (rounds: RoundSetting) => Promise<boolean>;
+  debateReady: (ready: boolean) => Promise<boolean>;
+  endDebate: () => Promise<boolean>;
   dismissError: () => void;
 }
 
 const GameContext = createContext<GameContextValue | null>(null);
 
 export function GameProvider({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   const socketRef = useRef<GameSocket | null>(null);
   const sessionRef = useRef<PlayerSession | null>(null);
   const busyRef = useRef(false);
@@ -34,6 +39,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    if (pathname.startsWith('/display/')) { setRestoring(false); return; }
     const socket = createSocket();
     socketRef.current = socket;
     sessionRef.current = readSession();
@@ -68,7 +74,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     });
     socket.connect();
     return () => { socket.removeAllListeners(); socket.disconnect(); socketRef.current = null; };
-  }, []);
+  }, [pathname]);
 
   const request = useCallback(async <T,>(send: (socket: GameSocket, done: (err: Error | null, result: Ack<T>) => void) => void): Promise<Ack<T>> => {
     const socket = socketRef.current;
@@ -100,6 +106,9 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const act = useCallback(async (event: Action) => (await request<undefined>((socket, done) => socket.timeout(8000).emit(event, done))).ok, [request]);
   const submit = useCallback(async (phase: 'answer' | 'bluff', answer: string) => (await request<undefined>((socket, done) => socket.timeout(8000).emit(phase === 'answer' ? 'answer:submit' : 'bluff:submit', { answer }, done))).ok, [request]);
   const vote = useCallback(async (answerId: string, hill: boolean) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('vote:submit', { answerId, hill }, done))).ok, [request]);
+  const settings = useCallback(async (rounds: RoundSetting) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('game:settings', { rounds }, done))).ok, [request]);
+  const debateReady = useCallback(async (ready: boolean) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:set-ready', { ready }, done))).ok, [request]);
+  const endDebate = useCallback(async () => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:end-host', done))).ok, [request]);
   const leave = useCallback(async () => {
     const result = await request<undefined>((socket, done) => socket.timeout(8000).emit('room:leave', done));
     if (!result.ok) return false;
@@ -110,7 +119,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     return true;
   }, [request]);
 
-  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
+  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, settings, debateReady, endDebate, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
 }
 
 export function useGame() {

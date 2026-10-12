@@ -2,7 +2,7 @@ import type { Server, Socket } from 'socket.io';
 import type { ClientEvents, PlayerSession, Reply, ServerEvents } from '../shared/types';
 import { GameError, RoomStore } from './rooms';
 
-interface SocketData { session?: PlayerSession }
+interface SocketData { session?: PlayerSession; displayRoomCode?: string }
 export type GameServer = Server<ClientEvents, ServerEvents, Record<string, never>, SocketData>;
 type GameSocket = Socket<ClientEvents, ServerEvents, Record<string, never>, SocketData>;
 
@@ -31,8 +31,15 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       return identity;
     };
     const requireUnbound = () => {
-      if (socket.data.session) throw new GameError('Leave your current room before joining another.');
+      if (socket.data.session || socket.data.displayRoomCode) throw new GameError('This connection is already attached to a room.');
     };
+    socket.on('display:join', (payload, reply) => action(reply, () => {
+      requireUnbound();
+      const view = store.displayView(payload?.roomCode);
+      socket.data.displayRoomCode = view.roomCode;
+      void socket.join(displayChannel(view.roomCode));
+      return view;
+    }));
     socket.on('room:create', (payload, reply) => action(reply, () => {
       requireUnbound();
       return bind(store.create(payload?.name, socket.id));
@@ -62,6 +69,16 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       store.start(current.roomCode, current.playerId, socket.id);
       return undefined;
     }));
+    socket.on('game:settings', (payload, reply) => action(reply, () => {
+      const current = session();
+      store.settings(current.roomCode, current.playerId, socket.id, payload?.rounds);
+      return undefined;
+    }));
+    socket.on('game:advance', (reply) => action(reply, () => {
+      const current = session();
+      store.advanceGame(current.roomCode, current.playerId, socket.id);
+      return undefined;
+    }));
     socket.on('game:reset', (reply) => action(reply, () => {
       const current = session();
       store.reset(current.roomCode, current.playerId, socket.id);
@@ -82,6 +99,16 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       store.vote(current.roomCode, current.playerId, socket.id, payload?.answerId, payload?.hill);
       return undefined;
     }));
+    socket.on('debate:set-ready', (payload, reply) => action(reply, () => {
+      const current = session();
+      store.setDebateReady(current.roomCode, current.playerId, socket.id, payload?.ready);
+      return undefined;
+    }));
+    socket.on('debate:end-host', (reply) => action(reply, () => {
+      const current = session();
+      store.endDebate(current.roomCode, current.playerId, socket.id);
+      return undefined;
+    }));
     socket.on('reveal:continue', (reply) => action(reply, () => {
       const current = session();
       store.reveal(current.roomCode, current.playerId, socket.id);
@@ -99,4 +126,7 @@ export function broadcastRoom(io: GameServer, store: RoomStore, code: string): v
     const socketId = store.activeSocket(code, player.id);
     if (socketId) io.to(socketId).emit('room:state', store.view(code, player.id));
   }
+  io.to(displayChannel(code)).emit('display:state', store.displayView(code));
 }
+
+export const displayChannel = (code: string) => `display:${code}`;

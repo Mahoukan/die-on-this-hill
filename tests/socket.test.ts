@@ -42,10 +42,12 @@ test('real Socket.IO clients complete a synchronized round, reconnect, score, an
   assert.equal(unauthorized.ok, false);
   const start = await new Promise<Ack>((resolve) => host.emit('game:start', resolve));
   assert.ok(start.ok);
-  await new Promise<Ack>((resolve) => host.emit('answer:submit', { answer: 'Sweden' }, resolve));
+  store.getRoom(create.data.roomCode).totalRounds = 1;
+  const correct = store.getRoom(create.data.roomCode).question!.correctAnswer;
+  await new Promise<Ack>((resolve) => host.emit('answer:submit', { answer: correct }, resolve));
   await delay(10);
   assert.equal(guestView?.me.genuineAnswer, null);
-  assert.equal(JSON.stringify(guestView).includes('Sweden'), false);
+  assert.equal(JSON.stringify(guestView).includes(correct), false);
   guest.disconnect();
   const reconnected = await connect();
   reconnected.on('room:state', (view) => { guestView = view; });
@@ -59,7 +61,7 @@ test('real Socket.IO clients complete a synchronized round, reconnect, score, an
   assert.equal(guestView?.phase, 'vote');
   assert.deepEqual(hostView?.answerPool, guestView?.answerPool);
   assert.equal(hostView?.answerPool.some((answer) => answer.isCorrect !== undefined || answer.bluffPlayerIds), false);
-  const sweden = hostView!.answerPool.find((answer) => answer.text === 'Sweden')!;
+  const sweden = hostView!.answerPool.find((answer) => answer.text === correct)!;
   const norway = hostView!.answerPool.find((answer) => answer.text === 'Norway')!;
   await new Promise<Ack>((resolve) => host.emit('vote:submit', { answerId: sweden.id, hill: true }, resolve));
   await delay(10);
@@ -71,11 +73,13 @@ test('real Socket.IO clients complete a synchronized round, reconnect, score, an
   assert.equal(hostView?.phase, 'results');
   assert.equal(guestView?.phase, 'results');
   const winner = hostView!.results.find((result) => result.playerId === create.data.playerId)!;
-  assert.equal(winner.finalAnswerPoints, 200);
+  assert.equal(winner.finalAnswerPoints, 100);
   assert.equal(winner.bluffPoints, 100);
   assert.equal(winner.totalScore, 300, 'Hill does not double bluff points');
   const loser = guestView!.results.find((result) => result.playerId === join.data.playerId)!;
   assert.equal(loser.totalScore, -100);
+  const final = await new Promise<Ack>((resolve) => host.emit('game:advance', resolve));
+  assert.ok(final.ok);
   const reset = await new Promise<Ack>((resolve) => host.emit('game:reset', resolve));
   assert.ok(reset.ok);
   await delay(10);

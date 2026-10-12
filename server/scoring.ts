@@ -6,7 +6,7 @@ export function scoreRound(room: GameRoom): RoundResult[] {
     const option = room.answerPool.find((item) => item.id === vote?.answerId);
     const correct = Boolean(option?.isCorrect);
     // A missed vote earns zero. Only an actual wrong final vote costs points.
-    const finalAnswerPoints = vote ? (correct ? 100 : -50) * (vote.hill ? 2 : 1) : 0;
+    const finalAnswerPoints = vote ? (correct ? 100 : -50) : 0;
     let bluffPoints = 0;
     for (const answer of room.answerPool) {
       // An accidentally correct bluff is accepted privately, but fools nobody.
@@ -16,7 +16,8 @@ export function scoreRound(room: GameRoom): RoundResult[] {
         bluffPoints += room.votes.filter((item) => item.answerId === answer.id && item.playerId !== player.id).length * 100;
       }
     }
-    const roundPoints = finalAnswerPoints + bluffPoints;
-    return { playerId: player.id, finalAnswerPoints, bluffPoints, roundPoints, totalScore: player.score + roundPoints, hill: Boolean(vote?.hill), correct };
+    const hillImpact = vote?.hill ? finalAnswerPoints : 0;
+    const roundPoints = finalAnswerPoints + hillImpact + bluffPoints;
+    return { playerId: player.id, finalAnswerPoints, bluffPoints, hillImpact, roundPoints, totalScore: player.score + roundPoints, hill: Boolean(vote?.hill), correct };
   });
 }

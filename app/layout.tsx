@@ -11,6 +11,8 @@ import '../css/vote.css';
 import '../css/reveal.css';
 import '../css/bluff-results.css';
 import '../css/results.css';
+import '../css/final-results.css';
+import '../css/display.css';
 import './multiplayer.css';
 
 export const metadata: Metadata = {

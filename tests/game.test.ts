@@ -20,25 +20,26 @@ test('private submissions, merged pool, and progressive reveal do not leak metad
   context.after(() => f.store.close());
   assert.match(f.code, /^[A-HJ-NP-Z]{4}$/);
   f.store.start(f.code, f.host.playerId, 'socket-0');
-  f.send(0, 'answer', ' Canada ');
+  const correct = f.store.getRoom(f.code).question!.correctAnswer;
+  f.send(0, 'answer', ' Wrong A ');
   const privateView = f.store.view(f.code, f.sessions[1].playerId);
   assert.equal(privateView.answeredCount, 1);
   assert.equal(privateView.me.genuineAnswer, null);
-  assert.equal(JSON.stringify(privateView).includes('Canada'), false);
-  f.send(1, 'answer', 'Finland'); f.send(2, 'answer', ' SWEDEN '); f.send(3, 'answer', 'sweden');
+  assert.equal(JSON.stringify(privateView).includes('Wrong A'), false);
+  f.send(1, 'answer', 'Wrong B'); f.send(2, 'answer', ` ${correct.toUpperCase()} `); f.send(3, 'answer', correct.toLowerCase());
   assert.equal(f.store.getRoom(f.code).phase, 'bluff');
-  f.send(0, 'bluff', 'Norway'); f.send(1, 'bluff', 'Canada'); f.send(2, 'bluff', ' canada '); f.send(3, 'bluff', 'Sweden');
+  f.send(0, 'bluff', 'Bluff A'); f.send(1, 'bluff', 'Wrong A'); f.send(2, 'bluff', ' wrong a '); f.send(3, 'bluff', correct);
   const debate = f.store.view(f.code, f.host.playerId);
   assert.equal(debate.phase, 'debate');
   assert.equal(debate.answerPool.length, 4);
   for (const option of debate.answerPool) assert.deepEqual(Object.keys(option).sort(), ['id', 'text']);
   assert.deepEqual(Object.keys(debate.question!).sort(), ['id', 'text']);
   assert.equal(debate.correctAnswer, undefined);
-  const canada = f.store.getRoom(f.code).answerPool.find((option) => option.text === 'Canada')!;
-  assert.equal(canada.genuinePlayerIds.length, 1);
-  assert.equal(canada.bluffPlayerIds.length, 2);
+  const wrong = f.store.getRoom(f.code).answerPool.find((option) => option.text === 'Wrong A')!;
+  assert.equal(wrong.genuinePlayerIds.length, 1);
+  assert.equal(wrong.bluffPlayerIds.length, 2);
   await delay(25);
-  f.vote(0, 'Sweden', true); f.vote(1, 'Canada'); f.vote(2, 'Sweden'); f.vote(3, 'Canada', true);
+  f.vote(0, correct, true); f.vote(1, 'Wrong A'); f.vote(2, correct); f.vote(3, 'Wrong A', true);
   let view = f.store.view(f.code, f.host.playerId);
   assert.equal(view.phase, 'reveal');
   assert.equal(view.revealStep, 'ready');
@@ -53,31 +54,34 @@ test('private submissions, merged pool, and progressive reveal do not leak metad
   assert.equal(view.answerPool.some((option) => option.isCorrect !== undefined || option.bluffPlayerIds), false);
   f.reveal();
   view = f.store.view(f.code, f.host.playerId);
-  assert.equal(view.correctAnswer, 'Sweden');
+  assert.equal(view.correctAnswer, correct);
   assert.equal(view.answerPool.some((option) => option.bluffPlayerIds), false);
   f.reveal();
   view = f.store.view(f.code, f.host.playerId);
   assert.equal(view.revealStep, 'bluffs');
-  assert.equal(view.answerPool.find((option) => option.text === 'Canada')!.bluffPlayerIds!.length, 2);
+  assert.equal(view.answerPool.find((option) => option.text === 'Wrong A')!.bluffPlayerIds!.length, 2);
   assert.equal(view.results.length, 4);
 });
 
 test('Hill doubles only final-answer points; duplicate bluff authors each earn rewards; negative scores remain valid', async (context) => {
   const f = fixture(); context.after(() => f.store.close());
   f.store.start(f.code, f.host.playerId, 'socket-0');
-  ['Canada', 'Finland', 'Sweden', 'Sweden'].forEach((text, index) => f.send(index, 'answer', text));
-  ['Norway', 'Canada', 'Canada', 'Sweden'].forEach((text, index) => f.send(index, 'bluff', text));
+  const correct = f.store.getRoom(f.code).question!.correctAnswer;
+  ['Wrong A', 'Wrong B', correct, correct].forEach((text, index) => f.send(index, 'answer', text));
+  ['Bluff A', 'Wrong A', 'Wrong A', correct].forEach((text, index) => f.send(index, 'bluff', text));
   await delay(25);
-  f.vote(0, 'Sweden', true); f.vote(1, 'Canada'); f.vote(2, 'Sweden'); f.vote(3, 'Canada', true);
+  f.vote(0, correct, true); f.vote(1, 'Wrong A'); f.vote(2, correct); f.vote(3, 'Wrong A', true);
   const room = f.store.getRoom(f.code);
   assert.deepEqual(room.results.map(({ finalAnswerPoints, bluffPoints, roundPoints, totalScore }) => ({ finalAnswerPoints, bluffPoints, roundPoints, totalScore })), [
-    { finalAnswerPoints: 200, bluffPoints: 0, roundPoints: 200, totalScore: 200 },
+    { finalAnswerPoints: 100, bluffPoints: 0, roundPoints: 200, totalScore: 200 },
     { finalAnswerPoints: -50, bluffPoints: 100, roundPoints: 50, totalScore: 50 },
     { finalAnswerPoints: 100, bluffPoints: 200, roundPoints: 300, totalScore: 300 },
-    { finalAnswerPoints: -100, bluffPoints: 0, roundPoints: -100, totalScore: -100 },
+    { finalAnswerPoints: -50, bluffPoints: 0, roundPoints: -100, totalScore: -100 },
   ]);
   f.reveal(); f.reveal(); f.reveal(); f.reveal();
   assert.equal(room.phase, 'results');
+  room.totalRounds = 1;
+  f.store.advanceGame(f.code, f.host.playerId, 'socket-0');
   f.store.reset(f.code, f.host.playerId, 'socket-0');
   assert.equal(room.phase, 'lobby');
   assert.equal(room.players.every((player) => player.score === 0 && !player.hillUsed), true);
@@ -124,7 +128,7 @@ test('server timers advance missed submissions and votes; clients cannot extend 
   const room = f.store.getRoom(f.code);
   assert.equal(room.phase, 'reveal');
   assert.equal(room.answerPool.length, 1);
-  assert.equal(room.answerPool[0].text, 'Sweden');
+  assert.equal(room.answerPool[0].text, room.question!.correctAnswer);
   assert.equal(room.results.every((item) => item.roundPoints === 0), true);
   assert.throws(() => f.send(0, 'answer', 'Sweden'), /phase has ended/);
   assert.equal(room.players.every((player) => !player.hillUsed), true);
