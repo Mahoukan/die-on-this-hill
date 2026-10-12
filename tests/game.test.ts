@@ -33,7 +33,7 @@ test('private submissions, merged pool, and progressive reveal do not leak metad
   assert.equal(debate.phase, 'debate');
   assert.equal(debate.answerPool.length, 4);
   for (const option of debate.answerPool) assert.deepEqual(Object.keys(option).sort(), ['id', 'text']);
-  assert.deepEqual(Object.keys(debate.question!).sort(), ['id', 'text']);
+  assert.deepEqual(Object.keys(debate.question!).sort(), ['category', 'id', 'packId', 'text']);
   assert.equal(debate.correctAnswer, undefined);
   const wrong = f.store.getRoom(f.code).answerPool.find((option) => option.text === 'Wrong A')!;
   assert.equal(wrong.genuinePlayerIds.length, 1);

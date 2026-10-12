@@ -74,6 +74,11 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       store.settings(current.roomCode, current.playerId, socket.id, payload?.rounds);
       return undefined;
     }));
+    socket.on('game:questions', (payload, reply) => action(reply, () => {
+      const current = session();
+      store.questionSettings(current.roomCode, current.playerId, socket.id, payload?.mode, payload?.selectedPackIds);
+      return undefined;
+    }));
     socket.on('game:advance', (reply) => action(reply, () => {
       const current = session();
       store.advanceGame(current.roomCode, current.playerId, socket.id);

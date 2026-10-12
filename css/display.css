@@ -37,6 +37,7 @@
 .display-lobby-grid p { margin: 1rem 0 0; color: var(--muted); font-size: clamp(0.9rem, 1.3vw, 1.4rem); }
 .display-correct { display: flex; flex-direction: column; gap: 0.65rem; align-items: center; margin: 2vh auto 0; }
 .display-correct > strong { color: var(--success); font-size: clamp(2rem, 4vw, 5rem); text-transform: uppercase; }
+.display-correct p { max-width: 900px; margin: 0; color: var(--muted); font-size: clamp(0.9rem, 1.25vw, 1.45rem); line-height: 1.5; text-align: center; }
 .display-correct span { color: var(--muted); font-size: clamp(0.9rem, 1.3vw, 1.5rem); }
 .display-scoreboard { margin: 3vh auto 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); overflow: hidden; }
 .display-score-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(90px, auto) minmax(90px, auto); gap: 1.2rem; align-items: center; padding: clamp(0.8rem, 1.4vh, 1.3rem) clamp(1rem, 2vw, 2rem); font-size: clamp(1rem, 1.7vw, 2rem); }

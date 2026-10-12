@@ -3,7 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { clearSession, createSocket, readSession, saveSession, type GameSocket } from '../lib/socket';
-import type { Ack, PlayerSession, RoomView, RoundSetting } from '../shared/types';
+import type { Ack, PlayerSession, QuestionMode, RoomView, RoundSetting } from '../shared/types';
 
 type Action = 'game:start' | 'game:advance' | 'game:reset' | 'reveal:continue';
 interface GameContextValue {
@@ -19,6 +19,7 @@ interface GameContextValue {
   submit: (phase: 'answer' | 'bluff', answer: string) => Promise<boolean>;
   vote: (answerId: string, hill: boolean) => Promise<boolean>;
   settings: (rounds: RoundSetting) => Promise<boolean>;
+  questionSettings: (mode: QuestionMode, selectedPackIds: string[]) => Promise<boolean>;
   debateReady: (ready: boolean) => Promise<boolean>;
   endDebate: () => Promise<boolean>;
   dismissError: () => void;
@@ -107,6 +108,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const submit = useCallback(async (phase: 'answer' | 'bluff', answer: string) => (await request<undefined>((socket, done) => socket.timeout(8000).emit(phase === 'answer' ? 'answer:submit' : 'bluff:submit', { answer }, done))).ok, [request]);
   const vote = useCallback(async (answerId: string, hill: boolean) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('vote:submit', { answerId, hill }, done))).ok, [request]);
   const settings = useCallback(async (rounds: RoundSetting) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('game:settings', { rounds }, done))).ok, [request]);
+  const questionSettings = useCallback(async (mode: QuestionMode, selectedPackIds: string[]) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('game:questions', { mode, selectedPackIds }, done))).ok, [request]);
   const debateReady = useCallback(async (ready: boolean) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:set-ready', { ready }, done))).ok, [request]);
   const endDebate = useCallback(async () => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:end-host', done))).ok, [request]);
   const leave = useCallback(async () => {
@@ -119,7 +121,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     return true;
   }, [request]);
 
-  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, settings, debateReady, endDebate, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
+  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, settings, questionSettings, debateReady, endDebate, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
 }
 
 export function useGame() {

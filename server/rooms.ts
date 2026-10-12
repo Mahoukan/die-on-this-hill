@@ -1,14 +1,14 @@
 import { randomInt, randomUUID, timingSafeEqual } from 'node:crypto';
-import type { AnswerOption, DisplayView, GamePhase, GameRoom, Player, PlayerSession, PlayerStats, RoomView, RoundSetting } from '../shared/types';
+import type { AnswerOption, DisplayView, GamePhase, GameRoom, Player, PlayerSession, PlayerStats, QuestionMode, RoomView, RoundSetting } from '../shared/types';
 import { buildLeaderboard, calculateAwards } from './awards';
-import { questionById, selectQuestions } from './questions';
+import { isAcceptedAnswer, normalizeAnswer } from './answer-matching';
+import { eligibleQuestions, isValidPackId, QUESTION_PACK_METADATA, questionById, selectQuestions } from './questions';
 import { scoreRound } from './scoring';
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
 const DURATIONS = { answer: 30_000, bluff: 30_000, debate: 60_000, 'debate-transition': 3_000, vote: 15_000 };
 const ROOM_IDLE_MS = 10 * 60_000;
 const ROUND_SETTINGS: readonly RoundSetting[] = ['recommended', 5, 8, 10, 12];
-export const normalizeAnswer = (value: string) => value.trim().toLocaleLowerCase('en');
 export const recommendedRounds = (players: number) => players >= 8 ? 5 : players >= 6 ? 6 : players >= 4 ? 8 : 10;
 export const emptyStats = (): PlayerStats => ({ correctInitialAnswers: 0, correctFinalAnswers: 0, wrongFinalAnswers: 0, successfulBluffVotes: 0, answerChanges: 0, changedWrongToCorrect: 0, changedCorrectToWrong: 0, hillUsed: false, hillSuccessful: false, hillScoreImpact: 0 });
 
@@ -39,7 +39,7 @@ export class RoomStore {
     requireRule(this.rooms.size < 500, 'The server is full. Try again later.');
     let code: string;
     do { code = Array.from({ length: 4 }, () => CODE_ALPHABET[randomInt(CODE_ALPHABET.length)]).join(''); } while (this.rooms.has(code));
-    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', selectedQuestionIds: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], phaseEndsAt: null };
+    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: ['general'], selectedQuestionIds: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], phaseEndsAt: null };
     this.rooms.set(code, { room, identities: new Map() });
     const session = this.addPlayer(code, displayName, socketId);
     room.hostPlayerId = session.playerId;
@@ -93,6 +93,18 @@ export class RoomStore {
     record.room.totalRounds = rounds === 'recommended' ? recommendedRounds(record.room.players.filter((player) => player.connected).length) : rounds as number;
     this.changed(code);
   }
+  questionSettings(code: string, id: string, socketId: string, mode: unknown, packIds: unknown): void {
+    const { record } = this.authorized(code, id, socketId, 'lobby');
+    this.host(record, id);
+    requireRule(mode === 'single' || mode === 'mixed', 'Choose Single Pack or Mixed Game.');
+    requireRule(Array.isArray(packIds) && packIds.every((packId) => typeof packId === 'string'), 'Choose valid question packs.');
+    const selectedPackIds = [...new Set(packIds as string[])];
+    requireRule(selectedPackIds.every(isValidPackId), 'One or more selected question packs do not exist.');
+    requireRule(mode === 'single' ? selectedPackIds.length === 1 : selectedPackIds.length >= 2, mode === 'single' ? 'Choose one question pack.' : 'Choose at least two packs for a Mixed Game.');
+    record.room.questionMode = mode as QuestionMode;
+    record.room.selectedPackIds = selectedPackIds;
+    this.changed(code);
+  }
   start(code: string, id: string, socketId: string): void {
     const { record } = this.authorized(code, id, socketId, 'lobby');
     this.host(record, id);
@@ -100,7 +112,9 @@ export class RoomStore {
     record.room.players = record.room.players.filter((player) => player.connected);
     for (const playerId of record.identities.keys()) if (!record.room.players.some((player) => player.id === playerId)) record.identities.delete(playerId);
     this.refreshRecommended(record.room);
-    const questions = selectQuestions(record.room.totalRounds);
+    const available = eligibleQuestions(record.room.selectedPackIds).length;
+    requireRule(available >= record.room.totalRounds, `Not enough questions for ${record.room.totalRounds} rounds. Choose more question packs or reduce the number of rounds.`);
+    const questions = selectQuestions(record.room.totalRounds, record.room.selectedPackIds);
     record.room.selectedQuestionIds = questions.map((question) => question.id);
     record.room.roundResults = [];
     record.room.players.forEach((player) => { player.score = 0; player.hillUsed = false; player.stats = emptyStats(); });
@@ -218,11 +232,11 @@ export class RoomStore {
       for (const result of room.results) {
         const player = room.players.find((item) => item.id === result.playerId)!; const vote = room.votes.find((item) => item.playerId === result.playerId); const submission = room.submissions.find((item) => item.playerId === result.playerId)!;
         player.score = result.totalScore; player.stats.successfulBluffVotes += result.bluffPoints / 100;
-        const initialCorrect = normalizeAnswer(submission.genuineAnswer || '') === normalizeAnswer(room.question!.correctAnswer);
+        const initialCorrect = submission.genuineAnswer !== null && isAcceptedAnswer(room.question!, submission.genuineAnswer);
         if (initialCorrect) player.stats.correctInitialAnswers += 1;
         if (vote) {
           if (result.correct) player.stats.correctFinalAnswers += 1; else player.stats.wrongFinalAnswers += 1;
-          const finalText = room.answerPool.find((item) => item.id === vote.answerId)!.text; const changed = submission.genuineAnswer !== null && normalizeAnswer(submission.genuineAnswer) !== normalizeAnswer(finalText);
+          const finalOption = room.answerPool.find((item) => item.id === vote.answerId)!; const finalText = finalOption.text; const changed = submission.genuineAnswer !== null && !(finalOption.isCorrect && isAcceptedAnswer(room.question!, submission.genuineAnswer)) && normalizeAnswer(submission.genuineAnswer) !== normalizeAnswer(finalText);
           if (changed) { player.stats.answerChanges += 1; if (!initialCorrect && result.correct) player.stats.changedWrongToCorrect += 1; if (initialCorrect && !result.correct) player.stats.changedCorrectToWrong += 1; }
           if (vote.hill) { player.stats.hillSuccessful = result.correct; player.stats.hillScoreImpact += result.hillImpact; }
         }
@@ -232,20 +246,20 @@ export class RoomStore {
   }
   private buildPool(room: GameRoom): void {
     const options = new Map<string, AnswerOption>();
-    const add = (text: string, kind: 'correct' | 'genuine' | 'bluff', id?: string) => { const key = normalizeAnswer(text); let option = options.get(key); if (!option) { option = { id: randomUUID(), text: text.trim(), isCorrect: false, genuinePlayerIds: [], bluffPlayerIds: [] }; options.set(key, option); } if (kind === 'correct') option.isCorrect = true; else if (id) option[kind === 'genuine' ? 'genuinePlayerIds' : 'bluffPlayerIds'].push(id); };
+    const add = (text: string, kind: 'correct' | 'genuine' | 'bluff', id?: string) => { const displayText = kind !== 'correct' && isAcceptedAnswer(room.question!, text) ? room.question!.correctAnswer : text.trim(); const key = normalizeAnswer(displayText); let option = options.get(key); if (!option) { option = { id: randomUUID(), text: displayText, isCorrect: false, genuinePlayerIds: [], bluffPlayerIds: [] }; options.set(key, option); } if (kind === 'correct') option.isCorrect = true; else if (id) option[kind === 'genuine' ? 'genuinePlayerIds' : 'bluffPlayerIds'].push(id); };
     add(room.question!.correctAnswer, 'correct'); for (const submission of room.submissions) { if (submission.genuineAnswer) add(submission.genuineAnswer, 'genuine', submission.playerId); if (submission.bluff) add(submission.bluff, 'bluff', submission.playerId); }
     room.answerPool = [...options.values()]; for (let index = room.answerPool.length - 1; index > 0; index--) { const other = randomInt(index + 1); [room.answerPool[index], room.answerPool[other]] = [room.answerPool[other], room.answerPool[index]]; }
   }
   private publicView(room: GameRoom): DisplayView {
     const final = room.phase === 'final-results'; const revealVotes = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep !== 'ready'); const revealCorrect = final || room.phase === 'results' || (room.phase === 'reveal' && ['correct', 'bluffs'].includes(room.revealStep)); const revealBluffs = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep === 'bluffs');
     return {
-      roomCode: room.roomCode, phase: room.phase, revealStep: room.revealStep, round: room.round, totalRounds: room.totalRounds, roundSetting: room.roundSetting, hostPlayerId: room.hostPlayerId,
+      roomCode: room.roomCode, phase: room.phase, revealStep: room.revealStep, round: room.round, totalRounds: room.totalRounds, roundSetting: room.roundSetting, questionMode: room.questionMode, selectedPackIds: [...room.selectedPackIds], questionPacks: QUESTION_PACK_METADATA.map((pack) => ({ ...pack })), availableQuestionCount: eligibleQuestions(room.selectedPackIds).length, hostPlayerId: room.hostPlayerId,
       players: room.players.map(({ stats: _stats, ...player }) => ({ ...player, score: revealCorrect ? player.score : player.score - (room.results.find((result) => result.playerId === player.id)?.roundPoints ?? 0) })),
-      question: room.question ? { id: room.question.id, text: room.question.text } : null,
+      question: room.question ? { id: room.question.id, text: room.question.text, category: room.question.category, packId: room.question.packId } : null,
       answerPool: room.answerPool.map((option) => ({ id: option.id, text: option.text, ...(revealVotes ? { voterIds: room.votes.filter((item) => item.answerId === option.id).map((item) => item.playerId) } : {}), ...(revealCorrect ? { isCorrect: option.isCorrect } : {}), ...(revealBluffs ? { genuinePlayerIds: [...option.genuinePlayerIds], bluffPlayerIds: [...option.bluffPlayerIds] } : {}) })),
       phaseEndsAt: room.phaseEndsAt, serverNow: Date.now(), answeredCount: room.submissions.filter((item) => item.genuineAnswer !== null).length, bluffCount: room.submissions.filter((item) => item.bluff !== null).length, votedCount: room.votes.length, hillPlayerIds: room.votes.filter((item) => item.hill).map((item) => item.playerId),
       debateReadyCount: this.debateReadyCount(room), debateRequiredCount: this.debateRequiredCount(room),
-      ...(revealCorrect && room.question ? { correctAnswer: room.question.correctAnswer } : {}), results: revealBluffs ? room.results.map((result) => ({ ...result })) : [], leaderboard: final ? buildLeaderboard(room.players) : [], awards: final ? calculateAwards(room.players) : [],
+      ...(revealCorrect && room.question ? { correctAnswer: room.question.correctAnswer, ...(room.question.explanation ? { explanation: room.question.explanation } : {}) } : {}), results: revealBluffs ? room.results.map((result) => ({ ...result })) : [], leaderboard: final ? buildLeaderboard(room.players) : [], awards: final ? calculateAwards(room.players) : [],
     };
   }
   displayView(code: unknown): DisplayView {

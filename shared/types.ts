@@ -1,6 +1,7 @@
 export type GamePhase = 'lobby' | 'answer' | 'bluff' | 'debate' | 'debate-transition' | 'vote' | 'reveal' | 'results' | 'final-results';
 export type RevealStep = 'ready' | 'votes' | 'correct' | 'bluffs';
 export type RoundSetting = 'recommended' | 5 | 8 | 10 | 12;
+export type QuestionMode = 'single' | 'mixed';
 
 export interface PlayerStats {
   correctInitialAnswers: number;
@@ -16,7 +17,9 @@ export interface PlayerStats {
 }
 
 export interface Player { id: string; name: string; score: number; isHost: boolean; hillUsed: boolean; connected: boolean; stats: PlayerStats; }
-export interface Question { id: string; text: string; correctAnswer: string; category?: string; }
+export interface Question { id: string; text: string; correctAnswer: string; packId: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
+export interface QuestionPack { id: string; name: string; description: string; questions: Question[]; }
+export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; }
 export interface PlayerSubmission { playerId: string; genuineAnswer: string | null; bluff: string | null; }
 export interface AnswerOption { id: string; text: string; isCorrect: boolean; genuinePlayerIds: string[]; bluffPlayerIds: string[]; }
 export interface PlayerVote { playerId: string; answerId: string; hill: boolean; }
@@ -34,6 +37,8 @@ export interface GameRoom {
   round: number;
   totalRounds: number;
   roundSetting: RoundSetting;
+  questionMode: QuestionMode;
+  selectedPackIds: string[];
   selectedQuestionIds: string[];
   hostPlayerId: string;
   players: Player[];
@@ -58,9 +63,13 @@ export interface RoomView {
   round: number;
   totalRounds: number;
   roundSetting: RoundSetting;
+  questionMode: QuestionMode;
+  selectedPackIds: string[];
+  questionPacks: QuestionPackMeta[];
+  availableQuestionCount: number;
   hostPlayerId: string;
   players: PublicPlayer[];
-  question: { id: string; text: string } | null;
+  question: { id: string; text: string; category: string; packId: string } | null;
   answerPool: PublicAnswer[];
   phaseEndsAt: number | null;
   serverNow: number;
@@ -71,6 +80,7 @@ export interface RoomView {
   debateReadyCount: number;
   debateRequiredCount: number;
   correctAnswer?: string;
+  explanation?: string;
   results: RoundResult[];
   leaderboard: LeaderboardEntry[];
   awards: GameAward[];
@@ -88,6 +98,7 @@ export interface ClientEvents {
   'room:leave': (reply: Reply) => void;
   'display:join': (payload: { roomCode: string }, reply: Reply<DisplayView>) => void;
   'game:settings': (payload: { rounds: RoundSetting }, reply: Reply) => void;
+  'game:questions': (payload: { mode: QuestionMode; selectedPackIds: string[] }, reply: Reply) => void;
   'game:start': (reply: Reply) => void;
   'game:advance': (reply: Reply) => void;
   'game:reset': (reply: Reply) => void;

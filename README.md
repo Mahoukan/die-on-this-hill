@@ -30,7 +30,9 @@ Use the supplied custom server commands; plain `next dev` or `next start` will n
 
 The host chooses Recommended, 5, 8, 10, or 12 rounds. Recommended resolves from the live lobby population: 2–3 players get 10 rounds, 4–5 get 8, 6–7 get 6, and 8+ get 5. An explicit host choice is retained as players join or leave.
 
-At game start, the server shuffles the local 24-question bank, selects the required number without repeats, and owns the complete sequence. Every round follows:
+The host selects either one built-in question pack or a Mixed Game containing two or more packs. The six local packs contain 72 questions across General Knowledge, Science & Technology, Geography, History, Movies & TV, and Food & Culture. Every pack supports a 12-round game. Pack selection and availability are synchronized room settings and are retained by Play Again.
+
+At game start, the server gathers only eligible questions, removes duplicate IDs, shuffles the combined pool, selects the exact required number without repeats, and owns the complete sequence. Mixed Game currently samples randomly from the combined pool without category balancing. Every round follows:
 
 ```text
 Genuine Answer → Bluff → Debate → Vote → Reveal → Round Results
@@ -48,11 +50,13 @@ Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared di
 - Missed final votes score zero. Negative total scores are valid.
 - The final leaderboard sorts by score, correct final answers, then successful bluff votes. Players still equal after those criteria share a rank.
 - Awards are calculated server-side from game statistics. Zero-value awards are hidden and tied winners share the award.
+- Genuine-answer statistics accept deterministic variants configured with each question. Matching ignores case, repeated spaces, and common punctuation; it does not use fuzzy or AI matching.
 
 ## Architecture
 
 - `server/rooms.ts`: authoritative room lifecycle, settings, rounds, timers, reconnect state, statistics, and private public-view projection.
-- `server/questions.ts`: local question bank and server-side no-repeat selection.
+- `server/questions/`: six local pack modules plus safe metadata, availability, lookup, and server-side no-repeat selection.
+- `server/answer-matching.ts`: deterministic accepted-answer normalization and comparison.
 - `server/scoring.ts`: round scoring and Hill impact.
 - `server/awards.ts`: final leaderboard and tied award calculations.
 - `server/socket.ts`: acknowledged typed Socket.IO actions and per-player broadcasts.
@@ -61,7 +65,7 @@ Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared di
 - `components/display-screen.tsx`: 16:9 shared-display phase renderer with fullscreen and private Hill announcements.
 - `tests/`: rule, privacy, timer, multi-round, awards, reconnect, and real Socket.IO integration coverage.
 
-The server broadcasts an allowlisted `RoomView`, not its internal room model. Private submissions remain private, and votes, correctness, answer origins, score deltas, and statistics are withheld until their appropriate reveal or final-results phase.
+The server broadcasts an allowlisted `RoomView`, not its internal room model. Lobby clients receive only pack names, descriptions, and real question counts. Private submissions, accepted answers, explanations, votes, correctness, answer origins, score deltas, and statistics are withheld until their appropriate reveal or final-results phase. Optional explanations appear only during the correct-answer reveal step.
 
 Rooms and game history exist only in memory. Restarting the server removes them. New players cannot join after a game starts, but an existing player can reconnect with their private session token and recover the current phase, score, Hill state, statistics, and locked actions.
 
