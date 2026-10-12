@@ -70,6 +70,7 @@
 .packs-page-heading, .editor-title, .editor-actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .packs-page-heading h1 { margin: 0.2rem 0; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.05em; }
 .packs-page-heading p { margin: 0; color: var(--muted); line-height: 1.6; }
+.pack-storage { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.875rem; }
 .pack-notice { margin: 1rem 0; padding: 0.8rem 1rem; border: 1px solid rgba(64,190,130,0.35); border-radius: 12px; color: var(--success); background: rgba(64,190,130,0.08); }
 .pack-notice.is-error { border-color: rgba(255,90,54,0.35); color: var(--accent); background: var(--accent-soft); }
 .packs-workspace { display: grid; grid-template-columns: minmax(230px, 0.34fr) minmax(0, 1fr); gap: 1rem; margin-top: 1.5rem; align-items: start; }

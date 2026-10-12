@@ -44,7 +44,7 @@ export function attachGameSockets(io: GameServer, store: RoomStore, packAdmin?: 
       void socket.join(displayChannel(view.roomCode));
       return view;
     }));
-    socket.on('packs:list', (reply) => action(reply, () => { requirePackAdmin(); return store.listCustomPacks(); }));
+    socket.on('packs:list', (reply) => action(reply, () => { requirePackAdmin(); return { packs: store.listCustomPacks(), storage: store.packs.storageUsage() }; }));
     socket.on('packs:create', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.createPack(payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
     socket.on('packs:update', (payload, reply) => action(reply, () => { requirePackAdmin(); const pack = store.updatePack(payload?.packId, payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
     socket.on('packs:delete', (payload, reply) => action(reply, () => { requirePackAdmin(); store.deletePack(payload?.packId); io.emit('packs:changed'); return undefined; }));

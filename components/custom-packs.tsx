@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react';
-import type { Ack, CustomQuestionInput, Question, QuestionPack } from '../shared/types';
+import type { Ack, CustomPackList, CustomPackStorage, CustomQuestionInput, Question, QuestionPack } from '../shared/types';
 import { createSocket, type GameSocket } from '../lib/socket';
 import { Header } from './game-common';
 
@@ -13,6 +13,7 @@ export function CustomPacks() {
   const socketRef = useRef<GameSocket | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [packs, setPacks] = useState<QuestionPack[]>([]);
+  const [storage, setStorage] = useState<CustomPackStorage | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [editingQuestionId, setEditingQuestionId] = useState<string | null>(null);
   const [question, setQuestion] = useState<CustomQuestionInput>(emptyQuestion);
@@ -41,7 +42,7 @@ export function CustomPacks() {
     const result = await new Promise<Ack<T>>((resolve) => send(socket, (timeout, reply) => resolve(timeout ? { ok: false, error: 'The server did not respond.' } : reply)));
     setPending(false); if (!result.ok) { setError(result.error); if (result.error === 'Admin authorization is required.') setAdminState('locked'); return null; } return result.data;
   }, []);
-  const load = useCallback(async () => { const result = await request<QuestionPack[]>((socket, done) => socket.timeout(8000).emit('packs:list', done)); if (result) { setPacks(result); setSelectedId((current) => current && result.some((pack) => pack.id === current) ? current : result[0]?.id ?? null); } }, [request]);
+  const load = useCallback(async () => { const result = await request<CustomPackList>((socket, done) => socket.timeout(8000).emit('packs:list', done)); if (result) { setPacks(result.packs); setStorage(result.storage); setSelectedId((current) => current && result.packs.some((pack) => pack.id === current) ? current : result.packs[0]?.id ?? null); } }, [request]);
 
   useEffect(() => { if (adminState !== 'unlocked') return; const socket = createSocket(); socketRef.current = socket; socket.on('connect', () => void load()); socket.on('packs:changed', () => void load()); socket.connect(); return () => { socket.removeAllListeners(); socket.disconnect(); socketRef.current = null; }; }, [adminState, load]);
 
@@ -80,6 +81,7 @@ export function CustomPacks() {
   if (adminState !== 'unlocked') return <div className="page packs-page"><Header /><main className="packs-shell admin-unlock"><section className="game-panel"><div className="eyebrow">Custom pack management</div><h1>{adminState === 'checking' ? 'CHECKING ADMIN ACCESS' : adminState === 'disabled' ? 'ADMIN ACCESS DISABLED' : 'UNLOCK CUSTOM PACKS'}</h1>{adminState === 'checking' ? <p className="stage-copy" role="status">Checking your admin session...</p> : adminState === 'disabled' ? <p className="stage-copy">Custom pack administration is not configured on this server.</p> : <form className="pack-create-form" onSubmit={unlock}><label htmlFor="pack-admin-password">Admin password<input id="pack-admin-password" type="password" autoComplete="current-password" maxLength={512} required value={password} onChange={(event) => setPassword(event.target.value)} /></label><button className="btn btn-primary btn-large" disabled={pending}>{pending ? 'UNLOCKING...' : 'UNLOCK'}</button></form>}{error && <p className="form-error" role="alert">{error}</p>}<Link className="btn btn-ghost btn-small" href="/">Back to Game</Link></section></main></div>;
 
   return <div className="page packs-page"><Header /><main className="packs-shell"><div className="packs-page-heading"><div><div className="eyebrow">Your question library</div><h1>Custom Packs</h1><p>Create local packs for family nights, work parties, and gloriously specific arguments.</p></div><div className="editor-actions"><button className="btn btn-ghost btn-small" type="button" disabled={pending} onClick={() => void logout()}>Lock Admin</button><Link className="btn btn-ghost btn-small" href="/">Back to Game</Link></div></div>
+    {storage && <p className="pack-storage" role="status">Custom pack storage: {(storage.usedBytes / (1024 * 1024)).toFixed(1)} MB / {storage.maxBytes / (1024 * 1024)} MB</p>}
     {(error || message) && <div className={`pack-notice${error ? ' is-error' : ''}`} role={error ? 'alert' : 'status'}>{error || message}</div>}
     <div className="packs-workspace"><aside className="pack-library"><form className="pack-create-form" onSubmit={create}><h2>Create Pack</h2><label>Name<input maxLength={100} required value={newName} onChange={(event) => setNewName(event.target.value)} /></label><label>Description<textarea maxLength={500} rows={2} value={newDescription} onChange={(event) => setNewDescription(event.target.value)} /></label><button className="btn btn-primary btn-small" disabled={pending}>Create Pack</button></form><div className="pack-library-actions"><button className="btn btn-secondary btn-small" type="button" onClick={() => fileRef.current?.click()}>Import Pack</button><input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(event) => void importFile(event.target.files?.[0])} /></div><div className="pack-library-list">{packs.length === 0 ? <p>No custom packs yet.</p> : packs.map((pack) => <button key={pack.id} className={selectedId === pack.id ? 'is-active' : ''} onClick={() => { setSelectedId(pack.id); clearQuestion(); }}><strong>{pack.name}</strong><span>{pack.questions.length} questions</span></button>)}</div></aside>
       <section className="pack-editor">{selected ? <><form className="pack-details-form" onSubmit={savePack}><div className="editor-title"><div><div className="eyebrow">Custom Pack</div><h2>{selected.name}</h2><span>{selected.questions.length} questions</span></div><div className="editor-actions"><button type="button" className="btn btn-ghost btn-small" onClick={() => void exportPack(selected)}>Export</button><button type="button" className="btn btn-ghost btn-small danger-action" onClick={() => void removePack(selected)}>Delete</button></div></div><label>Name<input name="name" key={`${selected.id}-name`} maxLength={100} required defaultValue={selected.name} /></label><label>Description<textarea name="description" key={`${selected.id}-description`} maxLength={500} rows={2} defaultValue={selected.description} /></label><button className="btn btn-secondary btn-small" disabled={pending}>Save Details</button></form>

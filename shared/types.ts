@@ -22,6 +22,8 @@ export interface QuestionPack { id: string; name: string; description: string; q
 export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; custom: boolean; }
 export interface CustomQuestionInput { text: string; correctAnswer: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
 export interface CustomPackExport { format: 'die-on-this-hill-pack'; version: 1; name: string; description: string; questions: CustomQuestionInput[]; }
+export interface CustomPackStorage { usedBytes: number; maxBytes: number; }
+export interface CustomPackList { packs: QuestionPack[]; storage: CustomPackStorage; }
 export interface PlayerSubmission { playerId: string; genuineAnswer: string | null; bluff: string | null; }
 export interface AnswerOption { id: string; text: string; isCorrect: boolean; genuinePlayerIds: string[]; bluffPlayerIds: string[]; }
 export interface PlayerVote { playerId: string; answerId: string; hill: boolean; }
@@ -101,7 +103,7 @@ export interface ClientEvents {
   'room:reconnect': (payload: PlayerSession, reply: Reply<PlayerSession>) => void;
   'room:leave': (reply: Reply) => void;
   'display:join': (payload: { roomCode: string }, reply: Reply<DisplayView>) => void;
-  'packs:list': (reply: Reply<QuestionPack[]>) => void;
+  'packs:list': (reply: Reply<CustomPackList>) => void;
   'packs:create': (payload: { name: string; description: string }, reply: Reply<QuestionPack>) => void;
   'packs:update': (payload: { packId: string; name: string; description: string }, reply: Reply<QuestionPack>) => void;
   'packs:delete': (payload: { packId: string }, reply: Reply) => void;

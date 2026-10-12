@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, lstatSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
-import type { CustomPackExport, CustomQuestionInput, Question, QuestionPack, QuestionPackMeta } from '../shared/types';
+import type { CustomPackExport, CustomPackStorage, CustomQuestionInput, Question, QuestionPack, QuestionPackMeta } from '../shared/types';
 import { normalizeAnswer } from './answer-matching';
 import { QUESTION_PACKS } from './questions';
 
@@ -10,6 +10,17 @@ export const MAX_QUESTIONS = 500;
 const LIMITS = { name: 100, description: 500, text: 300, correctAnswer: 150, category: 80, acceptedAnswer: 150, explanation: 600 } as const;
 
 export class PackValidationError extends Error {}
+
+function storageLimitBytes(value: string | undefined): number {
+  const fallback = 100 * 1024 * 1024;
+  if (value === undefined) return fallback;
+  const bytes = Math.floor(Number(value) * 1024 * 1024);
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(value.trim()) || !Number.isSafeInteger(bytes) || bytes <= 0) {
+    console.warn('Invalid CUSTOM_PACKS_MAX_STORAGE_MB; using 100 MB.');
+    return fallback;
+  }
+  return bytes;
+}
 
 function required(value: unknown, label: string, max: number): string {
   if (typeof value !== 'string' || !value.trim()) throw new PackValidationError(`${label} is required.`);
@@ -52,9 +63,11 @@ function clonePack(pack: QuestionPack): QuestionPack { return { ...pack, questio
 export class PackRegistry {
   private custom = new Map<string, QuestionPack>();
   readonly directory: string;
+  private readonly maxStorageBytes: number;
 
-  constructor(directory = process.env.CUSTOM_PACKS_DIR || join(process.cwd(), 'data', 'custom-packs')) {
+  constructor(directory = process.env.CUSTOM_PACKS_DIR || join(process.cwd(), 'data', 'custom-packs'), maxStorageMB = process.env.CUSTOM_PACKS_MAX_STORAGE_MB) {
     this.directory = resolve(directory);
+    this.maxStorageBytes = storageLimitBytes(maxStorageMB);
     mkdirSync(this.directory, { recursive: true });
     this.reload();
   }
@@ -74,6 +87,13 @@ export class PackRegistry {
   all(): QuestionPack[] { return [...QUESTION_PACKS.map(clonePack), ...[...this.custom.values()].map(clonePack)]; }
   metadata(): QuestionPackMeta[] { return this.all().map(({ id, name, description, questions, custom }) => ({ id, name, description, questionCount: questions.length, custom: custom === true })); }
   customPacks(): QuestionPack[] { return [...this.custom.values()].map(clonePack); }
+  storageUsage(): CustomPackStorage {
+    // Count persistent JSON files, including invalid packs, without following links or recursing.
+    const usedBytes = readdirSync(this.directory, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+      .reduce((total, entry) => total + lstatSync(join(this.directory, entry.name)).size, 0);
+    return { usedBytes, maxBytes: this.maxStorageBytes };
+  }
   has(id: string): boolean { return this.isBuiltIn(id) || this.custom.has(id); }
   get(id: string): QuestionPack | undefined { const pack = QUESTION_PACKS.find((item) => item.id === id) ?? this.custom.get(id); return pack ? clonePack(pack) : undefined; }
   eligible(packIds: readonly string[]): Question[] { const selected = new Set(packIds); const unique = new Map<string, Question>(); for (const pack of this.all()) if (selected.has(pack.id)) for (const question of pack.questions) unique.set(question.id, question); return [...unique.values()]; }
@@ -121,9 +141,25 @@ export class PackRegistry {
   }
 
   private isBuiltIn(id: string): boolean { return QUESTION_PACKS.some((pack) => pack.id === id); }
-  private mutable(packId: unknown): QuestionPack { if (typeof packId === 'string' && this.isBuiltIn(packId)) throw new PackValidationError('Built-in packs are read-only.'); if (typeof packId !== 'string' || !/^custom-[a-z0-9-]+$/.test(packId)) throw new PackValidationError('Invalid custom pack ID.'); const pack = this.custom.get(packId); if (!pack) throw new PackValidationError('Custom pack not found.'); return pack; }
+  private mutable(packId: unknown): QuestionPack { if (typeof packId === 'string' && this.isBuiltIn(packId)) throw new PackValidationError('Built-in packs are read-only.'); if (typeof packId !== 'string' || !/^custom-[a-z0-9-]+$/.test(packId)) throw new PackValidationError('Invalid custom pack ID.'); const pack = this.custom.get(packId); if (!pack) throw new PackValidationError('Custom pack not found.'); return clonePack(pack); }
   private pathFor(id: string): string { if (!/^custom-[a-z0-9-]+$/.test(id)) throw new PackValidationError('Invalid custom pack ID.'); const path = resolve(this.directory, `${id}.json`); if (!path.startsWith(`${this.directory}${process.platform === 'win32' ? '\\' : '/'}`)) throw new PackValidationError('Invalid custom pack path.'); return path; }
-  private save(pack: QuestionPack): void { const target = this.pathFor(pack.id); const temporary = `${target}.${randomUUID()}.tmp`; try { writeFileSync(temporary, `${JSON.stringify(pack, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' }); renameSync(temporary, target); this.custom.set(pack.id, pack); } catch (error) { if (existsSync(temporary)) rmSync(temporary); throw error; } }
+  private save(pack: QuestionPack): void {
+    const target = this.pathFor(pack.id);
+    const serialized = `${JSON.stringify(pack, null, 2)}\n`;
+    const replacementBytes = Buffer.byteLength(serialized, 'utf8');
+    const currentFile = existsSync(target) ? lstatSync(target) : undefined;
+    const currentBytes = currentFile?.isFile() ? currentFile.size : 0;
+    const { usedBytes, maxBytes } = this.storageUsage();
+    const projectedBytes = usedBytes - currentBytes + replacementBytes;
+    // Allow reductions if a deployment lowers the cap below existing usage.
+    // Checking and writing synchronously keeps writes serialized in this server process.
+    if (projectedBytes > maxBytes && replacementBytes > currentBytes) {
+      throw new PackValidationError(`Custom pack storage is full (${(usedBytes / (1024 * 1024)).toFixed(1)} MB / ${maxBytes / (1024 * 1024)} MB). Delete an existing pack before creating, importing, or enlarging a pack.`);
+    }
+    const temporary = `${target}.${randomUUID()}.tmp`;
+    try { writeFileSync(temporary, serialized, { encoding: 'utf8', flag: 'wx' }); renameSync(temporary, target); this.custom.set(pack.id, pack); }
+    catch (error) { if (existsSync(temporary)) rmSync(temporary); throw error; }
+  }
   private validateStored(value: unknown): QuestionPack {
     if (!value || typeof value !== 'object' || Array.isArray(value)) throw new PackValidationError('Stored pack must be an object.'); const raw = value as Record<string, unknown>; const id = required(raw.id, 'Pack ID', 100); if (!/^custom-[a-z0-9-]+$/.test(id)) throw new PackValidationError('Stored pack ID is unsafe.'); if (raw.custom !== true || !Array.isArray(raw.questions) || raw.questions.length > MAX_QUESTIONS) throw new PackValidationError('Stored pack schema is invalid.');
     const questions: Question[] = []; for (const item of raw.questions) { if (!item || typeof item !== 'object') throw new PackValidationError('Stored question is invalid.'); const record = item as Record<string, unknown>; const question = validateQuestion(record); const questionId = required(record.id, 'Question ID', 160); if (!questionId.startsWith(`${id}-q-`) || record.packId !== id) throw new PackValidationError('Stored question IDs are invalid.'); assertNoDuplicate(questions, question); questions.push({ id: questionId, packId: id, ...question }); }

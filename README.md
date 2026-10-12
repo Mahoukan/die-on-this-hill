@@ -62,6 +62,7 @@ See `.env.example` for safe example values.
 - `HOST=0.0.0.0`
 - `PORT=3000`
 - `CUSTOM_PACKS_DIR=/data/custom-packs`
+- `CUSTOM_PACKS_MAX_STORAGE_MB=100`
 - `PACK_ADMIN_PASSWORD`: required production secret for `/packs`
 
 Do not commit real passwords or production environment files.
@@ -97,6 +98,10 @@ docker compose -f docker-compose.example.yml up -d --build
 4. Mount persistent Coolify storage at `/data/custom-packs`.
 5. Ensure Nginx Proxy Manager can reach the Coolify-managed application on port 3000, either through an appropriate Docker network or a host port that is not publicly exposed.
 6. Deploy and wait for the container healthcheck to pass.
+
+`CUSTOM_PACKS_MAX_STORAGE_MB` is a runtime, application-level limit on total persistent custom pack JSON storage in `CUSTOM_PACKS_DIR`. It defaults to 100 MB (1 MB = 1,048,576 bytes). To change it in Coolify, set the application's runtime environment variable `CUSTOM_PACKS_MAX_STORAGE_MB` to the desired positive number, save, and redeploy. Missing values use the default; invalid, zero, negative, or out-of-range values log a warning and fall back to 100 MB.
+
+The `/packs` screen shows current usage and the cap. Creates, imports, and growing edits are rejected if they would exceed it. Replacements subtract the existing file size first. Deletion and export remain available, and edits that do not increase storage remain possible if the cap is lowered below current usage. Only regular JSON files directly inside the configured directory count, including invalid JSON files; atomic-write temporary files and subdirectories do not count. This is a persistent pack quota, not a filesystem quota; atomic writes still need temporary disk space. Use one application server process per pack directory.
 
 An empty Docker-managed volume inherits the image directory permissions. For a host bind mount, ensure the mounted directory is writable by the container's `node` user, UID 1000 in the selected base image. Do not use mode 777 as the default fix.
 
