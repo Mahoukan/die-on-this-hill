@@ -5,8 +5,16 @@ import { useEffect, useState } from 'react';
 import type { RoomView } from '../shared/types';
 import { useGame } from './game-provider';
 
-export function Header({ note }: { note?: string }) {
-  return <header className="topbar"><Link className="brand-mark" href="/" aria-label="Back to home"><span className="brand-flame" aria-hidden="true">▲</span><span>Die on This Hill</span></Link>{note && <span className="header-note">{note}</span>}</header>;
+export function Header({ note, roomCode }: { note?: string; roomCode?: string }) {
+  return <header className="topbar"><Link className="brand-mark" href="/" aria-label="Back to home"><span className="brand-flame" aria-hidden="true">▲</span><span>Die on This Hill</span></Link>{note && <span className="header-note">{note}</span>}{roomCode && <DisplayMenu roomCode={roomCode} />}</header>;
+}
+
+function DisplayMenu({ roomCode }: { roomCode: string }) {
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState('');
+  const path = `/display/${roomCode}`;
+  const copy = async () => { const url = `${location.origin}${path}`; try { await navigator.clipboard.writeText(url); setMessage('Display link copied'); } catch { setMessage(url); } };
+  return <div className="display-menu"><button type="button" className="display-menu-trigger" aria-expanded={open} onClick={() => setOpen(!open)}>DISPLAY</button>{open && <div className="display-menu-panel"><strong>Shared Display</strong><p>Open a read-only game display on another screen, TV, tablet or browser.</p><button className="btn btn-secondary btn-small" type="button" onClick={() => window.open(path, '_blank', 'noopener,noreferrer')}>Open Display</button><button className="btn btn-ghost btn-small" type="button" onClick={() => void copy()}>Copy Display Link</button>{message && <span role="status">{message}</span>}</div>}</div>;
 }
 
 export function RoundStrip({ room }: { room: RoomView }) {

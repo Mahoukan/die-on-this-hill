@@ -50,6 +50,7 @@ export function Home({ initialCode = '' }: { initialCode?: string }) {
             <p id="join-help" className="helper-text">Enter the four-letter code from your friends.</p>
           </form>
         </>}
+        <Link className="text-action custom-packs-entry" href="/packs">Manage Custom Packs</Link>
         {(localError || game.error) && <p className="form-error" role="alert">{localError || game.error}</p>}
         {!game.connected && <p className="connection-copy" role="status">Connecting to the game server...</p>}
       </section>

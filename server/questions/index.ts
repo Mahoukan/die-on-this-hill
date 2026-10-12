@@ -8,7 +8,7 @@ import { historyPack } from './history';
 import { scienceTechnologyPack } from './science-technology';
 
 export const QUESTION_PACKS: readonly QuestionPack[] = [generalPack, scienceTechnologyPack, geographyPack, historyPack, entertainmentPack, foodCulturePack];
-export const QUESTION_PACK_METADATA: QuestionPackMeta[] = QUESTION_PACKS.map(({ id, name, description, questions }) => ({ id, name, description, questionCount: questions.length }));
+export const QUESTION_PACK_METADATA: QuestionPackMeta[] = QUESTION_PACKS.map(({ id, name, description, questions }) => ({ id, name, description, questionCount: questions.length, custom: false }));
 export const ALL_QUESTIONS: readonly Question[] = QUESTION_PACKS.flatMap((pack) => pack.questions);
 
 export function eligibleQuestions(packIds: readonly string[]): Question[] {

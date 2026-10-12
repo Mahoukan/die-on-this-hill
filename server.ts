@@ -19,7 +19,7 @@ async function main() {
     });
   });
   const io: GameServer = new Server(httpServer, {
-    maxHttpBufferSize: 16_384,
+    maxHttpBufferSize: 2_200_000,
     // Keep browser connections on the same origin; LAN addresses work without
     // a permissive CORS wildcard. Non-browser test clients may omit Origin.
     allowRequest(request, callback) {

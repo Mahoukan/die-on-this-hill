@@ -40,6 +40,15 @@ export function attachGameSockets(io: GameServer, store: RoomStore): void {
       void socket.join(displayChannel(view.roomCode));
       return view;
     }));
+    socket.on('packs:list', (reply) => action(reply, () => store.listCustomPacks()));
+    socket.on('packs:create', (payload, reply) => action(reply, () => { const pack = store.createPack(payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:update', (payload, reply) => action(reply, () => { const pack = store.updatePack(payload?.packId, payload?.name, payload?.description); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:delete', (payload, reply) => action(reply, () => { store.deletePack(payload?.packId); io.emit('packs:changed'); return undefined; }));
+    socket.on('packs:question-add', (payload, reply) => action(reply, () => { const pack = store.addPackQuestion(payload?.packId, payload?.question); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:question-update', (payload, reply) => action(reply, () => { const pack = store.updatePackQuestion(payload?.packId, payload?.questionId, payload?.question); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:question-delete', (payload, reply) => action(reply, () => { const pack = store.deletePackQuestion(payload?.packId, payload?.questionId); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:import', (payload, reply) => action(reply, () => { const pack = store.importPack(payload?.json); io.emit('packs:changed'); return pack; }));
+    socket.on('packs:export', (payload, reply) => action(reply, () => store.exportPack(payload?.packId)));
     socket.on('room:create', (payload, reply) => action(reply, () => {
       requireUnbound();
       return bind(store.create(payload?.name, socket.id));

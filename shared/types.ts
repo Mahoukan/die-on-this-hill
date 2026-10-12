@@ -18,8 +18,10 @@ export interface PlayerStats {
 
 export interface Player { id: string; name: string; score: number; isHost: boolean; hillUsed: boolean; connected: boolean; stats: PlayerStats; }
 export interface Question { id: string; text: string; correctAnswer: string; packId: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
-export interface QuestionPack { id: string; name: string; description: string; questions: Question[]; }
-export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; }
+export interface QuestionPack { id: string; name: string; description: string; questions: Question[]; custom?: boolean; }
+export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; custom: boolean; }
+export interface CustomQuestionInput { text: string; correctAnswer: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
+export interface CustomPackExport { format: 'die-on-this-hill-pack'; version: 1; name: string; description: string; questions: CustomQuestionInput[]; }
 export interface PlayerSubmission { playerId: string; genuineAnswer: string | null; bluff: string | null; }
 export interface AnswerOption { id: string; text: string; isCorrect: boolean; genuinePlayerIds: string[]; bluffPlayerIds: string[]; }
 export interface PlayerVote { playerId: string; answerId: string; hill: boolean; }
@@ -40,6 +42,8 @@ export interface GameRoom {
   questionMode: QuestionMode;
   selectedPackIds: string[];
   selectedQuestionIds: string[];
+  /** Immutable per-game snapshots so later custom-pack edits cannot change an active game. */
+  selectedQuestions: Question[];
   hostPlayerId: string;
   players: Player[];
   question: Question | null;
@@ -97,6 +101,15 @@ export interface ClientEvents {
   'room:reconnect': (payload: PlayerSession, reply: Reply<PlayerSession>) => void;
   'room:leave': (reply: Reply) => void;
   'display:join': (payload: { roomCode: string }, reply: Reply<DisplayView>) => void;
+  'packs:list': (reply: Reply<QuestionPack[]>) => void;
+  'packs:create': (payload: { name: string; description: string }, reply: Reply<QuestionPack>) => void;
+  'packs:update': (payload: { packId: string; name: string; description: string }, reply: Reply<QuestionPack>) => void;
+  'packs:delete': (payload: { packId: string }, reply: Reply) => void;
+  'packs:question-add': (payload: { packId: string; question: CustomQuestionInput }, reply: Reply<QuestionPack>) => void;
+  'packs:question-update': (payload: { packId: string; questionId: string; question: CustomQuestionInput }, reply: Reply<QuestionPack>) => void;
+  'packs:question-delete': (payload: { packId: string; questionId: string }, reply: Reply<QuestionPack>) => void;
+  'packs:import': (payload: { json: string }, reply: Reply<QuestionPack>) => void;
+  'packs:export': (payload: { packId: string }, reply: Reply<{ filename: string; pack: CustomPackExport }>) => void;
   'game:settings': (payload: { rounds: RoundSetting }, reply: Reply) => void;
   'game:questions': (payload: { mode: QuestionMode; selectedPackIds: string[] }, reply: Reply) => void;
   'game:start': (reply: Reply) => void;
@@ -109,4 +122,4 @@ export interface ClientEvents {
   'debate:end-host': (reply: Reply) => void;
   'reveal:continue': (reply: Reply) => void;
 }
-export interface ServerEvents { 'room:state': (state: RoomView) => void; 'display:state': (state: DisplayView) => void; 'display:closed': () => void; 'session:replaced': () => void; }
+export interface ServerEvents { 'room:state': (state: RoomView) => void; 'display:state': (state: DisplayView) => void; 'display:closed': () => void; 'session:replaced': () => void; 'packs:changed': () => void; }

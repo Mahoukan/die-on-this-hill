@@ -30,7 +30,7 @@ Use the supplied custom server commands; plain `next dev` or `next start` will n
 
 The host chooses Recommended, 5, 8, 10, or 12 rounds. Recommended resolves from the live lobby population: 2–3 players get 10 rounds, 4–5 get 8, 6–7 get 6, and 8+ get 5. An explicit host choice is retained as players join or leave.
 
-The host selects either one built-in question pack or a Mixed Game containing two or more packs. The six local packs contain 72 questions across General Knowledge, Science & Technology, Geography, History, Movies & TV, and Food & Culture. Every pack supports a 12-round game. Pack selection and availability are synchronized room settings and are retained by Play Again.
+The host selects either one question pack or a Mixed Game containing two or more packs. The six built-in packs contain 72 questions across General Knowledge, Science & Technology, Geography, History, Movies & TV, and Food & Culture. Custom packs appear in the same selector, can be mixed with built-ins, and use their live question count for start validation. Pack selection and availability are synchronized room settings and are retained by Play Again.
 
 At game start, the server gathers only eligible questions, removes duplicate IDs, shuffles the combined pool, selects the exact required number without repeats, and owns the complete sequence. Mixed Game currently samples randomly from the combined pool without category balancing. Every round follows:
 
@@ -40,7 +40,15 @@ Genuine Answer → Bluff → Debate → Vote → Reveal → Round Results
 
 During Debate, connected players can toggle Ready to Vote. A strict majority starts a synchronized three-second voting transition; the host can trigger the same transition with End Debate Now. Natural timer expiry still opens voting immediately. The host advances to the next round or, after the final round, to Final Results. Scores, statistics, and Hill usage persist between rounds. Round submissions, answer cards, votes, reveal state, and timers reset. Play Again keeps the room, players, and round setting while resetting the game itself.
 
-Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared display. It has a separate read-only socket subscription, never becomes a player, and automatically follows lobby, gameplay, reveal, results, and Play Again. The host lobby includes Open Shared Display and Copy Display Link controls.
+Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared display. It has a separate read-only socket subscription, never becomes a player, and automatically follows lobby, gameplay, reveal, results, and Play Again. Every player has a compact Display menu throughout the game with Open Display and Copy Display Link actions; multiple displays can follow one room independently.
+
+## Custom question packs
+
+Open **Manage Custom Packs** from the home page or lobby to create and edit packs, accepted-answer variants, and optional explanations. Custom packs are persisted as individual JSON files in `data/custom-packs/`; the directory is created automatically and survives normal server restarts. Running games keep an in-memory snapshot of their selected questions, so later edits or deletion do not change an active game.
+
+Exports use the versioned `die-on-this-hill-pack` JSON format and omit local IDs and filesystem details. Imports are fully validated before writing, receive new server-controlled pack/question IDs, block normalized duplicate questions, and are limited to 500 questions and 2 MB. Importing a duplicate name creates a numbered copy instead of overwriting existing data.
+
+User-created `data/custom-packs/*.json` files are ignored by Git; only `.gitkeep` is tracked. Back up that directory to preserve local packs. To move packs to another server, either copy the JSON files while the server is stopped or use Export and Import in the UI.
 
 ## Rules
 
@@ -55,7 +63,8 @@ Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared di
 ## Architecture
 
 - `server/rooms.ts`: authoritative room lifecycle, settings, rounds, timers, reconnect state, statistics, and private public-view projection.
-- `server/questions/`: six local pack modules plus safe metadata, availability, lookup, and server-side no-repeat selection.
+- `server/questions/`: six read-only built-in pack modules.
+- `server/custom-packs.ts`: validated custom-pack registry, atomic JSON persistence, import/export, and unified built-in/custom lookup.
 - `server/answer-matching.ts`: deterministic accepted-answer normalization and comparison.
 - `server/scoring.ts`: round scoring and Hill impact.
 - `server/awards.ts`: final leaderboard and tied award calculations.
@@ -67,7 +76,7 @@ Open `/display/ROOM`—for example, `/display/HILL`—for the optional shared di
 
 The server broadcasts an allowlisted `RoomView`, not its internal room model. Lobby clients receive only pack names, descriptions, and real question counts. Private submissions, accepted answers, explanations, votes, correctness, answer origins, score deltas, and statistics are withheld until their appropriate reveal or final-results phase. Optional explanations appear only during the correct-answer reveal step.
 
-Rooms and game history exist only in memory. Restarting the server removes them. New players cannot join after a game starts, but an existing player can reconnect with their private session token and recover the current phase, score, Hill state, statistics, and locked actions.
+Rooms and game history exist only in memory. Restarting the server removes them; custom packs remain on disk. New players cannot join after a game starts, but an existing player can reconnect with their private session token and recover the current phase, score, Hill state, statistics, and locked actions.
 
 ## Manual multi-browser test
 

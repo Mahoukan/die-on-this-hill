@@ -28,6 +28,7 @@
 .setting-note { margin: -0.35rem 0 0.7rem; color: var(--muted); font-size: 0.72rem; }
 .pack-settings-panel { grid-column: 1 / -1; padding: 1.3rem; border: 1px solid var(--line); border-radius: var(--radius-lg); background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025)); }
 .pack-settings-panel h2 { margin: 0.25rem 0 0; font-size: 1.35rem; letter-spacing: -0.035em; }
+.pack-manage-link { display: inline-block; margin-top: 0.45rem; color: var(--muted); font-size: 0.7rem; text-underline-offset: 3px; }
 .pack-mode { flex-shrink: 0; }
 .pack-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; }
 .pack-card { position: relative; display: flex; flex-direction: column; gap: 0.5rem; min-height: 145px; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,0.025); color: var(--text); text-align: left; cursor: pointer; }
@@ -52,6 +53,50 @@
 .host-debate-controls { display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin: 1rem auto 0; padding-top: 1rem; border-top: 1px solid var(--line); }
 .debate-transition { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; margin: 1.5rem auto 0; color: var(--accent); font-size: 1.4rem; letter-spacing: 0.06em; }
 .debate-transition span { color: var(--muted); font-size: 0.8rem; letter-spacing: normal; }
+.display-menu { position: relative; margin-left: auto; }
+.display-menu-trigger { padding: 0.45rem 0.65rem; border: 1px solid var(--line); border-radius: 9px; background: rgba(255,255,255,0.04); color: var(--muted); font-size: 0.65rem; font-weight: 900; letter-spacing: 0.1em; cursor: pointer; }
+.display-menu-panel { position: absolute; z-index: 30; top: calc(100% + 0.6rem); right: 0; display: grid; gap: 0.65rem; width: min(310px, calc(100vw - 32px)); padding: 1rem; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--bg-soft); box-shadow: var(--shadow); }
+.display-menu-panel strong { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; }
+.display-menu-panel p, .display-menu-panel span { margin: 0; color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
+.display-menu-panel span { color: var(--success); }
+.custom-packs-entry { display: block; margin: 1rem auto 0; text-align: center; }
+.packs-page { min-height: 100dvh; }
+.packs-shell { width: min(calc(100% - 32px), 1120px); margin: 2rem auto 4rem; }
+.packs-page-heading, .editor-title, .editor-actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.packs-page-heading h1 { margin: 0.2rem 0; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.05em; }
+.packs-page-heading p { margin: 0; color: var(--muted); line-height: 1.6; }
+.pack-notice { margin: 1rem 0; padding: 0.8rem 1rem; border: 1px solid rgba(64,190,130,0.35); border-radius: 12px; color: var(--success); background: rgba(64,190,130,0.08); }
+.pack-notice.is-error { border-color: rgba(255,90,54,0.35); color: var(--accent); background: var(--accent-soft); }
+.packs-workspace { display: grid; grid-template-columns: minmax(230px, 0.34fr) minmax(0, 1fr); gap: 1rem; margin-top: 1.5rem; align-items: start; }
+.pack-library, .pack-editor { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--panel); }
+.pack-library { padding: 1rem; }
+.pack-library h2, .pack-editor h2, .pack-editor h3 { margin: 0; }
+.pack-create-form, .pack-details-form, .question-editor { display: grid; gap: 0.8rem; }
+.pack-create-form label, .pack-details-form label, .question-editor label { display: grid; gap: 0.4rem; color: var(--muted); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
+.pack-create-form input, .pack-create-form textarea, .pack-details-form input, .pack-details-form textarea, .question-editor input, .question-editor textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--line); border-radius: 10px; background: rgba(0,0,0,0.18); color: var(--text); font: inherit; letter-spacing: normal; text-transform: none; resize: vertical; }
+.pack-library-actions { margin: 1rem 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pack-library-list { display: grid; gap: 0.45rem; }
+.pack-library-list > p, .question-list > p { color: var(--muted); font-size: 0.8rem; }
+.pack-library-list button { display: grid; gap: 0.2rem; padding: 0.8rem; border: 1px solid transparent; border-radius: 11px; background: transparent; color: var(--text); text-align: left; cursor: pointer; }
+.pack-library-list button:hover, .pack-library-list button.is-active { border-color: rgba(255,90,54,0.4); background: var(--accent-soft); }
+.pack-library-list span { color: var(--muted); font-size: 0.7rem; }
+.pack-editor { padding: 1.25rem; }
+.pack-details-form { padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
+.editor-title span { color: var(--accent); font-size: 0.7rem; font-weight: 850; text-transform: uppercase; }
+.danger-action { color: var(--accent) !important; }
+.question-editor { margin-top: 1.2rem; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.02); }
+.question-editor label small { font-weight: 500; text-transform: none; letter-spacing: normal; }
+.question-field-grid { display: grid; grid-template-columns: 1fr 0.65fr; gap: 0.8rem; }
+.question-list { margin-top: 1.4rem; }
+.question-list h3 { margin-bottom: 0.7rem; }
+.question-list article { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto auto; gap: 0.8rem; align-items: center; padding: 0.8rem 0; border-top: 1px solid var(--line); }
+.question-list article > span { color: var(--muted); font-size: 0.72rem; }
+.question-list article div { display: grid; gap: 0.25rem; min-width: 0; }
+.question-list article strong { overflow-wrap: anywhere; }
+.question-list article small { color: var(--muted); }
+.empty-editor { min-height: 360px; display: grid; place-content: center; text-align: center; }
+.empty-editor p { color: var(--muted); }
 @media (max-width: 430px) { .name-dialog { padding: 1.5rem; } .game-page .header-note { display: none; } }
-@media (max-width: 760px) { .pack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pack-settings-panel .settings-heading { flex-direction: column; } }
+@media (max-width: 760px) { .pack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pack-settings-panel .settings-heading { flex-direction: column; } .packs-workspace { grid-template-columns: 1fr; } .packs-page-heading { align-items: flex-start; flex-direction: column; } }
 @media (max-width: 430px) { .pack-grid { grid-template-columns: 1fr; } .pack-mode { width: 100%; } .pack-mode button { flex: 1; } }
+@media (max-width: 520px) { .question-field-grid { grid-template-columns: 1fr; } .question-list article { grid-template-columns: 20px minmax(0, 1fr); } .question-list article .text-action { grid-column: auto; } }
