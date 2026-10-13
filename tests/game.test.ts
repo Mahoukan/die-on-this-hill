@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { setTimeout as delay } from 'node:timers/promises';
 import { RoomStore } from '../server/rooms';
+import type { GamePhase } from '../shared/types';
 
-function fixture(names = ['Suriya', 'Perry', 'Mark', 'Hunter'], durations = { answer: 1000, bluff: 1000, debate: 15, vote: 1000 }) {
+function fixture(names = ['Suriya', 'Perry', 'Mark', 'Hunter'], durations: Partial<Record<GamePhase | 'hill-announcement', number>> = { answer: 1000, bluff: 1000, debate: 15, vote: 1000 }) {
   const broadcasts: string[] = [];
   const store = new RoomStore((code) => broadcasts.push(code), durations);
   const host = store.create(names[0], 'socket-0');
@@ -132,6 +133,75 @@ test('server timers advance missed submissions and votes; clients cannot extend 
   assert.equal(room.results.every((item) => item.roundPoints === 0), true);
   assert.throws(() => f.send(0, 'answer', 'Sweden'), /phase has ended/);
   assert.equal(room.players.every((player) => !player.hillUsed), true);
+});
+
+test('Hill announcements expire independently, survive state updates, and newer announcements replace older ones', async (context) => {
+  const f = fixture(undefined, { answer: 1000, bluff: 1000, debate: 15, vote: 1000, 'hill-announcement': 40 });
+  context.after(() => f.store.close());
+  f.store.start(f.code, f.host.playerId, 'socket-0');
+  const correct = f.store.getRoom(f.code).question!.correctAnswer;
+  f.sessions.forEach((_, index) => f.send(index, 'answer', index ? `Wrong ${index}` : correct));
+  f.sessions.forEach((_, index) => f.send(index, 'bluff', `Bluff ${index}`));
+  await delay(25);
+  assert.equal(f.store.getRoom(f.code).phase, 'vote');
+
+  f.vote(0, correct, true);
+  const first = f.store.view(f.code, f.sessions[1].playerId).hillAnnouncement;
+  assert.equal(first?.playerId, f.host.playerId);
+  assert.equal(f.store.view(f.code, f.sessions[2].playerId).hillAnnouncement?.activatedAt, first?.activatedAt, 'ordinary state reads do not extend or clear the announcement');
+  await delay(25);
+  f.vote(1, correct, true);
+  const second = f.store.displayView(f.code).hillAnnouncement;
+  assert.equal(second?.playerId, f.sessions[1].playerId);
+  assert.ok(second && first && second.activatedAt > first.activatedAt);
+  await delay(20);
+  assert.equal(f.store.displayView(f.code).hillAnnouncement?.playerId, f.sessions[1].playerId, 'the first expiry cannot clear its replacement');
+  await delay(25);
+  assert.equal(f.store.displayView(f.code).hillAnnouncement, null);
+  assert.equal(f.store.getRoom(f.code).players[0].hillUsed, true);
+  assert.equal(f.store.getRoom(f.code).players[1].hillUsed, true);
+
+  f.store.disconnect(f.code, f.host.playerId, 'socket-0');
+  f.store.reconnect(f.host, 'socket-reloaded');
+  assert.equal(f.store.view(f.code, f.host.playerId).hillAnnouncement, null, 'reconnect cannot revive an expired announcement');
+});
+
+test('reload reconnect retains one player identity and phase state throughout a round', async (context) => {
+  const f = fixture(['Host', 'Guest 1', 'Guest 2'], { answer: 1000, bluff: 1000, debate: 1000, 'debate-transition': 10, vote: 1000 });
+  context.after(() => f.store.close());
+  f.store.start(f.code, f.host.playerId, 'socket-0');
+  const room = f.store.getRoom(f.code);
+  room.players[0].score = 125;
+  const correct = room.question!.correctAnswer;
+  let hostSocket = 'socket-0';
+  const reload = (expectedPhase: GamePhase) => {
+    f.store.disconnect(f.code, f.host.playerId, hostSocket);
+    assert.equal(room.players.length, 3, 'a brief disconnect does not remove the player');
+    assert.equal(room.players[0].connected, false);
+    hostSocket = `socket-${expectedPhase}-reloaded`;
+    f.store.reconnect(f.host, hostSocket);
+    const view = f.store.view(f.code, f.host.playerId);
+    assert.equal(view.phase, expectedPhase);
+    assert.equal(view.players.length, 3, 'reload does not duplicate the player');
+    assert.equal(view.players.find((player) => player.id === f.host.playerId)?.score, 125);
+    return view;
+  };
+
+  f.store.submit(f.code, f.host.playerId, hostSocket, 'answer', correct);
+  assert.equal(reload('answer').me.genuineAnswer, correct);
+  f.send(1, 'answer', 'Wrong 1'); f.send(2, 'answer', 'Wrong 2');
+  f.store.submit(f.code, f.host.playerId, hostSocket, 'bluff', 'Host Bluff');
+  assert.equal(reload('bluff').me.bluff, 'Host Bluff');
+  f.send(1, 'bluff', 'Guest Bluff 1'); f.send(2, 'bluff', 'Guest Bluff 2');
+  f.store.setDebateReady(f.code, f.host.playerId, hostSocket, true);
+  assert.equal(reload('debate').me.debateReady, true);
+  f.store.endDebate(f.code, f.host.playerId, hostSocket);
+  await delay(15);
+  const answerId = room.answerPool.find((answer) => answer.text === correct)!.id;
+  f.store.vote(f.code, f.host.playerId, hostSocket, answerId, true);
+  const voteView = reload('vote');
+  assert.equal(voteView.me.vote?.hill, true);
+  assert.equal(voteView.players.find((player) => player.id === f.host.playerId)?.hillUsed, true);
 });
 
 test('main phase timers last 90 seconds and only the host can skip them', async (context) => {

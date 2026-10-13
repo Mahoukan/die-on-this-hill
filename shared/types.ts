@@ -28,6 +28,7 @@ export interface CustomPackList { packs: QuestionPack[]; storage: CustomPackStor
 export interface PlayerSubmission { playerId: string; genuineAnswer: string | null; bluff: string | null; }
 export interface AnswerOption { id: string; text: string; isCorrect: boolean; genuinePlayerIds: string[]; bluffPlayerIds: string[]; }
 export interface PlayerVote { playerId: string; answerId: string; hill: boolean; }
+export interface HillAnnouncement { playerId: string; playerName: string; activatedAt: number; expiresAt: number; }
 export interface RoundResult { playerId: string; finalAnswerPoints: number; bluffPoints: number; hillImpact: number; roundPoints: number; totalScore: number; hill: boolean; correct: boolean; }
 export interface LeaderboardEntry { playerId: string; rank: number; score: number; correctFinalAnswers: number; successfulBluffVotes: number; hillSuccessful: boolean; }
 
@@ -56,6 +57,7 @@ export interface GameRoom {
   results: RoundResult[];
   roundResults: RoundResult[][];
   debateReadyPlayerIds: string[];
+  hillAnnouncement: HillAnnouncement | null;
   phaseEndsAt: number | null;
 }
 
@@ -84,6 +86,7 @@ export interface RoomView {
   bluffCount: number;
   votedCount: number;
   hillPlayerIds: string[];
+  hillAnnouncement: HillAnnouncement | null;
   debateReadyCount: number;
   debateRequiredCount: number;
   correctAnswer?: string;

@@ -8,13 +8,15 @@ import { DEFAULT_PACK_ID } from './questions';
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
 const DURATIONS = { answer: 90_000, bluff: 90_000, debate: 90_000, 'debate-transition': 3_000, vote: 90_000 };
+const HILL_ANNOUNCEMENT_MS = 3_500;
 const ROOM_IDLE_MS = 10 * 60_000;
 const ROUND_SETTINGS: readonly RoundSetting[] = ['recommended', 5, 8, 10, 12];
 export const recommendedRounds = (players: number) => players >= 8 ? 5 : players >= 6 ? 6 : players >= 4 ? 8 : 10;
 export const emptyStats = (): PlayerStats => ({ correctInitialAnswers: 0, correctFinalAnswers: 0, wrongFinalAnswers: 0, successfulBluffVotes: 0, answerChanges: 0, changedWrongToCorrect: 0, changedCorrectToWrong: 0, hillUsed: false, hillSuccessful: false, hillScoreImpact: 0 });
 
 interface Identity { token: string; socketId: string | null }
-interface RoomRecord { room: GameRoom; identities: Map<string, Identity>; timer?: ReturnType<typeof setTimeout>; cleanup?: ReturnType<typeof setTimeout>; hostTransfer?: ReturnType<typeof setTimeout>; }
+interface RoomRecord { room: GameRoom; identities: Map<string, Identity>; timer?: ReturnType<typeof setTimeout>; cleanup?: ReturnType<typeof setTimeout>; hostTransfer?: ReturnType<typeof setTimeout>; hillAnnouncementTimer?: ReturnType<typeof setTimeout>; }
+type RoomDurations = Partial<Record<GamePhase | 'hill-announcement', number>>;
 
 export class GameError extends Error {}
 function requireRule(condition: unknown, message: string): asserts condition { if (!condition) throw new GameError(message); }
@@ -22,7 +24,12 @@ function requireRule(condition: unknown, message: string): asserts condition { i
 export class RoomStore {
   private rooms = new Map<string, RoomRecord>();
   private durations: Partial<Record<GamePhase, number>>;
-  constructor(private changed: (roomCode: string) => void, durations: Partial<Record<GamePhase, number>> = {}, private removed: (roomCode: string) => void = () => {}, readonly packs = new PackRegistry()) { this.durations = { ...DURATIONS, ...durations }; }
+  private hillAnnouncementDuration: number;
+  constructor(private changed: (roomCode: string) => void, durations: RoomDurations = {}, private removed: (roomCode: string) => void = () => {}, readonly packs = new PackRegistry()) {
+    const { 'hill-announcement': hillAnnouncementDuration = HILL_ANNOUNCEMENT_MS, ...phaseDurations } = durations;
+    this.durations = { ...DURATIONS, ...phaseDurations };
+    this.hillAnnouncementDuration = hillAnnouncementDuration;
+  }
 
   private record(code: string): RoomRecord {
     const record = this.rooms.get(code);
@@ -40,7 +47,7 @@ export class RoomStore {
     requireRule(this.rooms.size < 500, 'The server is full. Try again later.');
     let code: string;
     do { code = Array.from({ length: 4 }, () => CODE_ALPHABET[randomInt(CODE_ALPHABET.length)]).join(''); } while (this.rooms.has(code));
-    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: [DEFAULT_PACK_ID], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], phaseEndsAt: null };
+    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: [DEFAULT_PACK_ID], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], hillAnnouncement: null, phaseEndsAt: null };
     this.rooms.set(code, { room, identities: new Map() });
     const session = this.addPlayer(code, displayName, socketId);
     room.hostPlayerId = session.playerId;
@@ -143,6 +150,7 @@ export class RoomStore {
   }
   private prepareRound(record: RoomRecord): void {
     const room = record.room;
+    this.clearHillAnnouncement(record);
     room.question = this.cloneQuestion(room.selectedQuestions[room.round - 1]);
     room.submissions = room.players.map((player) => ({ playerId: player.id, genuineAnswer: null, bluff: null }));
     room.answerPool = []; room.votes = []; room.results = []; room.debateReadyPlayerIds = []; room.revealStep = 'ready';
@@ -151,6 +159,7 @@ export class RoomStore {
   reset(code: string, id: string, socketId: string): void {
     const { record } = this.authorized(code, id, socketId, 'final-results');
     this.host(record, id);
+    this.clearHillAnnouncement(record);
     Object.assign(record.room, { round: 0, question: null, selectedQuestionIds: [], selectedQuestions: [], submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], revealStep: 'ready' });
     record.room.players.forEach((player) => { player.score = 0; player.hillUsed = false; player.stats = emptyStats(); });
     this.refreshRecommended(record.room);
@@ -170,7 +179,7 @@ export class RoomStore {
     if (previous) { requireRule(previous.answerId === answerId && previous.hill === hill, 'Your vote is already locked.'); return; }
     requireRule(!hill || !player.hillUsed, 'You have already used your Hill this game.');
     record.room.votes.push({ playerId: id, answerId, hill });
-    if (hill) { player.hillUsed = true; player.stats.hillUsed = true; }
+    if (hill) { player.hillUsed = true; player.stats.hillUsed = true; this.announceHill(record, player); }
     if (record.room.votes.length === record.room.players.length) this.advance(record); else this.changed(code);
   }
   setDebateReady(code: string, id: string, socketId: string, ready: unknown): void {
@@ -218,10 +227,11 @@ export class RoomStore {
     }
     if (record.room.phase === 'debate' && this.debateReadyCount(record.room) >= this.debateRequiredCount(record.room)) this.beginDebateTransition(record);
     else this.changed(code);
-    if (!record.room.players.some((item) => item.connected)) { clearTimeout(record.cleanup); record.cleanup = setTimeout(() => { clearTimeout(record.timer); clearTimeout(record.hostTransfer); this.rooms.delete(code); this.removed(code); }, ROOM_IDLE_MS); record.cleanup.unref(); }
+    if (!record.room.players.some((item) => item.connected)) { clearTimeout(record.cleanup); record.cleanup = setTimeout(() => { clearTimeout(record.timer); clearTimeout(record.hostTransfer); clearTimeout(record.hillAnnouncementTimer); this.rooms.delete(code); this.removed(code); }, ROOM_IDLE_MS); record.cleanup.unref(); }
   }
   private setPhase(record: RoomRecord, phase: GamePhase): void {
     clearTimeout(record.timer);
+    if (phase === 'lobby' || phase === 'answer' || phase === 'final-results') this.clearHillAnnouncement(record);
     record.room.phase = phase;
     if (phase === 'debate') record.room.debateReadyPlayerIds = [];
     if (!['debate', 'debate-transition'].includes(phase)) record.room.debateReadyPlayerIds = [];
@@ -265,6 +275,24 @@ export class RoomStore {
     add(room.question!.correctAnswer, 'correct'); for (const submission of room.submissions) { if (submission.genuineAnswer) add(submission.genuineAnswer, 'genuine', submission.playerId); if (submission.bluff) add(submission.bluff, 'bluff', submission.playerId); }
     room.answerPool = [...options.values()]; for (let index = room.answerPool.length - 1; index > 0; index--) { const other = randomInt(index + 1); [room.answerPool[index], room.answerPool[other]] = [room.answerPool[other], room.answerPool[index]]; }
   }
+  private announceHill(record: RoomRecord, player: Player): void {
+    this.clearHillAnnouncement(record);
+    const activatedAt = Date.now();
+    const announcement = { playerId: player.id, playerName: player.name, activatedAt, expiresAt: activatedAt + this.hillAnnouncementDuration };
+    record.room.hillAnnouncement = announcement;
+    record.hillAnnouncementTimer = setTimeout(() => {
+      if (record.room.hillAnnouncement?.activatedAt !== announcement.activatedAt || record.room.hillAnnouncement.playerId !== announcement.playerId) return;
+      record.room.hillAnnouncement = null;
+      record.hillAnnouncementTimer = undefined;
+      this.changed(record.room.roomCode);
+    }, this.hillAnnouncementDuration);
+    record.hillAnnouncementTimer.unref();
+  }
+  private clearHillAnnouncement(record: RoomRecord): void {
+    clearTimeout(record.hillAnnouncementTimer);
+    record.hillAnnouncementTimer = undefined;
+    record.room.hillAnnouncement = null;
+  }
   private publicView(room: GameRoom): DisplayView {
     const final = room.phase === 'final-results'; const revealVotes = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep !== 'ready'); const revealCorrect = final || room.phase === 'results' || (room.phase === 'reveal' && ['correct', 'bluffs'].includes(room.revealStep)); const revealBluffs = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep === 'bluffs');
     return {
@@ -272,7 +300,7 @@ export class RoomStore {
       players: room.players.map(({ stats: _stats, ...player }) => ({ ...player, score: revealCorrect ? player.score : player.score - (room.results.find((result) => result.playerId === player.id)?.roundPoints ?? 0) })),
       question: room.question ? { id: room.question.id, text: room.question.text, category: room.question.category, packId: room.question.packId } : null,
       answerPool: room.answerPool.map((option) => ({ id: option.id, text: option.text, ...(revealVotes ? { voterIds: room.votes.filter((item) => item.answerId === option.id).map((item) => item.playerId) } : {}), ...(revealCorrect ? { isCorrect: option.isCorrect } : {}), ...(revealBluffs ? { genuinePlayerIds: [...option.genuinePlayerIds], bluffPlayerIds: [...option.bluffPlayerIds] } : {}) })),
-      phaseEndsAt: room.phaseEndsAt, serverNow: Date.now(), answeredCount: room.submissions.filter((item) => item.genuineAnswer !== null).length, bluffCount: room.submissions.filter((item) => item.bluff !== null).length, votedCount: room.votes.length, hillPlayerIds: room.votes.filter((item) => item.hill).map((item) => item.playerId),
+      phaseEndsAt: room.phaseEndsAt, serverNow: Date.now(), answeredCount: room.submissions.filter((item) => item.genuineAnswer !== null).length, bluffCount: room.submissions.filter((item) => item.bluff !== null).length, votedCount: room.votes.length, hillPlayerIds: room.votes.filter((item) => item.hill).map((item) => item.playerId), hillAnnouncement: room.hillAnnouncement && room.hillAnnouncement.expiresAt > Date.now() ? { ...room.hillAnnouncement } : null,
       debateReadyCount: this.debateReadyCount(room), debateRequiredCount: this.debateRequiredCount(room),
       ...(revealCorrect && room.question ? { correctAnswer: room.question.correctAnswer, ...(room.question.explanation ? { explanation: room.question.explanation } : {}) } : {}), results: revealBluffs ? room.results.map((result) => ({ ...result })) : [], leaderboard: final ? buildLeaderboard(room.players) : [], awards: final ? calculateAwards(room.players) : [],
     };
@@ -300,5 +328,5 @@ export class RoomStore {
   private sanitizeSelection(room: GameRoom): void { const valid = room.selectedPackIds.filter((id) => this.packs.has(id)); if (room.questionMode === 'mixed') { room.selectedPackIds = [...new Set(valid)]; return; } room.selectedPackIds = [valid[0] ?? DEFAULT_PACK_ID]; }
   private cloneQuestion(question: Question): Question { return { ...question, acceptedAnswers: question.acceptedAnswers ? [...question.acceptedAnswers] : undefined }; }
   private shuffle(questions: Question[]): Question[] { const result = questions.map((question) => this.cloneQuestion(question)); for (let index = result.length - 1; index > 0; index--) { const other = randomInt(index + 1); [result[index], result[other]] = [result[other], result[index]]; } return result; }
-  close(): void { for (const record of this.rooms.values()) { clearTimeout(record.timer); clearTimeout(record.cleanup); clearTimeout(record.hostTransfer); } this.rooms.clear(); }
+  close(): void { for (const record of this.rooms.values()) { clearTimeout(record.timer); clearTimeout(record.cleanup); clearTimeout(record.hostTransfer); clearTimeout(record.hillAnnouncementTimer); } this.rooms.clear(); }
 }

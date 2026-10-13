@@ -5,6 +5,7 @@ import type { Ack, DisplayView, PublicAnswer } from '../shared/types';
 import { createSocket } from '../lib/socket';
 import { signed, useRemaining } from './game-common';
 import { AudioSettingsControl, useAudio } from './audio-provider';
+import { useActiveHillAnnouncement } from './hill-announcement';
 
 const nameFor = (room: DisplayView, id: string) => room.players.find((player) => player.id === id)?.name || 'Player';
 
@@ -13,12 +14,11 @@ export function DisplayScreen({ roomCode }: { roomCode: string }) {
   const [room, setRoom] = useState<DisplayView | null>(null);
   const [connected, setConnected] = useState(false);
   const [error, setError] = useState('');
-  const [hillPlayerId, setHillPlayerId] = useState<string | null>(null);
-  const seenHills = useRef(new Set<string>());
+  const hillAnnouncement = useActiveHillAnnouncement(room?.hillAnnouncement ?? null, room?.serverNow ?? 0);
+  const playedHill = useRef<number | null>(null);
   const previousState = useRef<{ phase: DisplayView['phase']; revealStep: DisplayView['revealStep'] } | null>(null);
   const awardTimer = useRef<number | null>(null);
 
-  const hillKey = room?.hillPlayerIds.join('|');
   useEffect(() => {
     const socket = createSocket();
     const join = () => {
@@ -38,16 +38,7 @@ export function DisplayScreen({ roomCode }: { roomCode: string }) {
     return () => { socket.removeAllListeners(); socket.disconnect(); };
   }, [roomCode]);
 
-  useEffect(() => {
-    if (!room || room.phase !== 'vote') { seenHills.current.clear(); setHillPlayerId(null); return; }
-    const fresh = room.hillPlayerIds.find((id) => !seenHills.current.has(id));
-    room.hillPlayerIds.forEach((id) => seenHills.current.add(id));
-    if (!fresh) return;
-    setHillPlayerId(fresh);
-    audio.play('hill-activate');
-    const timer = window.setTimeout(() => setHillPlayerId(null), 3500);
-    return () => window.clearTimeout(timer);
-  }, [room?.phase, hillKey, audio]);
+  useEffect(() => { if (!hillAnnouncement || playedHill.current === hillAnnouncement.activatedAt) return; playedHill.current = hillAnnouncement.activatedAt; audio.play('hill-activate'); }, [hillAnnouncement?.activatedAt, audio.play]);
 
   useEffect(() => { if (!room) return; if (room.phase !== 'final-results' && awardTimer.current !== null) { window.clearTimeout(awardTimer.current); awardTimer.current = null; } const before = previousState.current; previousState.current = { phase: room.phase, revealStep: room.revealStep }; if (!before) return;
     if (before.phase !== room.phase && room.phase === 'debate-transition') audio.play('countdown-sequence'); else if (before.phase !== room.phase && ['bluff', 'debate', 'vote'].includes(room.phase)) audio.play('phase-change');
@@ -59,7 +50,7 @@ export function DisplayScreen({ roomCode }: { roomCode: string }) {
 
   const fullscreen = async () => { try { if (!document.fullscreenElement) await document.documentElement.requestFullscreen(); else await document.exitFullscreen(); } catch { /* Fullscreen can be unavailable or denied by the browser. */ } };
   if (!room) return <div className="page page-display"><div className="display-shell"><DisplayHeader code={roomCode} connected={connected} fullscreen={fullscreen} /><main className="display-main display-message"><div className="eyebrow">Shared display</div><h1>{error || (connected ? 'CONNECTING TO GAME...' : 'RECONNECTING TO GAME...')}</h1><p>{connected ? 'Check the four-letter room code.' : 'The display will reconnect automatically.'}</p></main></div></div>;
-  return <div className="page page-display"><div className="display-shell"><DisplayHeader code={room.roomCode} connected={connected} fullscreen={fullscreen} round={room.round} totalRounds={room.totalRounds} /><main className="display-main"><DisplayPhase room={room} /></main><footer className="display-footer"><span>Optional shared display. Keep playing on your phones</span><span>{connected ? `Room ${room.roomCode}, live` : 'Reconnecting...'}</span></footer>{hillPlayerId && <div className="display-hill-announcement" role="status"><span>{nameFor(room, hillPlayerId)} has decided</span><strong>TO DIE ON THIS HILL</strong><small>Their answer remains secret.</small></div>}</div></div>;
+  return <div className="page page-display"><div className="display-shell"><DisplayHeader code={room.roomCode} connected={connected} fullscreen={fullscreen} round={room.round} totalRounds={room.totalRounds} /><main className="display-main"><DisplayPhase room={room} /></main><footer className="display-footer"><span>Optional shared display. Keep playing on your phones</span><span>{connected ? `Room ${room.roomCode}, live` : 'Reconnecting...'}</span></footer>{hillAnnouncement && <div className="display-hill-announcement" role="status"><span>{hillAnnouncement.playerName || nameFor(room, hillAnnouncement.playerId)} has decided</span><strong>TO DIE ON THIS HILL</strong><small>Their answer remains secret.</small></div>}</div></div>;
 }
 
 function DisplayHeader({ code, connected, fullscreen, round, totalRounds }: { code: string; connected: boolean; fullscreen: () => Promise<void>; round?: number; totalRounds?: number }) {
