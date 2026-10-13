@@ -1,0 +1,119 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Politics",
+  "questions": [
+    {
+      "question": "\"Yes, America Can!\" was this United States politician's de facto campaign slogan in 2004.",
+      "correctAnswer": "George W. Bush",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "In June 2017, Saudi Arabia and Egypt broke off ties with which country over its supposed support for terrorism?",
+      "correctAnswer": "Qatar",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Starting from 2000, China banned manufacturing and sales of all video game consoles. On which year was this ban lifted?",
+      "correctAnswer": "2015",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "What is centralism?",
+      "correctAnswer": " Concentration of power and authority in a central organization.",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Niccolò Machiavelli's work that argued effective leaders needed to crush their opponents at all costs?",
+      "correctAnswer": "The Prince",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the effort to deploy the Common Core State Standards (CCSS) in the US begin?",
+      "correctAnswer": "2009",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which letter do you need to have on a European driver license in order to ride any motorbikes?",
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which major bank's collapse was notable as one of the causes of the Financal Crisis of 2008?",
+      "correctAnswer": "Lehman Brothers",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which nation joined NATO as its 29th member in 2017?",
+      "correctAnswer": "Montenegro",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which Native American tribe/nation requires at least one half blood quantum (equivalent to one parent) to be eligible for membership?",
+      "correctAnswer": "Yomba Shoshone Tribe",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following United States Presidents served the shortest term in office?",
+      "correctAnswer": "William Henry Harrison",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following United States senators is known for performing a 24-hour long filibuster?",
+      "correctAnswer": "Strom Thurmond",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these was an official candidate in the 2017 British General Election?",
+      "correctAnswer": "Lord Buckethead",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which US state was the first to allow women to vote in 1869?",
+      "correctAnswer": "Wyoming",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the only US president to serve two non-consecutive terms in office?",
+      "correctAnswer": "Grover Cleveland",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the longest-serving senator in US history, serving from 1959 to 2010?",
+      "correctAnswer": "Robert Byrd",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    }
+  ]
+}

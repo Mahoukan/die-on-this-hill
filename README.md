@@ -21,7 +21,7 @@ Once per game, a player can choose I WILL DIE ON THIS HILL to double the stakes 
 
 - Multiplayer rooms with reconnect handling and configurable game length
 - Single Pack and Mixed Game modes
-- Six built-in question packs and persistent custom packs
+- 78 built-in question packs and persistent custom packs
 - Optional read-only Shared Displays
 - Majority debate readiness with a host override
 - Multi-round scoring, statistics, final rankings, and awards
@@ -129,7 +129,17 @@ If `PACK_ADMIN_PASSWORD` is missing, production startup fails. Development mode 
 
 ## Question packs
 
-Built-in packs are read-only source data under `server/questions/`. Custom packs are JSON files in `CUSTOM_PACKS_DIR`. Use the validated `/packs` import interface instead of manually creating files.
+Built-in packs are read-only application source: the original six packs remain under `server/questions/`, and 72 permanent JSON packs live in `packs/easy/`, `packs/medium/`, and `packs/hard/` (24 per difficulty). Together they contain 4,568 questions, including 4,496 from JSON. Commit these source files with the application. Docker copies `packs/` into the final image, outside the custom-pack volume.
+
+`server/questions/built-in-loader.ts` discovers sorted JSON filenames in those three folders once at server startup and appends them to the existing built-in registry. Adding a pack requires no TypeScript import. The folder determines difficulty; the JSON name supplies the display name, with an existing difficulty prefix/suffix removed and a single suffix added (for example, `Geography - Easy` or `Entertainment Film - Medium`). Missing names fall back to the filename.
+
+Pack IDs are `builtin-<difficulty>-<filename-slug>`. Slugs use lowercase ASCII letters, digits, and hyphens, and colliding slugs fail validation. Keep filenames and difficulty folders stable to preserve pack IDs; changing a display name does not change its ID. Question IDs use the pack ID plus a SHA-256 hash of the authored question fields, so reordering or inserting questions preserves existing IDs.
+
+The loader reuses the custom importer question schema checks while preserving authored question text, answers, alternatives, categories, and explanations. Invalid files fail startup with their path and question number. `npm run validate:packs` also checks all built-in IDs and reports repeated wording or display names; `npm run build` runs this validation automatically. Small packs use the existing availability checks: choose fewer rounds or combine packs in Mixed Game.
+
+The original General Knowledge, Geography, and History packs overlap the new packs in base name but remain separate. Difficulty suffixes distinguish their display names; there are no final display-name or ID collisions. Authored wording variants are retained: four repeated-wording pairs within the JSON packs, one across the JSON packs, and six between JSON and original packs (Brazil's official language, the smallest country, the first US president, New Zealand's capital, the Berlin Wall's fall, and octopus hearts). No-repeat selection remains based on question IDs, so separately authored wording variants can occur in the same game. Answers are not merged, including the Russia / Russian Federation variants in Geography - Easy.
+
+Custom packs remain JSON files in `CUSTOM_PACKS_DIR`. Only those files count toward `CUSTOM_PACKS_MAX_STORAGE_MB`. The `/packs` admin interface lists only custom packs; all built-in pack mutations are rejected as read-only. Use the validated `/packs` import interface for runtime custom content.
 
 Normal players receive only the safe pack metadata needed for lobby selection. They do not need admin access to select or play custom packs.
 

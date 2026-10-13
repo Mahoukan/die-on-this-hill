@@ -1,0 +1,203 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Sports",
+  "questions": [
+    {
+      "question": "At which race was the 2018 F1 Drivers Championship won?",
+      "correctAnswer": "Mexico",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Etihad Stadium is the home stadium for which team?",
+      "correctAnswer": "Manchester City",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "How many times did Martina Navratilova win the Wimbledon Singles Championship?",
+      "correctAnswer": "Nine",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "In Canadian football, scoring a rouge is worth how many points?",
+      "correctAnswer": "1",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Prior to 2018, which car company is the only Japanese company which won the 24 Hours of Le Mans?",
+      "correctAnswer": "Mazda",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "The AHL affiliate team of the Boston Bruins is named what?",
+      "correctAnswer": "Providence Bruins",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "The Mazda 787B won the 24 Hours of Le Mans in what year?",
+      "correctAnswer": "1991",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "What is the full name of the footballer \"Cristiano Ronaldo\"?",
+      "correctAnswer": "Cristiano Ronaldo dos Santos Aveiro",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "What is “The Sport of Kings”?",
+      "correctAnswer": "Horse Racing",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "What team did England beat in the semi-final stage to win in the 1966 World Cup final?",
+      "correctAnswer": "Portugal",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "What tool lends it's name to a last-stone advantage in an end in Curling?",
+      "correctAnswer": "Hammer",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Where was the Games of the XXII Olympiad held?",
+      "correctAnswer": "Moscow",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which city features all of their professional sports teams' jersey's with the same color scheme?",
+      "correctAnswer": "Pittsburgh",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which English football team is nicknamed 'The Tigers'?",
+      "correctAnswer": "Hull City",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+      "correctAnswer": "DING Ning (China)",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which is Kenesisa Bekele's personal best at marathon?",
+      "correctAnswer": "2:01:41",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which Italian footballer told Neuer where he's putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
+      "correctAnswer": "Pelle",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which male player won the gold medal of table tennis singles in 2016 Olympics Games?",
+      "correctAnswer": "Ma Long (China)",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these European cities was the first to host the modern Summer Olympic Games three times?",
+      "correctAnswer": "London",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these NHL players have never won a Hart Trophy for Regular Season MVP?",
+      "correctAnswer": "Steve Yzerman",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Russian cities did NOT contain a stadium that was used in the 2018 FIFA World Cup?",
+      "correctAnswer": "Vladivostok",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which player \"kung-fu kicked\" a Crystal Palace fan in January 1995?",
+      "correctAnswer": "Eric Cantona",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Which year was the third Super Bowl held?",
+      "correctAnswer": "1969",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Who did Drew Brees pass in all time NFL passing yards in 2018?",
+      "correctAnswer": "Peyton Manning",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Who is Manchester United's leading appearance maker?",
+      "correctAnswer": "Ryan Giggs",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Who scored the injury time winning goal in the 1999 UEFA Champions League final between Manchester United and Bayern Munich?",
+      "correctAnswer": "Ole Gunnar Solskjær",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "Who won the 1998 Daytona 500?",
+      "correctAnswer": "Dale Earnhardt",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    },
+    {
+      "question": "With which doubles partner did John McEnroe have most success?",
+      "correctAnswer": "Peter Fleming",
+      "acceptedAnswers": [],
+      "category": "Sports",
+      "explanation": ""
+    }
+  ]
+}

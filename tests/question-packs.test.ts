@@ -12,12 +12,13 @@ function roomFixture() {
   return { store, host, guest, room: store.getRoom(host.roomCode), changes };
 }
 
-test('pack and question metadata is valid, unique, and supports twelve rounds per pack', () => {
+test('pack and question metadata is valid and unique, with accurate availability for small packs', () => {
   assert.equal(new Set(QUESTION_PACKS.map((pack) => pack.id)).size, QUESTION_PACKS.length);
   assert.equal(new Set(ALL_QUESTIONS.map((question) => question.id)).size, ALL_QUESTIONS.length);
   const packIds = new Set(QUESTION_PACKS.map((pack) => pack.id));
   for (const pack of QUESTION_PACKS) {
-    assert.ok(pack.questions.length >= 12, `${pack.id} must support a 12-round game`);
+    assert.ok(pack.questions.length > 0, `${pack.id} must contain questions`);
+    if (!pack.id.startsWith('builtin-')) assert.ok(pack.questions.length >= 12, `${pack.id} must support a 12-round game`);
     assert.equal(pack.questions.every((question) => question.packId === pack.id && packIds.has(question.packId)), true);
   }
 });

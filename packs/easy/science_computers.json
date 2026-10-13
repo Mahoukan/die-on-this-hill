@@ -1,0 +1,343 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Science: Computers",
+  "questions": [
+    {
+      "question": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+      "correctAnswer": "1000",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Color model CMYK stands for?",
+      "correctAnswer": "Cyan, Magenta, Yellow, and Black",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How long is an IPv6 address?",
+      "correctAnswer": "128 bits",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many bits are commonly in a single byte?",
+      "correctAnswer": "Eight bits",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many kilobytes in one gigabyte (in decimal)?",
+      "correctAnswer": "1000000",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many values can a single byte represent?",
+      "correctAnswer": "256",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "HTML is what type of language?",
+      "correctAnswer": "Markup Language",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "If you were to code software in this language you'd only be able to type 0's and 1's.",
+      "correctAnswer": "Binary",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Hexadecimal\", what color would be displayed from the color code? \"#00FF00\"?",
+      "correctAnswer": "Green",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In any programming language, what is the most common way to iterate through an array?",
+      "correctAnswer": "'For' loops",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In computing, how many bits are in a nibble?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In computing, what does LAN stand for?",
+      "correctAnswer": "Local Area Network",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In computing, what does MIDI stand for?",
+      "correctAnswer": "Musical Instrument Digital Interface",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In networking, what does OSPF stand for?",
+      "correctAnswer": "Open Shortest Path First",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
+      "correctAnswer": "Final",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In web design, what does CSS stand for?",
+      "correctAnswer": "Cascading Style Sheet",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "On a standard American QWERTY keyboard, what symbol will you enter if you hold the shift key and press 1?",
+      "correctAnswer": "Exclamation Mark",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "On Twitter, what was the original character limit for a Tweet?",
+      "correctAnswer": "140",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The C programming language was created by this American computer scientist. ",
+      "correctAnswer": "Dennis Ritchie",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The Electron computer was released in Britain during 1983 for the home computing market, by which company? ",
+      "correctAnswer": "Acorn Computers",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The numbering system with a radix of 16 is more commonly referred to as ",
+      "correctAnswer": "Hexidecimal",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The programming language 'Swift' was created to replace what other programming language?",
+      "correctAnswer": "Objective-C",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
+      "correctAnswer": "HD Graphics 500",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The Windows OS was delevoped by which company?",
+      "correctAnswer": "Microsoft",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "This mobile OS held the largest market share in 2012.",
+      "correctAnswer": "iOS",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What amount of bits commonly equals one byte?",
+      "correctAnswer": "8",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does CPU stand for?",
+      "correctAnswer": "Central Processing Unit",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does GHz stand for?",
+      "correctAnswer": "Gigahertz",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does LTS stand for in the software market?",
+      "correctAnswer": "Long Term Support",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does SSD stand for?",
+      "correctAnswer": "Solid State Drive",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the \"MP\" stand for in MP3?",
+      "correctAnswer": "Moving Picture",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the computer software acronym JVM stand for?",
+      "correctAnswer": "Java Virtual Machine",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the Prt Sc button do?",
+      "correctAnswer": "Captures what's on the screen and copies it to your clipboard",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the term USB stand for?",
+      "correctAnswer": "Universal Serial Bus",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the code name for the mobile operating system Android 7.0?",
+      "correctAnswer": "Nougat",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the commonly used keyboard shortcut for the 'Copy' function on Windows OS?",
+      "correctAnswer": "Ctrl + C",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the domain name for the country Tuvalu?",
+      "correctAnswer": ".tv",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most preferred image format used for logos in the Wikimedia database?",
+      "correctAnswer": ".svg",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Layer 7 of the OSI model?",
+      "correctAnswer": "Application",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What kind of memory is used on memory cache?",
+      "correctAnswer": "SRAM",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What language does Node.js use?",
+      "correctAnswer": "JavaScript",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What programming language was GitHub written in?",
+      "correctAnswer": "Ruby",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "When Gmail first launched, how much storage did it provide for your email?",
+      "correctAnswer": "1GB",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+      "correctAnswer": "Apple",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which computer hardware device provides an interface for all other connected devices to communicate?",
+      "correctAnswer": "Motherboard",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which computer language would you associate Django framework with?",
+      "correctAnswer": "Python",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which programming language shares its name with an island in Indonesia?",
+      "correctAnswer": "Java",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which SQL keyword is used to fetch data from a database?",
+      "correctAnswer": "SELECT",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    }
+  ]
+}

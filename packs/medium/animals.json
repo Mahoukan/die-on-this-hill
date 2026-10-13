@@ -1,0 +1,210 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Animals",
+  "questions": [
+    {
+      "question": "\"Decapods\" are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
+      "correctAnswer": "Krill",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "A carnivorous animal eats flesh, what does a nucivorous animal eat?",
+      "correctAnswer": "Nuts",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "About how much of their body weight in food do sea otters eat every day?",
+      "correctAnswer": "25%",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Cashmere is the wool from which kind of animal?",
+      "correctAnswer": "Goat",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "For what reason would a spotted hyena \"laugh\"?",
+      "correctAnswer": "Nervousness",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "The dish Fugu, is made from what family of fish?",
+      "correctAnswer": "Pufferfish",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "The now extinct species \"Thylacine\" was native to where?",
+      "correctAnswer": "Tasmania, Australia",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What are rhino's horn made of?",
+      "correctAnswer": "Keratin",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What are the scales on all snakes and most lizards are made of?",
+      "correctAnswer": "Keratin",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What color/colour is a polar bear's skin?",
+      "correctAnswer": "Black",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What does \"hippopotamus\" mean and in what langauge?",
+      "correctAnswer": "River Horse (Greek)",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What dog breed is one of the oldest breeds of dog and has flourished since before 400 BCE.",
+      "correctAnswer": "Pugs",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the average lifespan of a domestic rabbit?",
+      "correctAnswer": "8-12 years",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the collective noun for bears?",
+      "correctAnswer": "Sloth",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the collective noun for rats?",
+      "correctAnswer": "Mischief",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the common term for bovine spongiform encephalopathy (BSE)?",
+      "correctAnswer": "Mad Cow disease",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the fastest animal?",
+      "correctAnswer": "Peregrine Falcon",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name for a male bee that comes from an unfertilized egg?",
+      "correctAnswer": "Drone",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the family that the domestic cat is a member of?",
+      "correctAnswer": "Felidae",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the national bird of Bahrain?",
+      "correctAnswer": "Bulbul",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name for the \"Polar Bear\"?",
+      "correctAnswer": "Ursus Maritimus",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name of the Common Chimpanzee?",
+      "correctAnswer": "Pan troglodytes",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the world's longest venomous snake?",
+      "correctAnswer": "King Cobra",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What type of animal is a natterjack?",
+      "correctAnswer": "Toad",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which animal was part of an Russian domestication experiment in 1959?",
+      "correctAnswer": "Foxes",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which dog breed is named after a region in Croatia",
+      "correctAnswer": "Dalmatian",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a venomous snake?",
+      "correctAnswer": "Reticulated python",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is true when alligators are behaving territorially?",
+      "correctAnswer": "They bellow while showing their tail and neck",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these species is not extinct?",
+      "correctAnswer": "Komodo dragon",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Science: Computers",
+  "questions": [
+    {
+      "question": "According to DeMorgan's Theorem, the Boolean expression (AB)' is equivalent to:",
+      "correctAnswer": "A' + B'",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "America Online (AOL) started out as which of these online service providers?",
+      "correctAnswer": "Quantum Link",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Australia, Japan, and Southeast Asia are in which ITU Region?",
+      "correctAnswer": "Region 3",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "CMOS is tech used for constructing integrated circuits. What does CMOS stand for?",
+      "correctAnswer": "Complementary metal–oxide–semiconductor",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many Hz does the video standard PAL support?",
+      "correctAnswer": "50",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Lenovo acquired IBM's personal computer division, including the ThinkPad line of laptops and tablets, in what year?",
+      "correctAnswer": "2005",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?",
+      "correctAnswer": "Cheetah",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The acronym \"RIP\" stands for which of these?",
+      "correctAnswer": "Routing Information Protocol",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The Harvard architecture for micro-controllers added which additional bus?",
+      "correctAnswer": "Instruction",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?",
+      "correctAnswer": "Micronesia",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the International System of Quantities refer 1024 bytes as?",
+      "correctAnswer": "Kibibyte",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What internet protocol was documented in RFC 1459?",
+      "correctAnswer": "IRC",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?",
+      "correctAnswer": "Coffee Lake",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the maximum value of a 32-bit signed binary integer?",
+      "correctAnswer": "2,147,483,647",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?",
+      "correctAnswer": "Transport",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+      "correctAnswer": "Quantum Teleportation",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What major programming language does Unreal Engine 4 use?",
+      "correctAnswer": "C++",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What port does HTTP run on?",
+      "correctAnswer": "80",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What type of sound chip does the Super Nintendo Entertainment System (SNES) have?",
+      "correctAnswer": "ADPCM Sampler",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What vulnerability ranked #1 on the OWASP Top 10 in 2013?",
+      "correctAnswer": "Injection ",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first company to use the term \"Golden Master\"?",
+      "correctAnswer": "Apple",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the first Bulgarian personal computer?",
+      "correctAnswer": "IMKO-1",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the security vulnerability found in Bash in 2014?",
+      "correctAnswer": "Shellshock",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which data structure does FILO apply to?",
+      "correctAnswer": "Stack",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which kind of algorithm is Ron Rivest not famous for creating?",
+      "correctAnswer": "Secret sharing scheme",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following computer components can be built using only NAND gates?",
+      "correctAnswer": "ALU",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a computer science algorithm?",
+      "correctAnswer": "Float Sort",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the oldest of these computers by release date?",
+      "correctAnswer": "TRS-80",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following physical typologies are used with Ethernet Networks?",
+      "correctAnswer": "Star",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Cherry MX mechanical keyboard switches is both tactile and clicky?",
+      "correctAnswer": "Cherry MX Blue",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a key value of Agile software development?",
+      "correctAnswer": "Comprehensive documentation",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a layer in the OSI model for data communications?",
+      "correctAnswer": "Connection Layer",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these names was an actual codename for a cancelled Microsoft project?",
+      "correctAnswer": "Neptune",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?",
+      "correctAnswer": "Heartbleed",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which RAID array type is associated with data mirroring?",
+      "correctAnswer": "RAID 1",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Who invented the \"Spanning Tree Protocol\"?",
+      "correctAnswer": "Radia Perlman",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the founder of Palantir?",
+      "correctAnswer": "Peter Thiel",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the original author of the realtime physics engine called PhysX?",
+      "correctAnswer": "NovodeX",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    }
+  ]
+}

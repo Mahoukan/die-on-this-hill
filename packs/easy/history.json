@@ -1,0 +1,560 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - History",
+  "questions": [
+    {
+      "question": "A collection of Sanskrit hymns and verses known as the Vedas are sacred texts in what religion?",
+      "correctAnswer": "Hinduism",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Abolitionist John Brown raided the arsenal in which Virginia Town?",
+      "correctAnswer": "Harper's Ferry",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "According to legend, the ancient Greeks constructed a huge wooden model of which animal to gain entrance to Troy?",
+      "correctAnswer": "Horse",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During WWII, in 1945, the United States dropped atomic bombs on the two Japanese cities of Hiroshima and what other city?",
+      "correctAnswer": "Nagasaki",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How long did World War II last?",
+      "correctAnswer": "6 years",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many manned moon landings have there been?",
+      "correctAnswer": "6",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many Sister Ships were related to the TItanic?",
+      "correctAnswer": "2",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How old was Adolf Hitler when he died?",
+      "correctAnswer": "56",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How was Socrates executed?",
+      "correctAnswer": "Poison",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1453, which important city fell?",
+      "correctAnswer": "Constantinople",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1720, England was in massive debt and became involved in the South Sea Bubble. Who was the main mastermind behind it?",
+      "correctAnswer": "John Blunt",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1939, Britain and France declared war on Germany after it invaded which country?",
+      "correctAnswer": "Poland",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the Great Northern War, between Russia and Sweden, end?",
+      "correctAnswer": "1721",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the nuclear power plant in Chernobyl melt down?",
+      "correctAnswer": "1986",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the Wall Street Crash take place?",
+      "correctAnswer": "1929",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the M1911 pistol designed?",
+      "correctAnswer": "1911",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which country was the Statue of Liberty built and exported to the United States of America?",
+      "correctAnswer": "France",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which war did the atomic bombings of Hiroshima and Nagasaki occur?",
+      "correctAnswer": "World War II",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which year did the Invasion of Kuwait by Iraq occur?",
+      "correctAnswer": "1990",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which year was Nelson Mandela released from prison",
+      "correctAnswer": "1990",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "King Henry VIII was the second monarch of which European royal house?",
+      "correctAnswer": "Tudor",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "On what street did the 1666 Great Fire of London start?",
+      "correctAnswer": "Pudding Lane",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Pol Pot was the former dictator of which country?",
+      "correctAnswer": "Cambodia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The \"Trail of Tears\" was a result of which United States President's Indian Removal Policy?",
+      "correctAnswer": "Andrew Jackson",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The collapse of the Soviet Union took place in which year?",
+      "correctAnswer": "1991",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The idea of Socialism was articulated and advanced by whom?",
+      "correctAnswer": "Karl Marx",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The original Roman alphabet lacked the following letters EXCEPT:",
+      "correctAnswer": "X",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Ottoman Empire was dissolved after their loss in which war?",
+      "correctAnswer": "World War I",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The RMS Titanic sunk during her maiden voyage from Southampton, England to which American city?",
+      "correctAnswer": "New York City",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "These two countries held a commonwealth from the 16th to 18th century.",
+      "correctAnswer": "Poland and Lithuania",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "To what political party did Abraham Lincoln belong when elected POTUS?",
+      "correctAnswer": "Republican",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What battle was the longest in World War I, lasting approximately 303 days?",
+      "correctAnswer": "Battle of Verdun ",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What country joined the EU in 2013?",
+      "correctAnswer": "Croatia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What does the United States of America celebrate during the 4th of July?",
+      "correctAnswer": "The signing of the Declaration of Independence",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the historical name of Sri Lanka?",
+      "correctAnswer": "Ceylon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is widely considered to be the oldest civilization known to mankind?",
+      "correctAnswer": "Sumeria",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What war did George Orwell famously volunteer for and nearly died in?",
+      "correctAnswer": "Spanish Civil War",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was Manfred von Richthofen's nickname?",
+      "correctAnswer": "The Red Baron",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first sport to have been played on the moon?",
+      "correctAnswer": "Golf",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name commonly given to the ancient trade routes that connected the East and West of Eurasia?",
+      "correctAnswer": "Silk Road",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the official German currency until 2002?",
+      "correctAnswer": "Mark",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was William Frederick Cody better known as?",
+      "correctAnswer": "Buffalo Bill",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the Titanic sink?",
+      "correctAnswer": "1912",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did World War I begin?",
+      "correctAnswer": "1914",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did World War II end?",
+      "correctAnswer": "1945",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the Battle of the Somme begin?",
+      "correctAnswer": "July 1st, 1916",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the Byzantine Empire collapse?",
+      "correctAnswer": "1453",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When is the Ides of March?",
+      "correctAnswer": "March 15",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was Google founded?",
+      "correctAnswer": "September 4, 1998",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Where did first known lesbian rights organization in the United States, Daughters of Bilitis, start?",
+      "correctAnswer": "San Francisco",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country was Josef Stalin born in?",
+      "correctAnswer": "Georgia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which famous military commander marched an army, which included war elephants, over the Alps during the Second Punic War?",
+      "correctAnswer": "Hannibal",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which famous world leader is famed for the saying, \"Let them eat cake\", yet is rumored that he/she never said it at all?",
+      "correctAnswer": "Marie Antoinette",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which game was the Game of the Year in 2018?",
+      "correctAnswer": "God of War",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which German field marshal was known as the `Desert Fox`?",
+      "correctAnswer": "Erwin Rommel",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which modern country is known as \"The Graveyard of Empires\"?",
+      "correctAnswer": "Afghanistan",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which modern day country is the region that was known as Phrygia in ancient times?",
+      "correctAnswer": "Turkey",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following African countries was most successful in resisting colonization?",
+      "correctAnswer": "Ethiopia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following ancient peoples was NOT classified as Hellenic (Greek)?",
+      "correctAnswer": "Illyrians",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries was not an axis power during World War II?",
+      "correctAnswer": " Soviet Union",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following was Brazil was a former colony under?",
+      "correctAnswer": "Portugal",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries remained neutral during World War II?",
+      "correctAnswer": "Switzerland",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these landmarks is not included in the original 'Seven Wonders of the Ancient World'?",
+      "correctAnswer": "Great Wall of China",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these countries was NOT in the Central Powers during WWI?",
+      "correctAnswer": "Spain",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these tanks was designed and operated by the United Kingdom?",
+      "correctAnswer": "Tog II",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these was not a beach landing site in the Invasion of Normandy?",
+      "correctAnswer": "Silver",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which South American country fought Great Britain over the Falkland Islands in 1982?",
+      "correctAnswer": "Argentina",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who discovered Penicillin?",
+      "correctAnswer": "Alexander Flemming",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who led the Communist Revolution of Russia?",
+      "correctAnswer": "Vladimir Lenin",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who rode on horseback to warn the Minutemen that the British were coming during the U.S. Revolutionary War?",
+      "correctAnswer": "Paul Revere",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who succeded Josef Stalin as the leader of the Soviet Union?",
+      "correctAnswer": "Nikita Krushchev",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was among those killed in the 2010 Smolensk, Russia plane crash tragedy?",
+      "correctAnswer": "The Polish President",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the Confederate general in the American Civil War?",
+      "correctAnswer": "Robert E. Lee",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first American in space?",
+      "correctAnswer": "Alan Shephard",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first president of Kenya?",
+      "correctAnswer": "Jomo Kenyatta",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first president of the United States?",
+      "correctAnswer": "George Washington",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first prime minister of Canada?",
+      "correctAnswer": "John Macdonald",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first ruler of Haiti after the country had gained its independence?",
+      "correctAnswer": "Jean-Jacques Dessalines",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the Prime Minister of Japan when Japan declared war on the US?",
+      "correctAnswer": "Hideki Tojo",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    }
+  ]
+}

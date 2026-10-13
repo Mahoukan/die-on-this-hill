@@ -1,0 +1,525 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Science & Nature",
+  "questions": [
+    {
+      "question": "\"The Big Bang Theory\" was first theorized by a priest of what religious ideology?",
+      "correctAnswer": "Catholic",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "A comet's gaseous envelope (which creates the tail) is called what?",
+      "correctAnswer": "The coma",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "All of the following human genetic haplogroup names are shared between Y-chromosome and mitochondrial DNA haplogroups EXCEPT:",
+      "correctAnswer": "Haplogroup U",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "An organic compound is considered an alcohol if it has what functional group?",
+      "correctAnswer": "Hydroxyl",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Autosomal-dominant Compelling Helio-Ophthalmic Outburst syndrome is the need to do what when seeing the Sun?",
+      "correctAnswer": "Sneeze",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Botanically speaking, which of these fruits is NOT a berry?",
+      "correctAnswer": "Strawberry",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Burning which of these metals will produce a bright white flame?",
+      "correctAnswer": "Magnesium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Coulrophobia is the irrational fear of what?",
+      "correctAnswer": "Clowns",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Folic acid is the synthetic form of which vitamin?",
+      "correctAnswer": "Vitamin B",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How long is a light-year?",
+      "correctAnswer": "9.461 Trillion Kilometres",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many legs is it biologically impossible for a centipede to have?",
+      "correctAnswer": "100",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many objects are equivalent to one mole?",
+      "correctAnswer": "6.022 x 10^23",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many protons are in an oxygen atom?",
+      "correctAnswer": "Eight",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many types of quarks are there in the standard model of physics?",
+      "correctAnswer": "6",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How much radiation does a banana emit?",
+      "correctAnswer": "0.1 Microsievert",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "If you planted the seeds of Quercus robur what would grow?",
+      "correctAnswer": "Trees",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In physics, conservation of energy and conservation of momentum are both consequences of which of the following?",
+      "correctAnswer": "Noether's Theorem",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In quantum physics, which of these theorised sub-atomic particles has yet to be observed?",
+      "correctAnswer": "Graviton",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In the Scoville scale, what is the hottest chemical?",
+      "correctAnswer": "Resiniferatoxin",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Muscle fiber is constructed of bundles small long organelles called what?",
+      "correctAnswer": "Myofibrils",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "On the Beaufort Scale of wind force, what wind name is given to number 8?",
+      "correctAnswer": "Gale",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The 'Islets of Langerhans' is found in which human organ?",
+      "correctAnswer": "Pancreas",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The core of the Sun can reach which temperature?",
+      "correctAnswer": "27° Million F (15° Million C)",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The Western Lowland Gorilla is scientifically know as?",
+      "correctAnswer": "Gorilla Gorilla Gorilla",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The word \"science\" stems from the word \"scire\" meaning what?",
+      "correctAnswer": "To know",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What causes the sound of a heartbeat?",
+      "correctAnswer": "Closure of the heart valves",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+      "correctAnswer": "Shin Splints",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What does the scientific name of the Cambrian-Period sea creature Anomalocaris mean?",
+      "correctAnswer": "Abnormal Shrimp",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What does the term \"isolation\" refer to in microbiology?",
+      "correctAnswer": "The separation of a strain from a natural, mixed population of living microbes",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What element on the periodic table has 92 electrons?",
+      "correctAnswer": "Uranium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What genetic disease is caused by having an extra Y chromosome (XYY)?",
+      "correctAnswer": "Jacob's Syndrome",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is \"Stenoma\"?",
+      "correctAnswer": "A genus of moths",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is considered the rarest form of color blindness?",
+      "correctAnswer": "Blue",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is isobutylphenylpropanoic acid more commonly known as?",
+      "correctAnswer": "Ibuprofen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the molecular formula of Glucose?",
+      "correctAnswer": "C6H12O6",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the molecular formula of Ozone?",
+      "correctAnswer": "O3",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most potent toxin known?",
+      "correctAnswer": "Botulinum toxin",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name for the auditory illusion of a note that seems to be rising infinitely?",
+      "correctAnswer": "Shepard Tone",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the same in Celsius and Fahrenheit?",
+      "correctAnswer": "-40",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name for the extinct hominin known as \"Lucy\"?",
+      "correctAnswer": "Australopithecus Afarensis",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name of the knee cap?",
+      "correctAnswer": "Patella",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name of the red fox?",
+      "correctAnswer": "Vulpes Vulpes",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the standard SI unit for luminous intensity?",
+      "correctAnswer": "Candela",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the unit of electrical inductance?",
+      "correctAnswer": "Henry",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What nucleotide pairs with guanine?",
+      "correctAnswer": "Cytosine",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?",
+      "correctAnswer": "Gauss's Law",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first organic compound to be synthesized from inorganic compounds?",
+      "correctAnswer": "Urea",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Where in the human body is the Pineal Gland located?",
+      "correctAnswer": "Brain",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the Gluteus Maximus muscle located?",
+      "correctAnswer": "Butt",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which constellation contains the center of the Milky Way?",
+      "correctAnswer": "Sagittarius",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which country first successfully farm-hatched and raised bluefin tuna in 1979?",
+      "correctAnswer": "Japan",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which horizon in a soil profile consists of bedrock?",
+      "correctAnswer": "R",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which is not a type of neuron?",
+      "correctAnswer": "Perceptual Neuron",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the chemical name of H2O?",
+      "correctAnswer": "Dihydrogen Monoxide",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which Landsat Satellite currently has had the longest operational life?",
+      "correctAnswer": "Landsat 5",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which Landsat Satellite failed to reach orbit?",
+      "correctAnswer": "Landsat 6",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
+      "correctAnswer": "Cretaceous-Paleogene",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which moon is the only satellite in our solar system to possess a dense atmosphere?",
+      "correctAnswer": "Titan",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following are cells of the adaptive immune system?",
+      "correctAnswer": "Cytotoxic T cells",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following elements is typically used in the doping of the semiconductor silicon?",
+      "correctAnswer": "Boron",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is a major muscle of the back?",
+      "correctAnswer": "Trapezius",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is considered classical conditioning?",
+      "correctAnswer": "Pavlov's dog experiments",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a real element?",
+      "correctAnswer": "Vitrainium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a word used to describe an earthquake?",
+      "correctAnswer": "Drop-slide",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the term for \"surgical complications resulting from surgical sponges left inside the patient's body?",
+      "correctAnswer": "Gossypiboma",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
+      "correctAnswer": "Acetone",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
+      "correctAnswer": "Polyvinylchloride (PVC) ",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these animals belongs in class Chondrichthyes?",
+      "correctAnswer": "Great white shark",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these chemical compounds is NOT found in gastric acid?",
+      "correctAnswer": "Sulfuric acid",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is a semiconductor amplifying device?",
+      "correctAnswer": "transistor",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is a stop codon in DNA?",
+      "correctAnswer": "TAA",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is used to show that Earth spins on an axis? ",
+      "correctAnswer": "Foucault Pendulum ",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these is scientific term for \"Brain Freeze\"?",
+      "correctAnswer": "Sphenopalatine Ganglioneuralgia",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which scientific unit is named after an Italian nobleman?",
+      "correctAnswer": "Volt",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    }
+  ]
+}

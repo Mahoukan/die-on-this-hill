@@ -1,0 +1,126 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Art",
+  "questions": [
+    {
+      "question": "Albrecht Dürer's birthplace and place of death were in...",
+      "correctAnswer": "Nürnberg",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "How many paint and pastel versions of \"The Scream\" is Norwegian painter Edvard Munch believed to have produced?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Painter Piet Mondrian (1872 - 1944) was a part of what movement?",
+      "correctAnswer": "Neoplasticism",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Paul Gauguin moved to which country in 1895?",
+      "correctAnswer": "Tahiti",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "The painting \"Guernica\" by Pablo Picasso expressed emotions of dread in response to which war?",
+      "correctAnswer": "Spanish Civil War",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "The painting \"The Starry Night\" by Vincent van Gogh was part of which art movement?",
+      "correctAnswer": "Post-Impressionism",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What French sculptor designed the Statue of Liberty? ",
+      "correctAnswer": "Frédéric Auguste Bartholdi",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What nationality was the famous artist Pablo Picasso?",
+      "correctAnswer": "Spanish",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What nationality was the famous artist Van Gogh?",
+      "correctAnswer": "Dutch",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first successful and commercially viable photographic technique?",
+      "correctAnswer": "The Daguerreotype",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What was the major distinction between the English and French Gothic styles of architecture?",
+      "correctAnswer": "Fan vaulting",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What year did Albrecht Dürer create the painting \"The Young Hare\"?",
+      "correctAnswer": "1502",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the Mona Lisa finished?",
+      "correctAnswer": "1504",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "When was Salvador Dali's painting, \"The Persistence of Memory,\" completed?",
+      "correctAnswer": "1931",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which art movement was Pablo Picasso known for co-founding?",
+      "correctAnswer": "Cubism",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not an additional variation of the color purple?",
+      "correctAnswer": "Kobicha",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted \"American Gothic\"?",
+      "correctAnswer": "Grant Wood",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    }
+  ]
+}

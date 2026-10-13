@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "tsx server.ts",
+    "validate:packs": "tsx scripts/validate-built-in-packs.ts",
+    "prebuild": "npm run validate:packs",
     "build": "next build --webpack",
     "start": "tsx server.ts --production",
     "typecheck": "tsc --noEmit",

@@ -1,0 +1,749 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Science & Nature",
+  "questions": [
+    {
+      "question": "A positron is an antiparticle of a what?",
+      "correctAnswer": "Electron",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "About how old is Earth?",
+      "correctAnswer": "4.5 Billion Years",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "After which Danish city is the 72th element on the periodic table named?",
+      "correctAnswer": "Copenhagen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "All the following metal elements are liquids at or near room temperature EXCEPT:",
+      "correctAnswer": "Beryllium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
+      "correctAnswer": "Nitrogen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+      "correctAnswer": "Light",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Approximately how long is a year on Uranus?",
+      "correctAnswer": "84 Earth years",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Approximately what percentage of Earth's atmosphere is Oxygen?",
+      "correctAnswer": "21%",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "At what depth should you make a decompression stop, or safety stop, on a typical scuba dive?",
+      "correctAnswer": "15 Feet / 5 Meters",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "At what temperature does water boil?",
+      "correctAnswer": "212°F",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Au on the Periodic Table refers to which element?",
+      "correctAnswer": "Gold",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Deionized water is water with which of the following removed?",
+      "correctAnswer": "Iron",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Deuterium is an isotope of which element?",
+      "correctAnswer": "Hydrogen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Down Syndrome is usually caused by an extra copy of which chromosome?",
+      "correctAnswer": "21",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Gannymede is the largest moon of which planet?",
+      "correctAnswer": "Jupiter",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many baby/milk teeth does a human child have in total?",
+      "correctAnswer": "20",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many degrees Fahrenheit is 100 degrees Celsius? ",
+      "correctAnswer": "212",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many hearts does an octopus have?",
+      "correctAnswer": "Three",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many officially recognized dwarf planets in the solar system are named after Polynesian deities?",
+      "correctAnswer": "2",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How many teeth does the average adult mouth have (except for wisdom teeth)?",
+      "correctAnswer": "32",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "How old is the universe?",
+      "correctAnswer": "13.8 Billion Years",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In aeronautics, flaps and slats are used to control what on an aircraft?",
+      "correctAnswer": "Lift",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In Chemistry, how many isomers does Butanol (C4H9OH) have?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In human biology, a circadium rhythm relates to a period of roughly how many hours?",
+      "correctAnswer": "24",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "In Psychology, which need appears highest in the \"Maslow's hierarchy of needs\" pyramid?",
+      "correctAnswer": "Esteem",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Myopia is the scientific term for which condition?",
+      "correctAnswer": "Shortsightedness",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "On the periodic table of elements, what is the symbol for Tin?",
+      "correctAnswer": "Sn",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "On which mission did the Space Shuttle Columbia break up upon re-entry?",
+      "correctAnswer": "STS-107",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Tetsuya Fujita was a scientist that developed the scale for which natural disaster?",
+      "correctAnswer": "Tornadoes",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The \"Tibia\" is found in which part of the body?",
+      "correctAnswer": "Leg",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.",
+      "correctAnswer": "low, all",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The human right lung has how many lobes?",
+      "correctAnswer": "3",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The humerus, paired radius, and ulna come together to form what joint?",
+      "correctAnswer": "Elbow",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The medial meniscus forms which part of what joint in the human body?",
+      "correctAnswer": "Knee",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The medical condition osteoporosis affects which part of the body?",
+      "correctAnswer": "Bones",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",
+      "correctAnswer": "Uranus",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "The Sun consists of mostly which two elements?",
+      "correctAnswer": "Hydrogen & Helium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+      "correctAnswer": "8 Minutes",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What are human nails made of?",
+      "correctAnswer": "Keratin",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What are the smallest blood vessels in the human body?",
+      "correctAnswer": "Capillaries",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What causes Lyme disease?",
+      "correctAnswer": "A bacteria",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What cell organelle is known as \"the powerhouse of the cell?\"",
+      "correctAnswer": "Mitochondria",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What do you study if you are studying entomology?",
+      "correctAnswer": "Insects",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What does CPR, the emergency procedure to assist someone who has suffered cardiac arrest, stand for?",
+      "correctAnswer": "Cardiopulmonary resuscitation",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What does the yellow diamond on the NFPA 704 fire diamond represent?",
+      "correctAnswer": "Reactivity",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is an alternative name for multiple personality disorder?",
+      "correctAnswer": "Dissociative identity disorder",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is Hypernatremia?",
+      "correctAnswer": "Increase in blood sodium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is radiation measured in?",
+      "correctAnswer": "Gray ",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the atomic number of the element Strontium?",
+      "correctAnswer": "38",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the atomic number of Uranium ",
+      "correctAnswer": "92",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the chemical formula for ammonia?",
+      "correctAnswer": "NH3",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the chemical symbol for lead?",
+      "correctAnswer": "Pb",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the colour of unoxidized blood?",
+      "correctAnswer": "Red",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the half-life of Uranium-235?",
+      "correctAnswer": "703,800,000 years",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest living organism currently known to man?",
+      "correctAnswer": "Honey Fungus",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Linnean name of the domestic apple tree?",
+      "correctAnswer": "Malus pumila",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the lowest layer of the Earth's atmosphere named?",
+      "correctAnswer": "Troposphere",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the mathematical formula of Ohm's law?",
+      "correctAnswer": "V = I*R",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the medical term for low blood sugar?",
+      "correctAnswer": "Hypoglycemia",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the molecular formula of the active component of chili peppers(Capsaicin)?",
+      "correctAnswer": "C18H27NO3",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?",
+      "correctAnswer": "Dunning-Kruger effect",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the Supermassive Black Hole in the centre of the Milky Way?",
+      "correctAnswer": "Sagittarius A*",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific term for 'taste'?",
+      "correctAnswer": "Gustatory Perception",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the standard SI unit for electric current?",
+      "correctAnswer": "Ampere",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the study of the cells and tissues of plants and animals?",
+      "correctAnswer": "Histology",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What is the unit of electrical capacitance?",
+      "correctAnswer": "Farad",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What medication was once commonly used as rat poison?",
+      "correctAnswer": "Coumadin",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What mineral has the lowest number on the Mohs scale?",
+      "correctAnswer": "Talc",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What part of the body produces insulin?",
+      "correctAnswer": "Pancreas",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What part of the brain takes its name from the Greek for seahorse?",
+      "correctAnswer": "Hippocampus",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What polymer is used to make CDs, safety goggles and riot shields?",
+      "correctAnswer": "Polycarbonate",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What stage of development do the majority of eukaryotic cells remain in for most of their life?",
+      "correctAnswer": "Interphase",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What term is best associated with Sigmund Freud?",
+      "correctAnswer": "Psychoanalysis",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What was the category of the 2005 hurricane, Hurricane Katrina, in the Saffir-Simpson hurricane wind scale?",
+      "correctAnswer": "Category 5",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first living creature in space?",
+      "correctAnswer": "Fruit Flies ",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "When the Falcon Heavy was launched on it's test flight, what was the only part of the operation that failed?",
+      "correctAnswer": "Center Core Landing",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "When was the first mammal successfully cloned?",
+      "correctAnswer": "1996",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Where did the dog breed \"Chihuahua\" originate?",
+      "correctAnswer": "Mexico",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Where did the Great Storm of 1987 make landfall at, first?",
+      "correctAnswer": "Cornwall",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which chemical element has the lowest boiling point?",
+      "correctAnswer": "Helium",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which chemical element was originally known as Alabamine?",
+      "correctAnswer": "Astatine",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which color cannot be produced in Roses, even through genetic alteration?",
+      "correctAnswer": "Blue",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which continent do sweet potatoes originally come from?",
+      "correctAnswer": "South America",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which desert is the only desert in the world where the \"Saguaro\" cactus grows indigenously?",
+      "correctAnswer": "The Sonoran Desert",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which element has the atomic number of 7?",
+      "correctAnswer": "Nitrogen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which NASA Space Shuttle broke apart during atmospheric re-entry on February 1, 2003? ",
+      "correctAnswer": "Columbia",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a passive electrical component?",
+      "correctAnswer": "Transistor",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the male pollen-producing reproductive part of a flower?",
+      "correctAnswer": "Stamen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following men does not have a chemical element named after him?",
+      "correctAnswer": "Sir Isaac Newton",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following spacecraft never touched the moon?",
+      "correctAnswer": "Mariner 4",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these choices is not one of the phases of mitosis?",
+      "correctAnswer": "Diplophase",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these elements on the Periodic Table is a Noble Gas?",
+      "correctAnswer": "Neon",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is a type of stretch/deep tendon reflex?",
+      "correctAnswer": "Ankle jerk reflex",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a bone found in the human arm?",
+      "correctAnswer": "Tibia",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a part of the structure of a typical neuron?",
+      "correctAnswer": "Islets of Langerhans",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these stars is the largest?",
+      "correctAnswer": "UY Scuti",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these two plates are best know for forming earthquakes and tsunami's? ",
+      "correctAnswer": "Convergent Plate Boundaries/Oceanic Crust",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these scientists conducted the Gold Foil Experiment which concluded that atoms are mostly made of empty space?",
+      "correctAnswer": "Ernest Rutherford",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which part of the body does glaucoma affect?",
+      "correctAnswer": "Eyes",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which planet did the \"Viking 1\" spacecraft send surface images of, starting in 1976?",
+      "correctAnswer": "Mars",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which planet in the Solar System is the closest to the Sun?",
+      "correctAnswer": "Mercury",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which portion of the Marijuana plant produces the psychoactive substance known as THC?",
+      "correctAnswer": "Female Flower",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which psychological term refers to the stress of holding contrasting beliefs?",
+      "correctAnswer": "Cognitive Dissonance",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Which Swiss psychologist is synonymous with the concepts of introvert and extrovert personalities?",
+      "correctAnswer": "Carl Jung",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Who developed the first successful polio vaccine in the 1950s?",
+      "correctAnswer": "Jonas Salk",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    },
+    {
+      "question": "Who made the discovery of X-rays?",
+      "correctAnswer": "Wilhelm Conrad Röntgen",
+      "acceptedAnswers": [],
+      "category": "Science & Nature",
+      "explanation": ""
+    }
+  ]
+}

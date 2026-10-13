@@ -1,0 +1,133 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Entertainment: Board Games",
+  "questions": [
+    {
+      "question": "Carcassonne is based on which French town?",
+      "correctAnswer": "Carcassonne",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "How many dice are used in the game of Yahtzee?",
+      "correctAnswer": "Five",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "How many dots are on a single die?",
+      "correctAnswer": "21",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "How many pieces are there on the board at the start of a game of chess?",
+      "correctAnswer": "32",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "How many spaces are there on a standard Monopoly board?",
+      "correctAnswer": "40",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In a standard game of Monopoly, what colour are the two cheapest properties?",
+      "correctAnswer": "Brown",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In board games, an additional or ammended rule that applies to a certain group or place is informally known as a \"what\" rule?",
+      "correctAnswer": "House",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In chess, which is a characteristic of the King's Gambit?",
+      "correctAnswer": "Sacrificing a pawn",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Dungeons and Dragons (5th edition), what stat do you normally add onto your initiative die roll?",
+      "correctAnswer": "Dexterity",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In which year was the pen and paper RPG \"Deadlands\" released?",
+      "correctAnswer": "1996",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "On a standard Monopoly board, which square is diagonally opposite 'Go'? ",
+      "correctAnswer": "Free Parking",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "The board game Monopoly takes its street names from which real American city?",
+      "correctAnswer": "Atlantic City, New Jersey",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What is the maximum level you can have in a single class in Dungeons and Dragons (5e)?",
+      "correctAnswer": "20",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "When was the board game Twister, released to the public?",
+      "correctAnswer": "April 1966",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a class in Dungeons and Dragons 5e?",
+      "correctAnswer": "Engineer ",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these board games do NOT utilize standard 6-sided dice?",
+      "correctAnswer": "The Game of Life",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these games includes the phrase \"Do not pass Go, do not collect $200\"?",
+      "correctAnswer": "Monopoly",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these is not a real game in the Dungeons & Dragons series?",
+      "correctAnswer": "Extreme Dungeons & Dragons",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    }
+  ]
+}

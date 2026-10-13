@@ -1,0 +1,105 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Science: Gadgets",
+  "questions": [
+    {
+      "question": "The term \"battery\" to describe an electrical storage device was coined by?",
+      "correctAnswer": "Benjamin Franklin",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What does GPS stand for?",
+      "correctAnswer": "Global Positioning System",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What does SSD stand for in the context of computer storage?",
+      "correctAnswer": " Solid State Drive",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of a simple machine that is made up of a stiff arm that can move freely around a fixed point?",
+      "correctAnswer": "Lever",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What is the SI unit for resistance?",
+      "correctAnswer": "Ohms",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What round is a classic AK-47 chambered in?",
+      "correctAnswer": "7.62x39mm",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "When did the CD begin to appear on the consumer market?",
+      "correctAnswer": "1982",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "When was the DVD invented?",
+      "correctAnswer": "1995",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "When was the iPhone released?",
+      "correctAnswer": "2007",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "When was the Tamagotchi digital pet released?",
+      "correctAnswer": "1996",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which buzzword did Apple Inc. use to describe their removal of the headphone jack?",
+      "correctAnswer": "Courage",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which gaming console is developed by Sony?",
+      "correctAnswer": "PlayStation",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not a type of computer mouse?",
+      "correctAnswer": "Smoothie mouse",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which virtual assistant is developed by Amazon?",
+      "correctAnswer": "Alexa",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    }
+  ]
+}

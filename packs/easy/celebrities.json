@@ -1,0 +1,84 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Celebrities",
+  "questions": [
+    {
+      "question": "Aubrey Graham is better known as",
+      "correctAnswer": "Drake",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "By what name is Carlos Estevez better known? ",
+      "correctAnswer": "Charlie Sheen",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "By which name is Ramon Estevez better known as?",
+      "correctAnswer": "Martin Sheen",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Gwyneth Paltrow has a daughter named...?",
+      "correctAnswer": "Apple",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Named after a character he played in a 1969 film, what is the name of the ski resort in Utah that Robert Redford bought in 1968?",
+      "correctAnswer": "Sundance",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Neil Hamburger is played by which comedian?",
+      "correctAnswer": "Gregg Turkington",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "What does film maker Dan Bell typically focus his films on?",
+      "correctAnswer": "Abandoned Buildings and Dead Malls",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "What was James Coburn's last film role before his death?",
+      "correctAnswer": "American Gun",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "What was the cause of Marilyn Monroes suicide?",
+      "correctAnswer": "Drug Overdose",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Which actress married Michael Douglas in 2000?",
+      "correctAnswer": "Catherine Zeta-Jones",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Which celebrity announced his presidency in 2015?",
+      "correctAnswer": "Kanye West",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    }
+  ]
+}

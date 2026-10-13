@@ -6,8 +6,9 @@ import { generalPack } from './general';
 import { geographyPack } from './geography';
 import { historyPack } from './history';
 import { scienceTechnologyPack } from './science-technology';
+import { loadBuiltInPacks } from './built-in-loader';
 
-export const QUESTION_PACKS: readonly QuestionPack[] = [generalPack, scienceTechnologyPack, geographyPack, historyPack, entertainmentPack, foodCulturePack];
+export const QUESTION_PACKS: readonly QuestionPack[] = [generalPack, scienceTechnologyPack, geographyPack, historyPack, entertainmentPack, foodCulturePack, ...loadBuiltInPacks()];
 export const QUESTION_PACK_METADATA: QuestionPackMeta[] = QUESTION_PACKS.map(({ id, name, description, questions }) => ({ id, name, description, questionCount: questions.length, custom: false }));
 export const ALL_QUESTIONS: readonly Question[] = QUESTION_PACKS.flatMap((pack) => pack.questions);
 

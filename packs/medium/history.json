@@ -1,0 +1,1274 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - History",
+  "questions": [
+    {
+      "question": " What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?",
+      "correctAnswer": "AK-47",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "According to scholarly estimates, what percentage of the world population at the time died due to Tamerlane's conquests?",
+      "correctAnswer": "5%",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Adolf Hitler was born on which date?",
+      "correctAnswer": "April 20, 1889",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "After his loss at the Battle of Waterloo, Napoleon Bonaparte was exiled to which island?",
+      "correctAnswer": "St. Helena",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Against which country did the Dutch Republic fight the Eighty Years' War?",
+      "correctAnswer": "Spain",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "All of the following are names of the Seven Warring States EXCEPT:",
+      "correctAnswer": "Zhai (翟)",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "America's Strategic Defense System during the Cold War was nicknamed after this famous movie.",
+      "correctAnswer": "Star Wars",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "As poverty and racial tensions pushed African-Americans out of the southern US, many of them moved north in an event known as what?",
+      "correctAnswer": "The Great Migration",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During the Mongolian invasions of Japan, what were the Mongol boats mostly stopped by?",
+      "correctAnswer": "Typhoons",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During what war did the \"Cuban Missile Crisis\" occur?",
+      "correctAnswer": "Cold War",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During which American Civil War campaign did Union troops dig a tunnel beneath Confederate troops to detonate explosives underneath them?",
+      "correctAnswer": "Siege of Petersburg",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Hong Kong was a part of which country's territory before Britain regained it in 1945?",
+      "correctAnswer": "Japan",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How did the Vikings call their short-lived colony in today's Canada?",
+      "correctAnswer": "Vínland",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many times was Albert Einstein married in his lifetime?",
+      "correctAnswer": "Twice",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many years did the Hundred Years' War last?",
+      "correctAnswer": "116",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How old was Lyndon B. Johnson when he assumed the role of President of the United States?",
+      "correctAnswer": "55",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How old was the famous King Tutankhamen (Tut) when he died?",
+      "correctAnswer": "19",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1845, a series of wars named after which indigenous people began in New Zealand?",
+      "correctAnswer": "Māori",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1961, an American B-52 aircraft crashed and nearly detonated two 4mt nuclear bombs over which US city?",
+      "correctAnswer": "Goldsboro, North Carolina",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In relation to the British Occupation in Ireland, what does the IRA stand for.",
+      "correctAnswer": "Irish Republican Army",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
+      "correctAnswer": "Chile",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what dialogue did Socrates defend himself to the court of Athens? ",
+      "correctAnswer": "The Apology",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what prison was Adolf Hitler held in 1924?",
+      "correctAnswer": "Landsberg Prison",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did Kentucky become the 15th state to join the union?",
+      "correctAnswer": "1792",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did Neil Armstrong and Buzz Aldrin land on the moon?",
+      "correctAnswer": "1969",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did Texas secede from Mexico?",
+      "correctAnswer": "1836",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the Berlin Wall fall?",
+      "correctAnswer": "1989",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the First World War end?",
+      "correctAnswer": "1918",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the North American Video Game Crash occur?",
+      "correctAnswer": "1983",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did William the Conqueror take control of England?",
+      "correctAnswer": "1066",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the famous 45 foot tall Hollywood sign first erected?",
+      "correctAnswer": "1923",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the last natural case of smallpox documented?",
+      "correctAnswer": "1977",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the video game company Electronic Arts founded?",
+      "correctAnswer": "1982",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which one of these cities did the Great Stink of 1858 occur?",
+      "correctAnswer": "London",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which year did the First World War begin?",
+      "correctAnswer": "1914",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which year was Constantinople conquered by the Turks?",
+      "correctAnswer": "1453",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which years did the Battle of Gallipoli take place?",
+      "correctAnswer": "1915 - 1916",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In World War I, what was the name of the alliance of Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria?",
+      "correctAnswer": "The Central Powers",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "John Moses Browning, the designer of the M1918 BAR (Browning Automatic Rifle) was a part of which religion?",
+      "correctAnswer": "Mormon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Joseph Smith was the founder of what religion?",
+      "correctAnswer": "Mormonism",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Joseph Stalin had a criminal past doing what?",
+      "correctAnswer": "Robbing Trains",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "On what day did Germany invade Poland?",
+      "correctAnswer": "September 1, 1939",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "On which day did construction start on \"The Pentagon\", the headquarters for the United States Department of Defense?",
+      "correctAnswer": "September 11, 1941",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "On which day did the attempted coup d'etat of 1991 in the Soviet Union begin?",
+      "correctAnswer": "August 19",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "One of the deadliest pandemics, the \"Spanish Flu\", killed off what percentage of the human world population at the time?",
+      "correctAnswer": "3 to 6 percent",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The 15th century conflicts between the Houses of York and Lancaster are known as the Wars of the what?",
+      "correctAnswer": "Wars of the Roses",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Battle of the Somme in World War I took place in which country?",
+      "correctAnswer": "France",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The catastrophic nuclear accident that occurred in Ukraine in 1986 occurred at which power plant?",
+      "correctAnswer": "Chernobyl",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The creator of the Enigma Cypher and Machine was of what nationality?",
+      "correctAnswer": "German",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The crown of the Empire State Building was originally built for what purpose?",
+      "correctAnswer": "Airship Dock",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Fallingwater House, located in Pennsylvania, was designed by which architect?",
+      "correctAnswer": "Frank Lloyd Wright",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The fraudelent doctor John R. Brinkley acummulated great fame and wealth in the early 1900s offering what service?",
+      "correctAnswer": "Goat testicles transplant",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The gunpowder plot was a well-known failed assassination attempt against which of England's then reigning monarchs?",
+      "correctAnswer": "James I",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+      "correctAnswer": "Germany",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Korean War started in what year?",
+      "correctAnswer": "1950",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Little Entente was an alliance formed against which nation?",
+      "correctAnswer": "Hungary",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The minigun was designed in 1960 by which manufacturer.",
+      "correctAnswer": "General Electric",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Panama Canal was finished under the administration of which U.S. president?",
+      "correctAnswer": "Woodrow Wilson",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The seed drill was invented by which British inventor?",
+      "correctAnswer": "Jethro Tull",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Spitfire L.F. Mk IX had what engine?",
+      "correctAnswer": "Merlin 66",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Thirty Years War ended with which treaty?",
+      "correctAnswer": "Peace of Westphalia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Tsar Bomba, the most powerful nuclear bomb ever tested, had a yield of 50 megatons but theoretically had a maximum yield of how much?",
+      "correctAnswer": "100 Megatons",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The United States Army Air Corps became the United States Air Force on what date?",
+      "correctAnswer": "September 18, 1947",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Under which name was Rodrigo Borgia made Pope?",
+      "correctAnswer": "Alexander VI",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What date was the first flight of the P-40 Warhawk?",
+      "correctAnswer": "October 14 1938",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What day did the Battle of Gettysburg begin?",
+      "correctAnswer": "July 1, 1863",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What disease crippled President Franklin D. Roosevelt and led him to help the nation find a cure? ",
+      "correctAnswer": "Polio",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What event marked the start of World War II?",
+      "correctAnswer": "Invasion of Poland (1939)",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What happened on June 6, 1944?",
+      "correctAnswer": "D-Day",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What historical event was Tchaikovsky's 1812 Overture referencing?",
+      "correctAnswer": "The Napoleonic Wars",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the bloodiest event in United States history, in terms of casualties?",
+      "correctAnswer": "Battle of Antietam",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the mnemonic device for remembering the fates of the wives of Henry VIII?",
+      "correctAnswer": "Divorced, Beheaded, Died, Divorced, Beheaded, Survived",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name given to the series of confrontations between the UK and Iceland over North Atlantic fishing rights?",
+      "correctAnswer": "The Cod Wars",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the famous Apache leader who died in 1909 at the age of 70?",
+      "correctAnswer": "Geronimo",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the ship which was only a few miles away from the RMS Titanic when it struck an iceberg on April 14, 1912?",
+      "correctAnswer": "Californian",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the US Navy spy ship which was attacked and captured by North Korean forces in 1968?",
+      "correctAnswer": "USS Pueblo",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the oldest US state?",
+      "correctAnswer": "Delaware",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What nationality was sultan Saladin?",
+      "correctAnswer": "Kurdish",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What number does the Roman numeral \"D\" stand for?",
+      "correctAnswer": "500",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was Genghis Khan's real name?",
+      "correctAnswer": "Temüjin",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the bloodiest single-day battle during the American Civil War?",
+      "correctAnswer": "The Battle of Antietam",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the capital of South Vietnam before the Vietnam War?",
+      "correctAnswer": "Saigon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the code name for the German invasion of the Soviet Union in WW2?",
+      "correctAnswer": "Operation Barbarossa",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of one of the surviving palaces of Henry VIII located near Richmond, London?",
+      "correctAnswer": "Hampton Court",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the African-American cultural explosion centered in upper Manhattan during the 1920s and 1930s?",
+      "correctAnswer": "Harlem Renaissance",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the chemical that was dropped on Vietnam during the Vietnam war?",
+      "correctAnswer": "Agent Orange",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the first permanent English settlement in America?",
+      "correctAnswer": "Jamestown",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the national hero of the Philippines who inspired and lead the Philippine Revolution against colonial Spain?",
+      "correctAnswer": "José Rizal",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the planned invasion of Japan towards the end of World War II?",
+      "correctAnswer": "Operation Downfall",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the total length of the Titanic?",
+      "correctAnswer": "882 ft | 268.8 m",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the transfer of disease, crops, and people across the Atlantic shortly after the discovery of the Americas called?",
+      "correctAnswer": "The Columbian Exchange",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the unofficial name for Germany between 1919 and 1933?",
+      "correctAnswer": "Weimar Republic",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What were the first states to break away from Yugoslavia?",
+      "correctAnswer": "Slovenia, Croatia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did Australia become a federation?",
+      "correctAnswer": "1901",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as \"Skoal Bandits\"?",
+      "correctAnswer": "1983",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the Battle of Agincourt take place?",
+      "correctAnswer": "1415",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the Boxing Day earthquake & tsunami occur in the Indian Ocean?",
+      "correctAnswer": "2004",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the Vietnam War end?",
+      "correctAnswer": "1975",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year is considered to be the year that the British Empire ended?",
+      "correctAnswer": "1997",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the Italian firearms manufacturer Beretta founded?",
+      "correctAnswer": "1526",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year were the Marian Reforms instituted in the Roman Republic?",
+      "correctAnswer": "107 BCE",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When Christopher Columbus sailed to America, what was the first region he arrived in?",
+      "correctAnswer": "The Bahamas Archipelago",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did construction of the Suez Canal finish?",
+      "correctAnswer": "1869",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Jamaica receive its independence from England? ",
+      "correctAnswer": "1962",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did L. L. Zamenhof first publish \"Unua Libro\", the first publication describing his international language Esperanto?",
+      "correctAnswer": "1887",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Norway become free from Sweden?",
+      "correctAnswer": "1905",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Norway get its constitution?",
+      "correctAnswer": "1814",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did O, Canada officially become the national anthem?",
+      "correctAnswer": "1980",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the Battle of the Bulge end?",
+      "correctAnswer": "January 25, 1945",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the British hand-over sovereignty of Hong Kong back to China?",
+      "correctAnswer": "1997",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the Crisis of the Third Century begin?",
+      "correctAnswer": "235 AD",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the United States formally declare war on Japan, entering World War II?",
+      "correctAnswer": "December 8, 1941",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Vesuvius destroy the city of Pompeii? ",
+      "correctAnswer": "79 AD",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was \"The Gadget\", the first nuclear device to be detonated, tested?",
+      "correctAnswer": "July 16, 1945",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was Napoleon Bonaparte crowned emperor of the French? ",
+      "correctAnswer": " December 2nd 1804",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the Grand Patriotic War in the USSR concluded?",
+      "correctAnswer": "May 9th, 1945",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the People's Republic of China founded?",
+      "correctAnswer": "October 1, 1949",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the United States National Security Agency established?",
+      "correctAnswer": "November 4, 1952",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Where and when was the first cardboard box made for industrial use?",
+      "correctAnswer": "England, 1817",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Where was Abraham Lincoln when he was assassinated by John Wilkes Booth in 1865?",
+      "correctAnswer": "At the theatre",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Where was Portuguese explorer Ferdinand Magellan killed in 1521?",
+      "correctAnswer": "The Phillipines",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which American civilization is the source of the belief that the world would end or drastically change on December 21st, 2012?",
+      "correctAnswer": "The Mayans",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Apollo mission was the last one in NASA's Apollo program?",
+      "correctAnswer": "Apollo 17",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which British monarch was also known as \"William of Orange\"?",
+      "correctAnswer": "William III",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which building was set aflame on August 24th, 1812?",
+      "correctAnswer": "The White House",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country attacked the USS Liberty on June 8, 1967?",
+      "correctAnswer": "Israel",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country gifted the Statue of Liberty to the United States of America?",
+      "correctAnswer": "France",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country had an \"Orange Revolution\" between 2004 and 2005?",
+      "correctAnswer": "Ukraine",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country was an allied power in World War II?",
+      "correctAnswer": "Soviet Union",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which dictator killed the most people?",
+      "correctAnswer": "Mao Zedong",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Greek god was the god of the Sun?",
+      "correctAnswer": "Helios",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which historical conflict killed the most people?",
+      "correctAnswer": "World War II",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which infamous European traitor was known as \"the last person to enter Parliament with honest intentions\"?",
+      "correctAnswer": "Guy Fawkes",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which king was killed at the Battle of Bosworth Field in 1485? ",
+      "correctAnswer": "Richard III",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?",
+      "correctAnswer": "The Flamingo",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Louis was known as 'The Sun King of France'?",
+      "correctAnswer": "Louis XIV",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Nation did NOT have a Colony in modern-day North America?",
+      "correctAnswer": "Portugal",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Nazi General was known as the \"Desert Fox\"?",
+      "correctAnswer": "Erwin Rommel",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of his six wives was Henry VIII married to the longest?",
+      "correctAnswer": "Catherine of Aragon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following ancient Near Eastern peoples still exists as a modern ethnic group?",
+      "correctAnswer": "Assyrians",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Assyrian kings did NOT rule during the Neo-Assyrian Empire?",
+      "correctAnswer": "Shamshi-Adad III",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following battles is often considered as marking the beginning of the fall of the Western Roman Empire?",
+      "correctAnswer": "Battle of Adrianople",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries was the first to send an object into space?",
+      "correctAnswer": "Germany",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT classified as a Semetic language?",
+      "correctAnswer": "Sumerian",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not in the Indo-European language family?",
+      "correctAnswer": "Finnish",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Presidents of the United States was assassinated?",
+      "correctAnswer": "William McKinley",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following snipers has the highest amount of confirmed kills?",
+      "correctAnswer": "Simo Häyhä",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Soviet revolutionaries was exiled from the USSR and later assassinated in 1940 for criticizing Stalinism?",
+      "correctAnswer": "Leon Trotsky",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following years is commonly referred to as the \"Year Without a Summer\"?",
+      "correctAnswer": "1816",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these 1900s tanks were designed and built BEFORE the others?",
+      "correctAnswer": "Renault FT",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries was NOT a part of the Soviet Union?",
+      "correctAnswer": "Afghanistan",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries was sea charted in 1500 by the Portuguese maritime explorations?",
+      "correctAnswer": "Brazil",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these facilities was not present on the Titanic?",
+      "correctAnswer": "Fainting room",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these founding fathers of the United States of America later became president?",
+      "correctAnswer": "James Monroe",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Roman Emperor led the Roman Empire to reach its maximum territorial extent?",
+      "correctAnswer": "Trajan",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which U.S. president took part in the Potsdam Conference, where the Allies reached a peace settlement with Germany?",
+      "correctAnswer": "Harry S. Truman",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which U.S. President was famously 'attacked' by a swimming rabbit?",
+      "correctAnswer": "Jimmy Carter",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which U.S. President was in office when the Gulf War began?",
+      "correctAnswer": "George H. W. Bush",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which WWII tank ace is credited with having destroyed the most tanks?",
+      "correctAnswer": "Kurt Knispel",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who assassinated Archduke Franz Ferdinand?",
+      "correctAnswer": "Gavrilo Princip",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who crowned Charlemagne as Holy Roman Emperor on Christmas Day in 800?",
+      "correctAnswer": "Pope Leo III",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who famously coined the phrase \"I think, therefore I am\"?",
+      "correctAnswer": "Descartes",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who is attributed credit for recording the epic poem The Odyssey?",
+      "correctAnswer": "Homer",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who is believed to have been the first European to 'discover' the land of New Zealand?",
+      "correctAnswer": "Abel Tasman",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who led France during the \"Reign of Terror\" ?",
+      "correctAnswer": "Maximilien Robespierre",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who tutored Alexander the Great?",
+      "correctAnswer": "Aristotle",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was a military strategist in the Eastern Zhou period?",
+      "correctAnswer": "Sun Tzu",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was Hannibal?",
+      "correctAnswer": "Carthaginian general",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first Chancellor of a united Germany in 1871? ",
+      "correctAnswer": "Otto Von Bismark",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first emperor of Rome?",
+      "correctAnswer": "Augustus ",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first explorer to sail to North America?",
+      "correctAnswer": "Leif Erikson",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first mammal successfully launched into Earth's orbit?",
+      "correctAnswer": "Laika, the dog",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first president born in the independent United States?",
+      "correctAnswer": "Martin Van Buren",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first President of the People's Republic of China?",
+      "correctAnswer": "Mao Zedong",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first wife of King Henry VIII?",
+      "correctAnswer": "Catherine of Aragon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the last Roman emperor in the Year of Four Emperors (69 AD)?",
+      "correctAnswer": "Vespasian",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the leader of Sweden in the Great Northern War?",
+      "correctAnswer": "Charles XII",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the leader of the Communist Party of Yugoslavia ?",
+      "correctAnswer": "Josip Broz Tito",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the main developer of the Suez Canal?",
+      "correctAnswer": "Ferdinand de Lesseps",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the only US President to be elected four times?",
+      "correctAnswer": "Franklin Roosevelt",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the Prime Minister of the United Kingdom for most of World War II?",
+      "correctAnswer": "Winston Churchill",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    }
+  ]
+}

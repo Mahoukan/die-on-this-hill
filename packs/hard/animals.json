@@ -1,0 +1,154 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Animals",
+  "questions": [
+    {
+      "question": "Chronic Wasting Disease (CWD) exclusively infects members of which family of animals?",
+      "correctAnswer": "Cervids",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "How many known living species of hyenas are there?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "To which biological phylum do all mammals, birds and reptiles belong?",
+      "correctAnswer": "Chordata",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Unlike on most salamanders, this part of a newt is flat?",
+      "correctAnswer": "Tail",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What bird is born with claws on its wing digits?",
+      "correctAnswer": "Hoatzin",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the average amount of chinchillas born into a single litter?",
+      "correctAnswer": "2-3",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the collective noun for vultures?",
+      "correctAnswer": "Wake",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Gray Wolf's scientific name?",
+      "correctAnswer": "Canis Lupus",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the copper-rich protein that creates the blue blood in the Antarctic octopus?",
+      "correctAnswer": "Hemocyanin",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name for the Bald Eagle?",
+      "correctAnswer": "Haliaeetus Leucocephalus ",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name of the Budgerigar?",
+      "correctAnswer": "Melopsittacus undulatus",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name of the cheetah?",
+      "correctAnswer": "Acinonyx jubatus",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What scientific family does the Aardwolf belong to?",
+      "correctAnswer": "Hyaenidae",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What scientific suborder does the family Hyaenidae belong to?",
+      "correctAnswer": "Feliformia",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What type of creature is a Bonobo?",
+      "correctAnswer": "Ape",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the Ethiopian Wolf before they knew it was related to wolves?",
+      "correctAnswer": "Simien Jackel",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is another name for the \"Poecilotheria Metallica Tarantula\"?",
+      "correctAnswer": "Gooty",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these animals is NOT a lizard?",
+      "correctAnswer": "Tuatara",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is a colony of polyps and not a jellyfish?",
+      "correctAnswer": "Portuguese Man-of-War",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which species is a \"mountain chicken\"?",
+      "correctAnswer": "Frog",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which species of Brown Bear is not extinct?",
+      "correctAnswer": "Syrian Brown Bear",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    }
+  ]
+}

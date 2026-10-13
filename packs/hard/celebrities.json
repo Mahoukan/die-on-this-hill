@@ -1,0 +1,56 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Celebrities",
+  "questions": [
+    {
+      "question": "Billy Herrington is from which US state?",
+      "correctAnswer": "New York",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Gabe Newell was born in which year?",
+      "correctAnswer": "1962 ",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "How tall is Tom Cruise?",
+      "correctAnswer": "5′ 7″",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
+      "correctAnswer": "Moose",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "What was the religion of famous singer \"Freddie Mercury\"?",
+      "correctAnswer": "Zoroastrianism",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Which school in Surrey, England did Steve Backshall attend?",
+      "correctAnswer": "Collingwood College",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    },
+    {
+      "question": "Who was Donald Trump's first wife?",
+      "correctAnswer": "Ivana Zelníčková",
+      "acceptedAnswers": [],
+      "category": "Celebrities",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Science: Mathematics",
+  "questions": [
+    {
+      "question": "How many Millibars (mbar) to 1 Inch of Mercury (inHg)",
+      "correctAnswer": "33.9",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many zeptometres are inside one femtometre?",
+      "correctAnswer": "1,000,000",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Integration is the reverse of what mathematical operation?",
+      "correctAnswer": "Derivation",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "The decimal number 31 in hexadecimal would be what?",
+      "correctAnswer": "1F",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "The French mathematician Évariste Galois is primarily known for his work in which?",
+      "correctAnswer": "Galois Theory",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philosopher?",
+      "correctAnswer": "Bertrand Russel",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the approximate value of mathematical constant e?",
+      "correctAnswer": "2.72",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the derivative of Acceleration with respect to time?",
+      "correctAnswer": "Jerk",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the fourth digit of π?",
+      "correctAnswer": "1",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the only Millennium Prize Problem that has been solved so far?",
+      "correctAnswer": "Poincaré conjecture",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the plane curve proposed by Descartes to challenge Fermat's extremum-finding techniques called?",
+      "correctAnswer": "Folium of Descartes",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the smallest number that can be expressed as the sum of two positive cubes in two different ways?",
+      "correctAnswer": "1729",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following famous mathematicians died in a duel at the age of 20?",
+      "correctAnswer": "Galois",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following mathematicians made major contributions to game theory?",
+      "correctAnswer": "John Von Neumann",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these did mathematician Leonhard Euler NOT develop?",
+      "correctAnswer": "An improvement to the Fast Fourier Transform",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    }
+  ]
+}

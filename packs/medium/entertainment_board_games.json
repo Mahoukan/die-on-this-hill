@@ -1,0 +1,161 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Entertainment: Board Games",
+  "questions": [
+    {
+      "question": "About how many Slinkys were sold in their first 60 years (from 1945 to 2005)?",
+      "correctAnswer": "300 Million",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "At the start of a standard game of the Monopoly, if you throw a double six, which square would you land on?",
+      "correctAnswer": "Electric Company",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Europa Universalis is a strategy video game based on which French board game?",
+      "correctAnswer": "Europa Universalis",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "How many points is the Z tile worth in Scrabble?",
+      "correctAnswer": "10",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Magic: The Gathering\", during the design for Planar Chaos, what color did the developers think of adding in as the sixth color?",
+      "correctAnswer": "Purple",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Magic: The Gathering\", what instant card has the highest converted mana cost?",
+      "correctAnswer": "Blinkmoth Infusion",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Chess, the Queen has the combined movement of which two pieces?",
+      "correctAnswer": "Bishop and Rook",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In poker, \"EV\" means what?",
+      "correctAnswer": "Expected Value",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In the Board Game, Settlers of Catan, a die roll of what number causes the Robber to attack? ",
+      "correctAnswer": "7",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the card game Magic: the Gathering first introduced?",
+      "correctAnswer": "1993",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Yu-Gi-Oh, how does a player perform an Xyz Summon?",
+      "correctAnswer": "Overlay at least 2 Monsters of the Same Level",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "The board game, Nightmare was released in what year?",
+      "correctAnswer": "1991",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What happens when you roll 3 doubles in a row in Monopoly?",
+      "correctAnswer": "Go to jail",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What letter is used to refer to blue mana in the card game Magic The Gathering?",
+      "correctAnswer": "U",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What special item did the creators of Cards Against Humanity ship for their Black Friday pack?",
+      "correctAnswer": "Bull Feces",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What type is \"Magic Drain\" in Yugioh! Trading Card Game?",
+      "correctAnswer": "Counter Trap",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following characters is not in the board game Clue?",
+      "correctAnswer": "Mister Indigo",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not a color of mana in Magic: The Gathering?",
+      "correctAnswer": "Yellow",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following tabletop games is the oldest?",
+      "correctAnswer": "Go",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the main character in the VHS tape included in the board game Nightmare?",
+      "correctAnswer": "The Gatekeeper",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first official world chess champion?",
+      "correctAnswer": "Wilhelm Steinitz",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Who was world chess champion between 1894 and 1921",
+      "correctAnswer": "Emanuel Lasker",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Mythology",
+  "questions": [
+    {
+      "question": "An Ankh is the Egyptian Hieroglyph for what?",
+      "correctAnswer": "Life",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "How many heads does Cerberus have?",
+      "correctAnswer": "3",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "In Greek mythology, who is the god of wine?",
+      "correctAnswer": "Dionysus",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "In most traditions, who was the wife of Zeus?",
+      "correctAnswer": "Hera",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "The ancient Roman god of war was commonly known as which of the following?",
+      "correctAnswer": "Mars",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "The greek god Poseidon was the god of what?",
+      "correctAnswer": "The Sea",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "The Nike apparel and footwear brand takes it's name from the Greek goddess of what?",
+      "correctAnswer": "Victory",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "This Greek goddess's name was chosen for the dwarf planet responsible for discord on Pluto's classification amongst astronomers.",
+      "correctAnswer": "Eris",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "What mythology did the god \"Apollo\" come from?",
+      "correctAnswer": "Greek and Roman",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "What mytological creatures have women's faces and vultures' bodies?",
+      "correctAnswer": "Harpies",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "What weakpoint of Achilles was expoited by the Trojan prince, Paris?",
+      "correctAnswer": "Heel",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which figure from Greek mythology traveled to the underworld to return his wife Eurydice to the land of the living?",
+      "correctAnswer": "Orpheus",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which Greek & Roman god was known as the god of music, truth and prophecy, healing, the sun and light, plague, poetry, and more?",
+      "correctAnswer": "Apollo",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not true about the life of Tiresias?",
+      "correctAnswer": "Sailed with the Argonauts to find the golden fleece",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these mythological creatures is said to be half-man and half-horse?",
+      "correctAnswer": "Centaur",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who in Greek mythology, who led the Argonauts in search of the Golden Fleece?",
+      "correctAnswer": "Jason",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the King of Gods in Ancient Greek mythology?",
+      "correctAnswer": "Zeus",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the only god from Greece who did not get a name change in Rome?",
+      "correctAnswer": "Apollo",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    }
+  ]
+}

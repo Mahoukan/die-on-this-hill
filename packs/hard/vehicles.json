@@ -1,0 +1,133 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Vehicles",
+  "questions": [
+    {
+      "question": "How much horsepower is produced by the SD40-2 Locomotive?",
+      "correctAnswer": "3,000",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "In 2014, over 6 million General Motors vehicles were recalled due to what critical flaw?",
+      "correctAnswer": "Faulty ignition switch",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The difference between the lengths of a Boeing 777-300ER and an Airbus A350-1000 is closest to:",
+      "correctAnswer": "0.1m",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Volkswagen's legendary VR6 engine has cylinders positioned at what degree angle?",
+      "correctAnswer": "15 Degree",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What car manufacturer gave away their patent for the seat-belt in the interest of saving lives?",
+      "correctAnswer": "Volvo",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What engine is in the Lexus SC400?",
+      "correctAnswer": "1UZ-FE",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What kind of train was Stepney, a train on the Bluebell Railway notable for his appearance in \"The Railway Series\"?",
+      "correctAnswer": "LB&SCR A1X",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What model was the sports car gifted to Yuri Gagarin by the French government in 1965?",
+      "correctAnswer": "Matra Djet",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the first front-wheel-drive car produced by Datsun (now Nissan)?",
+      "correctAnswer": "Cherry",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What year did the Chevrolet LUV mini truck make its debut?",
+      "correctAnswer": "1972",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which Audi does not use Haldex based all wheel drive system?",
+      "correctAnswer": "Audi A8",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which car is the first mass-produced hybrid vehicle?",
+      "correctAnswer": "Toyota Prius",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following FIA Rally cars was approved for use in the Group B class first? ",
+      "correctAnswer": "Porsche 911 Turbo",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Union Pacific 'Big Boy' locomotives was restored to working order in 2019?",
+      "correctAnswer": "4014",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a car model produced by Malaysian car manufacturer Proton?",
+      "correctAnswer": "Kelisa",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of the following is NOT a sub-company of the Volkswagen Group?",
+      "correctAnswer": "Opel",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these chassis codes are used by BMW 3-series?",
+      "correctAnswer": "E46",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which Variable Valve Timing technology is used by BMW?",
+      "correctAnswer": "VANOS",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    }
+  ]
+}

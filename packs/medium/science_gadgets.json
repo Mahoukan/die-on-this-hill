@@ -1,0 +1,112 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Science: Gadgets",
+  "questions": [
+    {
+      "question": "Apple's Voice Assistant, Siri, debuted on which iPhone?",
+      "correctAnswer": "iPhone 4S",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "How does a centrifuge separate heavy and light particles?",
+      "correctAnswer": "Spinning",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the Oculus Rift revealed to the public through a Kickstarter campaign?",
+      "correctAnswer": "2012",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Mobile hardware and software company \"Blackberry Limited\" was founded in which country?",
+      "correctAnswer": "Canada",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Out of all of the NASA Space Shuttles, which 2 have been destroyed in disasters?",
+      "correctAnswer": "Challenger and Columbia",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "This former Air Force and NASA engineer is the inventor of the Super Soaker water gun.",
+      "correctAnswer": "Lonnie Johnson",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What are the base station trackers used for the HTC Vive called?",
+      "correctAnswer": "Lighthouse",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What is the \"Mitsubishi Wakamaru\"?",
+      "correctAnswer": "A robot",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most significant side venture the popular firearms company, Remington, has pursued?",
+      "correctAnswer": "Typewriters",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first Infinity Coaster in the world and where is it located?",
+      "correctAnswer": "The Smiler, Alton Towers, UK",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "When was the compact disc player first released?",
+      "correctAnswer": "1982",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which company designed the \"Betamax\" video cassette format?",
+      "correctAnswer": "Sony",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which company developed the Hololens?",
+      "correctAnswer": "Microsoft",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which company manufactured the iconic TR-808 drum machine?",
+      "correctAnswer": "Roland",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Who patented a steam engine that produced continuous rotary motion?",
+      "correctAnswer": "James Watt",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    }
+  ]
+}

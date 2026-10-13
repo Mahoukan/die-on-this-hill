@@ -1,0 +1,441 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Science: Computers",
+  "questions": [
+    {
+      "question": ".at is the top-level domain for what country?",
+      "correctAnswer": "Austria",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": ".rs is the top-level domain for what country?",
+      "correctAnswer": "Serbia",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "All of the following programs are classified as raster graphics editors EXCEPT:",
+      "correctAnswer": "Inkscape",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Approximately how many Apple I personal computers were created?",
+      "correctAnswer": "200",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Generally, which component of a computer draws the most power?",
+      "correctAnswer": "Video Card",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How fast is USB 3.1 Gen 2 theoretically?",
+      "correctAnswer": "10 Gb/s",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many bits make up the significand portion of a single precision floating point number?",
+      "correctAnswer": "23",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many bytes are in a single Kibibyte?",
+      "correctAnswer": "1024",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "How many cores does the Intel i7-6950X have?",
+      "correctAnswer": "10",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In computing terms, typically what does CLI stand for?",
+      "correctAnswer": "Command Line Interface",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In CSS, which of these values CANNOT be used with the \"position\" property?",
+      "correctAnswer": "center",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In HTML, which non-standard tag used to be be used to make elements scroll across the viewport?",
+      "correctAnswer": "<marquee></marquee>",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In programming, the ternary operator is mostly defined with what symbol(s)?",
+      "correctAnswer": "?:",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In programming, what do you call functions with the same name but different implementations?",
+      "correctAnswer": "Overloading",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In the programming language \"Python\", which of these statements would display the string \"Hello World\" correctly?",
+      "correctAnswer": "print(\"Hello World\")",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "In the server hosting industry IaaS stands for...",
+      "correctAnswer": "Infrastructure as a Service",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Laserjet and inkjet printers are both examples of what type of printer?",
+      "correctAnswer": "Non-impact printer",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Linus Torvalds created which of these?",
+      "correctAnswer": "Linux",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Moore's law originally stated that the number of transistors on a microprocessor chip would double every...",
+      "correctAnswer": "Year",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Nvidia's headquarters are based in which Silicon Valley city?",
+      "correctAnswer": "Santa Clara",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "On which computer hardware device is the BIOS chip located?",
+      "correctAnswer": "Motherboard",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "On which day did the World Wide Web go online?",
+      "correctAnswer": "December 20, 1990",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Originally used in PCM adapters, what frequency is the standard for sampling audio in the Compact Disc Digital Audio format?",
+      "correctAnswer": "44.1 kHz",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+      "correctAnswer": "Taiwan",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The name of technology company HP stands for what?",
+      "correctAnswer": "Hewlett-Packard",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "The teapot often seen in many 3D modeling applications is called what?",
+      "correctAnswer": "Utah Teapot",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Unix Time is defined as the number of seconds that have elapsed since when?",
+      "correctAnswer": "Midnight, January 1, 1970",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What did the name of the Tor Anonymity Network orignially stand for?",
+      "correctAnswer": "The Onion Router",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does \"LCD\" stand for?",
+      "correctAnswer": "Liquid Crystal Display",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does AD stand for in relation to Windows Operating Systems? ",
+      "correctAnswer": "Active Directory",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does RAID stand for?",
+      "correctAnswer": "Redundant Array of Independent Disks",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the 'S' in the RSA encryption algorithm stand for?",
+      "correctAnswer": "Shamir",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the acronym CDN stand for in terms of networking?",
+      "correctAnswer": "Content Delivery Network",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the DOS in Microsoft's first operating system \"MS-DOS\" stand for?",
+      "correctAnswer": "Disk Operating System",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the term GPU stand for?",
+      "correctAnswer": "Graphics Processing Unit",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What does the term MIME stand for, in regards to computing?",
+      "correctAnswer": "Multipurpose Internet Mail Extensions",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What five letter word is the motto of the IBM Computer company?",
+      "correctAnswer": "Think",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is known as \"the brain\" of the Computer?",
+      "correctAnswer": "Central Processing Unit",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is largely considered the precursor to the USB format?",
+      "correctAnswer": "PS/2",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the correct term for the metal object in between the CPU and the CPU fan within a computer system?",
+      "correctAnswer": "Heat Sink",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the main CPU is the Sega Mega Drive / Sega Genesis?",
+      "correctAnswer": "Motorola 68000",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the default theme that is installed with Windows XP?",
+      "correctAnswer": "Luna",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What is the number of keys on a standard Windows Keyboard?",
+      "correctAnswer": "104",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was Bitcoin's block size limit in 2010?",
+      "correctAnswer": "1 MB",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first Android version specifically optimized for tablets?",
+      "correctAnswer": "Honeycomb",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first commerically available computer processor?",
+      "correctAnswer": "Intel 4004",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name given to Android 4.3?",
+      "correctAnswer": "Jelly Bean",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the image that features as the default background wallpaper for Windows XP?",
+      "correctAnswer": "Bliss",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "When did the online streaming service \"Mixer\" launch?",
+      "correctAnswer": "2016",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "When was the programming language \"C#\" released?",
+      "correctAnswer": "2000",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which coding language was the #1 programming language in terms of usage on GitHub in 2015?",
+      "correctAnswer": "JavaScript",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which internet company began life as an online bookstore called 'Cadabra'?",
+      "correctAnswer": "Amazon",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is a personal computer made by the Japanese company Fujitsu?",
+      "correctAnswer": "FM-7",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+      "correctAnswer": "C#",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?",
+      "correctAnswer": "Clipper Chip",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these people was NOT a founder of Apple Inc?",
+      "correctAnswer": "Jonathan Ive",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these programming languages is a low-level language?",
+      "correctAnswer": "Assembly",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these is not an official development name for a Ubuntu release?",
+      "correctAnswer": "Mystic Mansion",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which operating system was released first?",
+      "correctAnswer": "Mac OS",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Which programming language was developed by Sun Microsystems in 1995?",
+      "correctAnswer": "Java",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "While Apple was formed in California, in which western state was Microsoft founded?",
+      "correctAnswer": "New Mexico",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    },
+    {
+      "question": "Whistler was the codename of this Microsoft Operating System.",
+      "correctAnswer": "Windows XP",
+      "acceptedAnswers": [],
+      "category": "Science: Computers",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - General Knowledge",
+  "questions": [
+    {
+      "question": "\"Nephelococcygia\" is the practice of doing what? ",
+      "correctAnswer": "Finding shapes in clouds",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
+      "correctAnswer": "7 years",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+      "correctAnswer": "28%",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Before the 19th Century, the \"Living Room\" was originally called the...",
+      "correctAnswer": "Parlor",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Chartreuse is a color between yellow and what?",
+      "correctAnswer": "Green",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "correctAnswer": "Center Parcs",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Disney's Haunted Mansion is home to a trio of Hitchhiking Ghosts. Which of these is NOT one of them?",
+      "correctAnswer": "Harry",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Electronic music producer Kygo's popularity skyrocketed after a certain remix. Which song did he remix?",
+      "correctAnswer": "Ed Sheeran - I See Fire",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Going by the International Code of Signals, which single flag is interpreted as \"I require assistance (not distress)\"?",
+      "correctAnswer": "Victor",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "How long did it take the motorized window washers of the original World Trade Center to clean the entire exterior of the building?",
+      "correctAnswer": "1 Month",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "How many calories are in a 355 ml can of Pepsi Cola?",
+      "correctAnswer": "150",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "How many notes are there on a standard grand piano?",
+      "correctAnswer": "88",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "If someone said \"you are olid\", what would they mean?",
+      "correctAnswer": "You smell extremely unpleasant.",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "If you planted the seeds of Quercus robur, what would grow?",
+      "correctAnswer": "Trees",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Battle Cats\", what is Moneko / MISS Moneko's critical percentage rate?",
+      "correctAnswer": "15%",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
+      "correctAnswer": "8",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In flight systems, what does the initialism \"TCAS\" stand for?",
+      "correctAnswer": "Traffic Collision Avoidance System",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In linguistics, which of the following is not one of the Gricean Maxims under the Cooperative Principal?",
+      "correctAnswer": "Length",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In the fictional SCP universe what “Object Class” is given to SCP’s that cannot be contained.",
+      "correctAnswer": "Apollyon",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
+      "correctAnswer": "The Shatter's",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Located in Chile, El Teniente is the world's largest underground mine for what metal?",
+      "correctAnswer": "Copper",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Named after the mallow flower, mauve is a shade of what?",
+      "correctAnswer": "Purple",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Nephelococcygia is the practice of doing what?",
+      "correctAnswer": "Finding shapes in clouds",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Originally another word for poppy, coquelicot is a shade of what?",
+      "correctAnswer": "Red",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Roughly how many ingested apple seeds would it take to receive a fatal dose of cyanide?",
+      "correctAnswer": "200",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Sciophobia is the fear of what?",
+      "correctAnswer": "Shadows",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The Panama Canal was officially opened by which US president?",
+      "correctAnswer": "Woodrow Wilson",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The Quadrangularis Reversum is best described as which of the following?",
+      "correctAnswer": "A percussion instrument",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The Swedish word \"Grunka\" means what in English?",
+      "correctAnswer": "Thing",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The word \"abulia\" means which of the following?",
+      "correctAnswer": "The inability to make decisions",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The word \"aprosexia\" means which of the following?",
+      "correctAnswer": "The inability to concentrate on anything",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The word \"astasia\" means which of the following?",
+      "correctAnswer": "The inability to stand up",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The words \"bungalow\" and \"shampoo\" originate from the languages of which country?",
+      "correctAnswer": "India",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "This Ghanaian entrepreneur is a pioneer of microlending.",
+      "correctAnswer": "Esther Afua Ocloo",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "To which language family does Kazakh belong?",
+      "correctAnswer": "Turkic",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
+      "correctAnswer": "Andrew Scott Reisse",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What does the Latin phrase \"Veni, vidi, vici\" translate into English?",
+      "correctAnswer": "I came, I saw, I conquered",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the airspeed velocity of an unladen swallow?",
+      "correctAnswer": "24 MPH",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the longest bridge in the world?",
+      "correctAnswer": "Danyang–Kunshan Grand Bridge, China",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most commonly used noun in the English language?",
+      "correctAnswer": "Time",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the currency used in Ethiopia?",
+      "correctAnswer": "Birr",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the romanized Arabic word for \"moon\"?",
+      "correctAnswer": "Qamar",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the romanized Chinese word for \"airplane\"?",
+      "correctAnswer": "Feiji",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the romanized Korean word for \"heart\"?",
+      "correctAnswer": "Simjang",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the weight of a Gold Bar in Fallout: New Vegas?",
+      "correctAnswer": "35 Pounds",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
+      "correctAnswer": "Bulldog",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was Bank of America originally established as?",
+      "correctAnswer": "Bank of Italy",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the third country to have a McDonald's restaurant?",
+      "correctAnswer": "Costa Rica",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Queen Elizabeth II born?",
+      "correctAnswer": "1926",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the RoboSapien toy robot released?",
+      "correctAnswer": "2004",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When was \"YouTube\" founded?",
+      "correctAnswer": "February 14, 2005",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Where in La Coruña (Spain) is the headquarters of \"Inditex\", the biggest fashion group in the world?",
+      "correctAnswer": "Arteijo",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Where is Apple Inc. headquartered?",
+      "correctAnswer": "Cupertino, California",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which church's interior in Vatican City was designed in 1503 by renaissance architects including Bramante, Michelangelo and Bernini?",
+      "correctAnswer": "St. Peter's Basilica",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which film star has his statue in Leicester Square?",
+      "correctAnswer": "Charlie Chaplin",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song \"Shelter\"?",
+      "correctAnswer": "Madeon",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following  British Monarchs never appeared on a circulated pound sterling coin?",
+      "correctAnswer": "Edward VIII",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following chemicals are found in eggplant seeds?",
+      "correctAnswer": "Nicotine",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is an existing family in \"The Sims\"?",
+      "correctAnswer": "The Goth Family",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not another name for the eggplant?",
+      "correctAnswer": "Potimarron",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following languages does NOT use gender as a part of its grammar?",
+      "correctAnswer": "Turkish",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these anatomical terms refers to the tail end of the creature?",
+      "correctAnswer": "Caudal",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these banks are NOT authorized to issue currency notes in Hong Kong?",
+      "correctAnswer": "OCBC",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cities does NOT have a United States Minting location?",
+      "correctAnswer": "St. Louis, MO",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Indian languages is not part of the Indo-European language family?",
+      "correctAnswer": "Tamil",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these Swedish companies was founded in 1943?",
+      "correctAnswer": "IKEA",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which product did Nokia, the telecommunications company, originally sell?",
+      "correctAnswer": "Paper",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Who founded the Khan Academy?",
+      "correctAnswer": "Sal Khan",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Xanthophobia is the fear of what color?",
+      "correctAnswer": "Yellow",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    }
+  ]
+}

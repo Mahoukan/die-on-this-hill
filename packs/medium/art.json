@@ -1,0 +1,119 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Art",
+  "questions": [
+    {
+      "question": "In \"Last Supper\" by Leonardo Da Vinci, what two colors were the robes worn by Jesus?",
+      "correctAnswer": "Red and Blue",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What nationality was the surrealist painter Salvador Dali?",
+      "correctAnswer": "Spanish",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What were Marcel Duchamp's readymades?",
+      "correctAnswer": "utilitarian objects elevated to the status of art",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist painted “The Treachery of Images,” a painting of a pipe with the description \"this is not a pipe\"?",
+      "correctAnswer": "Magritte",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist's style was to use small different colored dots to create a picture?",
+      "correctAnswer": "Georges Seurat",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist’s studio was known as 'The Factory'?",
+      "correctAnswer": "Andy Warhol",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which Greek sculptor designed the Athena Parthenos statue inside the Parthenon?",
+      "correctAnswer": "Phidias",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these are the name of a famous marker brand?",
+      "correctAnswer": "Copic",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these paintings did Johannes Vermeer not paint?",
+      "correctAnswer": "Bacchus",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these colors are not featured in Mondrian's Broadway Boogie-Woogie?",
+      "correctAnswer": "Green",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these paintings is not by Caspar David Friedrich?",
+      "correctAnswer": "The Black Sea",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which time signature is commonly known as “Cut Time?”",
+      "correctAnswer": "2/2",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who designed the Chupa Chups logo?",
+      "correctAnswer": "Salvador Dali",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted \"The Scream\"?",
+      "correctAnswer": "Edvard Munch",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted the epic mural Guernica?",
+      "correctAnswer": "Pablo Picasso",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted the painting \"Nighthawks\"?",
+      "correctAnswer": "Edward Hopper",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - General Knowledge",
+  "questions": [
+    {
+      "question": " In which country was the Michelin tire company founded in 1889?",
+      "correctAnswer": "France",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "\"Gum arabic\" is a natural gum consisting of the hardened sap of which tree species?",
+      "correctAnswer": "Acacia",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "A doctor with a PhD is a doctor of what?",
+      "correctAnswer": "Philosophy",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "A statue of Charles Darwin sits in what London museum?",
+      "correctAnswer": "Natural History Museum",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "According to the BBPA, what is the most common pub name in the UK?",
+      "correctAnswer": "Red Lion",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "correctAnswer": "Five",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "After how many years would you celebrate your crystal anniversary?",
+      "correctAnswer": "15",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "All Souls and Merton are constituent colleges of what university?",
+      "correctAnswer": "Oxford",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Amsterdam Centraal station is twinned with what station?",
+      "correctAnswer": "London Liverpool Street",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
+      "correctAnswer": "Pancreatic",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Astraphobia is the irrational fear of what?",
+      "correctAnswer": "Thunder",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Bob and Mike Bryan were well known brothers in which sport?",
+      "correctAnswer": "Tennis",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Coleslaw originated from which European country?",
+      "correctAnswer": "The Netherlands",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "correctAnswer": "Hewlett-Packard",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Death Valley's Badwater Basin is North America's point of lowest elevation at how many feet below sea level?",
+      "correctAnswer": "282 feet",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Earl Grey tea is black tea flavoured with what?",
+      "correctAnswer": "Bergamot oil",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Frank Lloyd Wright was the architect behind what famous building?",
+      "correctAnswer": "The Guggenheim",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "If a person's hair is described as 'Titian', what colour is it?",
+      "correctAnswer": "Red",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In 2013 how much money was lost by Nigerian scams?",
+      "correctAnswer": "$12.7 Billion",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In a 1994 CBS interview, Microsoft co-founder Bill Gates performed what unusual trick on camera?",
+      "correctAnswer": "Jumping over an office chair",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In a standard set of playing cards, which is the only king without a moustache?",
+      "correctAnswer": "Hearts",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In ancient Greece, if your job were a \"hippeus\" which of these would you own?",
+      "correctAnswer": "Horse",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In the Morse code, which letter is indicated by 3 dots? ",
+      "correctAnswer": "S",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did Halley's Comet, which will not appear again until the year 2061, previously approach Earth?",
+      "correctAnswer": "1986",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was McDonald's founded?",
+      "correctAnswer": "1955",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "In which country was the 1992 Summer Olympics Games held?",
+      "correctAnswer": "Spain",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Linus Pauling, one of the only winners of multiple Nobel Prizes, earned his Nobel Prizes in Chemistry and what?",
+      "correctAnswer": "Peace",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Macintosh has named six of its operating systems after big cats. What big cat did Macintosh name their 2007 release after? ",
+      "correctAnswer": "Leopard",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "On average, Americans consume 100 pounds of what per second?",
+      "correctAnswer": "Chocolate",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Only 9% of US Households owned a television in ",
+      "correctAnswer": "1950",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Out of these four buildings, which one is the tallest, with a height of 1,250 ft (381 m)?",
+      "correctAnswer": "Empire State Building, United States",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Out of these four buildings, which one is the tallest, with a height of 1,483 ft (451.9 m)?",
+      "correctAnswer": "Petronas Twin Towers, Malaysia",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Out of these four buildings, which one is the tallest, with a height of 1,776 ft (541.3 m)?",
+      "correctAnswer": "One World Trade Center, United States",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+      "correctAnswer": "Burj Khalifa, United Arab Emirates",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Rolex is a company that specializes in what type of product?",
+      "correctAnswer": "Watches",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Scotch whisky and Drambuie make up which cocktail?",
+      "correctAnswer": "Rusty Nail",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "correctAnswer": "Modernism",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The early part of which decade, did the Goth Subculture begin?",
+      "correctAnswer": "1980s",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The lesser-known continuation of the saying \"Curiosity killed the cat...\" is:",
+      "correctAnswer": "\"...but satisfaction brought it back.\"",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The Mexican Beer \"Corona\" is what type of beer?",
+      "correctAnswer": "Pale Lager",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
+      "correctAnswer": "David Childs",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+      "correctAnswer": "Idiom",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The term \"scientist\" was coined in which year?",
+      "correctAnswer": "1833",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "correctAnswer": "Board Games",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "This field is sometimes known as “The Dismal Science.”",
+      "correctAnswer": "Economics",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What alcoholic drink is mainly made from juniper berries?",
+      "correctAnswer": "Gin",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What are the tallest twin buildings in the world, with a height of 1,483 ft (451.9 m)?",
+      "correctAnswer": "Petronas Twin Towers, Malaysia",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What are the three starter Pokemon available in Pokemon Black and White?",
+      "correctAnswer": "Snivy, Tepig, Oshawott",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What character was once considered to be the 27th letter of the alphabet?",
+      "correctAnswer": "Ampersand",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What did the Spanish autonomous community of Catalonia ban in 2010, that took effect in 2012?",
+      "correctAnswer": "Bullfighting",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What direction does the Statue of Liberty face?",
+      "correctAnswer": "Southeast",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What do the Dutch call their language?",
+      "correctAnswer": "Nederlands",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What does a milliner make and sell?",
+      "correctAnswer": "Hats",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What does the \"G\" mean in \"G-Man\"?",
+      "correctAnswer": "Government",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What English word means to \"think deeply\"?",
+      "correctAnswer": "Contemplate",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What fast food chain has the most locations globally? ",
+      "correctAnswer": "Subway",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is a \"dakimakura\"?",
+      "correctAnswer": "A body pillow",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is a Burgee?",
+      "correctAnswer": "A flag",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is a dead mall?",
+      "correctAnswer": "A mall with high vacancy rates or low consumer foot traffic",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is real haggis made of?",
+      "correctAnswer": "Sheep's Heart, Liver and Lungs",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the average life span of a garden ant?",
+      "correctAnswer": "15 years",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the currency of Poland?",
+      "correctAnswer": "Złoty",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the defining characteristic of someone who is described as hirsute?",
+      "correctAnswer": "Hairy",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the full title of the Prime Minister of the UK?",
+      "correctAnswer": "First Lord of the Treasury",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the German word for \"spoon\"?",
+      "correctAnswer": "Löffel",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the highest number of Michelin stars a restaurant can receive?",
+      "correctAnswer": "Three",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Italian word for \"tomato\"?",
+      "correctAnswer": "Pomodoro",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest rapid transit system in the world by number of stations, with 472 stations in operation?",
+      "correctAnswer": "New York City Subway",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the last letter of the Greek alphabet?",
+      "correctAnswer": "Omega",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most-visited website out of these options?",
+      "correctAnswer": "Google",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "correctAnswer": "Tandoori",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the popular animatronic singing fish prop, singing such hits such as \"Don't Worry, Be Happy\"?",
+      "correctAnswer": "Big Mouth Billy Bass",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the very first video uploaded to YouTube?",
+      "correctAnswer": "Me at the zoo",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the official language in Barcelona beside Spanish?",
+      "correctAnswer": "Catalan",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Portuguese word for \"Brazil\"?",
+      "correctAnswer": "Brasil",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the real name of viral internet meme Grumpy Cat?",
+      "correctAnswer": "Tardar Sauce",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the romanized Japanese word for \"university\"?",
+      "correctAnswer": "Daigaku",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the romanized Russian word for \"winter\"?",
+      "correctAnswer": "Zima",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the star sign of someone born on Valentines day?",
+      "correctAnswer": "Aquarius",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Swedish word for \"window\"?",
+      "correctAnswer": "Fönster",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the unit of currency in Laos?",
+      "correctAnswer": "Kip",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What is the world's most expensive spice by weight?",
+      "correctAnswer": "Saffron",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What Latin phrase roughly translates to \"seize the day\"?",
+      "correctAnswer": "Carpe diem",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
+      "correctAnswer": "Mike",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What nation produces roughly 40% of the world’s vanilla?",
+      "correctAnswer": "Madagascar",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was Mountain Dew's original slogan?",
+      "correctAnswer": "Yahoo! Mountain Dew... It'll tickle your innards!",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the destination of the missing flight MH370?",
+      "correctAnswer": "Beijing",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the height of Kingda Ka, the tallest roller coaster in the world from 2005 to 2024?",
+      "correctAnswer": "456 ft",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name given to Japanese military dictators who ruled the country through the 12th and 19th Century?",
+      "correctAnswer": "Shogun",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the original name of the search engine \"Google\"?",
+      "correctAnswer": "BackRub",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What was the soft drink Pepsi originally introduced as?",
+      "correctAnswer": "Brad's Drink",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Apple Inc. founded?",
+      "correctAnswer": "1976",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the first Apple iPod introduced?",
+      "correctAnswer": "2001",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Walt Disney born?",
+      "correctAnswer": "1901",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When did the website \"Facebook\" launch?",
+      "correctAnswer": "2004",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When was Hubba Bubba first introduced?",
+      "correctAnswer": "1979",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When was Nintendo founded?",
+      "correctAnswer": "September 23rd, 1889",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "correctAnswer": "July 4, 1776",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "When was WhatsApp founded?",
+      "correctAnswer": "2009",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Where did the pineapple plant originate?",
+      "correctAnswer": "South America",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Where does water from Poland Spring water bottles come from?",
+      "correctAnswer": "Maine, United States",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which American manufactured submachine gun was informally known by the American soldiers that used it as \"Grease Gun\"?",
+      "correctAnswer": "M3",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which country drives on the left side of the road?",
+      "correctAnswer": "Japan",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which country has the most Trappist breweries?",
+      "correctAnswer": "Belgium",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which essential condiment is also known as Japanese horseradish?",
+      "correctAnswer": "Wasabi ",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
+      "correctAnswer": "I. M. Pei",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which iconic Disneyland attraction was closed in 2017 to be remodeled as a \"Guardians of the Galaxy\" themed ride?",
+      "correctAnswer": "Twilight Zone Tower of Terror",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the most popular spoken language in the Southern Hemisphere?",
+      "correctAnswer": "Portuguese",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which Italian automobile manufacturer gained majority control of U.S. automobile manufacturer Chrysler in 2011?",
+      "correctAnswer": "Fiat",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which item of clothing is usually worn by a Scotsman at a wedding?",
+      "correctAnswer": "Kilt",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which language is NOT Indo-European?",
+      "correctAnswer": "Hungarian",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which logical fallacy means to attack the character of your opponent rather than their arguments?",
+      "correctAnswer": "Ad hominem",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which month is Black History Month in the US?",
+      "correctAnswer": "February",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which mountain has the highest peak in Africa?",
+      "correctAnswer": "Mount Kilimanjaro, Tanzania",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which mountain has the highest peak in Australia?",
+      "correctAnswer": "Mount Kosciuszko, New South Wales",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which mountain has the highest peak in Europe?",
+      "correctAnswer": "Mount Elbrus, Russia",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which mountain has the highest peak in North America?",
+      "correctAnswer": "Denali, USA",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which mountain has the highest peak in South America?",
+      "correctAnswer": "Aconcagua, Argentina",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following buildings is example of a structure primarily built in the Art Deco architectural style?",
+      "correctAnswer": "Niagara Mohawk Building",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following carbonated soft drinks were introduced first?",
+      "correctAnswer": "Dr. Pepper",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following correctly describes Japanese word order?",
+      "correctAnswer": "Subject Object Verb",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT one of Aesop's fables?",
+      "correctAnswer": "The Fox and the Hound",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Ivy League universities has its official motto in Hebrew as well as in Latin?",
+      "correctAnswer": "Yale University",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the General Mills Corporation's monster cereals was the last to be released in the 1970's?",
+      "correctAnswer": "Fruit Brute",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these American singers and songwriters won a Nobel Prize in Literature?",
+      "correctAnswer": "Bob Dylan",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these companies does NOT manufacture automobiles?",
+      "correctAnswer": "Ducati",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning \"finger pressure\"?",
+      "correctAnswer": "Shiatsu",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Nicktoons were NOT originally a short on Oh Yeah! Cartoons before becoming their own series?",
+      "correctAnswer": "Danny Phantom",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these words means \"idle spectator\"?",
+      "correctAnswer": "Gongoozler",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which river flows through the Scottish city of Glasgow?",
+      "correctAnswer": "Clyde",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "correctAnswer": "We Love to See You Smile",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Who invented Pastafarianism?",
+      "correctAnswer": "Bobby Henderson",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Who is a co-founder of music streaming service Spotify?",
+      "correctAnswer": "Daniel Ek",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the founder of \"The Lego Group\"?",
+      "correctAnswer": "Ole Kirk Christiansen",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    },
+    {
+      "question": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "correctAnswer": "Josh DeSeno",
+      "acceptedAnswers": [],
+      "category": "General Knowledge",
+      "explanation": ""
+    }
+  ]
+}

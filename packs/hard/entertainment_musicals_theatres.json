@@ -1,0 +1,77 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Entertainment: Musicals & Theatres",
+  "questions": [
+    {
+      "question": "After England, more Shakespeare plays are set in this present day country than in any other.",
+      "correctAnswer": "Italy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "In Les Misérables, who is Prison Code 24601?",
+      "correctAnswer": "Jean Valjean",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "In Macbeth, the eyes of what animals were used in the Witches' cauldron?",
+      "correctAnswer": "Newts",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Broadway's first \"long-run\" musical?",
+      "correctAnswer": "The Elves",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Which actor has NOT portrayed Billy Flynn in the musical \"Chicago\"?",
+      "correctAnswer": "Christopher Walken",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these plays was famously first performed posthumously after the playwright committed suicide?",
+      "correctAnswer": "4.48 Psychosis",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Which Shakespeare play features the stage direction \"Enter a messenger, with two heads and a hand\"?",
+      "correctAnswer": "Titus Andronicus",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who played \"Charlie Price\" in the musical \"Kinky Boots\" on Broadway in New York from May 26th - Aug 6th 2017?",
+      "correctAnswer": "Brendon Urie",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who serves as the speaker of the prologue in Shakespeare's Romeo and Juliet?",
+      "correctAnswer": "Chorus",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the lyrics for Leonard Bernstein's 1957 Brodway musical West Side Story?",
+      "correctAnswer": "Stephen Sondheim",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    }
+  ]
+}

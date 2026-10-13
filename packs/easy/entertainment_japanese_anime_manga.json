@@ -1,0 +1,364 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Entertainment: Japanese Anime & Manga",
+  "questions": [
+    {
+      "question": "How many \"JoJos\" that are protagonists are there in the series \"Jojo's Bizarre Adventure\"?",
+      "correctAnswer": "8+",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"A Certain Scientific Railgun\", how many \"sisters\" did Accelerator have to kill to achieve the rumored level 6?",
+      "correctAnswer": "20,000",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Fairy Tail\", what is the nickname of Natsu Dragneel?",
+      "correctAnswer": "The Salamander",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Future Diary\", what is the name of Yuno Gasai's Phone Diary?",
+      "correctAnswer": "Yukiteru Diary",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"Inuyasha\", what are the heros are looking to collect?",
+      "correctAnswer": "Jewel Shards",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"One Piece,\" what color is Tony Tony Chopper's nose?",
+      "correctAnswer": "Blue",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"The Melancholy of Haruhi Suzumiya\" series, the SOS Brigade club leader is unknowingly treated as a(n) __ by her peers.",
+      "correctAnswer": "God",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In \"To Love-Ru\", Ren and Run are from what planet?",
+      "correctAnswer": "Memorze",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In 2013, virtual pop-star Hatsune Miku had a sponsorship with which pizza chain?",
+      "correctAnswer": "Domino's",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In Digimon, what is the Japanese name for the final evolutionary stage?",
+      "correctAnswer": "Ultimate",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In Ms. Kobayashi's Dragon Maid, who is Kobayashi's maid?",
+      "correctAnswer": "Tohru",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the 2012 animated film \"Wolf Children\", what are the names of the wolf children?",
+      "correctAnswer": "Ame & Yuki",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the 9th Pokemon movie, who is the Prince of the Sea?",
+      "correctAnswer": "Manaphy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the anime \"My Hero Academia\", which character is shown with the ability to manipulate gravity?",
+      "correctAnswer": "Uraraka",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
+      "correctAnswer": "Elizabeth Midford",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the anime Noragami who is one of the main protagonists?",
+      "correctAnswer": "Yukine",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "In the anime Seven Deadly Sins what is the name of one of the sins?",
+      "correctAnswer": "Diane",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Kirito and Asuna are main characters from which anime?",
+      "correctAnswer": "Sword Art Online",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "On what medium was \"Clannad\" first created?",
+      "correctAnswer": "Visual novel",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Satella in \"Re:Zero\" is the witch of what?",
+      "correctAnswer": "Envy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "The characters of \"Log Horizon\" are trapped in what game?",
+      "correctAnswer": "Elder Tale",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "The name of Junko Enoshima's imposter at the beginning of Danganronpa: Trigger Happy Havoc is?",
+      "correctAnswer": "Mukuro Ikusaba",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "The two main characters of \"No Game No Life\", Sora and Shiro, together go by what name?",
+      "correctAnswer": "Blank",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What animation studio produced \"Gurren Lagann\"?",
+      "correctAnswer": "Gainax",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What anime studio was in charge of the hit anime \"Made in Abyss\"?",
+      "correctAnswer": "Kinema Citrus",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What caused the titular mascot of Yo-Kai Watch, Jibanyan, to become a yokai?",
+      "correctAnswer": "Being run over by a truck",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What color is Ryūko Matoi's half of the Scissor Blade in the anime Kill la KIll?",
+      "correctAnswer": "Red",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is Gatomon's name in the original Japanese version of Digimon Adventure?",
+      "correctAnswer": "Tailmon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the age of Ash Ketchum in Pokemon when he starts his journey?",
+      "correctAnswer": "10",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the last name of Edward and Alphonse in the Fullmetal Alchemist series.",
+      "correctAnswer": "Elric",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Funny Valentine's stand in Jojo's Bizarre Adventure Part 7, Steel Ball Run?",
+      "correctAnswer": "Dirty Deeds Done Dirt Cheap",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of JoJo's Bizarre Adventure Part 5?",
+      "correctAnswer": "Vento Aureo",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the corgi in Cowboy Bebop?",
+      "correctAnswer": "Einstein",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the stuffed lion in Bleach?",
+      "correctAnswer": "Kon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What is the theme song of \"Neon Genesis Evangelion\"?",
+      "correctAnswer": "A Cruel Angel's Thesis",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What name is the main character Chihiro given in the 2001 movie \"Spirited Away\"?",
+      "correctAnswer": "Sen (Thousand)",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What was Ash Ketchum's second Pokemon?",
+      "correctAnswer": "Caterpie",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What year did \"Attack on Titan\" first air?",
+      "correctAnswer": "2013",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "What's the English Dub Name of \"Smile Precure\"?",
+      "correctAnswer": "Glitter Force",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Which anime heavily features music from the genre \"Eurobeat\"?",
+      "correctAnswer": "Initial D",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following originated as a manga?",
+      "correctAnswer": "Akira",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Which part from the JoJo's Bizarre Adventure manga is about a horse race across America?",
+      "correctAnswer": "Part 7: Steel Ball Run",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Which Pokémon and it's evolutions were banned from appearing in a main role after the Episode 38 Incident?",
+      "correctAnswer": "The Porygon Line",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the armored titan in \"Attack On Titan\"?",
+      "correctAnswer": "Reiner Braun",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the author of the manga series \"Astro Boy\"?",
+      "correctAnswer": "Osamu Tezuka",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the colossal titan in \"Attack On Titan\"?",
+      "correctAnswer": "Bertolt Hoover",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the main character with yellow hair in the anime Naruto?",
+      "correctAnswer": "Naruto",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the main heroine of the anime, Full Metal Panic!",
+      "correctAnswer": "Kaname Chidori",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the true moon princess in Sailor Moon?",
+      "correctAnswer": "Sailor Moon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who was a voice actor for the English dubbing of HOWL'S MOVING CASTLE (2004)?",
+      "correctAnswer": "Christian Bale",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    },
+    {
+      "question": "Who was given the title \"Full Metal\" in the anime series \"Full Metal Alchemist\"?",
+      "correctAnswer": "Edward Elric",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Japanese Anime & Manga",
+      "explanation": ""
+    }
+  ]
+}

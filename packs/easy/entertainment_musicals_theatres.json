@@ -1,0 +1,63 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Entertainment: Musicals & Theatres",
+  "questions": [
+    {
+      "question": "\"Doctor Who\" star David Tennant performed in a rendition of which Shakespearean play?",
+      "correctAnswer": "Hamlet",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "How many plays is Shakespeare generally considered to have written?",
+      "correctAnswer": "37",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "In Shakespeare's play Julius Caesar, Caesar's last words were...",
+      "correctAnswer": "Et tu, Brute? ",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "What is Jean ValJean's first prisoner number?",
+      "correctAnswer": "24601",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Which Shakespeare play inspired the musical 'West Side Story'?",
+      "correctAnswer": "Romeo & Juliet",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the award winning musical \"In The Heights\"?",
+      "correctAnswer": "Lin-Manuel Miranda",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the musical \"Hamilton\"?",
+      "correctAnswer": "Lin-Manuel Miranda",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the play 'Angels in America'?",
+      "correctAnswer": "Tony Kusher",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Musicals & Theatres",
+      "explanation": ""
+    }
+  ]
+}

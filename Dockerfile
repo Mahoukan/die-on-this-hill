@@ -30,6 +30,7 @@ COPY --from=production-dependencies --chown=node:node /app/node_modules ./node_m
 COPY --from=builder --chown=node:node /app/.next ./.next
 COPY --from=builder --chown=node:node /app/public ./public
 COPY --from=builder --chown=node:node /app/server ./server
+COPY --from=builder --chown=node:node /app/packs ./packs
 COPY --from=builder --chown=node:node /app/shared ./shared
 COPY --from=builder --chown=node:node /app/server.ts ./server.ts
 COPY --from=builder --chown=node:node /app/next.config.ts ./next.config.ts

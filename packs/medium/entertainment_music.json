@@ -1,0 +1,1666 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Entertainment: Music",
+  "questions": [
+    {
+      "question": "\"Drink the Sea\" is an album by which electronic music artist?",
+      "correctAnswer": "The Glitch Mob",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "\"Lift Your Spirit\" is an album by which artist?",
+      "correctAnswer": "Aloe Blacc",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "\"Make You Feel My Love\" was originally written and performed by which singer-songwriter?",
+      "correctAnswer": "Bob Dylan",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "\"The Day the Music Died\" was a tragic plane crash that killed three musicians in which decade?",
+      "correctAnswer": "50's",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "\"The Genius\" is the original and secondary name of which Wu-Tang Clan member?",
+      "correctAnswer": "GZA",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "'74–'75 is a 1993 single from the album Ring by what American band?",
+      "correctAnswer": "The Connells",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "'Don't You Want Me?' was a number one hit in 1981 for which electropop band?",
+      "correctAnswer": "Human League",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "'I'm never gonna dance again, guilty feet have got no rhythm' were lyrics from which Wham! hit single?",
+      "correctAnswer": "Careless Whisper",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "'We Built This City' was a number one hit for which American rock band in 1985?",
+      "correctAnswer": "Starship",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "A piccolo is a smaller version of what instrument?",
+      "correctAnswer": "Flute",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "According to a Beatles song, who kept her face in a jar by the door?",
+      "correctAnswer": "Eleanor Rigby",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "According to the RIAA: Which artist has sold the most albums by the million?",
+      "correctAnswer": "The Beatles",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "According to their 1974 hit, what were Brownsville Station doing \"In The Boys' Room\"?",
+      "correctAnswer": "Smokin'",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "African-American performer Sammy Davis Jr. was known for losing which part of his body in a car accident?",
+      "correctAnswer": "Left Eye",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Band Aid's 'Do They Know It's Christmas' was recorded to raise awareness of which issue in Ethiopia?",
+      "correctAnswer": "Famine",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Cryoshell, known for \"Creeping in My Soul\" did the advertising music for what Lego Theme?",
+      "correctAnswer": "Bionicle",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "EDM producer Marshmello performs live wearing clothes and a marshmallow mask of what colour?",
+      "correctAnswer": "White",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "EDM record label Monstercat is based in which country?",
+      "correctAnswer": "Canada",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Ellie Goulding's earliest album was named?",
+      "correctAnswer": "Lights",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "For which civil rights activist did Stevie Wonder write the song 'Happy Birthday' in 1980?",
+      "correctAnswer": "Martin Luther King Jr",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "From which album is the Gorillaz song, \"On Melancholy Hill\" featured in?",
+      "correctAnswer": "Plastic Beach",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "From which country does the piano originate?",
+      "correctAnswer": "Italy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Grand Theft Autumn/Where Is Your Boy is a song by which band?",
+      "correctAnswer": "Fall Out Boy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "How many copies have Metallica album \"Metallica\" (A.K.A The Black Album) sold worldwide (in Millions of Copies)?",
+      "correctAnswer": "20.5",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "How many members are in the Japanese rock band SCANDAL?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "How many semitones are in an octave?",
+      "correctAnswer": "12",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "How many studio albums have the heavy metal band, 'Metallica' released in the period between 1983 and 2016?",
+      "correctAnswer": "10",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Iconic cartoon character Mickey Mouse made his onscreen debut in what year?",
+      "correctAnswer": "1928",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In 2015, David Hasselhof released a single called...",
+      "correctAnswer": "True Survivor",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In August 1964, who introduced the Beatles to cannabis?",
+      "correctAnswer": "Bob Dylan",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In music theory, how many notes are in a seventh chord?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In Prokofiev's 'Peter and the Wolf', the wolf itself is represented by a trio of which musical instrument?",
+      "correctAnswer": "French horn",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In The Bangles' 'Manic Monday', what time is it already?",
+      "correctAnswer": "Six o'clock",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In the song “The Ultimate Showdown of Ultimate Destiny,” who is the only one to survive the battle?",
+      "correctAnswer": "Mr. Rogers",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In what film was the Michael Jackson song \"Will You Be There\" featured?",
+      "correctAnswer": "Free Willy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did US band Weezer release Weezer (The White Album)?",
+      "correctAnswer": "2016",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was Taylor Swift born?",
+      "correctAnswer": "1989",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was Tchaikovsky's 1812 Overture composed?",
+      "correctAnswer": "1880",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In what year was the smash hit song \"Scatman's World\" released?",
+      "correctAnswer": "1995",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In which city did American rap producer DJ Khaled originate from?",
+      "correctAnswer": "Miami",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In which year did \"Caravan Palace\" release their first album?",
+      "correctAnswer": "2008",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "In which year was the Megadeth album \"Peace Sells... but Who's Buying?\" released?",
+      "correctAnswer": "1986",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Irish musician Hozier released a music track in 2013 titled, \"Take Me to ______\"",
+      "correctAnswer": "Church",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+      "correctAnswer": "Hurt",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Korean girl group TWICE is under which Entertainment Label?",
+      "correctAnswer": "JYP",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "La Fenice opera house is in which Italian city?",
+      "correctAnswer": "Venice",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Liam Howlett founded which electronic music group in 1990?",
+      "correctAnswer": "The Prodigy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Madonna's song \"Hung Up\" includes a piece from which popular 70s song?",
+      "correctAnswer": "Gimmie! Gimmie! Gimme! (A Man After Midnight)",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "May 16th of every year is known as __________ Day, named after a punk band prominent in the 1990s.",
+      "correctAnswer": "Lagwagon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Moby, an American DJ, singer, and musician, achieved worldwide success for the 1999 release of which of the following albums?",
+      "correctAnswer": "Play",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "On the cover of 'Abbey Road,' which of the Beatles is not wearing shoes?",
+      "correctAnswer": "Paul McCartney",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Pearl Jam was originally named after which sports figure?",
+      "correctAnswer": "Mookie Blaylock",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Pink Floyd made this song for their previous lead singer Syd Barrett.",
+      "correctAnswer": "Shine On You Crazy Diamond",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Prior to going solo in 1982, Lionel Richie was a member of which Motown group?",
+      "correctAnswer": "The Commodores",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Rick Astley's hit song \"Never Gonna Give You Up\" was released in what year?",
+      "correctAnswer": "1987",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Saul Hudson (Slash) of the band Guns N' Roses is known for playing what type of guitar?",
+      "correctAnswer": "Les Paul Standard",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The 'In the Flesh' tour was used in support of what Pink Floyd album?",
+      "correctAnswer": "Animals",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The 1952 musical composition 4'33\", composed by prolific American composer John Cage, is mainly comprised of what sound?",
+      "correctAnswer": "Silence",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The 2010 song \"Eenie Meenie\" was a collaboration between which two popular artists?",
+      "correctAnswer": "Sean Kingston & Justin Bieber",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The 2023 Beatles song \"Now and Then\" originated from an unfinished demo recorded by which Beatle?",
+      "correctAnswer": "John Lennon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The co-creator of Gorillaz, Damon Albarn, is also the lead singer of what band?",
+      "correctAnswer": "Blur",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The letters in the name of the band \"TWRP\" stand for what?",
+      "correctAnswer": "Tupperware Remix Party",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The Proclaimers - I'm Gonna Be (500 Miles) reached what position on the US Hot 100 Charts in 1993?",
+      "correctAnswer": "3rd",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The song \"Caramelldansen\" is commonly mistaken as a Japanese song, what language is the song actually sung in?",
+      "correctAnswer": "Swedish",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The song \"Feel Good Inc.\" by British band Gorillaz features which hip hop group?",
+      "correctAnswer": "De La Soul",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The song \"Twin Size Mattress\" was written by which band?",
+      "correctAnswer": "The Front Bottoms",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
+      "correctAnswer": "Baba O' Riley",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Typically, how many keys are on a piano?",
+      "correctAnswer": "88",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What album did Gorillaz release in 2017?",
+      "correctAnswer": "Humanz",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What animal is featured on the cover of English electronic music group The Prodigy's album, \"The Fat of the Land\"?",
+      "correctAnswer": "Crab",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What are the first few words in the lyrics of A-Ha's 'Take On Me'?",
+      "correctAnswer": "We're talking away",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What country did Shirley Bassey originate from?",
+      "correctAnswer": "Wales",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What date is referenced in the 1971 song \"September\" by Earth, Wind & Fire?",
+      "correctAnswer": "21st of September",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What French artist/band is known for playing on the midi instrument \"Launchpad\"?",
+      "correctAnswer": "Madeon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
+      "correctAnswer": "Trance",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is Brian May's guitar called?",
+      "correctAnswer": "Red Special",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is Fergie's debut album called?",
+      "correctAnswer": "The Dutchess",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is rapper Drake's real name?",
+      "correctAnswer": "Aubrey Graham",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the first track on Kanye West's 808s & Heartbreak?",
+      "correctAnswer": "Say You Will",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the last song on the first Panic! At the Disco album?",
+      "correctAnswer": "Build God, Then We'll Talk",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of French electronic music producer Madeon's 2015 debut studio album?",
+      "correctAnswer": "Adventure",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the 2016 studio album by the French electronic music duo Justice?",
+      "correctAnswer": "Woman",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the main character from the music video of \"Shelter\" by Porter Robinson and A-1 Studios?",
+      "correctAnswer": "Rin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the second studio album released by American rapper Post Malone in 2018?",
+      "correctAnswer": "Beerbongs & Bentleys",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the opening track on Lorde's Pure Heroine?",
+      "correctAnswer": "Tennis Court",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the real name of American rapper Pitbull?",
+      "correctAnswer": "Armando Christian Pérez",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the real name of Canadian electronic music producer deadmau5?",
+      "correctAnswer": "Joel Zimmerman",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the real name of prominent electronic musician Aphex Twin?",
+      "correctAnswer": "Richard D. James",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the real name of rapper, The Notorious B.I.G?",
+      "correctAnswer": "Christopher Wallace",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What is the relationship between the band members of American rock band King of Leon?",
+      "correctAnswer": "Brothers & cousins",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What M83 was featured in Grand Theft Auto V's radio?",
+      "correctAnswer": "Midnight City",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What musician made the song \"F**kin` Perfect\" in 2010?",
+      "correctAnswer": "P!nk",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What song by Tina Turner is the theme for Mad Max Beyond Thunderdome?",
+      "correctAnswer": "We Don't Need Another Hero",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What song on ScHoolboy Q's album Black Face LP featured Kanye West?",
+      "correctAnswer": "THat Part",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was Bon Iver's debut album released in 2007?",
+      "correctAnswer": "For Emma, Forever Ago",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was Britney Spears' debut single?",
+      "correctAnswer": "...Baby One More Time",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was David Bowie's real surname?",
+      "correctAnswer": "Jones",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was George Michael's chart-topping 1987 debut studio album?",
+      "correctAnswer": "Faith",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was Radiohead's first album?",
+      "correctAnswer": "Pablo Honey",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was Raekwon the Chefs debut solo album?",
+      "correctAnswer": "Only Built 4 Cuban Linx",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was Taylor Swift's 5th album called?",
+      "correctAnswer": "1989",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the birthplace of musical artist 'Sir Robert Bryson Hall II' (aka. Logic)?",
+      "correctAnswer": "Maryland, United States",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first music video to be broadcast on MTV?",
+      "correctAnswer": "Video Killed the Radio Star",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of Pink Floyd's first studio album?",
+      "correctAnswer": "The Piper at the Gates of Dawn",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the Wu-Tang Clan album Martin Shkreli bought for $2 million dollars?",
+      "correctAnswer": "Once Upon a Time in Shaolin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the release date of the They Might Be Giants album, 'Mink Car?'",
+      "correctAnswer": "September 11th, 2001",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the title of ABBA`s first UK hit single?",
+      "correctAnswer": "Waterloo",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was the title of Sakamoto Kyu's song \"Ue o Muite Arukou\" (I Look Up As I Walk) changed to in the United States?",
+      "correctAnswer": "Sukiyaki",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What was The Velvet Underground's first album called?",
+      "correctAnswer": "The Velvet Underground & Nico",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Red Hot Chill Pepper's album \"Californication\" released?",
+      "correctAnswer": "1999",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Weezer's album \"Pinkerton\" released? ",
+      "correctAnswer": "1996",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "What's the most common time signature for rock songs?",
+      "correctAnswer": "4/4",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "When did Radiohead release their album \"OK Computer\"?",
+      "correctAnswer": "1997",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "When did Tame Impala release their second album?",
+      "correctAnswer": "2012",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "When did The Beatles release the LP \"Please Please Me\"?",
+      "correctAnswer": "1963",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "When was the 3rd album \"Notes from the Underground\" of the band \"Hollywood Undead\" released?",
+      "correctAnswer": "2013",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "When was the Prince album \"Purple Rain\" released?",
+      "correctAnswer": "1984",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Where did the British Boy Band \"Bros\" come from?",
+      "correctAnswer": "Camberley",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Where does \"Gasolina\" rapper Daddy Yankee originate from?",
+      "correctAnswer": "Puerto Rico",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Aerosmith album featured \"Walk This Way\"?",
+      "correctAnswer": "Toys in the Attic",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which album by American rapper Kanye West contained songs such as \"Love Lockdown\", \"Paranoid\" and \"Heartless\"?",
+      "correctAnswer": "808s & Heartbreak",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which alternative rock band released the critically-acclaimed album \"OK Computer\"?",
+      "correctAnswer": "Radiohead",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which American family band had a 1986 top 10 hit with the song 'Crush On You'?",
+      "correctAnswer": "The Jets",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 \"Need You\"?",
+      "correctAnswer": "NGHTMRE",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist curated the official soundtrack for \"The Hunger Games: Mockingjay - Part 1\"?",
+      "correctAnswer": "Lorde",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist or group did John Lennon consider \"son(s) of the Beatles\"?",
+      "correctAnswer": "Jeff Lynne's Electric Light Orchestra",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist released his third and final studio album 'Electric Ladyland' before his death in 1970?",
+      "correctAnswer": "Jimi Hendrix",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which band had hits in 1972 with the songs \"Baby I'm A Want You\", \"Everything I Own\" and \"The Guitar Man\"",
+      "correctAnswer": "Bread",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which band had hits in 1975 with the songs, 'One Of These Nights' & 'Lyin Eyes'?",
+      "correctAnswer": "The Eagles",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which band released songs such as \"Electric Feel\", \"Kids\", and \"Time to Pretend\"?",
+      "correctAnswer": "MGMT",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which band released the album \"Sonic Highways\" in 2014?",
+      "correctAnswer": "Foo Fighters",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which band, with Boy George on lead vocals, won the Brit Awards in 1984?",
+      "correctAnswer": "Culture Club\t",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
+      "correctAnswer": "John",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Beatle wrote and sang the song \"Why Don't We Do It in the Road\" after being inspired by seeing two monkeys copulating in the street?",
+      "correctAnswer": "Paul",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which British band did Keith Moon play in until his death in 1978?",
+      "correctAnswer": "The Who",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which British female singer and songwriter was sampled Eminem's hit single 'Stan'?",
+      "correctAnswer": "Dido",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which chain restaurant increased sales after it was mentioned in the 2016 Beyoncé song: \"Formation\"?",
+      "correctAnswer": "Red Lobster",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which city is the American singer \"Pitbull\" from?",
+      "correctAnswer": "Miami",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Coldplay album won the Grammy for Best Rock Album in the 2009 Grammy Awards?",
+      "correctAnswer": "Viva La Vida Or Death And All His Friends",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which country does the electronic music duo \"The Knife\" originate from?",
+      "correctAnswer": "Sweden",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which country does the power metal band \"Sabaton\" originate from?",
+      "correctAnswer": "Sweden",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which country is singer Kyary Pamyu Pamyu from?",
+      "correctAnswer": "Japan",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which European capital city gives its name to a 1981 song by Ultravox?",
+      "correctAnswer": "Vienna",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which famous 90's rap album is commonly referred to as \"The Bible of Hip Hop\"?",
+      "correctAnswer": "Illmatic",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which French duo had UK hits in 1998 with the songs 'Sexy Boy', 'Kelly Watch The Stars' & 'All I Need'?",
+      "correctAnswer": "Air",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which genre of Hip Hop does MC Frontalot rap?",
+      "correctAnswer": "Nerdcore",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Iron Maiden album did the song \"Dream of Mirrors\" feature in?",
+      "correctAnswer": "Brave New World",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which member of \"The Beatles\" narrated episodes of \"Thomas the Tank Engine\"?",
+      "correctAnswer": "Ringo Starr",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which member of the British pop group \"The Spice Girls\" was known as Ginger Spice?",
+      "correctAnswer": "Geri Halliwell",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which music artist made the songs \"Heart\", \"It's a Sin\", and \"West End Girls\"?",
+      "correctAnswer": "Pet Shop Boys",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which musical group won the Brit Awards in 1985, with George Michael as a member?",
+      "correctAnswer": "Wham!",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which musical instrument is nicknamed 'the clown of the orchestra'?",
+      "correctAnswer": "Bassoon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which novelty band was best known for their UK chart hits \"Combine Harvester\" and \"I Am a Cider Drinker\" in 1976?",
+      "correctAnswer": "The Wurzels",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the Beatles band members is barefoot on the front cover of the 'Abbey Road' album?",
+      "correctAnswer": "Paul McCartney",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following bands is Tom DeLonge not a part of?",
+      "correctAnswer": "+44",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following guitarists recorded an album as a member of the Red Hot Chili Peppers?",
+      "correctAnswer": "Dave Navarro",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a song in BROCKHAMPTON's SATURATION album series?",
+      "correctAnswer": "LAMB",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following music bands is not from Finland?",
+      "correctAnswer": "Sabaton",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following rappers were NOT part of the hip-hop group Odd Future?",
+      "correctAnswer": "Vince Staples",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following stars was not mentioned in the lyrics of Madonna's \"Vogue\"?",
+      "correctAnswer": "Mae West",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these albums is a Wu-Tang Clan album?",
+      "correctAnswer": "Iron Flag",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these artists do NOT originate from France?",
+      "correctAnswer": "The Chemical Brothers",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these artists has NOT been a member of dancehall group Major Lazer?",
+      "correctAnswer": "Skrillex",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these artists was NOT a member of the electronic music supergroup Swedish House Mafia, which split up in 2013?",
+      "correctAnswer": "Alesso",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these bands are NOT from Australia?",
+      "correctAnswer": "The Naked and Famous",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these bands is the oldest?",
+      "correctAnswer": "Pink Floyd",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these bands was a featuring artist in Compton rapper Kendrick Lamar's 2017 album, \"DAMN.\"?",
+      "correctAnswer": "U2",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these black metal acts was a solo project?",
+      "correctAnswer": "Burzum",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a member of the virtual band Gorillaz?",
+      "correctAnswer": "Phi Cypher",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a name of an album released by American rapper Pitbull?",
+      "correctAnswer": "Welcome to Miami",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a single by Pink Floyd guitarist, David Gilmour?",
+      "correctAnswer": "Sunset Strip",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a song by Pegboard Nerds?",
+      "correctAnswer": "WiFi Tears",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a song featured on Green Day's 21st Century Breakdown album?",
+      "correctAnswer": "She's A Rebel",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a song on the album Graduation by Kanye West?",
+      "correctAnswer": "Waves",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a song on The Beatles' 1968 self titled album, also known as the White album?",
+      "correctAnswer": "Being For The Benefit Of Mr. Kite!",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT an album released by The Beatles?",
+      "correctAnswer": "The Wall",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not an Ed Sheeran album?",
+      "correctAnswer": "-",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT the name of an album released by American rapper Viper?",
+      "correctAnswer": "The Life of Pablo",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT the name of an album released by Miami-based producer DJ Khaled?",
+      "correctAnswer": "Don't Ever Play Yourself",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is the name of an American psychedelic rock band formed in 2002 by Benjamin Goldwasser and Andrew VanWyngarden?",
+      "correctAnswer": "MGMT",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Johns was murdered by gunshots outside the Dakota in New York in 1980?",
+      "correctAnswer": "John Lennon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these languages was NOT included in the 2016 song \"Don't Mind\" by Kent Jones?",
+      "correctAnswer": "Portuguese",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Queen songs were sampled for the baseline in Vanilla \"Ice's Ice Ice Baby?\"",
+      "correctAnswer": "Under Pressure",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs by artist Eminem contain the lyric \"Nice to meet you. Hi, my name is... I forgot my name!\"?",
+      "correctAnswer": "Rain Man",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs did Jimi Hendrix cover?",
+      "correctAnswer": "All of these songs",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs from American Idiot: The Musical was a previously unreleased Green Day song?",
+      "correctAnswer": "When It's Time",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs is NOT in The Beatles' album \"Sgt. Pepper's Lonely Hearts Club Band\"?",
+      "correctAnswer": "Strawberry Fields Forever",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs is not on the \"untitled\" album by Led Zeppelin?",
+      "correctAnswer": "Celebration Day",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these songs was NOT released in the 90s?",
+      "correctAnswer": "\"I Want It All\" by Queen",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these women is not a member of the Korean girl group TWICE?",
+      "correctAnswer": "Kang Seulgi",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these artists appears in the album Deltron 3030?",
+      "correctAnswer": "Dan the Automater",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these people has been in the band ''Metallica'' in the past?",
+      "correctAnswer": "Dave Mustaine",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these Pink Floyd albums were also a movie?",
+      "correctAnswer": "The Wall",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these Rammstein songs has two official music videos?",
+      "correctAnswer": "Du Riechst So Gut",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these rappers is NOT a member of the rap group Wu-Tang Clan?",
+      "correctAnswer": "Dr.Dre",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which popular jazz standard begins with the line \"Someday, when I'm awfully low\"?",
+      "correctAnswer": "The Way You Look Tonight",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which popular rock band has a one-armed drummer?",
+      "correctAnswer": "Def Leppard",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Queen song was covered by Brittany Murphy in the 2006 film \"Happy Feet\"?",
+      "correctAnswer": "Somebody to Love",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which rapper had an album that went double platinum with no features?",
+      "correctAnswer": "J. Cole",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which rock band released the album \"The Bends\" in March 1995?",
+      "correctAnswer": "Radiohead",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which singer was featured in Swedish producer Avicii's song \"Wake Me Up\"?",
+      "correctAnswer": "Aloe Blacc",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which song by Swedish electronic musician Avicii samples the song \"Something's Got A Hold On Me\" by Etta James?",
+      "correctAnswer": "Levels",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which song in Drake's \"Views\" features Future?",
+      "correctAnswer": "Grammys",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which song is not by TheFatRat?",
+      "correctAnswer": "Ascent",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which song made by MAN WITH A MISSION was used as the opening for the anime \"Log Horizon\"?",
+      "correctAnswer": "\"Database\"",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which song previously recorded by Elvis Presley was covered by UB40 with a reggae beat?",
+      "correctAnswer": "Can't Help Falling in Love",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Which Toronto landmark was featured on the cover art of Canadian rapper Drake's 2016 album \"Views\"?",
+      "correctAnswer": "CN Tower",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who had a 1973 hit with the song 'Hocus Pocus'?",
+      "correctAnswer": "Focus",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who had a 1976 hit with the song 'You Make Me Feel Like Dancing'?",
+      "correctAnswer": "Leo Sayer",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who had a US and UK number 1 hit in 1962 with the instrumental, 'Telstar'?",
+      "correctAnswer": "The Tornados",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who had hits in the 70s with the songs \"Lonely Boy\" and \"Never Let Her Slip Away\"?",
+      "correctAnswer": "Andrew Gold",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the artist of the recent new album the Uncanny Valley?",
+      "correctAnswer": "Perturbator",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the bassist of the British rock band Queen?",
+      "correctAnswer": "John Deacon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the founder and leader of industrial rock band, 'Nine Inch Nails'?",
+      "correctAnswer": "Trent Reznor",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the frontman of Muse?",
+      "correctAnswer": "Matt Bellamy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the lead singer of Bastille?",
+      "correctAnswer": "Dan Smith",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the lead singer of Silverchair?",
+      "correctAnswer": "Daniel Johns",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the lead singer of The Lumineers?",
+      "correctAnswer": "Wesley Schultz",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the lead singer of the Smashing Pumpkins?",
+      "correctAnswer": "Billy Corgan",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the Pink Floyd song \"Shine On You Crazy Diamond\" written about?",
+      "correctAnswer": "Syd Barrett",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the primary lyricist for Canadian progressive rock band Rush?",
+      "correctAnswer": "Neil Peart",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the singer for Fall Out Boy?",
+      "correctAnswer": "Patrick Stump",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the vocalist and frontman of rock band \"Guns N' Roses\"?",
+      "correctAnswer": "Axl Rose",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who performed the guitar solo on Michael Jackson's hit \"Beat It\"?",
+      "correctAnswer": "Eddie Van Halen",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who performed the hit single 'Call Me' for the 1980 film 'American Gigolo'?",
+      "correctAnswer": "Blondie",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who recorded the album called \"Down to the Moon\" in 1986?",
+      "correctAnswer": "Andreas Vollenweider",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who released the 1991 album \"Out of Time\"?",
+      "correctAnswer": "R.E.M.",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who sang backup vocals on Rockwell's hit 1984 single 'Somebody's Watching Me'?",
+      "correctAnswer": "Michael Jackson",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who sung the opening theme song to the 1995 James Bond film 'Goldeneye'?",
+      "correctAnswer": "Tina Turner",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first white band to play the Apollo Theater?",
+      "correctAnswer": "Buddy Holly and The Crickets",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the guitarist in the band \"The Doors\"?",
+      "correctAnswer": "Robby Krieger",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the lead singer and frontman of rock band R.E.M?",
+      "correctAnswer": "Michael Stipe",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the oldest member of The Beatles?",
+      "correctAnswer": "Ringo Starr",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the youngest member of The Beatles?",
+      "correctAnswer": "George Harrison",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who was walking like an Egyptian in 1981?",
+      "correctAnswer": "The Bangles",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the musical composition, \"Rhapsody In Blue\"?",
+      "correctAnswer": "George Gershwin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    },
+    {
+      "question": "With his distinctive red hair, which Italian composer, born in 1678, was known as the 'Red Priest'?",
+      "correctAnswer": "Vivaldi",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Music",
+      "explanation": ""
+    }
+  ]
+}

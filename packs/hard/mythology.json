@@ -1,0 +1,91 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Mythology",
+  "questions": [
+    {
+      "question": "According to Algonquian folklore, how does one transform into a Wendigo?",
+      "correctAnswer": "Participating in cannibalism.",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "In Greek Mythology, who was the daughter of King Minos?",
+      "correctAnswer": "Ariadne",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "In Norse mythology, what is the name of the serpent which eats the roots of the ash tree Yggdrasil?",
+      "correctAnswer": "Nidhogg",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Nidhogg is a mythical creature from what mythology?",
+      "correctAnswer": "Norse",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Talos, the mythical giant bronze man, was the protector of which island?",
+      "correctAnswer": "Crete",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "What immense structure is referred to in Norse Mythology as the Yggdrasil.",
+      "correctAnswer": "Tree",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "What was the punishment for Sysiphus's craftiness?",
+      "correctAnswer": "Cursed to roll a boulder up a hill for eternity.",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which Norse God has a horse named Sleipnir?",
+      "correctAnswer": "Odin",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a god in Norse Mythology.",
+      "correctAnswer": "Jens",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who did Hippomenes defeat in a footrace?",
+      "correctAnswer": "Atalanta",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who is a minor god that is protector and creator of various arts, such as cheese making and bee keeping.",
+      "correctAnswer": "Aristaeus",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the Egyptian god of reproduction and lettuce?",
+      "correctAnswer": "Min",
+      "acceptedAnswers": [],
+      "category": "Mythology",
+      "explanation": ""
+    }
+  ]
+}

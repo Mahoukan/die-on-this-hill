@@ -1,0 +1,189 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Entertainment: Board Games",
+  "questions": [
+    {
+      "question": "How many rooms are there, not including the hallways and the set of stairs, in the board game \"Clue\"?",
+      "correctAnswer": "9",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Magic: The Gathering, what card's flavor text is \"Catch!\"?",
+      "correctAnswer": "Lava Axe",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Magic: The Gathering, what term for blocking was established in the Portal set?",
+      "correctAnswer": "Intercepting",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Magic: The Gathering, what was a tribute card to Jamie Wakefield's late wife Marilyn, who loved horses?",
+      "correctAnswer": "Timbermare",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In Magic: The Gathering, which of the following was the first publicly released foil card?",
+      "correctAnswer": "Lightning Dragon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "In standard Monopoly, what's the rent if you land on Park Place with no houses?",
+      "correctAnswer": "$35",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "On a standard Monopoly board, how much do you have to pay for Tennessee Ave?",
+      "correctAnswer": "$180",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Some of the \"Fallen Empires\" cards from \"Magic: The Gathering\" were misprinted on the backs of which other card game?",
+      "correctAnswer": "Wyvern",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "The board game \"Monopoly\" is a variation of what board game?",
+      "correctAnswer": "The Landlord's Game",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "The board game \"Ra\" was designed by which designer? ",
+      "correctAnswer": "Reiner Knizia",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "The Dice Tower network of board game podcasts and videos is run by which individual?",
+      "correctAnswer": "Tom Vasel",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What do you declare in Rīchi Mahjong when you've drawn your winning tile?",
+      "correctAnswer": "Tsumo",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most challenging monster in the Dungeons & Dragons 5th Edition Monster Manual?",
+      "correctAnswer": "Tarrasque",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What is the sum of all the tiles in a standard box of Scrabble?",
+      "correctAnswer": "187",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What is the world's oldest board game?",
+      "correctAnswer": "Senet",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What Magic: The Gathering card's flavor text is just 'Ribbit.'?",
+      "correctAnswer": "Turn to Frog",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What was the development code name for the \"Urza's Destiny\" expansion for \"Magic: The Gathering\", released in 1999?",
+      "correctAnswer": "Chimichanga",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "What was the development code name for the \"Weatherlight\" expansion for \"Magic: The Gathering\", released in 1997?",
+      "correctAnswer": "Mocha Latte",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "When Magic: The Gathering was first solicited, which of the following was it originally titled?",
+      "correctAnswer": "Mana Clash",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which ability from the \"Magic: The Gathering\" Scars of Mirrodin expansion involves having at least three artifacts in play?",
+      "correctAnswer": "Metalcraft",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which board game was first released on February 6th, 1935?",
+      "correctAnswer": "Monopoly",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which card is on the cover of the Beta rulebook of \"Magic: The Gathering\"?",
+      "correctAnswer": "Bog Wraith",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which character class in Dungeons and Dragons 5th edition gains it's powers from making a pact with a being of higher power?",
+      "correctAnswer": "Warlock",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cards from \"Magic: The Gathering\" has a flavor text that begins with \"Oi oi oi\"?",
+      "correctAnswer": "Uthden Troll",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cities is NOT featured in the Pandemic board game?",
+      "correctAnswer": "Berlin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    },
+    {
+      "question": "Which Pokemon is #39 in the National Pokedex?",
+      "correctAnswer": "Jigglypuff",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Board Games",
+      "explanation": ""
+    }
+  ]
+}

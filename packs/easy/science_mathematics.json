@@ -1,0 +1,161 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Science: Mathematics",
+  "questions": [
+    {
+      "question": "How many degrees make a full circle?",
+      "correctAnswer": "360",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many sides does a heptagon have?",
+      "correctAnswer": "7",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many sides does a Möbius strip have?",
+      "correctAnswer": "1",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many sides does a pentagon have?",
+      "correctAnswer": "5",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many sides does a trapezium have?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "How many square faces does a cube have?",
+      "correctAnswer": "6",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "In Roman Numerals, what does XL equate to?",
+      "correctAnswer": "40",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "The metric prefix \"atto-\" makes a measurement how much smaller than the base unit?",
+      "correctAnswer": "One Quintillionth",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What comes after a Million, a Billion, and a Trillion?",
+      "correctAnswer": "Quadrillion",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is a polygon with eight sides called?",
+      "correctAnswer": "Octagon",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the correct order of operations for solving equations?",
+      "correctAnswer": "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the equation for the volume of a sphere?",
+      "correctAnswer": "(4/3)πr^3",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the least number of sides a polygon can have?",
+      "correctAnswer": "3",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the mathematician Euler's first name?",
+      "correctAnswer": "Leonhard",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of a nine sided polygon?",
+      "correctAnswer": "Nonagon",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What is the symbol for Displacement?",
+      "correctAnswer": "Δr",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What prime number comes next after 19?",
+      "correctAnswer": "23",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What type of angle is greater than 90°?",
+      "correctAnswer": "Obtuse",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "What's the square root of 49?",
+      "correctAnswer": "7",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not one of the seven Millennium Prize Problems?",
+      "correctAnswer": "Naviér conjecture",
+      "acceptedAnswers": ["Naviér–Stokes","Naviér–Stokes existence and smoothness"],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Which two men are credited with independently discovering differential calculus? ",
+      "correctAnswer": "Newton and Leibnitz",
+      "acceptedAnswers": ["Newton and Leibniz"],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    },
+    {
+      "question": "Who proved Fermat's Last Theorem?",
+      "correctAnswer": "Andrew Wiles",
+      "acceptedAnswers": [],
+      "category": "Science: Mathematics",
+      "explanation": ""
+    }
+  ]
+}

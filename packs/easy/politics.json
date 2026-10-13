@@ -1,0 +1,77 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Politics",
+  "questions": [
+    {
+      "question": "According to the United States Constitution, how old must a person be to be elected President of the United States?",
+      "correctAnswer": "35",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Former United States President Bill Clinton famously played which instrument?",
+      "correctAnswer": "Saxophone",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "How many people are in the U.S. House of Representatives?",
+      "correctAnswer": "435",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "The largest consumer market in 2015 was...",
+      "correctAnswer": "The United States of America",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "What candidate won the 2012 US Presidential Election?",
+      "correctAnswer": "Barack Obama",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which former US president was nicknamed \"Teddy\" after he refused to shoot a defenseless black bear?",
+      "correctAnswer": "Theodore Roosevelt",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Pacific Islander countries is ruled by a constitutional monarchy?",
+      "correctAnswer": "Tonga",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Who was South Africa's first Black President?",
+      "correctAnswer": "Nelson Mandela",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the 45th President of the United States?",
+      "correctAnswer": "Donald Trump",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    },
+    {
+      "question": "Whose 2016 presidential campaign slogan was \"Make America Great Again\"?",
+      "correctAnswer": "Donald Trump",
+      "acceptedAnswers": [],
+      "category": "Politics",
+      "explanation": ""
+    }
+  ]
+}

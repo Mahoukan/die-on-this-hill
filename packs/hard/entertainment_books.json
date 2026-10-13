@@ -1,0 +1,196 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Entertainment: Books",
+  "questions": [
+    {
+      "question": "Abel Magwitch is a character from which Charles Dickens novel?",
+      "correctAnswer": "Great Expectations",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "According to Bram Stoker's novel, in which British coastal town did Dracula come ashore?",
+      "correctAnswer": "Whitby",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In Margaret Atwood's \"The Handmaid's Tale\", what is Offred's real name is implied to be?",
+      "correctAnswer": "June",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the \"Harry Potter\" series, what is Headmaster Dumbledore's full name?",
+      "correctAnswer": "Albus Percival Wulfric Brian Dumbledore",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Beatrix Potter books, what type of animal is Tommy Brock?",
+      "correctAnswer": "Badger",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the book \"The Martian\", how long was Mark Watney trapped on Mars (in Sols)?",
+      "correctAnswer": "549 Days",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the book series \"Odd Thomas\", Danny Jessup has what genetic disease? ",
+      "correctAnswer": " Osteogenesis Imperfecta",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Harry Potter universe, what is Cornelius Fudge's middle name?",
+      "correctAnswer": "Oswald",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Harry Potter universe, who does Draco Malfoy end up marrying?",
+      "correctAnswer": "Astoria Greengrass",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
+      "correctAnswer": "Shadow",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Magic: The Gathering universe,  the Antiquities, Ice Age, and Alliances expansions take place on which continent?",
+      "correctAnswer": "Terisiare",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Magic: The Gathering universe, the Fallen Empires expansion takes place on which continent?",
+      "correctAnswer": "Sarpadia",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the Magic: The Gathering universe, which plane does the Homelands expansion take place in?",
+      "correctAnswer": "Ulgrotha",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In which classic novel by Mark Twain did a beggar and Prince of Wales switch clothes, and learn about social class inequality?",
+      "correctAnswer": "The Prince and the Pauper",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In which classic novel is there a character named Homer Simpson?",
+      "correctAnswer": "The Day of the Locust",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "The novel \"Jane Eyre\" was written by what author? ",
+      "correctAnswer": "Charlotte Brontë",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is Hermione Granger's middle name?",
+      "correctAnswer": "Jean",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is Ron Weasley's middle name?",
+      "correctAnswer": "Bilius",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the town in which Lily and James Potter are buried?",
+      "correctAnswer": "Godric's Hollow",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Where does the book \"The Silence of the Lambs\" get its title from?",
+      "correctAnswer": "The main character's trauma in childhood",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
+      "correctAnswer": "Rudyard Kipling",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
+      "correctAnswer": "Friedrich Engels",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which classic horror character killed Elizabeth Lavenza?",
+      "correctAnswer": "Frankenstein's Monster",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "correctAnswer": "Wessex",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a work done by Shakespeare?",
+      "correctAnswer": "Trial of Temperance",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these does Charlie NOT read in The Perks of Being a Wallflower?",
+      "correctAnswer": "The Grapes of Wrath",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the novel \"Moby-Dick\"?",
+      "correctAnswer": "Herman Melville",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    }
+  ]
+}

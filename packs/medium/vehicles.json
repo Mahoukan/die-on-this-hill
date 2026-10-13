@@ -1,0 +1,196 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Vehicles",
+  "questions": [
+    {
+      "question": "Complete the following analogy: Audi is to Volkswagen as Infiniti is to ?",
+      "correctAnswer": "Nissan",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Enzo Ferrari was originally an auto racer for what manufacturer before founding his own car company?",
+      "correctAnswer": "Alfa Romeo",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The British Rail Class 700, Class 707 and the Class 717 are part of what train family?",
+      "correctAnswer": "Desiro City",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What country is the Hussarya supercar, made by the car manufacturer \"Arrinera\", assembled in?",
+      "correctAnswer": "Poland",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What do the 4 Rings in Audi's Logo represent?",
+      "correctAnswer": "Previously independent automobile manufacturers",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What manufacturer made the car used in Back to the Future?",
+      "correctAnswer": "DeLorean",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What nickname was given to Air Canada Flight 143 after it ran out of fuel and glided to safety in 1983?",
+      "correctAnswer": "Gimli Glider",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What part of an automobile engine uses lobes to open and close intake and exhaust valves, and allows an air/fuel mixture into the engine?",
+      "correctAnswer": "Camshaft",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What was the aircraft registration for the last Concorde built?",
+      "correctAnswer": "G-BOAF",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first vehicle that came with air conditioning as a factory standard?",
+      "correctAnswer": "Packard",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "When was Cadillac founded?",
+      "correctAnswer": "1902",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "When was Tesla founded?",
+      "correctAnswer": "2003",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which animal features on the logo for Abarth, the motorsport division of Fiat?",
+      "correctAnswer": "Scorpion",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which car brand does NOT belong to General Motors?",
+      "correctAnswer": "Ford",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which car manufacturer created the \"Aventador\"?",
+      "correctAnswer": "Lamborghini",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which country has the international vehicle registration letter 'A'?",
+      "correctAnswer": "Austria",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which Japanese company is the world's largest manufacturer of motorcycles?",
+      "correctAnswer": "Honda",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following car models has been badge-engineered (rebadged) the most?",
+      "correctAnswer": "Isuzu Trooper",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries has officially banned the civilian use of dash cams in cars?",
+      "correctAnswer": "Austria",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a Russian car manufacturer?",
+      "correctAnswer": "BYD",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following passenger jets is the longest?",
+      "correctAnswer": "Boeing 747-8",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following vehicles featured a full glass roof at base model?",
+      "correctAnswer": "Renault Avantime",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these car models are produced by Lamborghini?",
+      "correctAnswer": "Aventador",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cars is NOT considered one of the 5 Modern Supercars by Ferrari?",
+      "correctAnswer": "Testarossa",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which one is NOT the function of engine oil in car engines?",
+      "correctAnswer": "Combustion",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of the following is not made by Ford?",
+      "correctAnswer": "Camry",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which supercar company is from Sweden?",
+      "correctAnswer": "Koenigsegg",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    }
+  ]
+}

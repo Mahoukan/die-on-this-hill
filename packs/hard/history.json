@@ -1,0 +1,665 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - History",
+  "questions": [
+    {
+      "question": "After the 1516 Battle of Marj Dabiq, the Ottoman Empire took control of Jerusalem from which sultanate?",
+      "correctAnswer": "Mamluk",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Before the American colonies switched to the Gregorian calendar in 1752, on what date did their new year start?",
+      "correctAnswer": "March 25th",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Bohdan Khmelnytsky was which of the following?",
+      "correctAnswer": "Leader of the Ukrainian Cossacks",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During the Roman Triumvirate of 42 BCE, what region of the Roman Republic was given to Lepidus?",
+      "correctAnswer": "Hispania ",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
+      "correctAnswer": "Nationalist Spain",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During the Wars of the Roses (1455 - 1487) which Englishman was dubbed \"the Kingmaker\"?",
+      "correctAnswer": "Richard Neville",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "During World War I, which nation's monarchs were blood related?",
+      "correctAnswer": "England, Germany, Russia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "From 1940 to 1942, what was the capital-in-exile of Free France ?",
+      "correctAnswer": "Brazzaville",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How long did the Warsaw Uprising during World War II last?",
+      "correctAnswer": "63 Days",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many sonatas did Ludwig van Beethoven write?",
+      "correctAnswer": "32",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "How many women joined the United States Armed Services during World War II?",
+      "correctAnswer": "350,000",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In 1547 who became the 1st Tsar of Russia",
+      "correctAnswer": "Ivan the Terrible",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In addition to his career as an astrologer and \"prophet\", Nostradamus published a 1555 treatise that included a section on what?",
+      "correctAnswer": "Making jams and jellies",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In the Seven Wonders of the World, which wonder is the only that has survived to this day?",
+      "correctAnswer": "Great Pyramid of Giza",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+      "correctAnswer": "John and Mary",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the Battle of Verdun take place?",
+      "correctAnswer": "1916",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "In which year did the Tokyo Subway Sarin Attack occur?",
+      "correctAnswer": "1995",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "List the following Iranic empires in chronological order:",
+      "correctAnswer": "Median, Achaemenid, Parthian, Sassanid",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "On which day did ARPANET suffer a 4 hour long network crash?",
+      "correctAnswer": "October 27, 1980",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Pianist Frédéric Chopin was a composer of which musical era?",
+      "correctAnswer": "Romantic",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?",
+      "correctAnswer": "Aragon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The ancient city of Chichén Itzá was built by which civilization?",
+      "correctAnswer": "Mayans",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Arab Spring was a series of protests and rebellions that began in which of these Arab nations?",
+      "correctAnswer": "Tunisia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The assassination of which royal led to the start of World War I?",
+      "correctAnswer": "Archduke Franz Ferdinand",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Battle of Hastings was fought in which year?",
+      "correctAnswer": "1066",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Bohemian Revolt (1618-1620) started after Protestants in Prague did what to their Catholic Lords Regents?",
+      "correctAnswer": "Threw them out of a window",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The coat of arms of the King of Spain contains the arms from the monarchs of Castille, Leon, Aragon and which other former Iberian kingdom?",
+      "correctAnswer": "Navarre",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The first Legoland park was opened in 1968 in which of these cities?",
+      "correctAnswer": "Billund, Denmark",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?",
+      "correctAnswer": "Justinian I",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The main objective of the German operation \"Case Blue\" during World War II was originally to capture what?",
+      "correctAnswer": "Caucasus",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The ontological argument for the proof of God's existence is first attributed to whom?",
+      "correctAnswer": "Anselm of Canterbury",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The pantheon in Rome was used to worship what god?",
+      "correctAnswer": "Any god they wanted",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The Second Boer War in 1899 was fought where?",
+      "correctAnswer": "South Africa",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The son of which pope supposedly held a lecherous fête involving 50 courtesans in the papal palace?",
+      "correctAnswer": "Alexander VI",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "The term Luddite originally applied to disgruntled workers in which industry?",
+      "correctAnswer": "Textile",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Toussaint Louverture led a successful slave revolt in which country?",
+      "correctAnswer": "Haiti",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What age was King Henry V when he died?",
+      "correctAnswer": "35",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What did Albert Einstein win the Nobel Prize for in 1921?",
+      "correctAnswer": "Photoelectric Effect",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What did the abbreviation \"RMS\" stand for in the RMS Titanic in 1912?",
+      "correctAnswer": "Royal Mail Ship",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What did the first vending machines in the early 1880's dispense?",
+      "correctAnswer": "Post cards",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the Boeing B-29 that dropped the 'Little Boy' atomic bomb on Hiroshima?",
+      "correctAnswer": "Enola Gay",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What micro-state is considered to have the oldest constitution still in effect?",
+      "correctAnswer": "San Marino",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What Southeast Asian country was formerly known as 'Lan Xang'?",
+      "correctAnswer": "Laos",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was found in 1946 by two young shepards near a cave?",
+      "correctAnswer": "Dead Sea Scrolls",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was Napoleon Bonaparte's name before he changed it?",
+      "correctAnswer": "Napoleone di Buonaparte",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the aim of the \"Umbrella Revolution\" in Hong Kong in 2014?",
+      "correctAnswer": "Genuine universal suffrage",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the Canada's first capital?",
+      "correctAnswer": "Kingston",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the code name for the Allied invasion of Southern France on August 15th, 1944?",
+      "correctAnswer": "Operation Dragoon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first recorded object to ever reach space?",
+      "correctAnswer": "Bumper-WAC",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the last colony the UK ceded marking the end of the British Empire?",
+      "correctAnswer": "Hong Kong",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the German offensive operation in October 1941 to take Moscow before winter?",
+      "correctAnswer": "Operation Typhoon",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of the spy ring that helped the United States win the Revolutionary War?",
+      "correctAnswer": "Culper Ring",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the original name of New York City?",
+      "correctAnswer": "New Amsterdam",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What was the real name of the Albanian national leader Skanderbeg?",
+      "correctAnswer": "Gjergj Kastrioti",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year was Canada founded in?",
+      "correctAnswer": "1867",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the first Pizza Hut restaurant opened?",
+      "correctAnswer": "1958",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the United States Declaration of Independence signed?",
+      "correctAnswer": "1776",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Canada leave the confederation to become their own nation?",
+      "correctAnswer": "July 1st, 1867",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Lithuania declare independence from the Soviet Union?",
+      "correctAnswer": "March 11th, 1990",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did Spanish Peninsular War start?",
+      "correctAnswer": "1808",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When did the French Revolution begin?",
+      "correctAnswer": "May 05 1789",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was Adolf Hitler appointed as Chancellor of Germany?",
+      "correctAnswer": "January 30, 1933",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was Finland's 100th year of being independent?",
+      "correctAnswer": "2017",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the \"Siege of Leningrad\" lifted during World War II?",
+      "correctAnswer": "January 1944",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the city of Rome, Italy founded?",
+      "correctAnswer": "753 BCE",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the Gregorian Calendar first adopted?",
+      "correctAnswer": "1582",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "When was the SS or Schutzstaffel established?",
+      "correctAnswer": "April 4th, 1925",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Where was Napoleon Bonaparte born?",
+      "correctAnswer": "Corsica",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Australian Prime Minister disappeared in 1967 and was never found?",
+      "correctAnswer": "Harold Holt",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which countries participated in the Lobster War?",
+      "correctAnswer": "France and Brazil",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country did the Eureka Rebellion, an 1856 battle against colonial rule, take place in?",
+      "correctAnswer": "Australia",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which country were potatoes originally grown?",
+      "correctAnswer": "Peru",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which day did World War I begin?",
+      "correctAnswer": "July 28",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which English king was married to Eleanor of Aquitaine?",
+      "correctAnswer": "Henry II",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which Irish village in County Mayo built a tourism industry on the back of an alleged appearance by the Virgin Mary in 1879?",
+      "correctAnswer": "Knock",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the hull NO. of the Fletcher class destroyer Fletcher?",
+      "correctAnswer": "DD-445",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which King of England was faced with the Peasants' Revolt in 1381?",
+      "correctAnswer": "Richard II",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?",
+      "correctAnswer": "Battle of Midway",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Physicists aided Nazi Germany in their production of a nuclear weapon?",
+      "correctAnswer": "Werner Heisenberg",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following physicists did NOT work on the Manhattan project?",
+      "correctAnswer": "Murray Gell-Mann",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following was not one of Joseph Stalin's ten blows during World War II?",
+      "correctAnswer": "Vistula-Oder Offensive",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these positions did the astronomer and physicist Isaac Newton not hold?",
+      "correctAnswer": "Surveyor to the City of London",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these theoretical phycisists first predicted the existence of antimatter?",
+      "correctAnswer": "Paul Dirac",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these rulers did not belong to the Habsburg dynasty?",
+      "correctAnswer": "Philip V",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
+      "correctAnswer": "George Washington",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who assassinated President James A. Garfield?",
+      "correctAnswer": "Charles Guiteau",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who invented the \"Flying Shuttle\" in 1738; one of the key developments in the industrialization of weaving?",
+      "correctAnswer": "John Kay",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the creator of the soft drink, Dr. Pepper?",
+      "correctAnswer": "Charles Alderton",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the British Prime Minister at the outbreak of the Second World War in 1939?",
+      "correctAnswer": "Neville Chamberlain",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first man to travel into outer space twice?",
+      "correctAnswer": "Gus Grissom",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the first man to travel into outer space?",
+      "correctAnswer": "Yuri Gagarin",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the last emperor of Mexico?",
+      "correctAnswer": "Ferdinand Maximilian",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the President of the United States during the signing of the Gadsden Purchase?",
+      "correctAnswer": "Franklin Pierce",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    },
+    {
+      "question": "With which Greek philosopher would you associate the phrase, \"I know that I know nothing\"?",
+      "correctAnswer": "Socrates",
+      "acceptedAnswers": [],
+      "category": "History",
+      "explanation": ""
+    }
+  ]
+}

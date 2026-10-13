@@ -1,0 +1,546 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Geography",
+  "questions": [
+    {
+      "question": "Bir Tawil, an uninhabited track of land claimed by no country, is located along the border of which two countries?",
+      "correctAnswer": "Egypt and Sudan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries border Kyrgyzstan?",
+      "correctAnswer": "4",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries share a land border with Russia? (Not including disputed territories)",
+      "correctAnswer": "14",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many islands does Kuwait have?",
+      "correctAnswer": "9",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many stations does the Central Line have on the London Underground?",
+      "correctAnswer": "49",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In 2012 the German-speaking microstate \"Liechtenstein\" in Central Europe had a population of how many inhabitants?",
+      "correctAnswer": "36,600",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
+      "correctAnswer": "Anglesey",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In which city is the Big Nickel located in Canada?",
+      "correctAnswer": "Sudbury, Ontario",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In which country is Tallinn located?",
+      "correctAnswer": "Estonia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Into which basin does the Jordan River flow into?",
+      "correctAnswer": "Dead Sea",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch is located on which Welsh island?",
+      "correctAnswer": "Anglesey",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Ouagadougou is the capital of which African country?",
+      "correctAnswer": "Burkina Faso",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Santorini is an island belonging to what European Country?",
+      "correctAnswer": "Greece",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "correctAnswer": "India",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The emblem on the flag of the Republic of Tajikistan features a sunrise over mountains below what symbol?",
+      "correctAnswer": "Crown",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Hunua Ranges is located in...",
+      "correctAnswer": "New Zealand",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "correctAnswer": "Indonesia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The mountainous Khyber Pass connects which of the two following countries?",
+      "correctAnswer": "Afghanistan and Pakistan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
+      "correctAnswer": "Chinese",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Suez Canal is located in which African country?",
+      "correctAnswer": "Egypt",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Svalbard Archipelago is a dependency of which country?",
+      "correctAnswer": "Norway",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What city is known as the Rose Capital of the World?",
+      "correctAnswer": "Tyler, Texas",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What country is not a part of Scandinavia?",
+      "correctAnswer": "Finland",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is Canada's largest island?",
+      "correctAnswer": "Baffin Island",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is special about Lake Titicaca?",
+      "correctAnswer": "Highest navigable lake",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the administrative centre and largest settlement on the Norwegian archipelago of Svalbard?",
+      "correctAnswer": "Longyearbyen",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the area of Vatican City?",
+      "correctAnswer": "0.44km^2",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital city of Bermuda?",
+      "correctAnswer": "Hamilton",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Burkina Faso?",
+      "correctAnswer": "Ouagadougou",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Mauritius?",
+      "correctAnswer": "Port Louis",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Suriname?",
+      "correctAnswer": "Paramaribo",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Wisconsin, USA?",
+      "correctAnswer": "Madison",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the county seat of King County, Washington?",
+      "correctAnswer": "Seattle",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the Finnish word for \"Finland\"?",
+      "correctAnswer": "Suomi",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the land connecting North America and South America?",
+      "correctAnswer": "Isthmus of Panama",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest city and commercial capital of Sri Lanka?",
+      "correctAnswer": "Colombo",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest freshwater lake by volume?",
+      "correctAnswer": "Lake Baikal",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most common climbing route for the second highest mountain in the world, K2?",
+      "correctAnswer": "Abruzzi Spur",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the most populous Muslim-majority nation in 2010?",
+      "correctAnswer": "Indonesia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?",
+      "correctAnswer": "Lishana Deni",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of rocky region that spans most of eastern Canada?",
+      "correctAnswer": "Canadian Shield",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the Canadian national anthem?",
+      "correctAnswer": "O Canada",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
+      "correctAnswer": "Grand Banks",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the official German name of the Swiss Federal Railways?",
+      "correctAnswer": "Schweizerische Bundesbahnen",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the second-largest city in Lithuania?",
+      "correctAnswer": "Kaunas",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the tallest mountain in Canada?",
+      "correctAnswer": "Mount Logan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the world's smallest country by population?",
+      "correctAnswer": "Vatican City",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What national museum will you find in Cooperstown, New York?",
+      "correctAnswer": "National Baseball Hall of Fame",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
+      "correctAnswer": "Niagara Falls",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What was the original name of Ho Chi Minh City?",
+      "correctAnswer": "Saigon",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What year is on the flag of the US state Wisconsin?",
+      "correctAnswer": "1848",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "When does Finland celebrate their independence day?",
+      "correctAnswer": "December 6th",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is Fort Marlborough located?",
+      "correctAnswer": "Bengkulu",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the city of Haarlem located?",
+      "correctAnswer": "The Netherlands",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the fast food chain \"Panda Express\" headquartered?",
+      "correctAnswer": "Rosemead, California",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is Timbuktu located?",
+      "correctAnswer": "Mali, Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which city is the capital of Michigan?",
+      "correctAnswer": "Lansing",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country is completely landlocked by South Africa?",
+      "correctAnswer": "Lesotho",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country is the Taedong River in?",
+      "correctAnswer": "North Korea",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country was NOT formerly part of Yugoslavia?",
+      "correctAnswer": "Albania",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is not a country in Africa?",
+      "correctAnswer": "Guyana",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the largest freshwater lake in the world?",
+      "correctAnswer": "Lake Superior ",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following Inuit languages was the FIRST to use a unique writing system not based on the Latin alphabet?",
+      "correctAnswer": "Inuktitut",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is a castle?",
+      "correctAnswer": "Elizabeth Castle",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following landlocked countries is entirely contained within another country?",
+      "correctAnswer": "Lesotho",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these African countries displays a gun on their flag?",
+      "correctAnswer": "Mozambique",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cities has a 4° East longitude. ",
+      "correctAnswer": "Amsterdam",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these cities is NOT in England?",
+      "correctAnswer": "Edinburgh",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is NOT a part of the Asian continent?",
+      "correctAnswer": "Suriname",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is NOT the only country to start with that letter of the alphabet?",
+      "correctAnswer": "Zambia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is an official currency of the Cook Islands?",
+      "correctAnswer": "New Zealand Dollar",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a city in India?",
+      "correctAnswer": "Islamabad",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a province in China?",
+      "correctAnswer": "Yangtze",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a real tectonic plate?",
+      "correctAnswer": "Atlantic Plate",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these island countries is located in the Caribbean?",
+      "correctAnswer": "Barbados",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which river was dammed to create Gatun Lake and the Panama Canal?",
+      "correctAnswer": "Chagres River",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "With which country does France share its largest land border",
+      "correctAnswer": "Brazil",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    }
+  ]
+}

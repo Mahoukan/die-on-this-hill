@@ -1,0 +1,42 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Hard - Science: Gadgets",
+  "questions": [
+    {
+      "question": "Which of the following cellular device companies is NOT headquartered in Asia?",
+      "correctAnswer": "Nokia",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the standard THX subwoofer crossover frequency?",
+      "correctAnswer": "80 Hz",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is used to measure blood pressure?",
+      "correctAnswer": "Sphygmomanometer",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Which round does a WW2 M1 Garand fire?",
+      "correctAnswer": ".30-06",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    },
+    {
+      "question": "Who built the first laser?",
+      "correctAnswer": "Theodore Harold Maiman",
+      "acceptedAnswers": [],
+      "category": "Science: Gadgets",
+      "explanation": ""
+    }
+  ]
+}

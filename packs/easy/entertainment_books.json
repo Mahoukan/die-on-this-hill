@@ -1,0 +1,224 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Entertainment: Books",
+  "questions": [
+    {
+      "question": "\"Green Eggs And Ham\" is a book by which author?",
+      "correctAnswer": "Dr. Seuss",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "American illustrator and writer Maurice Sendak is most well-known for writing which children's book?",
+      "correctAnswer": "Where The Wild Things Are",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+      "correctAnswer": "1984",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "How many Harry Potter books are there?",
+      "correctAnswer": "7",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In the novel 1984, written by George Orwell, what is the name of the totalitarian regime that controls Oceania?",
+      "correctAnswer": "INGSOC",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "In what Harry Potter book was a Horcrux first encountered?",
+      "correctAnswer": "The Chamber of Secrets",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "This play is generally considered to be the most adaptable of Shakespeare’s works, and follows two “star-crossed lovers”.",
+      "correctAnswer": "Romeo and Juliet",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+      "correctAnswer": "Richard Bachman",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Sherlock Holmes's brother?",
+      "correctAnswer": "Mycroft Holmes",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the fourth book in Stephen King's The Dark Tower series?",
+      "correctAnswer": "Wizard and Glass",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
+      "correctAnswer": "Holden Caulfield",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
+      "correctAnswer": "Fluffy",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+      "correctAnswer": "A Study in Scarlet",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What was Sir Handel's original name in \"The Railway Series\" and it's animated counterpart \"Thomas and Friends?\"",
+      "correctAnswer": "Falcon",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What was the first ever entry written for the SCP Foundation collaborative writing project?",
+      "correctAnswer": "SCP-173",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+      "correctAnswer": "The Nautilus",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What's Harry Potter's dad's name?",
+      "correctAnswer": "James Potter",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+      "correctAnswer": "A Clash of Kings",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which classic book opens with the line \"Call me Ishmael\"?",
+      "correctAnswer": "Moby Dick",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which famous book is sub-titled 'The Modern Prometheus'?",
+      "correctAnswer": "Frankenstein",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+      "correctAnswer": "Ian Fleming",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which is NOT a book in the Harry Potter Series?",
+      "correctAnswer": "The House Elf",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the world's best-selling book?",
+      "correctAnswer": "The Lord of the Rings",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the author of the \"A Song of Ice and Fire\" book series, starting with \"A Game of Thrones\"?",
+      "correctAnswer": "George R. R. Martin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+      "correctAnswer": "William Golding",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who was the original author of Frankenstein?",
+      "correctAnswer": "Mary Shelley",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote \"A Tale of Two Cities\"?",
+      "correctAnswer": "Charles Dickens",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote \"Harry Potter\"?",
+      "correctAnswer": "J.K. Rowling",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote \"The Scarlet Letter\", published in 1850?",
+      "correctAnswer": "Nathaniel Hawthorne",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+      "correctAnswer": "Hunter S. Thompson",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    },
+    {
+      "question": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+      "correctAnswer": "John Green",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Books",
+      "explanation": ""
+    }
+  ]
+}

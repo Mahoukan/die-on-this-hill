@@ -1,0 +1,119 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Art",
+  "questions": [
+    {
+      "question": " What color is produced by mixing black and white?",
+      "correctAnswer": "Grey",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What is a fundamental element of the Gothic style of architecture?",
+      "correctAnswer": "pointed arch",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What is another name for La Gioconda / La Joconde?",
+      "correctAnswer": "The Mona Lisa",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the Japanese art of folding paper into decorative shapes and figures?",
+      "correctAnswer": "Origami",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "What is the world's oldest known piece of fiction?",
+      "correctAnswer": "Epic of Gilgamesh",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist is famous for cutting off his ear?",
+      "correctAnswer": "Vincent van Gogh",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which artist painted the late 15th century mural 'The Last Supper'?",
+      "correctAnswer": "Leonardo da Vinci",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which painting was not made by Vincent Van Gogh?",
+      "correctAnswer": "The Ninth Wave",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Which Van Gogh painting depicts the view from his asylum in Saint-Rémy-de-Provence in southern France?",
+      "correctAnswer": "The Starry Night",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted \"Swans Reflecting Elephants\", \"Sleep\", and \"The Persistence of Memory\"?",
+      "correctAnswer": "Salvador Dali",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted \"The Starry Night\"?",
+      "correctAnswer": "Vincent van Gogh",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted the biblical fresco The Creation of Adam?",
+      "correctAnswer": "Michelangelo",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "correctAnswer": "Leonardo da Vinci ",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted the Sistine Chapel?",
+      "correctAnswer": "Michelangelo",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who painted The Starry Night?",
+      "correctAnswer": "Vincent van Gogh",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    },
+    {
+      "question": "Who sculpted the statue of David?",
+      "correctAnswer": "Michelangelo",
+      "acceptedAnswers": [],
+      "category": "Art",
+      "explanation": ""
+    }
+  ]
+}

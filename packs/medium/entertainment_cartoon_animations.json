@@ -1,0 +1,280 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Entertainment: Cartoon & Animations",
+  "questions": [
+    {
+      "question": "Adam West was the mayor of which cartoon town?",
+      "correctAnswer": "Quahog",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Before becoming the Autobot leader, Optimus Prime was known by what name on Cybertron?",
+      "correctAnswer": "Orion Pax",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Bugs Bunny, Tony the Tiger, and other bipedal animal characters are known as what type of character?",
+      "correctAnswer": "Anthropomorphic",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "How many episodes were in season five of Samurai Jack?",
+      "correctAnswer": "10",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In \"My Little Pony: Friendship is Magic\", which of these ponies represents the quality of honesty?",
+      "correctAnswer": "Applejack",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In \"SpongeBob SquarePants\", what is the name of Sandy Cheek's place of residence?",
+      "correctAnswer": "Sandy's Treedome",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In \"The Amazing World of Gumball\", who is the principal of Elmore Junior High?",
+      "correctAnswer": "Principal Brown",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In \"The Simpsons\", where did Homer and Marge first meet?",
+      "correctAnswer": "At Summer Camp",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In the animated series RWBY, what is the name of the weapon used by Weiss Schnee?",
+      "correctAnswer": "Myrtenaster",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In the Dreamworks animated movie \"Madagascar,\" who voices Maurice the lemur?",
+      "correctAnswer": "Cedric the Entertainer",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In the show \"Fat Albert and the Cosby Kids\", what is the name of the characters' fictional gang?",
+      "correctAnswer": "The Junkyard Gang",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "In what year did the anime adaptation of \"March Comes In Like A Lion\" air?",
+      "correctAnswer": "2016",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Nickelodeon is owned by what parent company?",
+      "correctAnswer": "Viacom",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "The character White Diamond from Steven Universe, is voiced by who?",
+      "correctAnswer": "Christine Ebersole",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "The stop motion comedy show \"Robot Chicken\" was created by which of the following?",
+      "correctAnswer": "Seth Green",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What ability does Princess Sofia the First have from her amulet that allows her to breathe underwater?",
+      "correctAnswer": "Mermaid Transformation",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What animated internet character is known to answer emails with his boxing gloves?",
+      "correctAnswer": "Strong Bad",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What Cartoon Network show aired its first episode on November 4th, 2013?",
+      "correctAnswer": "Steven Universe",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is Dipper's real name from \"Gravity Falls\"?",
+      "correctAnswer": "Mason Pines",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is Scooby-Doo's real name?",
+      "correctAnswer": "Scoobert",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is the cartoon character, Andy Capp, known as in Germany?",
+      "correctAnswer": "Willi Wakker",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Ruby Rose's weapon from RWBY?",
+      "correctAnswer": "Crescent Rose",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Sid's dog in \"Toy Story\"?",
+      "correctAnswer": "Scud",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the Alligator that The Simpsons \"killed\" in the episode \"Kill The Alligator and Run\"?",
+      "correctAnswer": "Captain Jack",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What is the standard frame rate for animation?",
+      "correctAnswer": "24 FPS",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What was the number on Gerald's shirt in \"Hey Arnold!\"?",
+      "correctAnswer": "33",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "What year was the Disney film \"A Goofy Movie\" released?",
+      "correctAnswer": "1995",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "When did the last episode of \"Futurama\" air before returning in 2023?",
+      "correctAnswer": "September 4, 2013",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which \"Toy Story\" character was voiced by Don Rickles?",
+      "correctAnswer": "Mr. Potato Head",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which city did Anger berate for ruining pizza in \"Inside Out\"?",
+      "correctAnswer": "San Francisco",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which episode from The Amazing World Of Gumball won the Childrens Choice Award at the British Animation Awards in 2016?",
+      "correctAnswer": "The Shell",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which Hanna-Barbera cartoon character travelled with a canine companion named Beegle Beagle?",
+      "correctAnswer": "Grape Ape",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is not a real character in the cartoon series My Little Pony: Friendship is Magic?",
+      "correctAnswer": "Rose Marene",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these cartoon characters is NOT voiced by Rob Paulsen?",
+      "correctAnswer": "Max Tennyson (Ben 10)",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which Sanrio character was introduced in 1996?",
+      "correctAnswer": "Pompompurin",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Which singer provided the voice of Metroid's Mother Brain in the animated series \"Captain N: The Game Master\"?",
+      "correctAnswer": "Levi Stubbs",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Who created \"RWBY\"?",
+      "correctAnswer": "Monty Oum",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Who is the \"dumb blonde\" character in Nickelodeon's \"The Loud House\"?",
+      "correctAnswer": "Leni",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    },
+    {
+      "question": "Who voiced Finn in Adventure Time?",
+      "correctAnswer": "Jeremy Shada",
+      "acceptedAnswers": [],
+      "category": "Entertainment: Cartoon & Animations",
+      "explanation": ""
+    }
+  ]
+}

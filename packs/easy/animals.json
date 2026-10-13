@@ -1,0 +1,140 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Animals",
+  "questions": [
+    {
+      "question": "By definition, where does an abyssopelagic animal live?",
+      "correctAnswer": "At the bottom of the ocean",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Hippocampus is the Latin name for which marine creature?",
+      "correctAnswer": "Seahorse",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "How many legs do butterflies have?",
+      "correctAnswer": "6",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "How many teeth does an adult rabbit have?",
+      "correctAnswer": "28",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Snakes and lizards are known to flick their tongue, this behavior is to?",
+      "correctAnswer": "Capture scent particles",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "The Kākāpō is a large, flightless, nocturnal parrot native to which country?",
+      "correctAnswer": "New Zealand",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What color is a Steller's Jay?",
+      "correctAnswer": "blue and black",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What colour is the female blackbird?",
+      "correctAnswer": "Brown",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What do you call a baby bat?",
+      "correctAnswer": "Pup",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is Grumpy Cat's real name?",
+      "correctAnswer": "Tardar Sauce",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the collective noun for a group of crows?",
+      "correctAnswer": "Murder",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the fastest  land animal?",
+      "correctAnswer": "Cheetah",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of a rabbit's abode?",
+      "correctAnswer": "Burrow",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "What is the scientific name for modern day humans?",
+      "correctAnswer": "Homo Sapiens",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which breed of dog is traditionally associated with firefighters?",
+      "correctAnswer": "Dalmatians",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which class of animals are newts members of?",
+      "correctAnswer": "Amphibian",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the national animal of India?",
+      "correctAnswer": "Tiger",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these animals are not real?",
+      "correctAnswer": "Nemean Lion",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    },
+    {
+      "question": "Wombats are native to which Country?",
+      "correctAnswer": "Australia",
+      "acceptedAnswers": [],
+      "category": "Animals",
+      "explanation": ""
+    }
+  ]
+}

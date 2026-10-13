@@ -1,0 +1,175 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Easy - Vehicles",
+  "questions": [
+    {
+      "question": "Automobiles produced by Tesla Motors operate on which form of energy?",
+      "correctAnswer": "Electricity",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "During World War 2, with tank was the most fear by the allies?",
+      "correctAnswer": "PanzerKampfwagen V Panther",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "How many wheels does a unicycle have?",
+      "correctAnswer": "1",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Jaguar Cars was previously owned by which car manfacturer?",
+      "correctAnswer": "Ford",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The Italian automaker Lamborghini uses what animal as its logo?",
+      "correctAnswer": "Bull",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The LS1 engine is how many cubic inches?",
+      "correctAnswer": "346",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The LS2 engine is how many cubic inches?",
+      "correctAnswer": "364",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The LS3 engine is how many cubic inches?",
+      "correctAnswer": "376",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "The LS7 engine is how many cubic inches?",
+      "correctAnswer": "427",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What animal is pictured on the logo of the automobile manufacturer Porsche?",
+      "correctAnswer": "Horse",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What are the cylinder-like parts that pump up and down within the engine?",
+      "correctAnswer": "Pistons",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What country was the Trabant 601 manufactured in?",
+      "correctAnswer": "East Germany",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What is the fastest road legal car in the world?",
+      "correctAnswer": "Koenigsegg Agera RS",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of Nissan's most popular electric car?",
+      "correctAnswer": "Leaf",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "What UK Train does NOT go over 125MPH?",
+      "correctAnswer": "Sprinter",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Where are the cars of the brand \"Ferrari\" manufactured?",
+      "correctAnswer": "Italy",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which car tire manufacturer is famous for its \"Eagle\" brand of tires, and is the official tire supplier of NASCAR?",
+      "correctAnswer": "Goodyear",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which car tire manufacturer is famous for its \"P Zero\" line?",
+      "correctAnswer": "Pirelli",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which Italian city is home of the car manufacturer 'Fiat'?",
+      "correctAnswer": "Turin",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following car manufacturers had a war named after it?",
+      "correctAnswer": "Toyota",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following collision avoidance systems helps airplanes avoid colliding with each other?",
+      "correctAnswer": "TCAS",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following vehicles from Ford is named after a WW2 Fighter Plane?",
+      "correctAnswer": "Mustang",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these automotive brands originated in Sweden?",
+      "correctAnswer": "Volvo",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these companies does NOT manufacture motorcycles?",
+      "correctAnswer": "Toyota",
+      "acceptedAnswers": [],
+      "category": "Vehicles",
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,1071 @@
+{
+  "format": "die-on-this-hill-pack",
+  "version": 1,
+  "name": "Medium - Geography",
+  "questions": [
+    {
+      "question": " What is the only nation that borders both Uruguay and Venezuela?",
+      "correctAnswer": "Brazil",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": " What Texas city is nicknamed \"The Yellow Rose of Texas\"?",
+      "correctAnswer": "Amarillo",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "A lion brandishing a sword is depicted on the national flag of which country?",
+      "correctAnswer": "Sri Lanka",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "All of the following are towns/villages in the Pacific Island nation of Kiribati EXCEPT:",
+      "correctAnswer": "Urutora",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "All of the following countries have official claims to territory in Antartica EXCEPT:",
+      "correctAnswer": "United States",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Bikini Atoll is in which country?",
+      "correctAnswer": "Marshall Islands",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Bridgetown is the capital of which island country in the Carribean?",
+      "correctAnswer": "Barbados",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Broome is a town in which state of Australia?",
+      "correctAnswer": "Western Australia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Colchester Overpass, otherwise known as \"Bunny Man Bridge\", is located where?",
+      "correctAnswer": "Fairfax County, Virginia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of?",
+      "correctAnswer": "Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Frankenmuth, a US city nicknamed \"Little Bavaria\", is located in what state?",
+      "correctAnswer": "Michigan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Gibraltar, located just south of the Iberian peninsula, is a territory of which West Europe country?",
+      "correctAnswer": "United Kingdom",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many counties in the Republic of Ireland.",
+      "correctAnswer": "26",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries are inside the United Kingdom?",
+      "correctAnswer": "Four",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries are larger than Australia?",
+      "correctAnswer": "5",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries does Spain have a land border with?",
+      "correctAnswer": "5",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many countries share a land border with Luxembourg?",
+      "correctAnswer": "3",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many independent countries are there within the continent of South America?",
+      "correctAnswer": "12",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many provinces are in the Netherlands?",
+      "correctAnswer": "12",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many rivers are in Saudi Arabia?",
+      "correctAnswer": "0",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many sovereign states are members of the United Nations?",
+      "correctAnswer": "195",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many states are in Australia?",
+      "correctAnswer": "6",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many time zones are in Russia?",
+      "correctAnswer": "11",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How many timezones does Russia have?",
+      "correctAnswer": "11",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "How tall is One World Trade Center in New York City?",
+      "correctAnswer": "1,776 ft",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In the 2016 Global Peace Index poll, out of 163 countries, what was the United States of America ranked?",
+      "correctAnswer": "103",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In Washington, D.C. what does the \"C\" stand for?",
+      "correctAnswer": "Columbia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In which country is located the municipality of Arteijo?",
+      "correctAnswer": "Spain",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In which English county is Stonehenge?",
+      "correctAnswer": "Wiltshire",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "In which English county is the city of Portsmouth?",
+      "correctAnswer": "Hampshire",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Kuala Lumpur is the capital of which country?",
+      "correctAnswer": "Malaysia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Lake Titicaca is located between which two nations?",
+      "correctAnswer": "Peru and Bolivia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Montreal is in which Canadian province?",
+      "correctAnswer": "Quebec",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "On a London Underground map, what colour is the Circle Line?",
+      "correctAnswer": "Yellow",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "On which continent is the country of Angola located?",
+      "correctAnswer": "Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "On which continent/s is the entire country of Spain specifically located when taking into account all of its territory?",
+      "correctAnswer": "Europe and Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The following Spanish provinces are located in the northern area of Spain except:",
+      "correctAnswer": "Murcia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The formerly East-Prussian city of Königsberg is known as which Russian City today?",
+      "correctAnswer": "Kaliningrad",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Gambia is a nation found on which continent?",
+      "correctAnswer": "Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The historical city Timbuktu is located in which West African country?",
+      "correctAnswer": "Mali",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Japanese district Akihabara is also known by what nickname?",
+      "correctAnswer": "Electric Town",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The land mass of modern day Turkey is called what?",
+      "correctAnswer": "Anatolia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The land of Gotland is located in which European country?",
+      "correctAnswer": "Sweden",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Principality of Sealand is an unrecognized micronation off the coast of what country?",
+      "correctAnswer": "The United Kingdom",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The Pyrenees mountains are located on the border of which two countries?",
+      "correctAnswer": "France and Spain",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The towns of Brugelette, Arlon and Ath are located in which country?",
+      "correctAnswer": "Belgium",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The US state of New York has about as many inhabitants as?",
+      "correctAnswer": "Romania",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The White Cliffs of Dover is located in which country? ",
+      "correctAnswer": "United Kingdom",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "The World Health Organization headquarters is located in which European country?",
+      "correctAnswer": "Switzerland",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What African country has Portuguese as its official language?",
+      "correctAnswer": "Mozambique",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What are the four corner states of the US?",
+      "correctAnswer": "Utah, Colorado, Arizona, New Mexico",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What city  has the busiest airport in the world?",
+      "correctAnswer": "Atlanta, Georgia USA",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What city is the Terracotta Army located in?",
+      "correctAnswer": "Xi'an",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What continent is the country Lesotho in?",
+      "correctAnswer": "Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What European country is not a part of the EU?",
+      "correctAnswer": "Norway",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What event led to Liechenstein adding a crown to its flag?",
+      "correctAnswer": "The 1936 Olympics",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the busiest port in Europe?",
+      "correctAnswer": "Port of Rotterdam",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital city of New Zealand?",
+      "correctAnswer": "Wellington",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital city of Slovenia?",
+      "correctAnswer": "Ljubljana",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital city of the U.S. state of Texas?",
+      "correctAnswer": "Austin",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "correctAnswer": "Canberra",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Belarus?",
+      "correctAnswer": "Minsk",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "correctAnswer": "Brasilia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of British Columbia, Canada?",
+      "correctAnswer": "Victoria",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Chile?",
+      "correctAnswer": "Santiago",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Cyprus?",
+      "correctAnswer": "Nicosia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Ecuador?",
+      "correctAnswer": "Quito",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Estonia?",
+      "correctAnswer": "Tallinn",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Greenland?",
+      "correctAnswer": "Nuuk",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Laos?",
+      "correctAnswer": "Vientiane",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Lithuania?",
+      "correctAnswer": "Vilnius",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Peru?",
+      "correctAnswer": "Lima",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Senegal?",
+      "correctAnswer": "Dakar",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Seychelles?",
+      "correctAnswer": "Victoria",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Slovakia?",
+      "correctAnswer": "Bratislava",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of the State of Washington, United States?",
+      "correctAnswer": "Olympia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of the U.S. state Texas?",
+      "correctAnswer": "Austin",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of the US state Nevada?",
+      "correctAnswer": "Carson City",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the capital of Vietnam?",
+      "correctAnswer": "Hanoi",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the fifth largest country by area?",
+      "correctAnswer": "Brazil",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the highest mountain in the world?",
+      "correctAnswer": "Mt. Everest",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest lake in the African continent?",
+      "correctAnswer": "Lake Victoria",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest Muslim country in the world?",
+      "correctAnswer": "Indonesia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the largest non-continental island in the world?",
+      "correctAnswer": "Greenland",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the longest river in Europe?",
+      "correctAnswer": "Volga",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the capital of Turkey?",
+      "correctAnswer": "Ankara",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the former country that was succeeded by countries such as Serbia, Croatia and Slovenia?",
+      "correctAnswer": "Yugoslavia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the name of the only remaining Grand Duchy in the world ?",
+      "correctAnswer": "Luxembourg",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the northernmost human settlement with year round inhabitants?",
+      "correctAnswer": "Alert, Canada",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the official language of Bhutan?",
+      "correctAnswer": "Dzongkha",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the official national language of Pakistan?",
+      "correctAnswer": "Urdu",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the only country in the world with a flag that doesn't have four right angles?",
+      "correctAnswer": "Nepal",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+      "correctAnswer": "Kashmir",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the right way to spell the capital of Hungary?",
+      "correctAnswer": "Budapest",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the smallest country in South America by area?",
+      "correctAnswer": "Suriname",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What is the state capital of South Dakota?",
+      "correctAnswer": "Pierre",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What island in the Canary Islands was the scene of one of the worst air disasters in history with the collision of two jumbo jets?",
+      "correctAnswer": "Tenerife",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What mountain range lines the border between Spain and France?",
+      "correctAnswer": "Pyrenees",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What tiny principality lies between Spain and France?",
+      "correctAnswer": "Andorra",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What was the African nation of Zimbabwe formerly known as?",
+      "correctAnswer": "Rhodesia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What was the most populous city in the Americas in 2015?",
+      "correctAnswer": "São Paulo",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "What's the first National Park designated in the United States?",
+      "correctAnswer": "Yellowstone",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where are the Nazca Lines located?",
+      "correctAnswer": "Peru",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is Hadrian's Wall located?",
+      "correctAnswer": "Carlisle, England",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the \"Sonoran Desert\" located?",
+      "correctAnswer": "North America",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the ancient city of Petra located?",
+      "correctAnswer": "Jordan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the area commonly known as the Bermuda Triangle?",
+      "correctAnswer": "North Atlantic Ocean, between Florida and Puerto Rico",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the Volga River?",
+      "correctAnswer": "Russia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Where is the world's oldest still operational space launch facility located?",
+      "correctAnswer": "Kazakhstan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which Canadian province has Charlottetown as its capital?",
+      "correctAnswer": "Prince Edward Island",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which city is the capital of Switzerland?",
+      "correctAnswer": "Bern",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country claims ownership of the disputed state Kosovo?",
+      "correctAnswer": "Serbia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country has the abbreviation \"CH\"?",
+      "correctAnswer": "Switzerland",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country has three capital cities?",
+      "correctAnswer": "South Africa",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country inside the United Kingdom does NOT appear on its flag, the Union Jack?",
+      "correctAnswer": "Wales",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which country ranks first in the number of historically active volcanoes?",
+      "correctAnswer": "Indonesia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which English county will you find the University of East Anglia?",
+      "correctAnswer": "Norfolk",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which European city has the highest mileage of canals in the world?",
+      "correctAnswer": "Birmingham",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which German city is located on the River Isar?",
+      "correctAnswer": "Munich",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the largest city in Morocco?",
+      "correctAnswer": "Casablanca",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the largest of these 4 islands?",
+      "correctAnswer": "Borneo",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the only US state located entirely within the Appalachia region?",
+      "correctAnswer": "West Virginia",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the smallest country in the world?",
+      "correctAnswer": "Vatican City",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which is the world's longest river?",
+      "correctAnswer": "Nile",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which islands below have been claimed by both Japan and Russia?",
+      "correctAnswer": "Kuril Islands",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which Oceanian nation is known in Māori as Aotearoa?",
+      "correctAnswer": "New Zealand",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following cities is the capital of Latvia?",
+      "correctAnswer": "Riga",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries banned the use of personal genetic ancestry tests?",
+      "correctAnswer": "Germany",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries does NOT recognize Armenia as an independent country?",
+      "correctAnswer": "Pakistan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries is an island?",
+      "correctAnswer": "Cyprus",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following countries is within the Eurozone but outside of the Schengen Area?",
+      "correctAnswer": "Cyprus",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is NOT a capital city?",
+      "correctAnswer": "Sydney",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is not a megadiverse country - one that harbors a high number of the earth's endemic species?",
+      "correctAnswer": "Thailand",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is the longest river in Europe?",
+      "correctAnswer": "Volga",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following language families is the most controversial amongst modern linguists?",
+      "correctAnswer": "Altaic",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these American cities has fewer than 1,000,000 people?",
+      "correctAnswer": "San Francisco, California",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is \"doubly landlocked\" (surrounded entirely by one or more landlocked countries)?",
+      "correctAnswer": "Uzbekistan",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is located the FURTHEST away from the South China Sea?",
+      "correctAnswer": "Bangladesh",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is not a United Nations member state?",
+      "correctAnswer": "Niue",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is NOT located in Africa?",
+      "correctAnswer": "Suriname",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is not written in its native language?",
+      "correctAnswer": "Slovaško",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these countries is the smallest by population?",
+      "correctAnswer": "Norway",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these country's capitals starts with the letter B?",
+      "correctAnswer": "Lebanon",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT a city in Saudi Arabia?",
+      "correctAnswer": "Dubai",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these is NOT an island that is part of the Philippines?",
+      "correctAnswer": "Java",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Japanese islands is the largest by area?",
+      "correctAnswer": "Shikoku",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which of these Mediterranian islands is under the sovereign rule of France?",
+      "correctAnswer": "Corsica",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these archipelagos are NOT a part of the United Kingdom?",
+      "correctAnswer": "The Channel Islands ",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which one of these countries borders with Poland?",
+      "correctAnswer": "Lithuania",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which state of the United States is the smallest?",
+      "correctAnswer": "Rhode Island ",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which stretch of water connects the Atlantic Ocean to the Mediterranean Sea?",
+      "correctAnswer": "Strait of Gibraltar",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    },
+    {
+      "question": "Which two modern-day countries used to be known as the region of Rhodesia between the 1890s and 1980?",
+      "correctAnswer": "Zambia & Zimbabwe",
+      "acceptedAnswers": [],
+      "category": "Geography",
+      "explanation": ""
+    }
+  ]
+}

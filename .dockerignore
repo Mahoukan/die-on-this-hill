@@ -17,6 +17,7 @@ Thumbs.db
 !.env.example
 data/custom-packs/*.json
 *.doth-pack.json
+!packs/**/*.json
 .agents
 .codex
 .aws
