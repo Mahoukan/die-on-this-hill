@@ -39,6 +39,12 @@ export function Timer({ seconds, label, locked = false }: { seconds: number; lab
   return <div className={`timer${locked ? ' is-stopped' : seconds > 0 && seconds <= 10 ? ' is-urgent' : ''}`} role="timer" aria-label="Time remaining"><span className="timer-value">{Math.floor(seconds / 60)}:{String(seconds % 60).padStart(2, '0')}</span><span className="timer-label">{locked ? 'locked' : seconds === 0 ? 'time’s up' : label}</span></div>;
 }
 
+export function HostSkip({ room, label = 'SKIP TIMER' }: { room: RoomView; label?: string }) {
+  const game = useGame();
+  if (room.hostPlayerId !== room.me.id) return null;
+  return <div className="host-phase-controls"><span className="eyebrow">Host controls</span><button className="btn btn-secondary" type="button" disabled={!game.connected || game.restoring || game.pending || room.phaseEndsAt === null} onClick={() => void game.skipPhase()}>{game.pending ? 'SKIPPING...' : label}</button></div>;
+}
+
 export function GameNotice() {
   const game = useGame();
   const wasDisconnected = useRef(false); const [restored, setRestored] = useState(false);

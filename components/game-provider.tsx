@@ -22,6 +22,7 @@ interface GameContextValue {
   questionSettings: (mode: QuestionMode, selectedPackIds: string[]) => Promise<boolean>;
   debateReady: (ready: boolean) => Promise<boolean>;
   endDebate: () => Promise<boolean>;
+  skipPhase: () => Promise<boolean>;
   dismissError: () => void;
 }
 
@@ -111,6 +112,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const questionSettings = useCallback(async (mode: QuestionMode, selectedPackIds: string[]) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('game:questions', { mode, selectedPackIds }, done))).ok, [request]);
   const debateReady = useCallback(async (ready: boolean) => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:set-ready', { ready }, done))).ok, [request]);
   const endDebate = useCallback(async () => (await request<undefined>((socket, done) => socket.timeout(8000).emit('debate:end-host', done))).ok, [request]);
+  const skipPhase = useCallback(async () => (await request<undefined>((socket, done) => socket.timeout(8000).emit('game:skip', done))).ok, [request]);
   const leave = useCallback(async () => {
     const result = await request<undefined>((socket, done) => socket.timeout(8000).emit('room:leave', done));
     if (!result.ok) return false;
@@ -121,7 +123,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     return true;
   }, [request]);
 
-  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, settings, questionSettings, debateReady, endDebate, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
+  return <GameContext.Provider value={{ room, session, connected, restoring, pending, error, enter, leave, act, submit, vote, settings, questionSettings, debateReady, endDebate, skipPhase, dismissError: () => setError('') }}>{children}</GameContext.Provider>;
 }
 
 export function useGame() {

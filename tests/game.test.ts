@@ -134,6 +134,26 @@ test('server timers advance missed submissions and votes; clients cannot extend 
   assert.equal(room.players.every((player) => !player.hillUsed), true);
 });
 
+test('main phase timers last 90 seconds and only the host can skip them', async (context) => {
+  const store = new RoomStore(() => {});
+  context.after(() => store.close());
+  const host = store.create('Host', 'socket-0');
+  const guest = store.join(host.roomCode, 'Guest', 'socket-1');
+  store.start(host.roomCode, host.playerId, 'socket-0');
+  const room = store.getRoom(host.roomCode);
+  assert.ok(room.phaseEndsAt);
+  assert.ok(room.phaseEndsAt - Date.now() > 89_000 && room.phaseEndsAt - Date.now() <= 90_000);
+  assert.throws(() => store.skipPhase(host.roomCode, guest.playerId, 'socket-1'), /Only the host/);
+  store.skipPhase(host.roomCode, host.playerId, 'socket-0');
+  assert.equal(room.phase, 'bluff');
+  assert.ok(room.phaseEndsAt && room.phaseEndsAt - Date.now() > 89_000);
+  store.skipPhase(host.roomCode, host.playerId, 'socket-0');
+  assert.equal(room.phase, 'debate');
+  assert.ok(room.phaseEndsAt && room.phaseEndsAt - Date.now() > 89_000);
+  store.skipPhase(host.roomCode, host.playerId, 'socket-0');
+  assert.equal(room.phase, 'debate-transition');
+});
+
 test('reconnect requires secret token, preserves locks and Hill, and supersedes old sockets', async (context) => {
   const f = fixture(['Host', 'Guest']); context.after(() => f.store.close());
   f.store.start(f.code, f.host.playerId, 'socket-0');

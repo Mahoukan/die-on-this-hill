@@ -117,6 +117,7 @@ export interface ClientEvents {
   'game:questions': (payload: { mode: QuestionMode; selectedPackIds: string[] }, reply: Reply) => void;
   'game:start': (reply: Reply) => void;
   'game:advance': (reply: Reply) => void;
+  'game:skip': (reply: Reply) => void;
   'game:reset': (reply: Reply) => void;
   'answer:submit': (payload: { answer: string }, reply: Reply) => void;
   'bluff:submit': (payload: { answer: string }, reply: Reply) => void;

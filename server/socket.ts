@@ -97,6 +97,11 @@ export function attachGameSockets(io: GameServer, store: RoomStore, packAdmin?: 
       store.advanceGame(current.roomCode, current.playerId, socket.id);
       return undefined;
     }));
+    socket.on('game:skip', (reply) => action(reply, () => {
+      const current = session();
+      store.skipPhase(current.roomCode, current.playerId, socket.id);
+      return undefined;
+    }));
     socket.on('game:reset', (reply) => action(reply, () => {
       const current = session();
       store.reset(current.roomCode, current.playerId, socket.id);

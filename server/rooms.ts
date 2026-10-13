@@ -7,7 +7,7 @@ import { scoreRound } from './scoring';
 import { DEFAULT_PACK_ID } from './questions';
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
-const DURATIONS = { answer: 30_000, bluff: 30_000, debate: 60_000, 'debate-transition': 3_000, vote: 15_000 };
+const DURATIONS = { answer: 90_000, bluff: 90_000, debate: 90_000, 'debate-transition': 3_000, vote: 90_000 };
 const ROOM_IDLE_MS = 10 * 60_000;
 const ROUND_SETTINGS: readonly RoundSetting[] = ['recommended', 5, 8, 10, 12];
 export const recommendedRounds = (players: number) => players >= 8 ? 5 : players >= 6 ? 6 : players >= 4 ? 8 : 10;
@@ -129,6 +129,17 @@ export class RoomStore {
     this.host(record, id);
     if (record.room.round >= record.room.totalRounds) this.setPhase(record, 'final-results');
     else { record.room.round += 1; this.prepareRound(record); }
+  }
+  skipPhase(code: string, id: string, socketId: string): void {
+    const record = this.record(code);
+    this.member(record, id, socketId);
+    const phase = record.room.phase;
+    this.expireIfNeeded(record);
+    requireRule(record.room.phase === phase, 'That phase has ended. Your screen will update automatically.');
+    this.host(record, id);
+    requireRule(['answer', 'bluff', 'debate', 'vote'].includes(record.room.phase), 'There is no active timer to skip.');
+    if (record.room.phase === 'debate') this.beginDebateTransition(record);
+    else this.advance(record);
   }
   private prepareRound(record: RoomRecord): void {
     const room = record.room;

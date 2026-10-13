@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from 'react';
 import type { RoomView } from '../shared/types';
 import { useGame } from './game-provider';
-import { RoundStrip, Timer, useRemaining } from './game-common';
+import { HostSkip, RoundStrip, Timer, useRemaining } from './game-common';
 
 export function SubmissionScreen({ room }: { room: RoomView }) {
   const game = useGame();
@@ -30,6 +30,7 @@ export function SubmissionScreen({ room }: { room: RoomView }) {
       <form className="answer-form" onSubmit={submit}><label htmlFor="submission-answer">{isBluff ? 'Your believable wrong answer' : 'Your genuine answer'}</label><input className="answer-input" id="submission-answer" name="answer" type="text" placeholder={isBluff ? 'Try a country that sounds plausible…' : 'I think it’s…'} autoComplete="off" maxLength={80} required aria-describedby="submission-help" disabled={locked} value={saved ?? answer} onChange={(event) => { event.target.setCustomValidity(''); setAnswer(event.target.value); }} /><p className="input-help" id="submission-help">{isBluff ? 'A country with a long coastline or lots of lakes could sound convincing. Keep it short; you’ll make your case out loud.' : 'Trust your gut. Save the convincing for later.'}</p><button className={`btn btn-primary btn-large full-width${locked ? ' is-locked' : ''}`} disabled={unavailable}>{locked ? isBluff ? 'BLUFF LOCKED' : 'ANSWER LOCKED' : game.pending ? 'LOCKING...' : seconds === 0 ? 'TIME’S UP' : isBluff ? 'SUBMIT BLUFF' : 'LOCK IN'}</button></form>
       {locked && <div className="locked-receipt" role="status"><span>{isBluff ? 'BLUFF LOCKED' : 'ANSWER LOCKED'}</span><strong>{saved}</strong><p>{waitingFor ? `Waiting for ${waitingFor} ${waitingFor === 1 ? 'player' : 'players'}...` : isBluff ? 'Everyone is ready. Let the debate begin.' : 'Everyone answered. Now make something up.'}</p></div>}
       <p className="players-status">{submittedCount} of {room.players.length} players {isBluff ? 'submitted a bluff' : 'answered'}</p>
+      <HostSkip room={room} label={isBluff ? 'SKIP TO DEBATE' : 'SKIP TO BLUFF'} />
     </section>
   </main>;
 }
