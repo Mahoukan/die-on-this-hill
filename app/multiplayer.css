@@ -30,6 +30,17 @@
 .pack-settings-panel h2 { margin: 0.25rem 0 0; font-size: 1.35rem; letter-spacing: -0.035em; }
 .pack-manage-link { display: inline-block; margin-top: 0.45rem; color: var(--muted); font-size: 0.7rem; text-underline-offset: 3px; }
 .pack-mode { flex-shrink: 0; }
+.pack-selector { display: grid; gap: 1rem; }
+.pack-selection-toolbar, .pack-group-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.4rem 0.75rem; }
+.pack-selection-toolbar > span { color: var(--muted); font-size: 0.78rem; }
+.pack-selection-actions { display: flex; flex-wrap: wrap; gap: 0.2rem; }
+.pack-selection-actions button { min-height: 44px; padding-inline: 0.65rem; }
+.pack-group-header { margin-bottom: 0.65rem; border-bottom: 1px solid var(--line); }
+.pack-group-header h3 { flex: 1; margin: 0; min-width: 150px; }
+.pack-group-toggle { display: flex; align-items: center; gap: 0.7rem; width: 100%; min-height: 52px; padding: 0.5rem 0; border: 0; background: transparent; color: var(--text); text-align: left; font: inherit; cursor: pointer; }
+.pack-group-toggle small { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.7rem; font-weight: 400; }
+.pack-disclosure { width: 8px; height: 8px; flex-shrink: 0; margin: 0 0.2rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); }
+.pack-group-toggle[aria-expanded="true"] .pack-disclosure { transform: rotate(45deg); }
 .pack-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; }
 .pack-card { position: relative; display: flex; flex-direction: column; gap: 0.5rem; min-height: 145px; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,0.025); color: var(--text); text-align: left; cursor: pointer; }
 .pack-card:hover:not(:disabled) { border-color: var(--line-strong); background: rgba(255,255,255,0.045); }

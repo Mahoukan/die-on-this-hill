@@ -38,13 +38,13 @@ test('real Socket.IO clients complete a synchronized round, reconnect, score, an
   await delay(10);
   assert.equal(hostView?.players.length, 2);
   assert.equal(guestView?.players.length, 2);
-  const blockedSetup = await new Promise<Ack>((resolve) => guest.emit('game:questions', { mode: 'single', selectedPackIds: ['geography'] }, resolve));
+  const blockedSetup = await new Promise<Ack>((resolve) => guest.emit('game:questions', { mode: 'single', selectedPackIds: ['builtin-easy-geography'] }, resolve));
   assert.equal(blockedSetup.ok, false);
-  const setup = await new Promise<Ack>((resolve) => host.emit('game:questions', { mode: 'single', selectedPackIds: ['science-technology'] }, resolve));
+  const setup = await new Promise<Ack>((resolve) => host.emit('game:questions', { mode: 'single', selectedPackIds: ['builtin-easy-science-nature'] }, resolve));
   assert.ok(setup.ok);
   await delay(10);
-  assert.deepEqual(hostView?.selectedPackIds, ['science-technology']);
-  assert.deepEqual(guestView?.selectedPackIds, ['science-technology']);
+  assert.deepEqual(hostView?.selectedPackIds, ['builtin-easy-science-nature']);
+  assert.deepEqual(guestView?.selectedPackIds, ['builtin-easy-science-nature']);
   const unauthorized = await new Promise<Ack>((resolve) => guest.emit('game:start', resolve));
   assert.equal(unauthorized.ok, false);
   const start = await new Promise<Ack>((resolve) => host.emit('game:start', resolve));
@@ -93,5 +93,5 @@ test('real Socket.IO clients complete a synchronized round, reconnect, score, an
   assert.equal(hostView?.phase, 'lobby');
   assert.equal(guestView?.phase, 'lobby');
   assert.equal(guestView?.players.every((player) => player.score === 0 && !player.hillUsed), true);
-  assert.deepEqual(guestView?.selectedPackIds, ['science-technology'], 'Play Again retains question setup');
+  assert.deepEqual(guestView?.selectedPackIds, ['builtin-easy-science-nature'], 'Play Again retains question setup');
 });

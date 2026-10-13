@@ -53,7 +53,7 @@ export class PackRegistry {
   }
 
   all(): QuestionPack[] { return [...QUESTION_PACKS.map(clonePack), ...[...this.custom.values()].map(clonePack)]; }
-  metadata(): QuestionPackMeta[] { return this.all().map(({ id, name, description, questions, custom }) => ({ id, name, description, questionCount: questions.length, custom: custom === true })); }
+  metadata(): QuestionPackMeta[] { return this.all().map(({ id, name, description, questions, custom, difficulty }) => ({ id, name, description, questionCount: questions.length, custom: custom === true, difficulty })); }
   customPacks(): QuestionPack[] { return [...this.custom.values()].map(clonePack); }
   storageUsage(): CustomPackStorage {
     // Count persistent JSON files, including invalid packs, without following links or recursing.

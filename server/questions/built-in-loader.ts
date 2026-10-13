@@ -80,7 +80,7 @@ export function loadBuiltInPacks(directory = SOURCE_DIRECTORY): QuestionPack[] {
           }
         });
         packs.push({ id, name: displayName(value.name, filename, difficulty),
-          description: optional(value.description, 'Description', LIMITS.description) ?? '', custom: false, questions });
+          description: optional(value.description, 'Description', LIMITS.description) ?? '', custom: false, difficulty, questions });
       } catch (error) {
         throw new Error(`Invalid built-in pack ${path}: ${error instanceof Error ? error.message : error}`);
       }

@@ -24,10 +24,10 @@ test('custom pack CRUD persists across registry reloads and question IDs stay st
 
 test('built-ins are immutable, IDs cannot collide, and unsafe paths are rejected', (context) => {
   const registry = new PackRegistry(directory(context));
-  assert.throws(() => registry.update('general', 'Changed', ''), /read-only/);
-  assert.throws(() => registry.delete('general'), /read-only/);
+  assert.throws(() => registry.update('builtin-easy-general-knowledge', 'Changed', ''), /read-only/);
+  assert.throws(() => registry.delete('builtin-easy-general-knowledge'), /read-only/);
   assert.throws(() => registry.update('../general', 'Changed', ''), /Invalid custom pack ID/);
-  const custom = registry.create('General', 'Name collision is safe'); assert.notEqual(custom.id, 'general'); assert.equal(custom.id.startsWith('custom-'), true);
+  const custom = registry.create('General', 'Name collision is safe'); assert.notEqual(custom.id, 'builtin-easy-general-knowledge'); assert.equal(custom.id.startsWith('custom-'), true);
 });
 
 test('import validates before writing, regenerates IDs, avoids overwrite, and export round-trips optional fields', (context) => {
@@ -45,7 +45,7 @@ test('duplicates are blocked and corrupted files do not prevent built-in or vali
   assert.throws(() => registry.addQuestion(pack.id, sample(' SAME   QUESTION!!! ')), /already exists/);
   writeFileSync(join(path, 'custom-broken.json'), '{broken', 'utf8');
   const originalError = console.error; console.error = () => {}; let reloaded: PackRegistry; try { reloaded = new PackRegistry(path); } finally { console.error = originalError; }
-  assert.ok(reloaded!.get('general')); assert.ok(reloaded!.get(pack.id)); assert.equal(reloaded!.get('custom-broken'), undefined);
+  assert.ok(reloaded!.get('builtin-easy-general-knowledge')); assert.ok(reloaded!.get(pack.id)); assert.equal(reloaded!.get('custom-broken'), undefined);
 });
 
 test('custom packs integrate with single/mixed setup, live availability, fallback, and active snapshots', (context) => {
@@ -54,9 +54,9 @@ test('custom packs integrate with single/mixed setup, live availability, fallbac
   const host = store.create('Host', 'socket-0'); store.join(host.roomCode, 'Guest', 'socket-1'); const room = store.getRoom(host.roomCode);
   store.settings(host.roomCode, host.playerId, 'socket-0', 5); store.questionSettings(host.roomCode, host.playerId, 'socket-0', 'single', [custom.id]);
   let view = store.view(host.roomCode, host.playerId); assert.equal(view.availableQuestionCount, 5); assert.equal(view.questionPacks.find((pack) => pack.id === custom.id)?.custom, true);
-  store.questionSettings(host.roomCode, host.playerId, 'socket-0', 'mixed', ['general', custom.id]); assert.equal(store.view(host.roomCode, host.playerId).availableQuestionCount, 17);
+  store.questionSettings(host.roomCode, host.playerId, 'socket-0', 'mixed', ['builtin-easy-general-knowledge', custom.id]); assert.equal(store.view(host.roomCode, host.playerId).availableQuestionCount, registry.get('builtin-easy-general-knowledge')!.questions.length + 5);
   store.questionSettings(host.roomCode, host.playerId, 'socket-0', 'single', [custom.id]); store.start(host.roomCode, host.playerId, 'socket-0'); const snapshot = room.selectedQuestions.map((question) => ({ ...question }));
   store.deletePackQuestion(custom.id, custom.questions[0].id); assert.deepEqual(room.selectedQuestions, snapshot, 'running game owns immutable question snapshots');
   room.phase = 'final-results'; room.phaseEndsAt = null; store.reset(host.roomCode, host.playerId, 'socket-0'); view = store.view(host.roomCode, host.playerId); assert.equal(view.availableQuestionCount, 4); assert.throws(() => store.start(host.roomCode, host.playerId, 'socket-0'), /Not enough questions/);
-  store.deletePack(custom.id); assert.deepEqual(room.selectedPackIds, ['general']); assert.equal(room.questionMode, 'single'); assert.ok(changes.length > 0, 'pack changes broadcast refreshed lobby state');
+  store.deletePack(custom.id); assert.deepEqual(room.selectedPackIds, ['builtin-easy-general-knowledge']); assert.equal(room.questionMode, 'single'); assert.ok(changes.length > 0, 'pack changes broadcast refreshed lobby state');
 });

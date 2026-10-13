@@ -1,15 +1,10 @@
 import { randomInt } from 'node:crypto';
 import type { Question, QuestionPack, QuestionPackMeta } from '../../shared/types';
-import { entertainmentPack } from './entertainment';
-import { foodCulturePack } from './food-culture';
-import { generalPack } from './general';
-import { geographyPack } from './geography';
-import { historyPack } from './history';
-import { scienceTechnologyPack } from './science-technology';
 import { loadBuiltInPacks } from './built-in-loader';
 
-export const QUESTION_PACKS: readonly QuestionPack[] = [generalPack, scienceTechnologyPack, geographyPack, historyPack, entertainmentPack, foodCulturePack, ...loadBuiltInPacks()];
-export const QUESTION_PACK_METADATA: QuestionPackMeta[] = QUESTION_PACKS.map(({ id, name, description, questions }) => ({ id, name, description, questionCount: questions.length, custom: false }));
+export const QUESTION_PACKS: readonly QuestionPack[] = loadBuiltInPacks();
+export const DEFAULT_PACK_ID = 'builtin-easy-general-knowledge';
+export const QUESTION_PACK_METADATA: QuestionPackMeta[] = QUESTION_PACKS.map(({ id, name, description, questions, difficulty }) => ({ id, name, description, questionCount: questions.length, custom: false, difficulty }));
 export const ALL_QUESTIONS: readonly Question[] = QUESTION_PACKS.flatMap((pack) => pack.questions);
 
 export function eligibleQuestions(packIds: readonly string[]): Question[] {

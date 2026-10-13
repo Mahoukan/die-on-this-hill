@@ -27,11 +27,11 @@ function writePack(path: string, difficulty: string, pack: unknown, filename = '
   writeFileSync(join(path, difficulty, filename), JSON.stringify(pack));
 }
 
-test('all 72 source packs join the six originals without changing authored question fields', () => {
+test('exactly 72 source packs replace the six originals without changing authored question fields', () => {
   const loaded = loadBuiltInPacks();
   assert.equal(loaded.length, 72);
-  assert.equal(QUESTION_PACKS.length, 78);
-  assert.equal(ALL_QUESTIONS.length, 4568);
+  assert.equal(QUESTION_PACKS.length, 72);
+  assert.equal(ALL_QUESTIONS.length, 4496);
   for (const difficulty of ['easy', 'medium', 'hard']) {
     const folder = join(process.cwd(), 'packs', difficulty);
     assert.equal(readdirSync(folder).filter((file) => file.endsWith('.json')).length, 24);
@@ -41,6 +41,7 @@ test('all 72 source packs join the six originals without changing authored quest
       const pack = loaded.find((item) => item.id === id)!;
       assert.ok(pack, id);
       assert.equal(pack.custom, false);
+      assert.equal(pack.difficulty, difficulty);
       assert.deepEqual(pack.questions.map(({ id: _id, packId: _packId, ...question }) => question),
         raw.questions.map(({ question, text, ...rest }: Record<string, unknown>) => ({ text: text ?? question, ...rest })));
     }
@@ -133,13 +134,13 @@ test('permanent packs support small-pack availability, mixed selection, and Play
   assert.ok(room.selectedQuestions.every((question) => question.packId === small));
   room.phase = 'final-results'; room.phaseEndsAt = null;
   store.reset(host.roomCode, host.playerId, 'socket-0');
-  const ids = [small, 'builtin-easy-geography', 'geography'];
+  const ids = [small, 'builtin-easy-geography'];
   store.settings(host.roomCode, host.playerId, 'socket-0', 12);
   store.questionSettings(host.roomCode, host.playerId, 'socket-0', 'mixed', ids);
-  assert.equal(store.view(host.roomCode, host.playerId).availableQuestionCount, 108);
-  assert.equal(registry.eligible([...ids, small]).length, 108);
-  const all = selectQuestions(108, ids);
-  assert.equal(new Set(all.map((question) => question.id)).size, 108);
+  assert.equal(store.view(host.roomCode, host.playerId).availableQuestionCount, 96);
+  assert.equal(registry.eligible([...ids, small]).length, 96);
+  const all = selectQuestions(96, ids);
+  assert.equal(new Set(all.map((question) => question.id)).size, 96);
   assert.ok(all.every((question) => ids.includes(question.packId)));
   store.start(host.roomCode, host.playerId, 'socket-0');
   const firstOrder = [...room.selectedQuestionIds];

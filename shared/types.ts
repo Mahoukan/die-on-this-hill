@@ -2,6 +2,7 @@ export type GamePhase = 'lobby' | 'answer' | 'bluff' | 'debate' | 'debate-transi
 export type RevealStep = 'ready' | 'votes' | 'correct' | 'bluffs';
 export type RoundSetting = 'recommended' | 5 | 8 | 10 | 12;
 export type QuestionMode = 'single' | 'mixed';
+export type PackDifficulty = 'easy' | 'medium' | 'hard';
 
 export interface PlayerStats {
   correctInitialAnswers: number;
@@ -18,8 +19,8 @@ export interface PlayerStats {
 
 export interface Player { id: string; name: string; score: number; isHost: boolean; hillUsed: boolean; connected: boolean; stats: PlayerStats; }
 export interface Question { id: string; text: string; correctAnswer: string; packId: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
-export interface QuestionPack { id: string; name: string; description: string; questions: Question[]; custom?: boolean; }
-export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; custom: boolean; }
+export interface QuestionPack { id: string; name: string; description: string; questions: Question[]; custom?: boolean; difficulty?: PackDifficulty; }
+export interface QuestionPackMeta { id: string; name: string; description: string; questionCount: number; custom: boolean; difficulty?: PackDifficulty; }
 export interface CustomQuestionInput { text: string; correctAnswer: string; category: string; acceptedAnswers?: string[]; explanation?: string; }
 export interface CustomPackExport { format: 'die-on-this-hill-pack'; version: 1; name: string; description: string; questions: CustomQuestionInput[]; }
 export interface CustomPackStorage { usedBytes: number; maxBytes: number; }

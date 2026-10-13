@@ -4,6 +4,7 @@ import { buildLeaderboard, calculateAwards } from './awards';
 import { isAcceptedAnswer, normalizeAnswer } from './answer-matching';
 import { PackRegistry, PackValidationError } from './custom-packs';
 import { scoreRound } from './scoring';
+import { DEFAULT_PACK_ID } from './questions';
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
 const DURATIONS = { answer: 30_000, bluff: 30_000, debate: 60_000, 'debate-transition': 3_000, vote: 15_000 };
@@ -39,7 +40,7 @@ export class RoomStore {
     requireRule(this.rooms.size < 500, 'The server is full. Try again later.');
     let code: string;
     do { code = Array.from({ length: 4 }, () => CODE_ALPHABET[randomInt(CODE_ALPHABET.length)]).join(''); } while (this.rooms.has(code));
-    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: ['general'], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], phaseEndsAt: null };
+    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: [DEFAULT_PACK_ID], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], phaseEndsAt: null };
     this.rooms.set(code, { room, identities: new Map() });
     const session = this.addPlayer(code, displayName, socketId);
     room.hostPlayerId = session.playerId;
@@ -100,7 +101,7 @@ export class RoomStore {
     requireRule(Array.isArray(packIds) && packIds.every((packId) => typeof packId === 'string'), 'Choose valid question packs.');
     const selectedPackIds = [...new Set(packIds as string[])];
     requireRule(selectedPackIds.every((packId) => this.packs.has(packId)), 'One or more selected question packs do not exist.');
-    requireRule(mode === 'single' ? selectedPackIds.length === 1 : selectedPackIds.length >= 2, mode === 'single' ? 'Choose one question pack.' : 'Choose at least two packs for a Mixed Game.');
+    requireRule(mode !== 'single' || selectedPackIds.length === 1, 'Choose one question pack.');
     record.room.questionMode = mode as QuestionMode;
     record.room.selectedPackIds = selectedPackIds;
     this.changed(code);
@@ -109,6 +110,7 @@ export class RoomStore {
     const { record } = this.authorized(code, id, socketId, 'lobby');
     this.host(record, id);
     requireRule(record.room.players.filter((player) => player.connected).length >= 2, 'You need at least two connected players to start.');
+    requireRule(record.room.questionMode !== 'mixed' || record.room.selectedPackIds.length >= 2, 'Choose at least two packs for a Mixed Game.');
     record.room.players = record.room.players.filter((player) => player.connected);
     for (const playerId of record.identities.keys()) if (!record.room.players.some((player) => player.id === playerId)) record.identities.delete(playerId);
     this.refreshRecommended(record.room);
@@ -284,7 +286,7 @@ export class RoomStore {
   exportPack(packId: unknown): { filename: string; pack: CustomPackExport } { try { return this.packs.export(packId); } catch (error) { throw new GameError(error instanceof Error ? error.message : 'Could not export that pack.'); } }
   private packAction<T>(action: () => T): T { try { const result = action(); this.packRegistryChanged(); return result; } catch (error) { if (error instanceof PackValidationError) throw new GameError(error.message); throw error; } }
   private packRegistryChanged(): void { for (const [code, record] of this.rooms) { if (record.room.phase === 'lobby') this.sanitizeSelection(record.room); this.changed(code); } }
-  private sanitizeSelection(room: GameRoom): void { const valid = room.selectedPackIds.filter((id) => this.packs.has(id)); if (room.questionMode === 'single' && valid.length === 1) { room.selectedPackIds = valid; return; } if (room.questionMode === 'mixed' && valid.length >= 2) { room.selectedPackIds = [...new Set(valid)]; return; } room.questionMode = 'single'; room.selectedPackIds = [valid[0] ?? 'general']; }
+  private sanitizeSelection(room: GameRoom): void { const valid = room.selectedPackIds.filter((id) => this.packs.has(id)); if (room.questionMode === 'mixed') { room.selectedPackIds = [...new Set(valid)]; return; } room.selectedPackIds = [valid[0] ?? DEFAULT_PACK_ID]; }
   private cloneQuestion(question: Question): Question { return { ...question, acceptedAnswers: question.acceptedAnswers ? [...question.acceptedAnswers] : undefined }; }
   private shuffle(questions: Question[]): Question[] { const result = questions.map((question) => this.cloneQuestion(question)); for (let index = result.length - 1; index > 0; index--) { const other = randomInt(index + 1); [result[index], result[other]] = [result[other], result[index]]; } return result; }
   close(): void { for (const record of this.rooms.values()) { clearTimeout(record.timer); clearTimeout(record.cleanup); clearTimeout(record.hostTransfer); } this.rooms.clear(); }

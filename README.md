@@ -21,7 +21,7 @@ Once per game, a player can choose I WILL DIE ON THIS HILL to double the stakes 
 
 - Multiplayer rooms with reconnect handling and configurable game length
 - Single Pack and Mixed Game modes
-- 78 built-in question packs and persistent custom packs
+- 72 built-in question packs and persistent custom packs
 - Optional read-only Shared Displays
 - Majority debate readiness with a host override
 - Multi-round scoring, statistics, final rankings, and awards
@@ -129,9 +129,9 @@ If `PACK_ADMIN_PASSWORD` is missing, production startup fails. Development mode 
 
 ## Question packs
 
-Built-in packs are read-only application source: the original six packs remain under `server/questions/`, and 72 permanent JSON packs live in `packs/easy/`, `packs/medium/`, and `packs/hard/` (24 per difficulty). Together they contain 4,568 questions, including 4,496 from JSON. Commit these source files with the application. Docker copies `packs/` into the final image, outside the custom-pack volume.
+Built-in packs are read-only application source: 72 permanent JSON packs live in `packs/easy/`, `packs/medium/`, and `packs/hard/` (24 per difficulty). Together they contain 4,496 questions. The lobby groups packs by their source folder difficulty, with a separate Custom Packs section. Each section can be collapsed locally without changing selection. In Mixed Game, global and per-section Select All and Deselect All controls update the server selection; starting still requires at least two packs. Commit these source files with the application. Docker copies `packs/` into the final image, outside the custom-pack volume.
 
-`server/questions/built-in-loader.ts` discovers sorted JSON filenames in those three folders once at server startup and appends them to the existing built-in registry. Adding a pack requires no TypeScript import. The folder determines difficulty; the JSON name supplies the display name, with an existing difficulty prefix/suffix removed and a single suffix added (for example, `Geography - Easy` or `Entertainment Film - Medium`). Missing names fall back to the filename.
+`server/questions/built-in-loader.ts` discovers sorted JSON filenames in those three folders once at server startup and populates the built-in registry. Adding a pack requires no TypeScript import. The folder determines difficulty; the JSON name supplies the display name, with an existing difficulty prefix/suffix removed and a single suffix added (for example, `Geography - Easy` or `Entertainment Film - Medium`). Missing names fall back to the filename.
 
 Pack IDs are `builtin-<difficulty>-<filename-slug>`. Slugs use lowercase ASCII letters, digits, and hyphens, and colliding slugs fail validation. Keep filenames and difficulty folders stable to preserve pack IDs; changing a display name does not change its ID. Question IDs use the pack ID plus a SHA-256 hash of the authored question fields, so reordering or inserting questions preserves existing IDs.
 
