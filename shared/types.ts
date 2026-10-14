@@ -1,4 +1,5 @@
-export type GamePhase = 'lobby' | 'answer' | 'bluff' | 'debate' | 'debate-transition' | 'vote' | 'reveal' | 'results' | 'final-results';
+export const GAME_PHASES = ['lobby', 'answer', 'bluff', 'debate', 'debate-transition', 'vote', 'reveal', 'results', 'final-results'] as const;
+export type GamePhase = typeof GAME_PHASES[number];
 export type RevealStep = 'ready' | 'votes' | 'correct' | 'bluffs';
 export type RoundSetting = 'recommended' | 5 | 8 | 10 | 12;
 export type QuestionMode = 'single' | 'mixed';
@@ -30,6 +31,15 @@ export interface AnswerOption { id: string; text: string; isCorrect: boolean; ge
 export interface PlayerVote { playerId: string; answerId: string; hill: boolean; }
 export interface HillAnnouncement { playerId: string; playerName: string; activatedAt: number; expiresAt: number; }
 export interface RoundResult { playerId: string; finalAnswerPoints: number; bluffPoints: number; hillImpact: number; roundPoints: number; totalScore: number; hill: boolean; correct: boolean; }
+export interface BluffOutcome { playerId: string; fooledPlayerIds: string[]; points: number; }
+export interface CompletedRoundAnswer extends AnswerOption { voterIds: string[]; bluffOutcomes: BluffOutcome[]; }
+export interface CompletedRound {
+  roundNumber: number;
+  question: Question;
+  answers: CompletedRoundAnswer[];
+  votes: PlayerVote[];
+  results: RoundResult[];
+}
 export interface LeaderboardEntry { playerId: string; rank: number; score: number; correctFinalAnswers: number; successfulBluffVotes: number; hillSuccessful: boolean; }
 
 export type AwardKey = 'human-wikipedia' | 'master-bullshitter' | 'great-recovery' | 'talked-out-of-it' | 'most-persuadable' | 'worst-hill';
@@ -55,6 +65,8 @@ export interface GameRoom {
   answerPool: AnswerOption[];
   votes: PlayerVote[];
   results: RoundResult[];
+  /** Immutable authoritative source for every post-vote screen and reconnect. */
+  completedRound: CompletedRound | null;
   roundResults: RoundResult[][];
   debateReadyPlayerIds: string[];
   hillAnnouncement: HillAnnouncement | null;
@@ -62,7 +74,7 @@ export interface GameRoom {
 }
 
 export interface PublicPlayer extends Omit<Player, 'stats'> {}
-export interface PublicAnswer { id: string; text: string; voterIds?: string[]; isCorrect?: boolean; genuinePlayerIds?: string[]; bluffPlayerIds?: string[]; }
+export interface PublicAnswer { id: string; text: string; voterIds?: string[]; isCorrect?: boolean; genuinePlayerIds?: string[]; bluffPlayerIds?: string[]; bluffOutcomes?: BluffOutcome[]; }
 
 /** Deliberate allowlist projection; contains no secrets or premature answer origins. */
 export interface RoomView {

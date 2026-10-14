@@ -6,6 +6,7 @@ import { createSocket } from '../lib/socket';
 import { signed, useRemaining } from './game-common';
 import { AudioSettingsControl, useAudio } from './audio-provider';
 import { useActiveHillAnnouncement } from './hill-announcement';
+import { phaseView } from '../shared/phase-view';
 
 const nameFor = (room: DisplayView, id: string) => room.players.find((player) => player.id === id)?.name || 'Player';
 
@@ -58,13 +59,15 @@ function DisplayHeader({ code, connected, fullscreen, round, totalRounds }: { co
 }
 
 function DisplayPhase({ room }: { room: DisplayView }) {
-  if (room.phase === 'lobby') return <DisplayLobby room={room} />;
-  if (room.phase === 'answer' || room.phase === 'bluff') return <DisplaySubmission room={room} />;
-  if (room.phase === 'debate' || room.phase === 'debate-transition') return <DisplayDebate room={room} />;
-  if (room.phase === 'vote') return <DisplayVote room={room} />;
-  if (room.phase === 'reveal') return <DisplayReveal room={room} />;
-  if (room.phase === 'results') return <DisplayResults room={room} />;
-  return <DisplayFinal room={room} />;
+  const view = phaseView(room.phase, room.revealStep);
+  if (view === 'lobby') return <DisplayLobby room={room} />;
+  if (view === 'answer' || view === 'bluff') return <DisplaySubmission room={room} />;
+  if (view === 'debate') return <DisplayDebate room={room} />;
+  if (view === 'vote') return <DisplayVote room={room} />;
+  if (view === 'reveal' || view === 'bluff-results') return <DisplayReveal room={room} />;
+  if (view === 'results') return <DisplayResults room={room} />;
+  if (view === 'final-results') return <DisplayFinal room={room} />;
+  return <DisplayWaiting title="WAITING FOR GAME STATE..." />;
 }
 
 function DisplayLobby({ room }: { room: DisplayView }) {
@@ -90,12 +93,18 @@ function DisplayVote({ room }: { room: DisplayView }) {
 
 function DisplayReveal({ room }: { room: DisplayView }) {
   const title = room.revealStep === 'ready' ? 'EVERYONE HAS VOTED' : room.revealStep === 'votes' ? 'HERE’S WHERE YOU LANDED' : room.revealStep === 'correct' ? 'THE CORRECT ANSWER IS...' : 'YOU BOUGHT THAT?';
-  return <section><div className="eyebrow">05 / The reveal, {room.question?.category}</div><h1 className="display-title">{title}</h1><p className="display-question">{room.question?.text}</p>{room.revealStep !== 'ready' && <div className="answer-pool display-pool">{room.answerPool.map((answer) => <article className={`answer-card${answer.isCorrect ? ' is-correct' : ''}`} key={answer.id}><h2>{answer.text}</h2>{answer.voterIds && <p>{answer.voterIds.length ? answer.voterIds.map((id) => nameFor(room, id)).join(', ') : 'No votes'}</p>}{room.revealStep === 'bluffs' && answer.bluffPlayerIds?.length ? <p>Bluff by {answer.bluffPlayerIds.map((id) => nameFor(room, id)).join(' & ')}</p> : null}</article>)}</div>}{room.revealStep === 'correct' && <div className="display-correct"><strong>{room.correctAnswer}</strong>{room.explanation && <p>{room.explanation}</p>}{room.hillPlayerIds.map((id) => { const survived = room.answerPool.some((answer) => answer.isCorrect && answer.voterIds?.includes(id)); return <span key={id}>{nameFor(room, id)} {survived ? 'died on the Hill and lived: +200' : 'fell on the wrong Hill: -100'}</span>; })}</div>}{room.revealStep === 'bluffs' && <p className="display-instruction">Bluff owners and voters revealed</p>}</section>;
+  if (room.revealStep === 'bluffs' && (room.results.length === 0 || !room.answerPool.some((answer) => answer.isCorrect))) return <DisplayWaiting eyebrow="06 / Bluff results" title="YOU BOUGHT THAT?" />;
+  return <section><div className="eyebrow">05 / The reveal, {room.question?.category}</div><h1 className="display-title">{title}</h1><p className="display-question">{room.question?.text}</p>{room.revealStep !== 'ready' && <div className="answer-pool display-pool">{room.answerPool.map((answer) => <article className={`answer-card${answer.isCorrect ? ' is-correct' : ''}`} key={answer.id}><h2>{answer.text}</h2>{answer.voterIds && <p>{answer.voterIds.length ? answer.voterIds.map((id) => nameFor(room, id)).join(', ') : 'No votes'}</p>}{room.revealStep === 'bluffs' && answer.bluffOutcomes?.length ? answer.bluffOutcomes.map((outcome) => <p key={outcome.playerId}>Bluff by {nameFor(room, outcome.playerId)}: {outcome.fooledPlayerIds.length ? `${outcome.fooledPlayerIds.map((id) => nameFor(room, id)).join(', ')} fell for it, ${signed(outcome.points)}` : 'nobody believed it, 0'}</p>) : null}</article>)}</div>}{room.revealStep === 'correct' && <div className="display-correct"><strong>{room.correctAnswer}</strong>{room.explanation && <p>{room.explanation}</p>}{room.hillPlayerIds.map((id) => { const survived = room.answerPool.some((answer) => answer.isCorrect && answer.voterIds?.includes(id)); return <span key={id}>{nameFor(room, id)} {survived ? 'died on the Hill and lived: +200' : 'fell on the wrong Hill: -100'}</span>; })}</div>}{room.revealStep === 'bluffs' && <p className="display-instruction">Bluff owners, fooled players, and points revealed</p>}</section>;
 }
 
 function DisplayResults({ room }: { room: DisplayView }) {
   const results = [...room.results].sort((left, right) => right.totalScore - left.totalScore);
+  if (results.length === 0) return <DisplayWaiting eyebrow="07 / The reckoning" title={`ROUND ${room.round} RESULTS`} />;
   return <section><div className="eyebrow">07 / The reckoning</div><h1 className="display-title">ROUND {room.round} RESULTS</h1><div className="display-scoreboard">{results.map((result) => <div key={result.playerId} className="display-score-row"><strong>{nameFor(room, result.playerId)}</strong>{result.hill && <span className="display-hill-badge">HILL {result.correct ? 'LIVED' : 'FELL'}</span>}<span className={result.roundPoints < 0 ? 'negative' : 'positive'}>{signed(result.roundPoints)}</span><b>{result.totalScore.toLocaleString()}</b></div>)}</div><p className="display-instruction">Waiting for the host...</p></section>;
+}
+
+function DisplayWaiting({ title, eyebrow = 'Game state' }: { title: string; eyebrow?: string }) {
+  return <section className="display-message"><div className="eyebrow">{eyebrow}</div><h1 className="display-title">{title}</h1><p>Waiting for round results...</p></section>;
 }
 
 function DisplayFinal({ room }: { room: DisplayView }) {

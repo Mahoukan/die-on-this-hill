@@ -1,9 +1,9 @@
 import { randomInt, randomUUID, timingSafeEqual } from 'node:crypto';
-import type { AnswerOption, CustomPackExport, CustomQuestionInput, DisplayView, GamePhase, GameRoom, Player, PlayerSession, PlayerStats, Question, QuestionMode, QuestionPack, RoomView, RoundSetting } from '../shared/types';
+import type { AnswerOption, CompletedRound, CustomPackExport, CustomQuestionInput, DisplayView, GamePhase, GameRoom, Player, PlayerSession, PlayerStats, Question, QuestionMode, QuestionPack, RoomView, RoundSetting } from '../shared/types';
 import { buildLeaderboard, calculateAwards } from './awards';
 import { isAcceptedAnswer, normalizeAnswer } from './answer-matching';
 import { PackRegistry, PackValidationError } from './custom-packs';
-import { scoreRound } from './scoring';
+import { bluffOutcomes, scoreRound } from './scoring';
 import { DEFAULT_PACK_ID } from './questions';
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
@@ -47,7 +47,7 @@ export class RoomStore {
     requireRule(this.rooms.size < 500, 'The server is full. Try again later.');
     let code: string;
     do { code = Array.from({ length: 4 }, () => CODE_ALPHABET[randomInt(CODE_ALPHABET.length)]).join(''); } while (this.rooms.has(code));
-    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: [DEFAULT_PACK_ID], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], hillAnnouncement: null, phaseEndsAt: null };
+    const room: GameRoom = { roomCode: code, phase: 'lobby', revealStep: 'ready', round: 0, totalRounds: 10, roundSetting: 'recommended', questionMode: 'single', selectedPackIds: [DEFAULT_PACK_ID], selectedQuestionIds: [], selectedQuestions: [], hostPlayerId: '', players: [], question: null, submissions: [], answerPool: [], votes: [], results: [], completedRound: null, roundResults: [], debateReadyPlayerIds: [], hillAnnouncement: null, phaseEndsAt: null };
     this.rooms.set(code, { room, identities: new Map() });
     const session = this.addPlayer(code, displayName, socketId);
     room.hostPlayerId = session.playerId;
@@ -153,14 +153,14 @@ export class RoomStore {
     this.clearHillAnnouncement(record);
     room.question = this.cloneQuestion(room.selectedQuestions[room.round - 1]);
     room.submissions = room.players.map((player) => ({ playerId: player.id, genuineAnswer: null, bluff: null }));
-    room.answerPool = []; room.votes = []; room.results = []; room.debateReadyPlayerIds = []; room.revealStep = 'ready';
+    room.answerPool = []; room.votes = []; room.results = []; room.completedRound = null; room.debateReadyPlayerIds = []; room.revealStep = 'ready';
     this.setPhase(record, 'answer');
   }
   reset(code: string, id: string, socketId: string): void {
     const { record } = this.authorized(code, id, socketId, 'final-results');
     this.host(record, id);
     this.clearHillAnnouncement(record);
-    Object.assign(record.room, { round: 0, question: null, selectedQuestionIds: [], selectedQuestions: [], submissions: [], answerPool: [], votes: [], results: [], roundResults: [], debateReadyPlayerIds: [], revealStep: 'ready' });
+    Object.assign(record.room, { round: 0, question: null, selectedQuestionIds: [], selectedQuestions: [], submissions: [], answerPool: [], votes: [], results: [], completedRound: null, roundResults: [], debateReadyPlayerIds: [], revealStep: 'ready' });
     record.room.players.forEach((player) => { player.score = 0; player.hillUsed = false; player.stats = emptyStats(); });
     this.refreshRecommended(record.room);
     this.sanitizeSelection(record.room);
@@ -266,7 +266,8 @@ export class RoomStore {
           if (vote.hill) { player.stats.hillSuccessful = result.correct; player.stats.hillScoreImpact += result.hillImpact; }
         }
       }
-      room.roundResults.push(room.results.map((result) => ({ ...result }))); room.revealStep = 'ready'; this.setPhase(record, 'reveal');
+      room.completedRound = this.snapshotCompletedRound(room);
+      room.roundResults.push(room.completedRound.results.map((result) => ({ ...result }))); room.revealStep = 'ready'; this.setPhase(record, 'reveal');
     }
   }
   private buildPool(room: GameRoom): void {
@@ -274,6 +275,21 @@ export class RoomStore {
     const add = (text: string, kind: 'correct' | 'genuine' | 'bluff', id?: string) => { const displayText = kind !== 'correct' && isAcceptedAnswer(room.question!, text) ? room.question!.correctAnswer : text.trim(); const key = normalizeAnswer(displayText); let option = options.get(key); if (!option) { option = { id: randomUUID(), text: displayText, isCorrect: false, genuinePlayerIds: [], bluffPlayerIds: [] }; options.set(key, option); } if (kind === 'correct') option.isCorrect = true; else if (id) option[kind === 'genuine' ? 'genuinePlayerIds' : 'bluffPlayerIds'].push(id); };
     add(room.question!.correctAnswer, 'correct'); for (const submission of room.submissions) { if (submission.genuineAnswer) add(submission.genuineAnswer, 'genuine', submission.playerId); if (submission.bluff) add(submission.bluff, 'bluff', submission.playerId); }
     room.answerPool = [...options.values()]; for (let index = room.answerPool.length - 1; index > 0; index--) { const other = randomInt(index + 1); [room.answerPool[index], room.answerPool[other]] = [room.answerPool[other], room.answerPool[index]]; }
+  }
+  private snapshotCompletedRound(room: GameRoom): CompletedRound {
+    return {
+      roundNumber: room.round,
+      question: this.cloneQuestion(room.question!),
+      answers: room.answerPool.map((answer) => ({
+        ...answer,
+        genuinePlayerIds: [...answer.genuinePlayerIds],
+        bluffPlayerIds: [...answer.bluffPlayerIds],
+        voterIds: room.votes.filter((vote) => vote.answerId === answer.id).map((vote) => vote.playerId),
+        bluffOutcomes: bluffOutcomes(room, answer.id),
+      })),
+      votes: room.votes.map((vote) => ({ ...vote })),
+      results: room.results.map((result) => ({ ...result })),
+    };
   }
   private announceHill(record: RoomRecord, player: Player): void {
     this.clearHillAnnouncement(record);
@@ -295,14 +311,19 @@ export class RoomStore {
   }
   private publicView(room: GameRoom): DisplayView {
     const final = room.phase === 'final-results'; const revealVotes = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep !== 'ready'); const revealCorrect = final || room.phase === 'results' || (room.phase === 'reveal' && ['correct', 'bluffs'].includes(room.revealStep)); const revealBluffs = final || room.phase === 'results' || (room.phase === 'reveal' && room.revealStep === 'bluffs');
+    const completed = room.completedRound;
+    const sourceQuestion = completed?.question ?? room.question;
+    const sourceAnswers = completed?.answers ?? room.answerPool.map((answer) => ({ ...answer, voterIds: room.votes.filter((vote) => vote.answerId === answer.id).map((vote) => vote.playerId), bluffOutcomes: bluffOutcomes(room, answer.id) }));
+    const sourceVotes = completed?.votes ?? room.votes;
+    const sourceResults = completed?.results ?? room.results;
     return {
       roomCode: room.roomCode, phase: room.phase, revealStep: room.revealStep, round: room.round, totalRounds: room.totalRounds, roundSetting: room.roundSetting, questionMode: room.questionMode, selectedPackIds: [...room.selectedPackIds], questionPacks: this.packs.metadata(), availableQuestionCount: this.packs.eligible(room.selectedPackIds).length, hostPlayerId: room.hostPlayerId,
-      players: room.players.map(({ stats: _stats, ...player }) => ({ ...player, score: revealCorrect ? player.score : player.score - (room.results.find((result) => result.playerId === player.id)?.roundPoints ?? 0) })),
-      question: room.question ? { id: room.question.id, text: room.question.text, category: room.question.category, packId: room.question.packId } : null,
-      answerPool: room.answerPool.map((option) => ({ id: option.id, text: option.text, ...(revealVotes ? { voterIds: room.votes.filter((item) => item.answerId === option.id).map((item) => item.playerId) } : {}), ...(revealCorrect ? { isCorrect: option.isCorrect } : {}), ...(revealBluffs ? { genuinePlayerIds: [...option.genuinePlayerIds], bluffPlayerIds: [...option.bluffPlayerIds] } : {}) })),
-      phaseEndsAt: room.phaseEndsAt, serverNow: Date.now(), answeredCount: room.submissions.filter((item) => item.genuineAnswer !== null).length, bluffCount: room.submissions.filter((item) => item.bluff !== null).length, votedCount: room.votes.length, hillPlayerIds: room.votes.filter((item) => item.hill).map((item) => item.playerId), hillAnnouncement: room.hillAnnouncement && room.hillAnnouncement.expiresAt > Date.now() ? { ...room.hillAnnouncement } : null,
+      players: room.players.map(({ stats: _stats, ...player }) => ({ ...player, score: revealCorrect ? player.score : player.score - (sourceResults.find((result) => result.playerId === player.id)?.roundPoints ?? 0) })),
+      question: sourceQuestion ? { id: sourceQuestion.id, text: sourceQuestion.text, category: sourceQuestion.category, packId: sourceQuestion.packId } : null,
+      answerPool: sourceAnswers.map((option) => ({ id: option.id, text: option.text, ...(revealVotes ? { voterIds: [...option.voterIds] } : {}), ...(revealCorrect ? { isCorrect: option.isCorrect } : {}), ...(revealBluffs ? { genuinePlayerIds: [...option.genuinePlayerIds], bluffPlayerIds: [...option.bluffPlayerIds], bluffOutcomes: option.bluffOutcomes.map((outcome) => ({ ...outcome, fooledPlayerIds: [...outcome.fooledPlayerIds] })) } : {}) })),
+      phaseEndsAt: room.phaseEndsAt, serverNow: Date.now(), answeredCount: room.submissions.filter((item) => item.genuineAnswer !== null).length, bluffCount: room.submissions.filter((item) => item.bluff !== null).length, votedCount: sourceVotes.length, hillPlayerIds: sourceVotes.filter((item) => item.hill).map((item) => item.playerId), hillAnnouncement: room.hillAnnouncement && room.hillAnnouncement.expiresAt > Date.now() ? { ...room.hillAnnouncement } : null,
       debateReadyCount: this.debateReadyCount(room), debateRequiredCount: this.debateRequiredCount(room),
-      ...(revealCorrect && room.question ? { correctAnswer: room.question.correctAnswer, ...(room.question.explanation ? { explanation: room.question.explanation } : {}) } : {}), results: revealBluffs ? room.results.map((result) => ({ ...result })) : [], leaderboard: final ? buildLeaderboard(room.players) : [], awards: final ? calculateAwards(room.players) : [],
+      ...(revealCorrect && sourceQuestion ? { correctAnswer: sourceQuestion.correctAnswer, ...(sourceQuestion.explanation ? { explanation: sourceQuestion.explanation } : {}) } : {}), results: revealBluffs ? sourceResults.map((result) => ({ ...result })) : [], leaderboard: final ? buildLeaderboard(room.players) : [], awards: final ? calculateAwards(room.players) : [],
     };
   }
   displayView(code: unknown): DisplayView {
